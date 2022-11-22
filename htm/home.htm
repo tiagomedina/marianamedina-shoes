@@ -1,0 +1,156 @@
+<script src='<PathTo file="htm/js/smartmodal-min.js">'></script>
+
+<!-- Template for product quantity in cart -->
+<textarea id=cartQuantityTemplate style=display:none>
+  <div id="dynCartAdd<prodId>" class="dynCartAdd hidethis" onclick="dynCart$.changeQty(<prodId>,1)"><dynCartAdd></div>
+  <div id="dynCartQtyPanel<prodId>" class="dynCartQtyPanel hidethis">
+    <svg class=dynCartQtyDel viewBox="0 0 24 24" onclick="dynCart$.stepQty(<prodId>,false)"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm5 11h-10v-2h10v2z"/></svg>
+    <input type=number id="dynCartQty<prodId>" prodid="<prodId>" value="<cartprodqty>" oriValue="<cartprodqty>" maxlength=2 oninput="this.value=this.value.replace(/[^\d+]/,'').substring(0,3)" onkeyup="delayExec(function(){dynCart$.inputQty(<prodId>);},1000)">
+    <svg class=dynCartQtyAdd viewBox="0 0 24 24" onclick="dynCart$.stepQty(<prodId>,true)"><path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10-4.48-10-10-10zm5 11h-4v4h-2v-4h-4v-2h4v-4h2v4h4v2z"/></svg>
+  </div>
+  <div id="dynCartDone<prodId>" class="dynCartDone hidethis"><div class="skeleton-item"><a onclick="Cart$.fnShowCartCheckout();"><dynCartDone></a></div></div>
+</textarea>
+
+<!-- Home -->
+<div class="home-main-container"  id="home-sales-section">
+  <div class="MainHomeBoxTitFC">
+    <h1 class="MainHomeBoxTitFC-line"><var key="home-title-sales"></var></h1>
+  </div> 
+  <div class="home-container-products">
+    <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+    <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+    <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+    <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+  </div>
+</div>
+
+<div class="home-banner-separator">
+  <div class="home-banner-one-separator-left font-regular">
+    <div>
+      <h2><var key="home-title-special-offers"></var></h2>
+      <p><var key="home-title-special-offers-text"></var></p>
+      <a href="<url-sale>" aria-label="Special offers"><var key="home-title-special-offers-buy-now"></var></a>
+    </div>
+  </div>
+  <div class="home-banner-one-separator-right">
+    <a href="<banner-redir 16>" aria-label="Banner">
+      <picture>
+        <source media="(max-width:1024px)" id='home-title-sales-mobile' srcset="<banner-image-mobile 16>">
+        <img id='home-title-sales-desktop' alt='<banner-alt 16>' src='<banner-image 16>'>
+      </picture>
+    </a>
+  </div>
+</div>
+
+<div class="home-main-container" id="home-release-section">
+  <div class="MainHomeBoxTitFC">
+    <h3 class="MainHomeBoxTitFC-line"><var key="home-title-last-releases"></var></h3>
+  </div> 
+  <div class="home-container-products">
+    <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+    <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+    <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+    <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+  </div>
+</div>
+
+<div class="home-banner-separator">
+  <div class="home-banner-two-separator-left font-regular">
+    <div>
+      <h3><var key="home-title-last-awesome-releases"></var></h3>
+      <p><var key="home-title-last-awesome-releases-text"></var></p>
+      <a href="<url-release>" aria-label="New arrivals"><var key="home-title-last-awesome-releases-buy-now"></var></a>
+    </div>
+  </div>
+  <div class="home-banner-two-separator-right">
+    <a href="<banner-redir 17>" aria-label="Banner">
+      <picture>
+        <source media="(max-width:1024px)" srcset="<banner-image-mobile 17>" id="home-title-last-releases-mobile">
+        <img alt="<banner-alt 17>" id="home-title-last-releases-dekstop" src='<banner-image 17>'>
+      </picture>
+    </a>
+  </div>
+</div>
+
+<div class="home-main-container" id="home-featured-section">
+  <div class="MainHomeBoxTitFC">
+    <h2 class="MainHomeBoxTitFC-line"><var key="home-title-featured-products"></var></h2>
+  </div> 
+  <div class="home-container-products">
+    <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+    <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+    <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+    <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+  </div>
+</div>
+
+<div class="home-info-banners">
+    <div class="home-info-banners-one">
+      <div class="home-info-banners-container">
+        <picture>          
+          <source media="(max-width:1024px)" srcset="<banner-image-mobile 18>">
+          <img src="<banner-image 18>" loading="lazy" alt="<banner-alt 18> - <StoreName>" class="home-info-banners-images" width="646" height="439">          
+        </picture>
+        <div class="home-info-banners-container-centered">
+          <a href="<banner-redir 18>">
+            <img alt="Icon payment - <StoreName>" id="home-section-payment" src="<PathTo file="images/icon-banner-payment.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
+            <h3><var key="home-section-payment"></var></h3>
+          </a>
+        </div>
+      </div> 
+    </div>
+    <div class="home-info-banners-two">
+      <div class="home-info-banners-container">
+        <picture>          
+          <source media="(max-width:1024px)" srcset="<banner-image-mobile 19>">
+          <img src="<banner-image 19>" loading="lazy" alt="<banner-alt 19>" class="home-info-banners-images" width="646" height="439">          
+        </picture>
+        <div class="home-info-banners-container-centered">
+          <a href="<banner-redir 19>">
+            <img alt="Security Badge - Buy now!" id="home-section-security" src="<PathTo file="images/icon-banner-security.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
+            <h3><var key="home-section-security"></var></h3>
+          </a>
+        </div>
+      </div> 
+    </div>
+</div>
+
+<div class="home-info-banners">
+    <div class="home-info-banners-three">
+      <div class="home-info-banners-container">
+        <picture>          
+          <source media="(max-width:1024px)" srcset="<banner-image-mobile 20>">
+          <img src="<banner-image 20>" loading="lazy" alt="<banner-alt 20>" class="home-info-banners-images" width="646" height="439">          
+        </picture>
+        <div class="home-info-banners-container-centered">
+          <a href="<banner-redir 20>">
+            <img alt="Shipping - Buy now!" id="home-section-delivery" src="<PathTo file="images/icon-banner-delivery.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
+            <h3><var key="home-section-delivery"></var></h3>
+          </a>
+        </div>
+      </div> 
+    </div>
+    <div class="home-info-banners-four">
+      <div class="home-info-banners-container">
+        <picture>          
+          <source media="(max-width:1024px)" srcset="<banner-image-mobile 21>">
+          <img src="<banner-image 21>" loading="lazy" alt="<banner-alt 21>" class="home-info-banners-images" width="646" height="439">          
+        </picture>
+        <div class="home-info-banners-container-centered">
+          <a href="<banner-redir 21>">
+            <img alt="Contact us - Buy now!" id="home-section-contact-us" src="<PathTo file="images/icon-banner-contact.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
+            <h3><var key="home-section-contact-us"></var></h3>
+          </a>
+        </div>
+      </div> 
+    </div>
+</div>
+
+<!-- Banners Slideshow -->
+<textarea id="FC-HideHomeBanners" style="display:none;">
+  <div class="carouselBanner js-flickity" id="home-banner-flickty"></div>
+</textarea>
+<script>
+var aBannersHome=<banners-json info="1" max="6" pos="11">;
+FCLib$.onLoaded(function(){skeletonLib$.removeClass("loading-skeleton",document);});
+</script>
