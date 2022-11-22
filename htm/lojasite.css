@@ -262,10 +262,10 @@ a.navigation-dropdown-link:visited, a.navigation-dropdown-link:active{color:inhe
 .dynCartQty .dynCartQtyPanel{display:flex;justify-content:center;}
 .dynCartQty .dynCartQtyDel,.dynCartQty .dynCartQtyAdd{width:32px;height:32px;fill:#aaa;}
 .dynCartQty .dynCartQtyDel:hover{fill:#FF625F;}
-.dynCartQty .dynCartQtyAdd:hover{fill:#248033;}
+.dynCartQty .dynCartQtyAdd:hover{fill:#F2C0A2;}
 .dynCartQty input{width:40px;height:20px;border-radius:15px;text-align:center;border:1px solid #666;color:#666;font-size:14px;font-weight:400;outline:none;margin:0 4px;}
-.dynCartQty .dynCartAdd{color:#248033;font-size:15px;background-color:#deece0;border:1px solid #248033;padding:7px 20px;border-radius:5px;display:flex;align-items:center;justify-content:center;line-height:1.3;cursor:pointer;white-space:nowrap;;user-select:none;width:85%}
-.dynCartQty .dynCartAdd:hover{border:1px solid #01bb01;background-color:#01bb01;color:#fff;}
+.dynCartQty .dynCartAdd{color:#F2C0A2;font-size:15px;background-color:#deece0;border:1px solid #F2C0A2;padding:7px 20px;border-radius:5px;display:flex;align-items:center;justify-content:center;line-height:1.3;cursor:pointer;white-space:nowrap;;user-select:none;width:85%}
+.dynCartQty .dynCartAdd:hover{border:1px solid #A66E4E;background-color:#A66E4E;color:#fff;}
 .hidethis{display:none!important;}
 .dynCartDone{cursor:pointer;margin-top:6px;font-size:12px;line-height:12px;font-weight:bold;text-align:center;white-space:nowrap;background-color: #d9e8f8;/* cor original #f5f6f8 */padding:0 5px 4px 5px;border-radius:3px;user-select:none;max-width:110px;/* retirar depois */}
 .dynCartDone::before{content:".";width:0px;height:0px;display:flex;justify-content:center;align-items:center;position:relative;left:45%;top:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:5px solid #d9e8f8;color:#d9e8f8;}
@@ -325,7 +325,7 @@ h1.MainHomeBoxTitFC-line:after,h2.MainHomeBoxTitFC-line:after,h3.MainHomeBoxTitF
 .text-overflow{box-sizing:border-box;display:block;display:-webkit-box;max-width:400px;min-height:35px;margin:0 auto;line-height:18px;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
 .DivHomeNomeProd .HomeNomeProd{display:block;word-wrap:break-word;overflow:hidden;height:3.2rem;line-height:1.5rem;color:#666666;margin-top:0px;font-size:1.3rem;cursor:pointer!important}
 .DivHomePriceProd{text-align:left;margin-bottom:15px;cursor:pointer!important;border-top:1px solid #eeeeee;padding-top:5px}
-.FCHome .home-price{color:#178239}
+.FCHome .home-price{color:#8C4E37}
 .FCHome .DivHomePriceProd .prices .price .currency{display:flex;display:-webkit-flex;display:-webkit-flex;align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center}
 .FCHome .DivHomePriceProd .prices .price .currency a{font-size:0.8rem!important;background:#707e89;border-radius:2px;color:#ffffff;text-align:center;margim:0 auto;padding:10px;text-transform:uppercase}
 .PriceAVistaProdLista{font-size:0.8em;position:relative;top:-20px}

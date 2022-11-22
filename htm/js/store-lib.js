@@ -171,7 +171,7 @@ var sF$=(function(){
       if(fnGetConfig("Product_Badges_Home_ProductList")){
         var sBadges="";
         if(oBadge.hasAttribute("data-sale") && OriginalPrice>Price*1.01)sBadges+="<div id='badgeProm"+ ProductID +"' class='fc-badge-product-sale skeleton-item' title='Oferta'><span>-" + fnGetSale() + "%</span></div>";
-        /* if(oBadge.hasAttribute("data-release"))sBadges+="<div class='fc-badge-product-release skeleton-item' title='Lançamento'>&#10033;</div>"; */
+        /* if(oBadge.hasAttribute("data-release"))sBadges+="<div class='fc-badge-product-release skeleton-item' title='Lanï¿½amento'>&#10033;</div>"; */
         /* if(oBadge.hasAttribute("data-highlight"))sBadges+="<div class='fc-badge-product-highlight skeleton-item' title='Destaque'>&#9755;</div>"; */
         if(sBadges!="")oBadge.innerHTML+="<div class='fc-badge-product-principal'>"+ sBadges +"</div>";
       }
@@ -1971,7 +1971,7 @@ function fnprocessXMLCEPC(obj){
     var sShipping="<div class='ZipOptionsCart'><select onchange=\"fnChangeFreteCart(this,'"+iValorCesta+"')\"><option>"+ rk("shipping-options") +"</option>";
     var dAgora=new Date();
     console.log("===== Regular cart [ "+ (dAgora.getDate() +"/"+(dAgora.getMonth()+1)+"/"+dAgora.getFullYear()+" "+ dAgora.getHours()+":"+dAgora.getMinutes()+":"+dAgora.getSeconds()) +" ] =====");
-    console.log("Qtd de opções: "+ iOpt);
+    console.log("Qtd de opï¿½ï¿½es: "+ iOpt);
     for(var i=1;i<=iOpt;i++){
       var OptName=ReadXMLNode(obj,"Opt"+ i +"Name");
       var OptImage=ReadXMLNode(obj,"Opt"+ i +"Image");
@@ -1991,7 +1991,7 @@ function fnprocessXMLCEPC(obj){
       console.log("2) i="+i+" bCurrentOptionSelected="+ bCurrentOptionSelected +" bAlredySelectedOption="+ bAlredySelectedOption);
       if(bCurrentOptionSelected){sValFreteAtual=sValorFrete;bAlredySelectedOption=true;}
       sShipping+="<option value='"+ sValorFrete +"'"+ (bCurrentOptionSelected?" selected":"") +">"+ OptName +" ["+ sValorFrete +"]</option>";
-      console.log("Opção "+ i +": ["+ OptName +"] "+ sValorFrete +" Atual:"+ bCurrentOptionSelected);
+      console.log("Opï¿½ï¿½o "+ i +": ["+ OptName +"] "+ sValorFrete +" Atual:"+ bCurrentOptionSelected);
     }
     sShipping+="</select></div>";
     oShippingOptions1.innerHTML=sShipping;
@@ -2003,7 +2003,7 @@ function fnprocessXMLCEPC(obj){
     sValFreteAtual=ReadXMLNode(obj,"Opt1Value");
     FCLib$.SetCookie("OPFrete"+FC$.IDLoja,"");
   }  
-  console.log("Nome da última opção de frete selecionada: ["+ sOpFreteSelected +"]");
+  console.log("Nome da ï¿½ltima opï¿½ï¿½o de frete selecionada: ["+ sOpFreteSelected +"]");
   console.log("Valor do frete atual: "+ sValFreteAtual);
   fnShowFreteCart(sValFreteAtual,iValorCesta);
 }
@@ -2015,7 +2015,7 @@ function fnprocessXMLCEPC(obj){
       var iPos=sOpFrete.indexOf(" [");
       if(iPos>0)sOpFrete=sOpFrete.substring(0,iPos);
       FCLib$.SetCookie("OPFrete"+FC$.IDLoja,sOpFrete);
-      console.log("Nova opção de frete: ["+ sOpFrete +"] Valor de "+ obj.options[obj.selectedIndex].value);
+      console.log("Nova opï¿½ï¿½o de frete: ["+ sOpFrete +"] Valor de "+ obj.options[obj.selectedIndex].value);
       fnShowFreteCart(obj.options[obj.selectedIndex].value,iValorCesta);
     }
   }
@@ -2611,8 +2611,8 @@ var Cart$=(function(){
       if(bMais){var iQtd=iQtdOri+1;iQtdTotalProd=iQtdTotalProd+1}
       else{var iQtd=iQtdOri-1;}
       
-      /* exemplo de código para teste de conceito de limitar qtd comprada do item */
-      if(idProdCart==459002 && iQtd>10){alert("Máximo de 10 itens atingido");return} 
+      /* exemplo de cï¿½digo para teste de conceito de limitar qtd comprada do item */
+      if(idProdCart==459002 && iQtd>10){alert("Mï¿½ximo de 10 itens atingido");return} 
       
       /* If inventory controls check how many you have in the product, otherwise change the direct quantity */
       if(FC$.StockControl)FCLib$.fnAjaxExecFC(FCLib$.uk("url-product-info"),"idprod="+ idProdCart +"&format=1",false,fnChangeQtdProdStock,idProdPed,iQtd,iQtdOri);
@@ -2633,8 +2633,8 @@ var Cart$=(function(){
         if(bMais){var iQtd=iQtdOri+iQtdDif;iQtdTotalProd=iQtdTotalProd+iQtdDif}
         else{var iQtd=iQtdOri-iQtdDif;iQtdTotalProd=iQtdTotalProd-iQtdDif} 
         
-        /* exemplo de código para teste de conceito de limitar qtd comprada do item */
-        if(idProdCart==459002 && iQtd>10){alert("Máximo de 10 itens atingido. Altere a quantidade");return}
+        /* exemplo de cï¿½digo para teste de conceito de limitar qtd comprada do item */
+        if(idProdCart==459002 && iQtd>10){alert("Mï¿½ximo de 10 itens atingido. Altere a quantidade");return}
         
         /* If inventory controls check how many you have in the product, otherwise change the direct quantity */
         if(FC$.StockControl)FCLib$.fnAjaxExecFC(FCLib$.uk("url-product-info"),"idprod="+ idProdCart +"&format=1",false,fnChangeQtdProdStock,idProdPed,iQtd,iQtdOri);
@@ -2748,7 +2748,7 @@ var Cart$=(function(){
       var sShipping="<div class='ZipOptionsCart'><select onchange=\"Cart$.fnChangeFrete(this,'"+iValorCesta+"')\"><option>"+ rk("shipping-options") +"</option>";
       var dAgora=new Date();
       console.log("===== Side cart [ "+ (dAgora.getDate() +"/"+(dAgora.getMonth()+1)+"/"+dAgora.getFullYear()+" "+ dAgora.getHours()+":"+dAgora.getMinutes()+":"+dAgora.getSeconds()) +" ] =====");
-      console.log("Qtd de opções: "+ iOpt);
+      console.log("Qtd de opï¿½ï¿½es: "+ iOpt);
       for(var i=1;i<=iOpt;i++){
         var OptName=ReadXMLNode(obj,"Opt"+ i +"Name");
         var OptImage=ReadXMLNode(obj,"Opt"+ i +"Image");
@@ -2768,7 +2768,7 @@ var Cart$=(function(){
         console.log("2) i="+i+" bCurrentOptionSelected="+ bCurrentOptionSelected +" bAlredySelectedOption="+ bAlredySelectedOption);
         if(bCurrentOptionSelected){sValFreteAtual=sValorFrete;bAlredySelectedOption=true;}
         sShipping+="<option value='"+ sValorFrete +"'"+ (bCurrentOptionSelected?" selected":"") +">"+ OptName +" ["+ sValorFrete +"]</option>";
-        console.log("Opção "+ i +": ["+ OptName +"] "+ sValorFrete +" Atual:"+ bCurrentOptionSelected);
+        console.log("Opï¿½ï¿½o "+ i +": ["+ OptName +"] "+ sValorFrete +" Atual:"+ bCurrentOptionSelected);
         console.log("=======================");
       }
       sShipping+="</select></div>";
@@ -2779,7 +2779,7 @@ var Cart$=(function(){
       sValFreteAtual=ReadXMLNode(obj,"Opt1Value");
       FCLib$.SetCookie("OPFrete"+FC$.IDLoja,"");
     }  
-    console.log("Nome da última opção de frete selecionada: ["+ sOpFreteSelected +"]");
+    console.log("Nome da ï¿½ltima opï¿½ï¿½o de frete selecionada: ["+ sOpFreteSelected +"]");
     console.log("Valor do frete atual: "+ sValFreteAtual);
     fnShowFrete(sValFreteAtual,iValorCesta);
   }
@@ -2791,7 +2791,7 @@ var Cart$=(function(){
       var iPos=sOpFrete.indexOf(" [");
       if(iPos>0)sOpFrete=sOpFrete.substring(0,iPos);
       FCLib$.SetCookie("OPFrete"+FC$.IDLoja,sOpFrete);
-      console.log("Nova opção de frete: ["+ sOpFrete +"] Valor de "+ obj.options[obj.selectedIndex].value);
+      console.log("Nova opï¿½ï¿½o de frete: ["+ sOpFrete +"] Valor de "+ obj.options[obj.selectedIndex].value);
       fnShowFrete(obj.options[obj.selectedIndex].value,iValorCesta);
     }
   }
@@ -3005,11 +3005,11 @@ function fnShowDateProm(sDateTime){
         var dDataPromFim=oGetDate.oDate;
         var dAgora=new Date();
         var dFaltam=(dDataPromFim-dAgora); /* retorna em milissegundos */
-        var iHoras=new Date(dFaltam+10800000).getHours(); /* horas > diferença de 3 horas (+10800000) */
-        var iMinutos=new Date(dFaltam+10800000).getMinutes(); /* minutos > diferença de 3 horas (+10800000) */
-        var iSeconds=new Date(dFaltam+10800000).getSeconds(); /* segundos > diferença de 3 horas (+10800000) */
-        dFaltam=parseInt(dFaltam/1000/60/60/24); /* quantos dias restam para acabar a promoção */
-        if(dDataPromFim>dAgora && dFaltam<10){ /* só exibe informação quando faltarem 10 dias para acabar a promoção */
+        var iHoras=new Date(dFaltam+10800000).getHours(); /* horas > diferenï¿½a de 3 horas (+10800000) */
+        var iMinutos=new Date(dFaltam+10800000).getMinutes(); /* minutos > diferenï¿½a de 3 horas (+10800000) */
+        var iSeconds=new Date(dFaltam+10800000).getSeconds(); /* segundos > diferenï¿½a de 3 horas (+10800000) */
+        dFaltam=parseInt(dFaltam/1000/60/60/24); /* quantos dias restam para acabar a promoï¿½ï¿½o */
+        if(dDataPromFim>dAgora && dFaltam<10){ /* sï¿½ exibe informaï¿½ï¿½o quando faltarem 10 dias para acabar a promoï¿½ï¿½o */
           var sCont="<div class='product-details-data-prom-date-container'>"+ rk("details-promotion-valid-until-text") +" <b class='product-details-data-prom-date'>"+ fnFormatN(dDataPromFim.getDate()) +"/"+ fnFormatN(1+dDataPromFim.getMonth()) +"/"+ dDataPromFim.getFullYear() +" "+ rk("details-promotion-valid-until-at-text") +" "+ fnFormatN(dDataPromFim.getHours()) +":"+ fnFormatN(dDataPromFim.getMinutes()) +".</b></div><div class='product-details-lats-hours'>"+ rk("details-promotion-left-text") +"</div>";
           if(dFaltam<1){
             sCont+="<div class='product-details-data-prom-container'>";
