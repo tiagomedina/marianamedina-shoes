@@ -52,10 +52,10 @@ html{-webkit-text-size-adjust:100%;}
 @keyframes skeleton-shimmer{0%{background-position:-1000px 0;}100%{background-position:1000px 0;}}
 
 /* Discount Rules */
-.ContentItensCart [rulename] {border:2px dashed #7daf87;background:#f0f5f1;}
+.ContentItensCart [rulename] {border:2px dashed #BF8069;background:#f0f5f1;}
 .FCCart [rulename] td{background:#f0f5f1;}
-.FCCheckout [rulename] .EstTabPedido{border-top:2px dashed #7daf87;border-bottom:2px dashed #7daf87;border-left:2px dashed #7daf87;}
-.FCCheckout [rulename] .EstTabPedidoNum{border-top:2px dashed #7daf87;border-bottom:2px dashed #7daf87;border-right:2px dashed #7daf87;}
+.FCCheckout [rulename] .EstTabPedido{border-top:2px dashed #BF8069;border-bottom:2px dashed #BF8069;border-left:2px dashed #BF8069;}
+.FCCheckout [rulename] .EstTabPedidoNum{border-top:2px dashed #BF8069;border-bottom:2px dashed #BF8069;border-right:2px dashed #BF8069;}
 .FCCheckout [rulename] .FCPrice{margin-right:10px;}
 .FCTrack [rulename] td{background-color:#deeae0;}
 
@@ -90,8 +90,8 @@ a.shop-list-action{display:flex;display:-webkit-flex;align-items:center;-webkit-
 #idTabRedirPagtoFC{background:#dedede;padding:1px;margin:0}
 #idTabRedirPagtoFC .EstTabTopo{padding:2px 2px 2px 2px;background:#f0f0f0;color:#0e3657;font-size:11pt;font-family:tahoma;line-height:40px}
 #idTabRedirPagtoFC .EstTabQuadro{background:#ffffff;font-size:8pt;font-family:arial}
-#idTabRedirPagtoFC .InputButton{background-color:#6ea853;color:#fcfcfc;font-weight:bold;font-size:12px;font-family:tahoma,arial;height:40px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}
-#idTabRedirPagtoFC .InputButton:hover{background-color:#4c7738;border-radius:5px;color:#FCFCFC;font-family:tahoma,arial;font-size:12px;font-weight:bold;height:40px;cursor:pointer}
+#idTabRedirPagtoFC .InputButton{background-color:#F2C0A2;color:#fcfcfc;font-weight:bold;font-size:12px;font-family:tahoma,arial;height:40px;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px}
+#idTabRedirPagtoFC .InputButton:hover{background-color:#F2C0A2;border-radius:5px;color:#FCFCFC;font-family:tahoma,arial;font-size:12px;font-weight:bold;height:40px;cursor:pointer}
 
 /* Filters */
 #ContentFil{width:220px;margin-bottom:20px;padding-bottom:15px}
@@ -125,7 +125,7 @@ justify-content:center;-webkit-justify-content:center;}
 #ContentFil .FilMoreOptionsSearch{margin-top:15px;width:192px;}
 #ContentFil .FilMoreOptionsSearch a{background-color:#dedede;color:#555555;border-radius:3px;font-weight:bold;font-size:0.8rem;padding:4px 10px 4px 10px;text-decoration:none;display:flex;display:-webkit-flex;
 justify-content:center;-webkit-justify-content:center;}
-#ContentFil .FilMoreOptionsSearch a:hover{background-color:#4caf50;color:#fcfcfc}
+#ContentFil .FilMoreOptionsSearch a:hover{background-color:#F2C0A2;color:#fcfcfc}
 ul.FilItemsList li label{position:relative;top:-1px}
 #ContentFil .FilItems .FilItemsList li{display:flex;align-items:baseline;margin:7px 0px;}
 ul.FilItemsList li label{top:-2px;}
@@ -335,7 +335,7 @@ h1.MainHomeBoxTitFC-line:after,h2.MainHomeBoxTitFC-line:after,h3.MainHomeBoxTitF
 .DivHomeSpy a{padding:0 3px}
 .DivHomeSpy img{position:relative;top:6px}
 .DivHomeProd{border-radius:5px;border:1px solid #eeeeee;background:#ffffff;}
-.videoProd{border:1px solid #eeeeeeeee;margin-bottom:10px;margin-top:10px;background:#ffffff;padding:10px}
+.videoProd{border:1px solid #eeeeeeee;margin-bottom:10px;margin-top:10px;background:#ffffff;padding:10px}
 .DivHomeImagemProd img,.DivProductListImagemProd img{margin-bottom:10px;margin-top:10px;padding:10px;background:#ffffff;cursor:pointer!important}
 .home-banner-separator{background:#f0f0f2;contain:layout}
 .home-banner-one-separator-left div p,.home-banner-two-separator-left div p{font-size:1rem;color:#212121}
@@ -346,7 +346,7 @@ h1.MainHomeBoxTitFC-line:after,h2.MainHomeBoxTitFC-line:after,h3.MainHomeBoxTitF
 .home-info-banners-container .home-info-banners-images{width:100%;}
 .home-info-banners-container-centered{position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);width:500px;}
 .home-info-banners-one a h3,.home-info-banners-two a h3,.home-info-banners-three a h3,.home-info-banners-four a h3{color:#ffffff;text-transform:uppercase;padding:10px 30px;background-color:rgba(0,0,0,1);font-size:1rem;border-radius:25px}
-.PriceAVistaLista{height:20px;font-size:0.8rem;color:#248033}
+.PriceAVistaLista{height:20px;font-size:0.8rem;color:#8C4E37}
 #home-sales-section,#home-release-section,#home-featured-section{display:none}
 
 /* Aside */
@@ -360,7 +360,7 @@ h1.MainHomeBoxTitFC-line:after,h2.MainHomeBoxTitFC-line:after,h3.MainHomeBoxTitF
 .DivListProd{display:flex;display:-webkit-flex;width:27%;float:left;border-radius:5px;border:1px solid #eeeeee;background-color:#ffffff;margin:10px;padding:1rem;height:428px;transition:all .5s ease;}
 .DivProductListNomeProd .ProductListNomeProd{display:block;word-wrap:break-word;overflow:hidden;height:3.2rem;line-height:1.5rem;color:#666666;margin-top:0;font-size:1.2rem;cursor:pointer!important}
 .DivProductListPriceProd{text-align:left;margin-bottom:15px;height:70px;cursor:pointer!important;border-top:1px solid #eeeeee;padding-top:5px}
-.ProductList .home-price{color:#178239;font-size:1.2rem!important}
+.ProductList .home-price{color:#8C4E37;font-size:1.2rem!important}
 .ProductList .DivProductListPriceProd .prices .price .currency{display:flex;display:-webkit-flex;align-items:center;-webkit-align-items:center;justify-content:center;-webkit-justify-content:center}
 .ProductList .DivProductListPriceProd .prices .price .currency a{font-size:0.8rem!important;background:#697680;border-radius:2px;color:#ffffff;text-align:center;margin:0 auto;padding:10px;text-transform:uppercase}
 .PriceAVistaProdLista{font-size:0.8em;position:relative;top:-20px}
@@ -553,7 +553,7 @@ a:hover .icon-share-wishlist-off-det-product{background:url("../images/wishlist_
 #idHeadFilters{font-size:0.9em;margin:10px 0 10px 0;padding:10px;border-style:solid;border-width:1px;box-sizing:border-box;float:left;width:100%;border-radius:2px;-webkit-border-radius:2px;-moz-border-border-radius:2px;border-color:#cdcdcd;background-color:#fcfcfc}
 #idTxtFilters{float:left;margin:4px 0 0 0}
 #idHideFilters,#idShowFilters{float:left;margin:0 0 0 5px}
-#idShowFilters button{padding:8px 20px 8px 20px;font-size:11px;font-weight:bold;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer;background-color:#4caf50;border:0 solid #4caf50;color:#fcfcfc;text-transform:uppercase}
+#idShowFilters button{padding:8px 20px 8px 20px;font-size:11px;font-weight:bold;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer;background-color:#F2C0A2;border:0 solid #F2C0A2;color:#fcfcfc;text-transform:uppercase}
 #idShowFilters button:hover{background:#555555}
 #idHideFilters button{padding:8px 20px 8px 20px;font-size:11px;font-weight:bold;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;cursor:pointer;background-color:#555555;border:0 solid #555555;color:#fcfcfc;text-transform:uppercase}
 #idHideFilters button:hover{background:#990000}
@@ -617,7 +617,7 @@ a:hover .icon-share-wishlist-off-det-product{background:url("../images/wishlist_
 /* Button Ped Confirmation */
 .BotConfPed{border-width:1px;font-weight:bold;font-size:14px;font-family:verdana;height:40px;width:300px;background:green;color:#fcfcfc;border-color:#333333}
 .EstTextoContinuar{font-size:12pt;font-weight:bold;color:green;font-family:tahoma,verdana,arial;color:green}
-.BotContinuarConfirmacao{background-color:#6ea853;font-weight:bold;font-family:verdana;border:none;padding:7px 15px 7px 15px;color:#ffffff;cursor:pointer;-webkit-border-radius:3px;min-height:47px;transition:background-color 0.5s background-color:#4caf50;font-size:14px}
+.BotContinuarConfirmacao{background-color:#F2C0A2;font-weight:bold;font-family:verdana;border:none;padding:7px 15px 7px 15px;color:#ffffff;cursor:pointer;-webkit-border-radius:3px;min-height:47px;transition:background-color 0.5s background-color:#F2C0A2;font-size:14px}
 .BotContinuar{font-size:12pt;font-weight:bold}
 
 /* Transaction Return Styles */
@@ -653,10 +653,10 @@ table[name="TabEnvioInt"] td{vertical-align:middle;padding:5px 5px}
 #idTDFreightSimulationFC .EstTabPedido td{padding:12px 5px 0 0;vertical-align:middle}
 #idTDFreightSimulationFC #idBut{border-radius:3px;-webkit-border-radius:3px;-moz-border-border-radius:3px;border:none;padding:6px 5px;cursor:pointer;background-color:#33a1ff;color:#ffffff}
 .FCCart .EstTabPedidoTit{background:#F5F5F5;border-top:0!important;font-size:0.85rem;text-transform:uppercase}
-.FCCart #FCCartSubtotals .FCCartItemsPrice .FCPrice,.FCCart #FCCartSubtotals .FCCartItemsPrice .FCCurrencyLabel{font-size:1rem;color:#4caf50;font-weight:700}
-.FCCart #FCCartRightSummary .FCCartPriceValue,.FCCart  #FCCartRightSummary .FCCartPriceValue .FCCurrencyLabel{color:#4caf50;font-weight:700}
-.FCCart .FCCartSmallProd .FCCartTotalPrice .FCPrice .FCCurrencyLabel,.FCCart .FCCartSmallProd .FCCartTotalPrice .FCPrice .FCPriceValue{font-size:1.2rem;color:#4caf50;font-weight:700}
-.FCCart #FCCartSmallSubtotals .FCCartPriceValue .FCPrice .FCCurrencyLabel,.FCCart #FCCartSmallSubtotals .FCCartPriceValue .FCPrice .FCPriceValue{color:#4caf50;font-weight:700}
+.FCCart #FCCartSubtotals .FCCartItemsPrice .FCPrice,.FCCart #FCCartSubtotals .FCCartItemsPrice .FCCurrencyLabel{font-size:1rem;color:#F2C0A2;font-weight:700}
+.FCCart #FCCartRightSummary .FCCartPriceValue,.FCCart  #FCCartRightSummary .FCCartPriceValue .FCCurrencyLabel{color:#F2C0A2;font-weight:700}
+.FCCart .FCCartSmallProd .FCCartTotalPrice .FCPrice .FCCurrencyLabel,.FCCart .FCCartSmallProd .FCCartTotalPrice .FCPrice .FCPriceValue{font-size:1.2rem;color:#F2C0A2;font-weight:700}
+.FCCart #FCCartSmallSubtotals .FCCartPriceValue .FCPrice .FCCurrencyLabel,.FCCart #FCCartSmallSubtotals .FCCartPriceValue .FCPrice .FCPriceValue{color:#F2C0A2;font-weight:700}
 .FCCartRecalculate button#FCCartRecalculateBut,.FCCartStillShopping button#FCCartStillShoppingBut{background:transparent!important;color:#666666;text-decoration:underline;font-size:0.7rem;letter-spacing:0.8px}
 #FCCartCupomBut{padding:13px!important;background:#444444!important;font-size:0.9rem;font-weight:700;color:#ffffff;letter-spacing:0.3px;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);transition:all 0.3s cubic-bezier(.25,.8,.25,1)}
 #FCCartCupomBut:hover{background:#666666!important;color:#ffffff;box-shadow:0 2px 4px rgba(0,0,0,0.25),0 5px 5px rgba(0,0,0,0.22)}
@@ -902,7 +902,7 @@ a:hove .EstNamePageHistoryr{height:40px;font-size:1rem;text-decoration:none;bord
 .FCAddressMyAcc #idAccountMyAddressFC #FCMyAccContentAddress .buttonsAddAddressMyAcc #idRegisterAddress{background:#1e88e5;font-weight:bold}
 .FCMyAccContent .FCDivExtAccessMyAcc .buttonsMyAcc #idAccessPswEdit,.FCMyAccContent .FCDivExtLastOrderMyAcc .buttonsMyAcc #idSeeAllOrders,.FCMyAccContent .FCDivExtOrdersListMyAcc .buttonsMyAcc #idSeeDetailTracking{background:#1e88e5}
 #FCMyAccContentMyAddress,.FCDivAddress2MyAcc{font-size:0.9em}
-.FCTrack #idRecoverOrderFC a{background:#4caf50;border-radius:2px;padding:5px 10px 5px 10px;color:#ffffff}
+.FCTrack #idRecoverOrderFC a{background:#F2C0A2;border-radius:2px;padding:5px 10px 5px 10px;color:#ffffff}
 .FCMyAccount #Email,.FCMyAccount #Senha{font-size:1rem!important;height:40px}
 .FCMyAccount .pwdEye{position:relative;top:10px}
 .FCMyAccount .FCDivWishlistCont1MyAcc div,.FCMyAccount .FCDivWishlist2MyAcc div{height:auto!important;}
@@ -932,7 +932,7 @@ a:hove .EstNamePageHistoryr{height:40px;font-size:1rem;text-decoration:none;bord
 #idDivImgLoadingCEPFC{width:10%;margin-top:10px;text-align:center}
 .ZipName{font-size:0.8em;font-weight:bold}
 .ZipObsVal{font-size:0.7em}
-.ZipValue{font-size:0.8em;font-weight:bold;color:#4caf50}
+.ZipValue{font-size:0.8em;font-weight:bold;color:#F2C0A2}
 .ZipOption:first-child{border-top:0}
 .ZipOptions{width:245px;display:table;text-align:left;margin:0 0 0 0;clear:both;border:1px solid #dedede;background:#fcfcfc;padding:10px}
 .ZipOption{width:100%;display:table;padding:0 0 0 0}
@@ -1030,7 +1030,7 @@ ul{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit
 #idTabBotPreviousNextFC{padding:40px 0}
 #idTabBotPreviousNextFC #idTxtBotPreviousPageFC{text-align:center;width:80px;padding:15px 30px 15px 30px;cursor:pointer;font-size:16px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-transform:uppercase;background-color:#e4e5e5;color:#555555}
 #idTabBotPreviousNextFC #idTxtBotPreviousPageFC:hover{text-decoration:none}
-#idTabBotPreviousNextFC #idTxtBotNextPageFC{text-align:center;width:80px;padding:15px 30px 15px 30px;cursor:pointer;font-size:16px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-transform:uppercase;background-color:#4caf50;color:#ffffff}
+#idTabBotPreviousNextFC #idTxtBotNextPageFC{text-align:center;width:80px;padding:15px 30px 15px 30px;cursor:pointer;font-size:16px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-transform:uppercase;background-color:#F2C0A2;color:#ffffff}
 #idTabBotPreviousNextFC #idNextPageFC a,#idTabBotPreviousNextFC #idPreviousPageFC a,#idTabBotPreviousNextFC #idTxtBotNextPageFC:hover{text-decoration:none}
 #idTabBotPreviousNextFC #idImgBotNextPageFC,#idTabBotPreviousNextFC #idImgBotPreviousPageFC{display:none}
 .BotVerMais{cursor:hand;font-size:9pt;font-family:tahoma,verdana,arial;font-weight:bold;text-decoration:none;margin-top:12px}
