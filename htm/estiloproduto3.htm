@@ -1,4 +1,4 @@
-<!-- estiloproduto.htm : JSON Grid v2 2020  (Store 2) -->
+<!-- estiloproduto.htm : JSON Grid v2 2020  (Store 1) -->
 <ProdTop>
 <style>
 #idTxtIntroFoundProdsFC{display:none!important;}
@@ -57,31 +57,38 @@ var bTemSub=false;
   </div>
 </div>
 
-
 <!-- Template for each product in product list -->
 <textarea id=prodListTemplate style=display:none>
   <div class=prodBox>
     <FormProd>
-      <div class=DivListProd <dataattribute> id=DivProd<prodId>>
-        <div class=DivProductListProd>
-          <div class=DivProductListImagemProd id=DivImagemProdDouble<prodId> onclick="fcSpy$.openSmartModal('<URLProd>');"></div>
-          <div class=DivProductListNomeProd id=DivProductListNomeProd<prodId> onclick="fcSpy$.openSmartModal('<URLProd>');">
-            <span class="ProductListNomeProd text-overflow font-regular" title="<prodRef>"><prodNameEnc></span>
-          </div>
-          <div class=DivProductListPriceProd id=DivProductListPriceProd<prodId> onclick="fcSpy$.openSmartModal('<URLProd>');">
-            <div id=idProdPrice<prodId>></div> 
-            <div class=PriceAVistaLista id=ProdDesc<prodId>></div>
-          </div>
-          <div class="prodlist-spy-details-container">
-            <div class="ProductList-wishlist"><span id=ProdWL<prodId>></span><script>WL$.fnButtonAddToWishlist(<prodId>);</script></div>
-          </div>
+    <div class="DivListProd" <DataAttribute> id="DivProd<prodId>">
+      <div class="DivProductListProd">
+  
+        <div class="list-prod-image" id="DivImagemProdDouble<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');" tabIndex="0"></div>
+        <div class="list-prod-name text-overflow"><prodNameEnc></div>
+        <div class="list-prod-price">
+          <div id="idProdPrice<prodId>"></div> 
+          <div class="PriceAVistaLista" id="ProdDesc<prodId>"></div>
         </div>
-        <div id=zFProdSoldOut<prodId>></div>
+        <div class="list-prod-spy-details-container">
+          <div class="list-prod-wishlist"><span id=ProdWL<prodId>></span><script>WL$.fnButtonAddToWishlist(<prodId>);</script></div>
+        </div>  
       </div>
+      <div id="zFProdSoldOut<prodId>"></div>
+      <script>IDProdutoPai=<prodId>;var iEstoqueSubs=0;var bTemSubs=false;</script>
+      <sub>
+        <script>iEstoqueSubs=iEstoqueSubs+<prodStock>.0;bTemSubs=true;</script>
+      </sub>
+    </div>
     </FormProd>
   </div>
   <script>
-  sF$.fnProd("<prodImgMain>",("<prodImgDet>"==""?"<prodImgMain>":"<prodImgDet>"),"<URLProd>",<prodId>,"<prodNameFU>",<prodPriceNum>,<prodPriceOri>,"<prodRef>",<prodMaxInstallmentNum>,<prodStock>);
+  function fnProd<prodId>(){
+    sF$.fnProd("<prodImgMain>",("<prodImgDet>"==""?"<prodImgMain>":"<prodImgDet>"),"<URLProd>",<prodId>,"<prodNameFU>",<prodPriceNum>,<prodPriceOri>,"<prodRef>",<prodMaxInstallmentNum>,<prodStock>);
+  };
+  if(iPagProdFC==0)FCLib$.onReady(function(){fnProd<prodId>();}); else fnProd<prodId>();
+  sF$.fnGetSubProductSoldOutID(<prodId>,iEstoqueSubs,bTemSubs);
+  sF$.fnGetProductSoldOutID(<prodId>,<prodStock>);
   </script>
 </textarea>
 
@@ -107,7 +114,7 @@ pt$.init();
     catName:document.getElementById("catName<prodId>").value,
     prodRef:"<prodRef>",
     dataattribute:"<dataattribute>",
-    prodStock:<prodStock>.0,
+    prodStock:(""=="<prodStock>"?99999999:<prodStock>.0),
     prodPriceOri:"<prodPriceOri>",
     prodPriceNum:<prodPriceNum>,
     prodMaxInstallmentNum:<prodMaxInstallmentNum>,
@@ -126,7 +133,7 @@ pt$.init();
       prodId:<prodId>,
       prodRef:"<prodRef>",
       dataattribute:"<dataattribute>",
-      prodStock:<prodStock>.0,
+      prodStock:(""=="<prodStock>"?99999999:<prodStock>.0),
       prodPriceOri:"<prodPriceOri>",
       prodPriceNum:<prodPriceNum>,
       colorVal:"<colorVal>",
@@ -216,7 +223,6 @@ pt$.init();
       <div class="FreightContainerFC" id="det-zipcode-container">
         <div id="ShowCEP<prodId>"></div>
       </div>
-
     </div>
 
       <div>
@@ -282,11 +288,7 @@ pt$.init();
           }
         </script>
       </div>
-
-
-
   </div>
-
 </div>
 
 <div class="det-product-description-container-full">
@@ -346,7 +348,7 @@ var GridLib_<prodId>$=(function(){
     CorRGB:"<colorRGB>",
     IDProduto:<prodId>,
     CodProd:"<prodRef>",
-    Estoque:(""=="<prodStock>"?99999999:<prodStock>.0),
+    Estoque:<prodStock>.0,
     PesoNum:"<weightNum>",
     PrecoOri:"<prodPriceOri>",
     PrecoNum:"<prodPriceNum>",
@@ -374,7 +376,7 @@ var GridLib_<prodId>$=(function(){
       CorRGB:"<colorRGB>",
       IDProduto:<prodId>,
       CodProd:"<prodRef>",
-      Estoque:(""=="<prodStock>"?99999999:<prodStock>.0),
+      Estoque:<prodStock>.0,
       PesoNum:"<weightNum>",
       PrecoOri:"<prodPriceOri>",
       PrecoNum:"<prodPriceNum>",
