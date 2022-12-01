@@ -1,4 +1,4 @@
-<!-- estiloproduto.htm : JSON Grid v2 2020  (Store 2) -->
+<!-- estiloproduto.htm : JSON Grid v2 2020  (Store 1) -->
 <ProdTop>
 <style>
 #idPagProdTop,#idTxtIntroFoundProdsFC,.left-bar,#idMobileFilters{display:none!important;}
@@ -35,139 +35,119 @@ var bTemSub=false;
 <!-- Template for custom pages, including home -->
 <textarea id=customTemplate style=display:none>
   <div class=FCHome>
-    <div class="home-main-container">
-      <div class=MainHomeBoxTitFC>
-        <h1 class="MainHomeBoxTitFC-line"><var key="home-title-sales"></var></h1>
-      </div> 
-      <div class="home-container-products">
-        <div class="home-container-products-child"><prod out="p255" em="prom,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="prom,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="prom,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="prom,rand"></div>
+
+<section class="home-container">
+  <div class="home-container-box">
+
+    <!-- Banners -->
+    <div class="home-container-banners-middle">
+      <div class="home-container-three-banners">
+        <div class="home-container-three-banners-child home-container-three-banners-child-first">
+          <a href="/prod,offers,1,offers.htm" target="_self">
+            <img src="<storePath>images/home-banner-first.jpg" alt="Banner 5" loading="lazy">
+            <div class="home-container-three-banners-child-text"><var key="product-list-buy"></var></div>
+          </a>
+        </div>
+        <div class="home-container-three-banners-child home-container-three-banners-child-second">
+          <a href="/prod,releases,1,releases.htm" target="_self">
+            <img src="<storePath>images/home-banner-second.jpg" alt="Banner 6" loading="lazy">
+            <div class="home-container-three-banners-child-text"><var key="product-list-buy"></var></div>
+          </a>
+        </div>
+        <div class="home-container-three-banners-child home-container-three-banners-child-third">
+          <a href="/page,file,highlights.htm" target="_self">
+            <img src="<storePath>images/home-banner-third.jpg" alt="Banner 7" loading="lazy">
+            <div class="home-container-three-banners-child-text"><var key="product-list-buy"></var></div>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="home-banner-separator">
-      <div class="home-banner-one-separator-left font-regular">
-        <div>
-          <h3><var key="home-title-special-offers"></var></h3>
-          <p><var key="home-title-special-offers-text"></var></p>
-          <a href="<url-sale>"><var key="home-title-special-offers-buy-now"></var></a>
+    <!-- Products -->
+    <div class="home-main-container">
+      <div class="home-container-title">
+        <div class="home-container-main-title">
+          <h1><var key="home-title-sales"></var></h1>
         </div>
       </div>
-      <div class="home-banner-one-separator-right">
-        <a href="<url-sale>">
-          <picture>
-            <source media="(max-width:1024px)" id="home-title-sales-mobile" srcset="/images/shim.gif?cccfc=1" alt="Deals">
-            <img id="home-title-sales-desktop" alt="Deals" src="<PathTo file="images/home-banner-sales.jpg">">
-          </picture>
+      <div class="home-container-products">
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+        <div class="home-container-products-child home-container-products-sales"><prod out="p255" em="prom,rand"></div>
+      </div>
+    </div>
+
+    <!-- Banner Separator -->
+    <div class="home-container-banners-full">
+      <a href="/categories.ehc">
+        <picture>          
+          <source media="(max-width:1024px)" srcset="<storePath>images/home-banner-middle-mob.jpg">
+          <img alt="Banner 8" src="<storePath>images/home-banner-middle.jpg" loading="lazy">          
+        </picture>
+      </a>
+    </div>
+
+    <!-- Products -->
+    <div class="home-main-container">
+      <div class="home-container-title">
+        <div class="home-container-main-title">
+          <h2><var key="home-title-last-releases"></var></h2>
+        </div>
+      </div>
+      <div class="home-container-products">
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+        <div class="home-container-products-child home-container-products-releases"><prod out="p255" em="new,rand"></div>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="home-main-container">
+      <div class="home-container-title">
+        <div class="home-container-main-title">
+          <h2><var key="home-title-featured-products"></var></h2>
+        </div>
+      </div>
+      <div class="home-container-products">
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+        <div class="home-container-products-child home-container-products-featured"><prod out="p255" em="high,rand"></div>
+      </div>
+    </div>
+
+    <!-- Sections Payment, Security, Delivery & Contact -->
+    <div class="home-container-badges">
+      <div class="home-container-badges-box">
+        <a href="<url-help>#Pagamento">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-payment.jpg">" alt="Payment" loading="lazy"></div>
+          <h5><var key="home-section-payment"></var></h5>
+        </a>
+      </div>
+      <div class="home-container-badges-box">
+        <a href="<url-help>#Seguranca">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-security.jpg">" alt="Security" loading="lazy"></div>
+          <h5><var key="home-section-security"></var></h5>
+        </a>
+      </div>
+      <div class="home-container-badges-box">
+        <a href="<url-help>#Entregas">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-delivery.jpg">" alt="Delivery" loading="lazy"></div>
+          <h5><var key="home-section-delivery"></var></h5>
+        </a>
+      </div>
+      <div class="home-container-badges-box">
+        <a href="<url-contact>">
+          <div class="home-badges-image"><img src="<PathTo file="images/icon-banner-contact.jpg">" alt="Contact us" loading="lazy"></div>
+          <h5><var key="home-section-contact-us"></var></h5>
         </a>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="home-main-container">
-      <div class="MainHomeBoxTitFC">
-        <h2 class="MainHomeBoxTitFC-line"><var key="home-title-last-releases"></var></h2>
-      </div> 
-      <div class="home-container-products">
-        <div class="home-container-products-child"><prod out="p255" em="new,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="new,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="new,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="new,rand"></div>
-      </div>
-    </div>
-    
-    <div class="home-banner-separator">
-      <div class="home-banner-two-separator-left font-regular">
-        <div>
-          <h3><var key="home-title-last-awesome-releases"></var></h3>
-          <p><var key="home-title-last-awesome-releases-text"></var></p>
-          <a href="<url-release>"><var key="home-title-last-awesome-releases-buy-now"></var></a>
-        </div>
-      </div>
-      <div class="home-banner-two-separator-right">
-        <a href="<url-release>">
-          <picture>
-            <source media="(max-width:1024px)" srcset="/images/shim.gif?cccfc=1" id="home-title-last-releases-mobile" alt="Releases">
-            <img alt="Produtos em lançamento" id="Releases" src="<PathTo file="images/home-banner-releases.jpg">">
-          </picture>
-        </a>
-      </div>
-    </div>
-
-    <div class="home-main-container">
-      <div class="MainHomeBoxTitFC">
-        <h2 class="MainHomeBoxTitFC-line"><var key="home-title-featured-products"></var></h2>
-      </div> 
-      <div class="home-container-products">
-        <div class="home-container-products-child"><prod out="p255" em="high,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="high,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="high,rand"></div>
-        <div class="home-container-products-child"><prod out="p255" em="high,rand"></div>
-      </div>
-    </div>
-
-    <div class="home-info-banners">
-        <div class="home-info-banners-one">
-          <div class="home-info-banners-container">
-            <picture>          
-              <source media="(max-width:1024px)" srcset="<banner-image-mobile 18>">
-              <img src="<banner-image 18>" loading="lazy" alt="<banner-alt 18> - <StoreName>" title="Formas de Pagamento" class="home-info-banners-images" width="646" height="439">         
-            </picture>
-            <div class="home-info-banners-container-centered">
-              <a href="<banner-redir 18>">
-                <img alt="Payment" id="home-section-payment" src="<PathTo file="images/icon-banner-payment.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
-                <h4><var key="home-section-payment"></var></h4>
-              </a>
-            </div>
-          </div> 
-        </div>
-        <div class="home-info-banners-two">
-          <div class="home-info-banners-container">
-            <picture>          
-              <source media="(max-width:1024px)" srcset="<banner-image-mobile 19>">
-              <img src="<banner-image 19>" loading="lazy" alt="<banner-alt 19>" title="Segurança" class="home-info-banners-images" width="646" height="439">         
-            </picture>
-            <div class="home-info-banners-container-centered">
-              <a href="<banner-redir 19>">
-                <img alt="Security" id="home-section-payment" src="<PathTo file="images/icon-banner-security.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
-                <h4><var key="home-section-security"></var></h4>
-              </a>
-            </div>
-          </div> 
-        </div>
-    </div>
-    
-    <div class="home-info-banners">
-        <div class="home-info-banners-three">
-          <div class="home-info-banners-container">
-            <picture>          
-              <source media="(max-width:1024px)" srcset="<banner-image-mobile 20>">
-              <img src="<banner-image 20>" loading="lazy" alt="<banner-alt 20>" title="Frete Rápido" class="home-info-banners-images" width="646" height="439">        
-            </picture>
-            <div class="home-info-banners-container-centered">
-              <a href="<banner-redir 20>">
-                <img alt="Delevery" id="home-section-payment" src="<PathTo file="images/icon-banner-delivery.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
-                <h4><var key="home-section-delivery"></var></h4>
-              </a>
-            </div>
-          </div> 
-        </div>
-        <div class="home-info-banners-four">
-          <div class="home-info-banners-container">
-            <picture>          
-              <source media="(max-width:1024px)" srcset="<banner-image-mobile 21>">
-              <img src="<banner-image 21>" loading="lazy" alt="<banner-alt 21>" title="Fale Conosco" class="home-info-banners-images" width="646" height="439">           
-            </picture>
-            <div class="home-info-banners-container-centered">
-              <a href="<banner-redir 21>">
-                <img alt="Contact us" id="home-section-payment" src="<PathTo file="images/icon-banner-contact.svg">" loading="lazy" width="150" height="150" class="home-info-banners-icon">
-                <h4><var key="home-section-contact-us"></var></h4>
-              </a>
-            </div>
-          </div> 
-        </div>
-    </div>
   </div>
 </textarea>
 
@@ -176,22 +156,19 @@ var bTemSub=false;
 <p255>
   <div class=prodBox>
     <FormProd>
-      <div class=DivHomeProd <dataattribute> id=DivProd<prodId>>
-        <div class=DivProductListProd>
-          <div class=DivProductListImagemProd id=DivImagemProdDouble<prodId> onclick="fcSpy$.openSmartModal('<URLProd>');"></div>
-          <div class=DivProductListNomeProd id=DivProductListNomeProd<prodId> onclick="fcSpy$.openSmartModal('<URLProd>');">
-            <span class="ProductListNomeProd text-overflow font-regular" title="<prodRef>"><prodNameEnc></span>
-          </div>
-          <div class=DivProductListPriceProd id=DivProductListPriceProd<prodId> onclick="fcSpy$.openSmartModal('<URLProd>');">
-            <div id=idProdPrice<prodId>></div> 
-            <div class=PriceAVistaLista id=ProdDesc<prodId>></div>
-          </div>
-          <div class="prodlist-spy-details-container">
-            <div class="ProductList-wishlist"><span id=ProdWL<prodId>></span><script>WL$.fnButtonAddToWishlist(<prodId>);</script></div>
-          </div>
-        </div>
-        <div id=zFProdSoldOut<prodId>></div>
+
+    <div class="home-prod-container" <DataAttribute> id="DivProd<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');">
+      <div class="DivHomeImagemProd" id="DivImagemProdDouble<prodId>" onclick="fcSpy$.openSmartModal('<URLProd>');" tabIndex="0"></div>
+      <div class="home-prod-name text-overflow"><prodNameEnc></div>
+      <div class="home-prod-price">
+        <div id="idProdPrice<prodId>"></div> 
+        <div class="PriceAVistaLista" id="ProdDesc<prodId>"></div>
       </div>
+      <div class="home-spy-details-container">
+        <div class="DivHome-wishlist"><span id=ProdWL<prodId>></span><script>WL$.fnButtonAddToWishlist(<prodId>);</script></div>
+      </div>
+      <div id=zFProdSoldOut<prodId>></div>
+    </div>
     </FormProd>
   </div>
   <script>
