@@ -9,10 +9,10 @@
 <script src='<PathTo file="htm/ls/live-store-search-smartmodal.js">'></script>
 
 <style>
-.HeaderMainbar,.header-space-top,#FC-ShowHomeBanners,.footer-history,.FooterMainBarFC,.FooterMainBarFC-container-socialshare,.FooterMainBarFC-container,#idBadgeAllFC,.left-bar{display:none!important;}
+.header-container,.header-space-top,#FC-ShowHomeBanners,.footer-history,.footer-container,#idBadgeAllFC,.left-bar,.HeaderCartNumberProds{display:none!important;}
 .container-video {position: relative;text-align: center;color: white;}
 .container iframe{}
-.DivHomeDetails{cursor:pointer;}
+.DivHomeDetails{cursor:pointer;background:transparent!important}
 .vex.vex-theme-default{overflow-y:hidden!important;}
 
 body,html{min-height:100%;}
@@ -64,23 +64,21 @@ html{-ms-overflow-style:scrollbar;}
 .ProdCartPagto a{padding: 10px 45px;}
 #CartDesign #idZipC{height:33px;}
 
+.live-store-home-spy-details-container .DivHomeSpy, .live-store-home-spy-details-container .DivHomeDetails{position:relative;top:-5px;left:18px!important;}
 .live-store-background iframe{position:absolute;top:-60px;left:0;width:100%;height:calc(100% + 120px);}
 
 @media screen and (min-width:1025px){
   .FCHome .middle-container{max-width:100%!important;text-align:center;margin:0 auto}
-  .live-store-background iframe{top:-160px;}
-  .live-store-submit{margin-top:260px;}
-  .live-store-submit a{padding:25px 10px;}
+  .live-store-submit{margin-top:380px;}
   .live-store-footer-container-block-1{width:90%;}
   .live-store-footer-container-block-2{width:10%;}
   body{overflow:hidden;}
 }
 
 @media screen and (max-width:1024px) {
-  .live-store-background iframe{top:-175px;height:150%;}
   .live-store-drag-and-scroll{overflow:auto !important;}
   .live-store-header-cart{width:30%!important;display:flex;justify-content:space-between;}
-  .home-spy-details-container .DivHomeSpy, .home-spy-details-container .DivHomeDetails{position:relative;top:-5px;left:12px!important;}
+  .live-store-home-spy-details-container .DivHomeSpy, .live-store-home-spy-details-container .DivHomeDetails{position:relative;top:-5px;left:18px!important;}
 }
 
 @media only screen and (max-width:768px){
@@ -89,13 +87,19 @@ html{-ms-overflow-style:scrollbar;}
   .LivestorePage .FCCloseBack {top:15px;right:15px;}
 }
 
+.live-store-background iframe{position:absolute;top:-60px;left:0;width:100%;height:calc(100% + 120px);}
+
 @media only screen and (min-width:1026px) and (max-width:1366px){
-  .live-store-background iframe{top:-193px;height:150%;}
   #live-store-screen-size{width:1366px;height:768px;}
-  .live-store-submit{margin-top:200px;}
+  .live-store-submit{margin-top:225px;}
 }
 
-@media only screen and (min-width:1367px){
+@media only screen and (min-width:1037px) and (max-width:1376px){
+  #live-store-screen-size{width:1376px;height:774px;}
+  .live-store-submit{margin-top:225px;}
+}
+
+@media only screen and (min-width:1377px){
   #live-store-screen-size{width:1920px;height:1080px;}
 }
 
@@ -132,18 +136,18 @@ html{-ms-overflow-style:scrollbar;}
        <div class="live-store-show-info" id="live-store-show-info">
          <div class="live-store-product-one">
             <div class="DivHomeProd1 live-store-categorie-icon">
-              <div class="home-spy-details-container">
+              <div class="live-store-home-spy-details-container">
                 <a class="DivHomeDetails" target="_parent" onclick="fcSpyLVCat$.openlistSmartModal('/prod,offers,1,offers.htm');"><img src="<PathTo file="images/ls/icon-live-store-discount.svg">" alt="discount" loading="lazy" width="48" height="48"></a>
               </div>
             </div>
             <div class="DivHomeProd1 live-store-categorie-icon">
-              <div class="home-spy-details-container">
-                <a class="DivHomeDetails" target="_parent" onclick="fcSpyLVCat$.openlistSmartModal('/prod,releases,1,releases.htm');"><img src="<PathTo file="images/ls/icon-live-store-release.svg">" alt="release" loading="lazy" width="48" height="48"></a>
+              <div class="live-store-home-spy-details-container">
+                <a class="DivHomeDetails" target="_parent" onclick="fcSpyLVCat$.openlistSmartModal('/prod,releases,1,releases.htm');"><img src="<PathTo file="images/ls/icon-live-store-release.svg">"  alt="release" loading="lazy" width="48" height="48"></a>
               </div>
             </div>
 
             <!--<div class="DivHomeProd1 live-store-categorie-icon">
-              <div class="home-spy-details-container">
+              <div class="live-store-home-spy-details-container">
                 <a class="DivHomeDetails" target="_parent" onclick="fcSpyLVCat$.openlistSmartModal('/');"><img src="<PathTo file="images/ls/icon-live-store-product.svg">" loading="lazy" width="48" height="48"></a>
               </div>
             </div>-->
