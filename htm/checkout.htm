@@ -133,6 +133,13 @@ function FuncChkRegisterBegin(){
   if(F$.Step==1){
    document.getElementById('idChkBottomFC').style.position='fixed';
    document.getElementById('idChkBottomFC').style.bottom='0px!important';
+    setTimeout(function(){
+      var newItem = document.createElement("div");
+      var textnode = document.createTextNode(rk("freight-delivery"));
+      newItem.appendChild(textnode);
+      var list = document.getElementById("idCountryFC");
+      list.insertBefore(newItem, list.childNodes[0]);
+    }, 100);
   }
 }
 
