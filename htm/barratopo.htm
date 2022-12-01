@@ -25,129 +25,85 @@ FCLib$.LazyLoadWaitImage="/images/circular-loading.svg?cccfc=1"; /* loading lazy
 <header>
   <nav id="navigation" class="navigation navigation-justified navigation-landscape">
     <div class="header-container">
-     <div class="header-mainbar">
-        <div class="header-logo">
-          <a href="<StoreDomain>"><img alt="<storeName> - logo" src="<store-logo>" class="HeaderLogo"></a>
+      <!-- Offcanvas Menu Mobile -->
+      <div class="header-container-bar-menu header-offcanvas-menu">
+        <div class="navigation-button-toggler">
+          <i class="hamburger-icon"></i>
         </div>
-        <!-- Offcanvas Menu Mobile -->
-        <div class="header-container-bar-menu header-offcanvas-menu" id="btn-show">
-          <div class="navigation-button-toggler">
-            <i class="hamburger-icon"></i>
+      </div>
+      <!-- Logo -->
+      <div class="header-logo">
+         <a href="<StoreDomain>"><img alt="<storeName>" src="<store-logo>" class="header-container-logo"></a>
+      </div>
+      <!-- Search -->
+      <div class="header-search">
+        <form name="TopSearchForm" method="GET" id="autocomplete-form" action="<url-prod>">
+          <input type="hidden" name="<par-typed>" value="true">
+          <div class="header-search-input-container">
+            <input type="text" id="autocomplete" value="<SearchText>" name="<par-text>" class="InputTextBusca" aria-label="Search field">
+            <button id="search-button" type="submit" aria-label="Search">                     
+              <img width="22" height="22" src="<storePath>images/iconsearch.svg?cccfc=1" alt="Search" id="voiceSearchMGlass">
+            </button>
+            <img class="header-speech-icon" id="voiceSearch" onclick="sF$.fnStartDictation()" src="<storePath>images/icon-speech.svg?cccfc=1" width="34" height="34" alt="Voice" />
           </div>
+        </form>
+      </div>
+      <!-- Login -->
+      <div class="header-login">
+        <div id="header-mainbar-container-login">
+          <span class="loginInfo" id="fc-loginInfo"></span>
         </div>
-        <div class="header-menu">
-          <ul class="HeaderMenuULFC font-regular">
-            <li><a href="<url-sale>"><var key="header-cat-sales"></var></a></li>
-            <li><a href="<url-release>"><var key="header-cat-releases"></var></a></li>
-            <li><a href="<url-account>?orders=1#Orders"><var key="header-cat-my-orders"></var></a></li>
-          </ul>
-        </div>
-        <div class="header-search">
-          <div id="header-mainbar-container-search">
-            <img alt="Search" onclick="sF$.fnShowSearchBox();sF$.fnSearchInputGetFocus();" src="<storePath>images/iconsearch.svg?cccfc=1" width="30" height="30" id="header-mainbar-container-search-icon" tabIndex="0">
-          </div>
-        </div>
-        <div class="header-login">
-          <div id="header-mainbar-container-login">
-            <span class="loginInfo" id="fc-loginInfo"></span>
-          </div>
-        </div>
-        <div class="header-cart">
-          <div class="HeaderBasket">
-            <span onclick="Cart$.fnShowCartCheckout();" style="cursor:pointer;">
-              <img width="30" height="30" src="<PathTo file="images/iconcart.svg">" id="header-cat-cart" alt="Cart">
-              <div class="HeaderCartItensPosition"><span id="idCartItemsTop" class="HeaderCartNumberProds"></span></div>
-            </span>
-          </div> 
-        </div>
+      </div>
+      <!-- Shopping Cart -->
+      <div class="header-cart">
+        <span onclick="Cart$.fnShowCartCheckout();" style="cursor:pointer;">
+          <div class="header-shopping-cart-icon"><img width="30" height="30" src="<storePath>images/iconcart.svg" id="header-cat-cart" alt="Cart"></div>
+          <div class="header-shopping-cart-qty"><span id="idCartItemsTop" class="HeaderCartNumberProds"></span></div>
+        </span>
       </div>
     </div>
-  
-    <!-- Search box -->
-    <div id="header-main-search-container">
-      <div id="header-mainbar-container-search-result" role="search">
-        <div class="header-mainbar-container-search-result-full-position">
-          <div id="header-mainbar-container-search-result-close" onclick="sF$.fnCloseSearchBox()"><img alt="Close" id="header-cat-search-close" src="<PathTo file="images/icon-search-close.svg">"></div>
-            <div class="child-header-mainbar header-mainbar-flex-search speech" id="search-box">
-              <form name="TopSearchForm" method="GET" id="autocomplete-form" action="<url-prod>">
-                <input type="hidden" name="<par-typed>" value="true">
-                <input type="text" id="autocomplete" value="<SearchText>" name="<par-text>" class="InputTextBusca" autofocus="autofocus">
-                <img class="header-speech-icon" id="voiceSearch" onclick="sF$.fnStartDictation()" src="<storePath>images/icon-speech.svg?cccfc=1" width="24" height="24" alt="Voice" />
-                <button id="search-button" type="submit" aria-label="Search">
-                  <img src="<storePath>images/iconsearch.svg" width="22" height="22" alt="Search" id="voiceSearchMGlass">
-                </button>
-              </form>
-            </div>
-          </div>
-      </div>
-    </div>
-  
-    <!-- Menu Dropdown -->
-    <div class="navigation-body scroll-momentum">    
-      <div class="navigation-body-header">
-        <span class="navigation-body-close-button">&times;</span>
-      </div>
-      <div class="header-menu-align">
-        <div class="header-menu-align-horizontal">
-          <ul class="navigation-menu" id="horizontalMenuCont">
-            <li class="navigation-item is-active"><a href="/" class="navigation-link navigation-text-uppercase"><var key="header-cat-home"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-sale>" class="navigation-link"><var key="header-cat-sales"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-release>" class="navigation-link"><var key="header-cat-releases"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-categories>" class="navigation-link"><categories></a></li>
-            <script>
-              <ListPathCat out="14">
-              var menuHorCont = document.getElementById('horizontalMenuCont');
-              for (var i in FCLib$.oCatMenu.slice(0,8)){
-                var textTOInsert="";
-                textTOInsert+='<li class="navigation-item">';
-                textTOInsert+=' <a href="'+FCLib$.oCatMenu[i].url+'" class="navigation-link">'+FCLib$.oCatMenu[i].name+'</a>';
-                  if(FCLib$.oCatMenu[i].subs){
-                    textTOInsert+='<ul class="navigation-dropdown navigation-submenu" style="right: auto;"><span class="dm-arrow"></span>';
-                    for (var ii in FCLib$.oCatMenu[i].subs){
-                      textTOInsert+='<li class="navigation-dropdown-item"><a href="'+FCLib$.oCatMenu[i].subs[ii].url+'" class="navigation-dropdown-link">'+FCLib$.oCatMenu[i].subs[ii].name+'</a></li>';
+      <!-- Menu Dropdown -->
+      <div class="navigation-body scroll-momentum header-menu">
+        <div class="navigation-body-header">
+          <span class="navigation-body-close-button">&times;</span>
+        </div>
+        <div class="header-menu-align">
+          <div class="header-menu-align-horizontal">
+            <ul class="navigation-menu" id="horizontalMenuCont">
+              <li class="navigation-item is-active"><a href="/" class="navigation-link navigation-text-uppercase"><var key="header-cat-home"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-sale>" class="navigation-link"><var key="header-cat-sales"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-release>" class="navigation-link"><var key="header-cat-releases"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-categories>" class="navigation-link"><categories></a></li>
+              <script>
+                <ListPathCat out="14">
+                var menuHorCont = document.getElementById('horizontalMenuCont');
+                for (var i in FCLib$.oCatMenu.slice(0,8)){
+                  var textTOInsert="";
+                  textTOInsert+='<li class="navigation-item">';
+                  textTOInsert+=' <a href="'+FCLib$.oCatMenu[i].url+'" class="navigation-link">'+FCLib$.oCatMenu[i].name+'</a>';
+                    if(FCLib$.oCatMenu[i].subs){
+                      textTOInsert+='<ul class="navigation-dropdown navigation-submenu" style="right: auto;"><span class="dm-arrow"></span>';
+                      for (var ii in FCLib$.oCatMenu[i].subs){
+                        textTOInsert+='<li class="navigation-dropdown-item"><a href="'+FCLib$.oCatMenu[i].subs[ii].url+'" class="navigation-dropdown-link">'+FCLib$.oCatMenu[i].subs[ii].name+'</a></li>';
+                      }
+                      textTOInsert+='</ul>';
                     }
-                    textTOInsert+='</ul>';
-                  }
-                  textTOInsert+='</li>';
-                  menuHorCont.innerHTML+=textTOInsert;
-               }
-            </script>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-add-product>" class="navigation-link"><var key="header-cat-cart"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-account>?orders=1#Orders" class="navigation-link"><var key="header-cat-my-orders"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-account>?wishlist=1#Wishlist" class="navigation-link"><var key="header-cat-my-wishlist"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-account>?register=1#Register" class="navigation-link"><var key="header-cat-register"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-newsletter>" class="navigation-link"><var key="header-cat-newsletter"></var></a></li>
-            <li class="navigation-item navigation-text-uppercase"><a href="<url-contact>" class="navigation-link"><var key="header-cat-contact-us"></var></a></li>
-          </ul>
+                    textTOInsert+='</li>';
+                    menuHorCont.innerHTML+=textTOInsert;
+                 }
+              </script>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-add-product>" class="navigation-link"><var key="header-cat-cart"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-account>?orders=1#Orders" class="navigation-link"><var key="header-cat-my-orders"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-account>?wishlist=1#Wishlist" class="navigation-link"><var key="header-cat-my-wishlist"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-account>?register=1#Register" class="navigation-link"><var key="header-cat-register"></var></a></li>
+              <li class="navigation-item navigation-item-mobile navigation-text-uppercase"><a href="<url-newsletter>" class="navigation-link"><var key="header-cat-newsletter"></var></a></li>
+              <li class="navigation-item navigation-text-uppercase"><a href="<url-contact>" class="navigation-link"><var key="header-cat-contact-us"></var></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </nav>
-
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="header-space-top"></div>
 
 <!-- Receive Banner Home -->
 <div id="FC-ShowHomeBanners"></div>
