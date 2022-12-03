@@ -123,143 +123,10 @@ var bTemSub=false;
 </ProdList>
 
 <ProdDet>
-<!-- Prod Det -->
-<link rel="stylesheet" type="text/css" href="/js/MagicToolbox/MagicZoomPlusV3/magiczoomplus.css" />
-<script type="text/javascript" src="/js/MagicToolbox/MagicZoomPlusV3/magiczoomplus.js"></script>
-
-<div class="product-details-breadcrumb">
-  <div class="product-details-breadcrumb-container">
-    <div class="product-details-breadcrumb-container-first">
-      <a href="/home.asp?idloja=<IDLoja>" class="ProductStyleBreadCrumblinkFC">Home:</a>
-    </div>
-    <div class="product-details-breadcrumb-container-second">
-      <PathCat>
-    </div>
-  </div>
-</div>
-
-<div class="product-details-container">
-  <div class="product-details">
-    <div class="product-details-image">
-      <div class="product-details-content-release"><prodRelease></div>
-      <div class="zoom-gallery" id="idDivGridImg">
-        <a href="<prodImgAmp>" class="MagicZoom" id="zoom"><img src="<prodImgDet>" alt="<prodNameEnc>" onError="MostraImgOnError(this,0)"></a>
-      </div> 
-    </div>
-    <div class="product-details-content">
-      <div><h1 id="idNameProductGridFC"><prodNameEnc></h1></div>
-      <div class="DivProductDet-sku">
-        <div class="DivProductDet-sku-cod">Ref: <prodRef></div>
-
-        <div class="DivProductDet-review">
-        <div class="det-product-show-product-review-icons"></div>
-        <script type="text/javascript">
-          iQtdOp=<prodReviewsQty>.0;
-          var showQtdReviewStars = document.querySelectorAll(".det-product-show-product-review-icons");
-          for (i = 0; i < showQtdReviewStars.length; i++) {
-            if(iQtdOp==0){showQtdReviewStars[i].innerHTML = "<a href='<url-product-review><prodId>' aria-label='review'><div class='ProductStyleReviewOffBoxFC'><div class='NotaOpiniaoVazio NotaOpiniaoVazio1'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio2'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio3'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio4'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio5'></div><div class='NotaOpiniaoVazio NotaOpiniaoVazio6'></div></div></a>";}
-            else{showQtdReviewStars[i].innerHTML = "<a href='<url-product-review><prodId>' aria-label='review'><div class='ProductStyleReviewOnBoxFC'><div class='ProductStyleReviewStarsOnFC'><prodAverageReviews></div></a><div class='ProductStyleReviewQtyOnFC'>(<a href='#OP' style='text-decoration:none;'>0<prodReviewsQty></a>)</div></div>";}
-          } 
-        </script>
-        </div>
-      </div>
-
-      <!-- Stock -->
-      <div class="product-details-show-stock-container">
-        <div id="product-details-show-stock"></div>
-          <script type="text/javascript">
-          FCLib$.onReady(function(){
-            var sStockProduct=<prodstock>.0;
-            fnGetStockProduct(sStockProduct);});
-          </script>
-      </div>
-      <!-- Date prom -->
-      <div class="product-details-data-prom">
-        <div id="DataProm"></div>
-        <script type="text/javascript">
-        var sDateTime="<DataPromFim>";
-        FCLib$.onReady(function(){fnShowDateProm(sDateTime);});
-        </script>
-      </div>
-
-      <div>
-        <div class="prod-price" id="idPriceGridFC<prodId>">
-          <div class="product-details-price-container"><prodPriceSimple></div>
-        </div>
-        <script>
-          FCLib$.onReady(function(){
-            var e=document.getElementById("idPriceGridFC<IDProduto>");
-            if(e)e.innerHTML += fnMaxInstallmentsGrid(<PrecoNum>,<MaxParcelasProdNum>) + fnShowEconomyGrid(<PrecoNum>,<PrecoOri>);
-          });
-        </script>
-      </div>
-      <p id="idPriceAVista">
-        <script>const TPProdPrice=<prodPriceNum>;FCLib$.onReady(function(){sF$.fnMostraDescontoProdDet(<prodPriceNum>);});</script>
-      </p>
-      <!-- Payment Table  -->
-      <div id="tpDisplayCard" class="hidethis">
-        <button class="accordionFC"><img  src="<storepath>images/iconcard.svg" widht="25" height="25px" alt="card"><span class="tp-title"><var key="payment-table-details-text"></var></span></button>
-        <div class="panelFC"></div>
-      </div>
-      <script>
-      function fnDefineMaxInstallment(){
-        let maxInstallmentNum=<prodMaxInstallmentNum>;
-        if(typeof ParcelsValues!="undefined" && maxInstallmentNum==0){ 
-          let iPosArrayValue=0;
-          for(var i=0;i<ParcelsValues.length && TPProdPrice>=ParcelsValues[i];i++){iPosArrayValue=i;}
-          maxInstallmentNum=iPosArrayValue+1;
-        }
-        if(typeof ParcelsInterests!="undefined"){
-          if(maxInstallmentNum==0||maxInstallmentNum>ParcelsInterests.length)maxInstallmentNum=ParcelsInterests.length;
-        } else maxInstallmentNum=0;
-        return maxInstallmentNum;
-      }
-      
-      function fnDisplayCard(maxInstallmentNum){
-        let TPMainDIV=document.querySelector(".panelFC");
-        let TPMainDIVHTML=`
-          <div class="TPiconesCartoes" >
-            <ul>
-              <li><img width="38" height="39" alt="MasterCard" src="<baseloja>images/fc-mastercard-2.svg"></li>
-              <li><img width="38" height="39" alt="Visa" src="<baseloja>images/fc-visa.svg"></li>
-              <li><img width="38" height="39" alt="Amex" src="<baseloja>images/fc-amex.svg"></li>
-              <li class="TPDisplayIconsCards"><img width="38" height="39" alt="Elo" src="<baseloja>images/fc-elo.svg"></li>
-              <li class="TPDisplayIconsCards"><img width="38" height="39" alt="PagSeguro" src="<baseloja>images/fc-pagseguro-1.svg"></li>
-            </ul>
-          </div>
-          <div class="TPtabelaParcelas">
-            <ul class="TPtabelaParcelasUL">`;
-              for(let i=0;i<maxInstallmentNum;i++) {
-                TPMainDIVHTML+=`<li><b>`+(i+1)+`<var key="payment-table-installments-x"></var></b> <var key="payment-table-installments-of"></var> `+FCLib$.formatMoney(CalculateInstallment(TPProdPrice,(i+1)),FC$.Currency)+ `<var key="payment-table-installments-month"></var></li>`;
-              }
-              TPMainDIVHTML+=`
-            </ul>
-          </div>`;
-        TPMainDIV.innerHTML=TPMainDIVHTML;
-        var paymentTableAccordion=document.getElementsByClassName("accordionFC");
-        for(i=0;i<paymentTableAccordion.length;i++){
-          paymentTableAccordion[i].addEventListener("click",function(){
-            this.classList.toggle("activeFC");
-            var paymentTablePanel=this.nextElementSibling;
-            if (paymentTablePanel.style.maxHeight){
-              paymentTablePanel.style.maxHeight=null;
-            }else {
-              paymentTablePanel.style.maxHeight=paymentTablePanel.scrollHeight+"px";
-            } 
-          });
-        }
-      }
-      
-      let iProdMaxInstallment=fnDefineMaxInstallment();
-      if(iProdMaxInstallment>1)fnDisplayCard(iProdMaxInstallment);
-      else document.getElementById("tpDisplayCard").style.display="none";
-      
-      </script>
-      <!-- End - Payment Table -->
-      <div id="product-details-dyncart-container">
-        <div id="dynCartContainer<prodId>" class=dynCartQty dyn-cart-qty="<prodId>" dyn-cart-stock="<prodStock>.0" dyn-cart-a1="<desc1Val>" dyn-cart-a2="<desc2Val>" dyn-cart-a3="<desc3Val>" dyn-cart-d1="<descD1Val>" dyn-cart-d2="<descD2Val>" dyn-cart-d3="<descD3Val>" dyn-cart-color="<colorVal>" dyn-cart-price="<prodPriceNum>"></div>
-      </div>
-      <div class="FCGridMain">
+  <!-- Begin: HTML structure -->
+<link rel="stylesheet" type="text/css" href="<BaseLoja>htm/css/FC_Grid_v1.css">
+<link rel="stylesheet" href="/js/MagicToolbox/MagicZoomPlusV1/magiczoomplus.css">
+<div class="FCGridMain">
 <div id="idDivGridImg" class="col-small-12 col-medium-12 col-large-5 col-xlarge-5">
 <img src="<ImagemProdDet>">
 </div>
@@ -364,5 +231,73 @@ adicionalD3 : 'Selecione'
 FCGrid$.init("idMainGridFC_<IDProduto>", aProductListGrid, aProductOnlyOneGrid); /* Inicia a grade */
 </script>
 <!-- End: JS scripts -->
+</ProdDet>
+
+<ProdAmp><!-- Prod Amp --></ProdAmp>
+<ProdBottom>
+<script>
+FCLib$.onLoaded(function(){skeletonLib$.removeClass("loading-skeleton",document);});
+
+function FuncAutoPagPreload(iPagProdFC){
+  skeletonLib$.showSkeleton(iPagProdFC);
+  fixDIVsSizes();
+}
+
+function FuncAutoPagPostload(sHTMLPage,iPagProdFC){
+  return skeletonLib$.removeSlideIn(sHTMLPage);
+}
+
+function FuncAutoPagStart(){
+  sF$.fnShowingProdsQty(false);
+}
+
+function FuncAutoPagEnd(){
+  if(iPagProdFC==iPagCountFC)sF$.fnShowingProdsQty(true);
+  dynCart$.updateQty();
+  skeletonLib$.removeClass("loading-skeleton",document);
+  fixDIVsSizes();
+}
+
+/* Limit filters options view */
+if(document.body.className=='FCProduct ProductList'){
+  var getAllFillItemsList,FillItemsListLimit,ulChildNodes,btShowMore,btShowMoreTxt;
+  FCLib$.onLoaded(function(){
+    getAllFillItemsList=Array.prototype.slice.call(document.querySelectorAll(".FilItemsList"));
+    FillItemsListLimit=7;
+    getAllFillItemsList.forEach(function(itemUL,idUL){
+      if(getAllFillItemsList[idUL].childElementCount>FillItemsListLimit){
+        ulChildNodes=Array.prototype.slice.call(getAllFillItemsList[idUL].childNodes);
+        ulChildNodes.forEach(function(item,id){
+            if(id>FillItemsListLimit-1)item.style.display="none";
+        });
+        btShowMore=document.createElement("div");
+        btShowMoreTxt=document.createTextNode(rk("prod-list-filter-button-show-more"));
+        btShowMore.appendChild(btShowMoreTxt);
+        btShowMore.setAttribute('id','btShowMore'+idUL);
+        btShowMore.setAttribute('class','button-ShowMore');
+        btShowMore.setAttribute('onclick','showAllFilters(getAllFillItemsList['+idUL+'].childNodes,'+btShowMore.id+')');
+        itemUL.appendChild(btShowMore);
+      }
+    });
+  });
+  function showAllFilters(ulIDchildrens,btToChange){
+    if(btToChange.textContent==rk("prod-list-filter-button-show-more")){
+      ulIDchildrens.forEach(function(item){
+          item.removeAttribute('style');
+      });
+      btToChange.textContent=rk("prod-list-filter-button-show-less");
+      btToChange.setAttribute('class','button-ShowLess');
+    } else if(btToChange.textContent==rk("prod-list-filter-button-show-less")){
+      ulIDchildrens.forEach(function(item,id){
+        if(id>FillItemsListLimit-1)item.style.display="none";
+      });
+      btToChange.textContent=rk("prod-list-filter-button-show-more");
+      btToChange.removeAttribute('style');
+      btToChange.removeAttribute('class','button-ShowLess');
+      btToChange.setAttribute('class','button-ShowMore');
+    }
+  }
+};
+</script>
 </ProdBottom>
 <!-- estiloproduto.htm : Grid v1 2020  (Store 1) -->
