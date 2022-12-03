@@ -1,6 +1,15 @@
+var oResourcesCalcQtyCart={
+  "cart-update-text":["Atualizar","Update","Actualizar","Atualizar"],
+  "cart-hello-text":["Olá","Hello","Hola","Olá"],
+  "cart-zip-code":["Calcular Frete","Calculate Shipping","Calcular Envío","Calcular Frete"],
+  "cart-advanced-search":["Busca Avançada","Advanced Search","Búsqueda Avanzada","Busca Avançada"],
+}
+
+function rkqty(sKey){if(oResourcesCalcQtyCart[sKey])return oResourcesCalcQtyCart[sKey][FC$.Language];else console.warn("js var not found in language resources %c"+ sKey,"color:red");}
+
 var zF$ = (function () {
 
-  /*CartUpdate*/
+  //CartUpdate
   function addUnitQtyProdCart(elem, number) {
     /* add or diminish the amount quantyty in cart page */
     var idElem = elem.getAttribute("data-qty-id"), elemQty = document.querySelector("#" + idElem);
@@ -25,7 +34,7 @@ var zF$ = (function () {
       for (var i = 0; i < aInputQtyProducts.length; i++) {
         var oInputQty = aInputQtyProducts[i], idElem = oInputQty.id;
         if (typeof idElem !== 'undefined') {
-          /*create and add button decrease '-'*/
+          //create and add button decrease '-'
           var btnDecrease = document.createElement('span');
           btnDecrease.textContent = '-';
           btnDecrease.setAttribute('class', 'btn-qty-add btn-qty-decrease');
@@ -33,7 +42,7 @@ var zF$ = (function () {
           btnDecrease.onclick = function () {
             zF$.addUnitQtyProdCart(this, -1);
           };
-          /*create and add button plus '+'*/
+          //create and add button plus '+'
           var btnPlus = document.createElement('span');
           btnPlus.textContent = '+';
           btnPlus.setAttribute('class', 'btn-qty-add btn-qty-plus');
@@ -66,7 +75,7 @@ var zF$ = (function () {
 })();
 
 (function () {
-  /*define class responsive for #idFCContent*/
+  //define class responsive for #idFCContent
   var getBodyClass = document.body.getAttribute('class');
   if (getBodyClass === "FCProduct ProductList" || getBodyClass === "FCNewsletter" || getBodyClass === "FCAdvancedSearch" || getBodyClass === "FCCategories") {
     var domColumn = document.getElementById('idFCContent');
@@ -82,9 +91,9 @@ var zF$ = (function () {
   }
 
   if (FC$.Page == "Cart") {
-    zF$.fnChangeInnerText("#FCCartFreightSimulationBut", ""+ rk("cart-zip-code") +"");
-    zF$.fnChangeInnerText("#FCCartRecalculateBut", ""+ rk("cart-update-text") +"");
-    zF$.fnChangeInnerText("#idTxtRecalculateFC b", ""+ rk("cart-update-text") +"");
+    zF$.fnChangeInnerText("#FCCartFreightSimulationBut", ""+ rkqty("cart-zip-code") +"");
+    zF$.fnChangeInnerText("#FCCartRecalculateBut", ""+ rkqty("cart-update-text") +"");
+    zF$.fnChangeInnerText("#idTxtRecalculateFC b", ""+ rkqty("cart-update-text") +"");
   }
 
 })();

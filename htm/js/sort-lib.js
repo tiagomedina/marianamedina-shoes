@@ -1,23 +1,23 @@
-/*Ordem*/
+//Ordenação
 var sPag=document.location.href.toUpperCase();
 if(sPag.indexOf("/PROD,")==-1){sConcat="&";sCharSep="=";} else {sConcat=",";sCharSep=",";}
 if(iQtdProds>2){
-  sOrdenacao="<table width='100%' cellspacing='0' cellpadding='0'><tr><td>";
-  sOrdenacao+="<div class='fc-order-mobile'>"+ rk("list-sort-by-title") +"</div> <select id=OrderProd class=smSelect onchange=NewOrder()>";
-  sOrdenacao+="<option value=-1>"+ rk("list-sort-by-title-select") +"</option>";
-  sOrdenacao+="<option value=0>"+ rk("list-sort-by-title-default") +"</option>";
-  sOrdenacao+="<option value=1>"+ rk("list-sort-by-title-releases") +"</option>";
-  sOrdenacao+="<option value=2>"+ rk("list-sort-by-title-highlights") +"</option>";
-  sOrdenacao+="<option value=3>"+ rk("list-sort-by-title-cat-names") +"</option>";
-  sOrdenacao+="<option value=4>"+ rk("list-sort-by-title-product-names") +"</option>";
-  sOrdenacao+="<option value=5>"+ rk("list-sort-by-title-reviews") +"</option>";
-  sOrdenacao+="<option value=7>"+ rk("list-sort-by-title-price-low") +"</option>";
-  sOrdenacao+="<option value=8>"+ rk("list-sort-by-title-price-high") +"</option>";
-  sOrdenacao+="</select>";
+  sOrdenacao="<table><tr><td>";
+  sOrdenacao+="&nbsp;Ordenar por: <select id=OrderProd class=smSelect onchange=NewOrder()>";
+  sOrdenacao+="<option value=-1>Selecione</option>";
+  sOrdenacao+="<option value=0>Padrão</option>";
+  sOrdenacao+="<option value=1>Lançamentos</option>";
+  sOrdenacao+="<option value=2>Destaques</option>";
+  sOrdenacao+="<option value=3>Nomes das categorias</option>";
+  sOrdenacao+="<option value=4>Nomes dos produtos</option>";
+  sOrdenacao+="<option value=5>Avaliações dos clientes</option>";
+  sOrdenacao+="<option value=7>Preços menores</option>";
+  sOrdenacao+="<option value=8>Preços maiores</option>";
+  sOrdenacao+="</select>&nbsp;&nbsp;";
   sOrdenacao+="</td></tr></table>"; 
 }
 
-if(document.getElementById('idPagProdTop'))document.getElementById('idPagProdTop').innerHTML="<div id='idDivPagProd'><table width='100%'><tr><td>"+ sOrdenacao +"</td></tr></table></div>";
+document.getElementById('idPagProdTop').innerHTML="<div id='idDivPagProd'><table width='100%' bgcolor='#f7f7f7' height='30'><tr><td>"+ sOrdenacao +"</td></tr></table></div>";
 
 var oOrder=document.getElementById('OrderProd');
 var posOrder=sPag.indexOf("ORDER"+sCharSep);
@@ -33,7 +33,7 @@ if(posOrder!=-1){
 function NewOrder(){
   var iOrder=oOrder.options[oOrder.selectedIndex].value;
   if(iOrder>=0){
-    if(posOrder!=-1){ /*Found order in URL, replace*/
+    if(posOrder!=-1){ //Found order in URL, replace
       var sLoc=document.location.href.replace(new RegExp('order'+sCharSep+iOrderCurrent),'order'+sCharSep+iOrder);
     }
     else{
@@ -49,7 +49,7 @@ function NewOrder(){
         else{var sLoc=document.location.href+'?order='+iOrder;}
       }
     }
-    /*console.log('loc='+sLoc);*/
+    //console.log('loc='+sLoc);
     document.location.href=sLoc;
   }
 }
