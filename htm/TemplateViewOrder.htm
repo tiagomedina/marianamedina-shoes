@@ -137,7 +137,7 @@
 
   .pegou:after{
 
-    content: "Você pegou";
+    content: "Vocï¿½ pegou";
 
   }
 
@@ -221,10 +221,10 @@
 
 <section class="login">
   <div class="container">
-    <img class="imgLogin" src="https://www.bebefofuxo.com.br/lojas/00020368/images/logotopo.png">
+    <img class="imgLogin" src="https://www.bebefofuxo.com.br/lojas/00054883/images/logotopo.png">
     <div class="formulario">
       <h1>Pedido: <orderNumber></h1>
-      <div class="botoesForm botao" id="botao_drop"><h2>Escolha um usuário</h2></div>
+      <div class="botoesForm botao" id="botao_drop"><h2>Escolha um usuï¿½rio</h2></div>
       <input type="password" class="botoesForm senha" id="senha" name="senha" placeholder="Senha" maxlength="4">
       <button class="botoesForm" onclick="clique_enviar()">Enviar</button>
     </div>
@@ -242,7 +242,7 @@
 <orderData>
 
   <script>
-//criando arrays e variáveis
+//criando arrays e variï¿½veis
 let numPedido = <orderNumber>;
 let con; //variavel usada para verificar se o usuario entrou em um pedido com falta, desmarcou um item e tentou passar para outro
 let control = 2;
@@ -272,7 +272,7 @@ let cor = [];
 $("#pedido").hide();
 $("#a").hide();
 
-//Criando o botão de logout e outras funções assim que a página é carregada
+//Criando o botï¿½o de logout e outras funï¿½ï¿½es assim que a pï¿½gina ï¿½ carregada
 document.addEventListener("DOMContentLoaded", () => {
 
     criaBotaoLogout();
@@ -299,7 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById("itens").innerText = quantidadesTotais;
 
-    //INICIO - parte nova de coleta de dados e ordenaçao geral
+    //INICIO - parte nova de coleta de dados e ordenaï¿½ao geral
 
     $("tr td:first-child[class*='Lista']").each(function(i){
         if(i > 0){
@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //FIM - parte nova de coleta de dados e ordenação geral
+    //FIM - parte nova de coleta de dados e ordenaï¿½ï¿½o geral
 
     imagemProd();
     criaTelas();
@@ -363,9 +363,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	$("label[class='nPedido']").remove();
 });
 
-window.setTimeout(()  => { insereImagens(); },2000); //Função para colocar as imagens dos itens
+window.setTimeout(()  => { insereImagens(); },2000); //Funï¿½ï¿½o para colocar as imagens dos itens
 
-//Função para quando clicar no botão pegar
+//Funï¿½ï¿½o para quando clicar no botï¿½o pegar
 function verde(botao) {
 
 	let qtd = parseInt(botao.dataset.qtd);
@@ -448,10 +448,10 @@ function verde(botao) {
     }
 }
 
-//Função para quando clicar no botão em falta
+//Funï¿½ï¿½o para quando clicar no botï¿½o em falta
 function vermelho(botao) {
 
-    let text = "Tem certeza que está em falta?";
+    let text = "Tem certeza que estï¿½ em falta?";
     let qtd = parseInt(botao.dataset.qtd);
     let idBotao = botao.id;
     let array = idBotao.split("_");
@@ -532,14 +532,14 @@ function vermelho(botao) {
     }
 }
 
-//Função para fazer logout
+//Funï¿½ï¿½o para fazer logout
 function clique_logout(){
 
   	let usuario = document.getElementById("botao_drop").innerText;
     let xhttp2 = new XMLHttpRequest();
-    //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova função de retorno definida
+    //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova funï¿½ï¿½o de retorno definida
     xhttp2.onreadystatechange = function() {
-    //readystate = 4 e status = 200 indica que a requisição foi respondida com sucesso
+    //readystate = 4 e status = 200 indica que a requisiï¿½ï¿½o foi respondida com sucesso
         if (this.readyState == 4 && this.status == 200) {
             //o retorno do servidor encontra-se dentro do responseText
             let resposta = this.responseText;
@@ -631,12 +631,12 @@ function desabilitar(){
 
     setaDireita.forEach((element) => {
         element.href = "#"+element.parentNode.id;
-        element.onclick = function(){ alert("Marque uma opção!"); };
+        element.onclick = function(){ alert("Marque uma opï¿½ï¿½o!"); };
     });
 
     setaEsquerda.forEach((element) => {
         element.href = "#"+element.parentNode.id;
-        element.onclick = function(){ alert("Marque uma opção!"); };
+        element.onclick = function(){ alert("Marque uma opï¿½ï¿½o!"); };
     });
 }
 
@@ -651,7 +651,7 @@ function criaBotaoLogout(){
     btLogout.innerText = "Logout";
     btLogout.className = "btLogout";
 
-    btLogout.addEventListener("click", () => { //Atribuindo função para fazer logout para o botão
+    btLogout.addEventListener("click", () => { //Atribuindo funï¿½ï¿½o para fazer logout para o botï¿½o
         clique_logout();
     });
 
@@ -660,7 +660,7 @@ function criaBotaoLogout(){
 }
 
 function imagemProd(){
-    //código para fazer aparecer as imagens dos produtos
+    //cï¿½digo para fazer aparecer as imagens dos produtos
     array_itens.forEach(codigo => {
         let corT = codigo.cor;
         let corCorrigida = corT.replace(/Cor: /g, '');
@@ -675,7 +675,7 @@ function imagemProd(){
         }
     });
 
-    xhttp7.onreadystatechange = function(){ //Função para receber todas as imagens de produtos do banco de dados
+    xhttp7.onreadystatechange = function(){ //Funï¿½ï¿½o para receber todas as imagens de produtos do banco de dados
         if(this.readyState == 4 && this.status == 200){
             array_imagens = eval(this.responseText);
         }
@@ -690,7 +690,7 @@ function criaTelas(){
 	let htmlElements = document.createElement("div");
     htmlElements.style.display = "inline-flex";
 
-    //criação da tela de picking para cada item do pedido
+    //criaï¿½ï¿½o da tela de picking para cada item do pedido
     for (let i = 0; i < array_itens.length; i++) {
 
         let divTela = document.createElement("div");
@@ -704,7 +704,7 @@ function criaTelas(){
 
         let imgSetaEsquerda = document.createElement("img");
         imgSetaEsquerda.className = "setalogo2";
-        imgSetaEsquerda.src = "https://www.bebefofuxo.com.br/lojas/00020368/images/seta_logo2.png";
+        imgSetaEsquerda.src = "https://www.bebefofuxo.com.br/lojas/00054883/images/seta_logo2.png";
 
         let setaDireita = document.createElement("a");
         setaDireita.className = "direita";
@@ -713,7 +713,7 @@ function criaTelas(){
 
         let imgSetaDireita = document.createElement("img");
         imgSetaDireita.className = "setalogo";
-        imgSetaDireita.src = "https://www.bebefofuxo.com.br/lojas/00020368/images/seta_logo.png";
+        imgSetaDireita.src = "https://www.bebefofuxo.com.br/lojas/00054883/images/seta_logo.png";
 
         let telaAtributos = document.createElement("div");
         telaAtributos.className = "divTela";
@@ -728,7 +728,7 @@ function criaTelas(){
         nomeItem.id = "nomeItem_" + i;
 
         let tituloCod = document.createElement("h3");
-        tituloCod.innerText = "Código Modelo: ";
+        tituloCod.innerText = "Cï¿½digo Modelo: ";
 
         let codProd = document.createElement("label");
         codProd.id = "codProd_" + i;
@@ -762,7 +762,7 @@ function criaTelas(){
 
         let img = document.createElement("img");
         img.className = "imgProd";
-        img.src = "https://www.bebefofuxo.com.br/lojas/00020368/prod/" + imagem;
+        img.src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/" + imagem;
 
         let divBotoes = document.createElement("div");
         divBotoes.className = "divBotoes";
@@ -832,7 +832,7 @@ function insereImagens(){
 
             obterImagem[0] = array_imagens.filter(e => e.codigo_tamanho_cor === array_itens[i].codigo+tamanho.replace("Tamanho: ", "-")+"-"+corCorrigida);
             imagem = obterImagem[0][0].imagem_prod;
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00020368/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
 
         }else if(array_itens[i].cor == "" && array_itens[i].tamanho != ""){
 
@@ -840,7 +840,7 @@ function insereImagens(){
 
             obterImagem[0] = array_imagens.filter(e => e.codigo_tamanho_cor === array_itens[i].codigo+tamanho.replace("Tamanho: ", "-")+"-");
             imagem = obterImagem[0][0].imagem_prod;
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00020368/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
 
         }else{
 
@@ -848,21 +848,21 @@ function insereImagens(){
 
             obterImagem[0] = array_imagens.filter(e => e.codigo_tamanho_cor === array_itens[i].codigo+"--"+corCorrigida);
             imagem = obterImagem[0][0].imagem_prod;
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00020368/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
 
         }
 
         if(imagem == undefined){
 
             imagem = "imagem_template.png";
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00020368/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
 
         }
 
     }
 }
 
-//funcão para realizar o login
+//funcï¿½o para realizar o login
 function clique_enviar(){
 
   let usuario = document.getElementById("botao_drop").innerText;
@@ -875,23 +875,23 @@ function clique_enviar(){
 
       if(resposta[0] == "1"){
 
-        alert("Este pedido está em andamento por " + resposta[1] + "!");
+        alert("Este pedido estï¿½ em andamento por " + resposta[1] + "!");
 
       }else if(resposta[0] == "2"){
 
-        alert("Este pedido já foi finalizado!");
+        alert("Este pedido jï¿½ foi finalizado!");
 
       }else{
 
         let xhttp = new XMLHttpRequest();
-        //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova função de retorno definida
+        //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova funï¿½ï¿½o de retorno definida
         xhttp.onreadystatechange = function() {
-            //readystate = 4 e status = 200 indica que a requisição foi respondida com sucesso
+            //readystate = 4 e status = 200 indica que a requisiï¿½ï¿½o foi respondida com sucesso
             if(this.readyState == 4 && this.status == 200) {
                 //o retorno do servidor encontra-se dentro do responseText
                 control = parseInt(this.responseText);
 
-                if(control == 1){ //caso usuario e senha estejam corretos, esconde a tela de login e mostra a tela de picking, além de mandar o pedido para impressão
+                if(control == 1){ //caso usuario e senha estejam corretos, esconde a tela de login e mostra a tela de picking, alï¿½m de mandar o pedido para impressï¿½o
 
                     $.get( "https://bebefofuxo.net/scripts/sistema_picking/enviarDadosImpressao.php", {num_pedido: numPedido} )
                     .done(function( data ) {
@@ -929,7 +929,7 @@ function clique_enviar(){
 
                 }else if(control == 0){// caso a senha seja incorreta
 
-                    alert("Senha informada é incorreta!");
+                    alert("Senha informada ï¿½ incorreta!");
 
                 }
             }
@@ -1272,7 +1272,7 @@ function criaTelaQtd(botao){
     iconeMenos.className = "icones";
     iconeMenos.id = "iconeMenos";
     iconeMenos.style.width = "45px";
-    iconeMenos.src = "https://www.rumo.com.br/lojas/00020368/images/icone_subtracao.svg";
+    iconeMenos.src = "https://www.rumo.com.br/lojas/00054883/images/icone_subtracao.svg";
     iconeMenos.style.cursor = "pointer";
     iconeMenos.addEventListener("click", () => { if(qtd.innerText != "0"){ qtd.innerText = parseInt(qtd.innerText) -1 } });
 
@@ -1285,7 +1285,7 @@ function criaTelaQtd(botao){
     iconeMais.className = "icones";
     iconeMais.id = "iconeMais";
     iconeMais.style.width = "45px";
-    iconeMais.src = "https://www.rumo.com.br/lojas/00020368/images/icone_soma.svg";
+    iconeMais.src = "https://www.rumo.com.br/lojas/00054883/images/icone_soma.svg";
     iconeMais.style.cursor = "pointer";
 
     div2.appendChild(iconeMais);
@@ -1340,7 +1340,7 @@ function abreTela(qtdPegos, nome, control, botao){
 
   	if(control == 1){
 
-      document.querySelector("#titulo").innerText = "Quantos estão em falta?";
+      document.querySelector("#titulo").innerText = "Quantos estï¿½o em falta?";
 
       if(document.querySelector("#botaoPeguei_"+index).style.backgroundColor == "green"){
 		limite = parseInt(document.querySelector("#botaoPeguei_"+index).dataset.pegou);
@@ -1360,7 +1360,7 @@ function abreTela(qtdPegos, nome, control, botao){
           //mostraQtdNeutro.style.display = "none";
           //mostraQtdPeguei.style.display = "none";
           //mostraQtdFalta.style.display = "block";
-          //mostraQtdFalta.innerText = "Há " + qtd.innerText + "/" + qtdTotal + " itens em falta";
+          //mostraQtdFalta.innerText = "Hï¿½ " + qtd.innerText + "/" + qtdTotal + " itens em falta";
 
           arrAcoes = [{"nome": usuario, "data": data_completa, "numPedido": numPedido, "acao": "produto em falta", "codigoModelo": codigo_modelo, "cor": cor, "tamanho": tamanho, "qtd": parseInt(qtd.innerText)}];
 
@@ -1373,7 +1373,7 @@ function abreTela(qtdPegos, nome, control, botao){
           //mostraQtdNeutro.style.display = "none";
           //mostraQtdPeguei.style.display = "none";
           //mostraQtdFalta.style.display = "block";
-          //mostraQtdFalta.innerText = "Há " + qtd.innerText + "/" + qtdTotal + " itens em falta";
+          //mostraQtdFalta.innerText = "Hï¿½ " + qtd.innerText + "/" + qtdTotal + " itens em falta";
 
           arrAcoes = [{"nome": usuario, "data": data_completa, "numPedido": numPedido, "acao": "produto em falta", "codigoModelo": codigo_modelo, "cor": cor, "tamanho": tamanho, "qtd": parseInt(qtd.innerText)}];
 
@@ -1396,7 +1396,7 @@ function abreTela(qtdPegos, nome, control, botao){
               	//mostraQtdNeutro.style.display = "none";
           		//mostraQtdPeguei.style.display = "block";
           		//mostraQtdFalta.style.display = "none";
-            	//mostraQtdPeguei.innerText = "Você pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
+            	//mostraQtdPeguei.innerText = "Vocï¿½ pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
 
             }
 
@@ -1415,7 +1415,7 @@ function abreTela(qtdPegos, nome, control, botao){
 
     }else if(control == 0){
 
-      document.querySelector("#titulo").innerText = "Você precisa pegar "+ qtdTotal + " " + nome;
+      document.querySelector("#titulo").innerText = "Vocï¿½ precisa pegar "+ qtdTotal + " " + nome;
 
       if(document.querySelector("#botaoEmFalta_"+index).style.backgroundColor == "red"){
 		limite = parseInt(document.querySelector("#botaoEmFalta_"+index).dataset.pegou);
@@ -1439,7 +1439,7 @@ function abreTela(qtdPegos, nome, control, botao){
               mostraQtdNeutro.style.display = "none";
           	  mostraQtdFalta.style.display = "none";
               mostraQtdPeguei.style.display = "block";
-              mostraQtdPeguei.innerText = "Você pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
+              mostraQtdPeguei.innerText = "Vocï¿½ pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
 
               fechaTela();
 
@@ -1448,7 +1448,7 @@ function abreTela(qtdPegos, nome, control, botao){
               mostraQtdNeutro.style.display = "none";
           	  mostraQtdFalta.style.display = "none";
               mostraQtdPeguei.style.display = "block";
-              mostraQtdPeguei.innerText = "Você pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
+              mostraQtdPeguei.innerText = "Vocï¿½ pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
 
               document.querySelector("#botaoPeguei_"+index).style.backgroundColor = "green";
 
@@ -1469,7 +1469,7 @@ function abreTela(qtdPegos, nome, control, botao){
       }
     }else if(control == 2){
 
-    	document.querySelector("#titulo").innerText = "Quantos você quer devolver?";
+    	document.querySelector("#titulo").innerText = "Quantos vocï¿½ quer devolver?";
         limite = parseInt(qtdPegos);
         document.querySelector("#iconeMais").onclick = function(){ if(parseInt(qtd.innerText) <= limite - 1){ qtd.innerText = parseInt(qtd.innerText) + 1 }}
         console.log(qtdPegos + " " + qtd.innerText);
@@ -1509,7 +1509,7 @@ function abreTela(qtdPegos, nome, control, botao){
               mostraQtdNeutro.style.display = "none";
               mostraQtdFalta.style.display = "none";
               mostraQtdPeguei.style.display = "block";
-              mostraQtdPeguei.innerText = "Você pegou " + (qtdPegos - parseInt(qtd.innerText)) + "/" + qtdTotal + " itens";
+              mostraQtdPeguei.innerText = "Vocï¿½ pegou " + (qtdPegos - parseInt(qtd.innerText)) + "/" + qtdTotal + " itens";
               botao.style.backgroundColor = "";
               document.querySelector("#botaoEmFalta_"+index).style.visibility = "";
               document.querySelector("#botaoEmFalta_"+index).dataset.pegou = (qtdTotal - (qtdPegos - parseInt(qtd.innerText)));
@@ -1531,7 +1531,7 @@ function abreTela(qtdPegos, nome, control, botao){
 
     }else if(control == 3){
 
-		document.querySelector("#titulo").innerText = "Quantos você quer desmarcar falta?";
+		document.querySelector("#titulo").innerText = "Quantos vocï¿½ quer desmarcar falta?";
         limite = parseInt(qtdPegos);
         document.querySelector("#iconeMais").onclick = function(){ if(parseInt(qtd.innerText) <= limite - 1){ qtd.innerText = parseInt(qtd.innerText) + 1 }}
 
@@ -1550,7 +1550,7 @@ function abreTela(qtdPegos, nome, control, botao){
 					mostraQtdFalta.style.display = "none";
                     mostraQtdNeutro.style.display = "none";
                 	mostraQtdPeguei.style.display = "block";
-                    mostraQtdPeguei.innerText = "Você pegou " + document.querySelector("#botaoPeguei_"+index).dataset.pegou + "/" + qtdTotal + " itens";
+                    mostraQtdPeguei.innerText = "Vocï¿½ pegou " + document.querySelector("#botaoPeguei_"+index).dataset.pegou + "/" + qtdTotal + " itens";
 
                 }else{
 
@@ -1575,7 +1575,7 @@ function abreTela(qtdPegos, nome, control, botao){
             	mostraQtdNeutro.style.display = "none";
           		mostraQtdPeguei.style.display = "none";
           		mostraQtdFalta.style.display = "block";
-                mostraQtdFalta.innerText = "Há " + (qtdPegos - parseInt(qtd.innerText)) + "/" + qtdTotal + " itens em falta";
+                mostraQtdFalta.innerText = "Hï¿½ " + (qtdPegos - parseInt(qtd.innerText)) + "/" + qtdTotal + " itens em falta";
                 botao.style.backgroundColor = "";
               	document.querySelector("#botaoPeguei_"+index).style.visibility = "";
               	document.querySelector("#botaoPeguei_"+index).dataset.pegou = (qtdTotal - (qtdPegos - parseInt(qtd.innerText)));
@@ -1651,7 +1651,7 @@ function fnGetQtd(mostraQtdPeguei, mostraQtdFalta, mostraQtdNeutro){
 	if(mostraQtdFalta.style.display == "block"){
 
       let qtdAnterior = mostraQtdFalta.innerText.split("/");
-      qtdAnterior[0] = qtdAnterior[0].replace("Há ", "");
+      qtdAnterior[0] = qtdAnterior[0].replace("Hï¿½ ", "");
       qtdAnterior[0] = qtdAnterior[0].replace(" ", "");
 
       return qtdAnterior[0];
@@ -1659,7 +1659,7 @@ function fnGetQtd(mostraQtdPeguei, mostraQtdFalta, mostraQtdNeutro){
     }else if(mostraQtdPeguei.style.display == "block"){
 
       let qtdAnterior = mostraQtdPeguei.innerText.split("/");
-      qtdAnterior[0] = qtdAnterior[0].replace("Você pegou ", "");
+      qtdAnterior[0] = qtdAnterior[0].replace("Vocï¿½ pegou ", "");
       qtdAnterior[0] = qtdAnterior[0].replace(" ", "");
 
       return qtdAnterior[0];
@@ -1667,7 +1667,7 @@ function fnGetQtd(mostraQtdPeguei, mostraQtdFalta, mostraQtdNeutro){
     }else{
 
       let qtdAnterior = mostraQtdNeutro.innerText.split("/");
-      qtdAnterior[0] = qtdAnterior[0].replace("Você pegou ", "");
+      qtdAnterior[0] = qtdAnterior[0].replace("Vocï¿½ pegou ", "");
       qtdAnterior[0] = qtdAnterior[0].replace(" ", "");
 
       return qtdAnterior[0];
@@ -1684,13 +1684,13 @@ function setQtd(control, index, qtd){
         if(document.querySelector("#botaoPeguei_"+index).dataset.pegou == 0){
 
           document.querySelector("#mostraQtd_"+index).className = "neutro";
-          document.querySelector("#mostraQtd_"+index).innerText = "Você não pegou nenhum item";
+          document.querySelector("#mostraQtd_"+index).innerText = "Vocï¿½ nï¿½o pegou nenhum item";
           document.querySelector("#botaoEmFalta_"+index).dataset.pegou = 0;
 
         }else{
 
           document.querySelector("#mostraQtd_"+index).className = "peguei";
-          document.querySelector("#mostraQtd_"+index).innerText = "Você pegou " + qtd + " item(s)";
+          document.querySelector("#mostraQtd_"+index).innerText = "Vocï¿½ pegou " + qtd + " item(s)";
           document.querySelector("#botaoEmFalta_"+index).dataset.pegou = 0;
 
         }
@@ -1698,7 +1698,7 @@ function setQtd(control, index, qtd){
       }else if(control == 1){
 
         document.querySelector("#mostraQtd_"+index).className = "falta";
-        document.querySelector("#mostraQtd_"+index).innerText = "Há " + qtd + " item(s) em falta";
+        document.querySelector("#mostraQtd_"+index).innerText = "Hï¿½ " + qtd + " item(s) em falta";
         document.querySelector("#botaoEmFalta_"+index).dataset.pegou = qtd;
 
       }else if(control == 2){
@@ -1706,13 +1706,13 @@ function setQtd(control, index, qtd){
         if(document.querySelector("#botaoEmFalta_"+index).dataset.pegou == 0){
 
           document.querySelector("#mostraQtd_"+index).className = "neutro";
-          document.querySelector("#mostraQtd_"+index).innerText = "Você não pegou nenhum item";
+          document.querySelector("#mostraQtd_"+index).innerText = "Vocï¿½ nï¿½o pegou nenhum item";
           document.querySelector("#botaoPeguei_"+index).dataset.pegou = 0;
 
         }else{
 
           document.querySelector("#mostraQtd_"+index).className = "falta";
-          document.querySelector("#mostraQtd_"+index).innerText = "Há " + qtd + " item(s) em falta";
+          document.querySelector("#mostraQtd_"+index).innerText = "Hï¿½ " + qtd + " item(s) em falta";
           document.querySelector("#botaoPeguei_"+index).dataset.pegou = 0;
 
         }
@@ -1720,7 +1720,7 @@ function setQtd(control, index, qtd){
       }else if(control == 3){
 
         document.querySelector("#mostraQtd_"+index).className = "peguei";
-        document.querySelector("#mostraQtd_"+index).innerText = "Você pegou " + qtd + " item(s)";
+        document.querySelector("#mostraQtd_"+index).innerText = "Vocï¿½ pegou " + qtd + " item(s)";
         document.querySelector("#botaoPeguei_"+index).dataset.pegou = qtd;
 //Fazer o inserir textos para o peguei
       }

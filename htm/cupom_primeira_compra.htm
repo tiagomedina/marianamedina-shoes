@@ -14,7 +14,7 @@ function tratarResposta () {
               	
              	var divResposta = document.getElementById('lblRetornoCupom');
           		timerResposta = setTimeout(esconderResposta, 4000);
-            	divResposta.innerHTML = "Você já está cadastrado!";
+            	divResposta.innerHTML = "Vocï¿½ jï¿½ estï¿½ cadastrado!";
                 jahVerificado=false;
             }
             else if (xhr.responseText == "2")
@@ -29,7 +29,7 @@ function tratarResposta () {
                jahVerificado=true;
                var divResposta = document.getElementById('lblRetornoCupom');
   			   divResposta.innerHTML = "";
-               alert("Eba! =) <br><br> Você recebeu o cupom de primeira compra em seu e-mail!")
+               alert("Eba! =) <br><br> Vocï¿½ recebeu o cupom de primeira compra em seu e-mail!")
             }
          }
          else
@@ -62,7 +62,7 @@ return false;
 function verificarUsuarioCadastrado() {
   	
   
-  //função desativada devido entrada da Mailbiz
+  //funï¿½ï¿½o desativada devido entrada da Mailbiz
   
     var txtField = document.querySelector(".zfnewsinput").children[0];
   
@@ -88,14 +88,14 @@ function verificarUsuarioCadastrado() {
     
     	xhr.send();
         */
-      	alert("Eba! =) <br><br> Você foi cadastado e recebeu um e-mail com o código do cupom! Seu cupom de primeira compra é: <br><br>20BEMVINDO<br><br> Clique em OK e comece a usar o seu cupom!");
-      	window.location= "https://www.bebefofuxo.com.br/home.asp?IDLoja=20368&cupom=20BEMVINDO";
+      	alert("Eba! =) <br><br> Vocï¿½ foi cadastado e recebeu um e-mail com o cï¿½digo do cupom! Seu cupom de primeira compra ï¿½: <br><br>20BEMVINDO<br><br> Clique em OK e comece a usar o seu cupom!");
+      	window.location= "https://www.bebefofuxo.com.br/home.asp?IDLoja=54883&cupom=20BEMVINDO";
   		return false;
     }
     else
     {
     	var divResposta = document.getElementById('lblRetornoCupom');
-    	divResposta.innerHTML = "E-mail inválido. Corrija-o e tente novamente.";
+    	divResposta.innerHTML = "E-mail invï¿½lido. Corrija-o e tente novamente.";
       
         return false;
     }
@@ -119,7 +119,7 @@ function mostrarInfo(){
     
 </script>
 
-<link href="../lojas/00020368/htm/css/home.css" rel="stylesheet" type="text/css">
+<link href="../lojas/00054883/htm/css/home.css" rel="stylesheet" type="text/css">
 <div class="zfnewsletter">
 <form name="FormCadNewsletter" method="GET" action="" onSubmit="return verificarUsuarioCadastrado();" class="formCupom" novalidate>
 <input type="hidden" name="IDLoja" value="<IDLojaNum>">
@@ -129,7 +129,7 @@ function mostrarInfo(){
   <div class="zfnewsbloco1"><img src="<PathTo file="images/selo_ganhe_20.svg">" alt="Ganhe R$ 20" title="Ganhe R$ 20"></div>
   <div class="zfnewsbloco2">
     <div class="zfnewstit">GANHE R$ 20,00 NA 1<span class="ordinal">a</span> COMPRA!</div>
-    <div class="zfnewstxt">Cadastre seu email e receba o cupom de desconto.&nbsp;<br>(Insira o código diretamente no carrinho de compras)<div class="mntext">Válido para compras acima de R$ 250,00.&nbsp;<br>Cupom de uso único e não cumulativo com outras promoções.</div></div>
+    <div class="zfnewstxt">Cadastre seu email e receba o cupom de desconto.&nbsp;<br>(Insira o cï¿½digo diretamente no carrinho de compras)<div class="mntext">Vï¿½lido para compras acima de R$ 250,00.&nbsp;<br>Cupom de uso ï¿½nico e nï¿½o cumulativo com outras promoï¿½ï¿½es.</div></div>
   </div>
   <div class="zfnewsbloco3">
     <div class="zfnewsinput"><input type="email" name="Email" placeholder="Digite aqui o seu E-mail"></div>

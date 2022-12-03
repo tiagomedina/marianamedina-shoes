@@ -12,7 +12,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $('#idDadosPagtoTitFC').css("background-color","rgb(242 242 242)");
     $('#idDadosPagtoTitFC').css("color","rgb(102 102 102)");
     var a = $('#idDadosPagtoTitFC .EstTabTopo').text();
-    a = a.replace("   (Loja Bebê Fofuxo)","");
+    a = a.replace(" ï¿½ (Loja Bebï¿½ Fofuxo)","");
     $('#idDadosPagtoTitFC .EstTabTopo').text(a);
   }
   else
@@ -64,7 +64,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $("#P2ccNome").parent().parent()[0].children[1].remove();
     $("#P2ccNome").parent().parent().parent().parent().parent().parent()[0].innerHTML = $("#P2ccNome").parent().parent()[0].innerHTML;
     var newNode = document.createElement("div");
-    var textNode = document.createTextNode("Titular (impresso no cartão):");
+    var textNode = document.createTextNode("Titular (impresso no cartï¿½o):");
     newNode.appendChild(textNode);
     $("#P2ccNome").parent().parent()[0].children[0].insertBefore(newNode,$("#P2ccNome").parent().parent()[0].children[0].children[0]);
     $("#idTRccNomeFC div").css('margin-top', '10px');
@@ -75,7 +75,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $("#P2ccSeg").parent().parent()[0].children[1].remove();
     $("#P2ccSeg").parent().parent().parent().parent().parent().parent()[0].innerHTML = $("#P2ccSeg").parent().parent()[0].innerHTML;
     var newNode = document.createElement("div");
-    var textNode = document.createTextNode("Código de segurança (CVV):");
+    var textNode = document.createTextNode("Cï¿½digo de seguranï¿½a (CVV):");
     newNode.appendChild(textNode);
     $("#P2ccSeg").parent().parent()[0].children[0].insertBefore(newNode,$("#P2ccSeg").parent().parent()[0].children[0].children[0]);
     $("#P2ccSeg").parent().parent()[0].children[0].innerHTML += oqeh;
@@ -105,9 +105,9 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
       this.style.height = "44px";
       this.style.padding = "5px 0 5px 5px";
       $(this).css("input[type='text']:focus","16px !important");
-      this.onpaste = function(){alert("Digite os dados ao invés de colar.");return false};
-      this.onpaste = function(){alert("Digite os dados ao invés de colar.");return false};
-      this.onpaste = function(){alert("Digite os dados ao invés de colar.");return false};
+      this.onpaste = function(){alert("Digite os dados ao invï¿½s de colar.");return false};
+      this.onpaste = function(){alert("Digite os dados ao invï¿½s de colar.");return false};
+      this.onpaste = function(){alert("Digite os dados ao invï¿½s de colar.");return false};
 
     });
 
@@ -119,7 +119,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $('#idDadosPagtoTitFC').css("background-color","rgb(242 242 242)");
     $('#idDadosPagtoTitFC').css("color","rgb(102 102 102)");
     var a = $('#idDadosPagtoTitFC .EstTabTopo').text();
-    a = a.replace("   (Loja Bebê Fofuxo)","");
+    a = a.replace(" ï¿½ (Loja Bebï¿½ Fofuxo)","");
     $('#idDadosPagtoTitFC .EstTabTopo').text(a);
 
     var num_pedido = a.replace("Pagamento do pedido #","");
@@ -133,11 +133,11 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     newNode.style.maxWidth = "500px";
     newNode.style.marginLeft = "auto";
     newNode.style.marginRight = "auto";
-    newNode.innerHTML = "Para trocar a bandeira do cartão de crédito e efetuar o pagamento você precisa <strong>refazer o seu pedido</strong>, mas não se preocupe, é bem fácil:<br><br>- Clique no link abaixo<br>- Faça o login (caso ainda não esteja logado)<br>- Clique no botão verde da página indicando para refazer o pedido<br><br><a href='https://www.bebefofuxo.com.br/track.asp?numpedido="+num_pedido+"'>Desejo trocar a bandeira do cartão</a>";
+    newNode.innerHTML = "Para trocar a bandeira do cartï¿½o de crï¿½dito e efetuar o pagamento vocï¿½ precisa <strong>refazer o seu pedido</strong>, mas nï¿½o se preocupe, ï¿½ bem fï¿½cil:<br><br>- Clique no link abaixo<br>- Faï¿½a o login (caso ainda nï¿½o esteja logado)<br>- Clique no botï¿½o verde da pï¿½gina indicando para refazer o pedido<br><br><a href='https://www.bebefofuxo.com.br/track.asp?numpedido="+num_pedido+"'>Desejo trocar a bandeira do cartï¿½o</a>";
     insertAfter($("#idTabRedirPagtoFC").parent().parent().parent().parent().parent()[0],newNode);
 
 
-    $.getScript("https://www.bebefofuxo.com.br/lojas/00020368/htm/js/vanillamaskermin.js",function() {
+    $.getScript("https://www.bebefofuxo.com.br/lojas/00054883/htm/js/vanillamaskermin.js",function() {
 
       /*masks*/
       function inputHandler(masks, max, event) {
@@ -188,7 +188,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     newNode.style.marginRight = "auto";
     newNode.style.marginTop = "30px";
     newNode.style.marginBottom = "30px";
-    newNode.innerHTML = "<div style='text-align:center;'>Seu pagamento será processado pela <br> <img style='margin-top:10px;' src='/lojas/00020368/images/yapay.png' width='150px' height='42'></div>";
+    newNode.innerHTML = "<div style='text-align:center;'>Seu pagamento serï¿½ processado pela <br> <img style='margin-top:10px;' src='/lojas/05488368/images/yapay.png' width='150px' height='42'></div>";
     insertAfter($(".qrMain")[0],newNode);
 
   }
@@ -201,7 +201,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     newNode.style.marginRight = "auto";
     newNode.style.marginTop = "30px";
     newNode.style.marginBottom = "30px";
-    newNode.innerHTML = "<div style='text-align:center;'>Seu pagamento será processado pela <br> <img style='margin-top:10px;' src='/lojas/00020368/images/yapay.png' width='150px' height='42'></div>";
+    newNode.innerHTML = "<div style='text-align:center;'>Seu pagamento serï¿½ processado pela <br> <img style='margin-top:10px;' src='/lojas/05488368/images/yapay.png' width='150px' height='42'></div>";
     insertAfter($("#idTabRedirPagtoFC")[0],newNode);
 
   }
@@ -212,7 +212,7 @@ var head  = document.getElementsByTagName('head')[0];
 var link  = document.createElement('link');
 link.rel  = 'stylesheet';
 link.type = 'text/css';
-link.href = '/lojas/00020368/htm/css/customPayment.css';
+link.href = '/lojas/00054883/htm/css/customPayment.css';
 link.media = 'all';
 head.appendChild(link);
 
