@@ -1,4 +1,4 @@
-/* Template [02/2019] */
+/* Template Fastcommerce [02/2019] */
 
 var iNextPageButFC,bBuyWishlist;
 
@@ -92,7 +92,7 @@ var sFLiveStore$=(function(){
     if(oBadge){
       if(fnGetConfig("Product_Badges_Home_ProductList")){
         var sBadges="";
-        if(oBadge.hasAttribute("data-sale") && OriginalPrice>Price*1.01)sBadges+="<div id='badgeProm"+ ProductID +"' class='fc-badge-product-sale' title='Oferta'><span>-" + fnGetSale() + "%</span></div>";
+        if(oBadge.hasAttribute("data-sale") && OriginalPrice>Price)sBadges+="<div id='badgeProm"+ ProductID +"' class='fc-badge-product-sale' title='Oferta'><span>-" + fnGetSale() + "%</span></div>";
         /* if(oBadge.hasAttribute("data-release"))sBadges+="<div class='fc-badge-product-release' title='Lançamento'>&#10033;</div>"; */
         /* if(oBadge.hasAttribute("data-highlight"))sBadges+="<div class='fc-badge-product-highlight' title='Destaque'>&#9755;</div>"; */
         if(sBadges!="")oBadge.innerHTML+="<div class='fc-badge-product-principal'>"+ sBadges +"</div>";

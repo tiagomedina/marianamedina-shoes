@@ -11,9 +11,9 @@ var LibHotSite$=(function(){
   var oFilOut=null;
   var bChangedFilters=false;
   var oFilShow={};
-  /*configuration parameters*/
-  var iMaxItems=5;  /*above this number of filter items, the search box is displayed inside the filters*/
-  var iMaxSearch=20; /*maximum character size for searching for a filter*/
+  //configuration parameters
+  var iMaxItems=5;  //above this number of filter items, the search box is displayed inside the filters
+  var iMaxSearch=20; //maximum character size for searching for a filter
 
   function fnInit(){
     var iQtdProds=aFiltersHotsite.length;
@@ -29,13 +29,31 @@ var LibHotSite$=(function(){
       fnChangeQtdProds(Object.keys(LibHotSite$.oDicCat).length);
     }
     else {
-      fnIntoView(fnGetID("idPagProdTop"));
-      if(FC$.Mobile || document.documentElement.clientWidth<400)filterCloseNav();
+      fnIntoView(fnGetID("HotSiteTit"));
+      if(FC$.Mobile || document.documentElement.clientWidth<400)showDivFilter();
     }
   }
 
   function fnDisplayedProd(oObj){
     return oObj.classList.contains("smoothShow");
+  }
+
+  function fnIntoView(oObj){
+    if(oObj){
+      if(!IsObjOnScreen(oObj)){
+        oObj.scrollIntoView();
+      }
+    }
+  }
+
+  function IsObjOnScreen(oObj){
+    var oRect=oObj.getBoundingClientRect();
+    return (
+     oRect.top>=0 &&
+     oRect.left>=0 &&
+     oRect.bottom<=(window.innerHeight || document.documentElement.clientHeight) &&
+     oRect.right<=(window.innerWidth || document.documentElement.clientWidth)
+    );
   }
    
   function fnInsertFiltersProd(oProdFilters){
@@ -44,14 +62,14 @@ var LibHotSite$=(function(){
     if(oDivProd){
       var bDisplayedProd=fnDisplayedProd(oDivProd);
       if(bDisplayedProd){
-        /*product category filter, oDicCat structure*/
-        var FilNameCat="Categoria";
-        var FilValueCat=oDicCat[idProd].replace(/'/g,"");
+        //product category filter, oDicCat structure
+        var FilNameCat="Categoria"
+        var FilValueCat=oDicCat[idProd];
         var FilNameAtt="filter_"+FilNameCat.replace(/ /g,"_");
         oDivProd.setAttribute(FilNameAtt,FilValueCat);        
         if(oDicFilters[FilNameCat]==undefined)oDicFilters[FilNameCat]=FilValueCat;
         else oDicFilters[FilNameCat]=oDicFilters[FilNameCat]+","+FilValueCat;           
-        /*product filters filter, aFiltersHotsite structure*/
+        //product filters filter, aFiltersHotsite structure
         var opFil=oProdFilters.pFil;
         if(typeof(opFil)=="object"){
           for(var i in opFil){
@@ -59,21 +77,21 @@ var LibHotSite$=(function(){
             var bShowFil=oFiltro.show;
             if(bShowFil){
               var FilName=oFiltro.name;
-              var FilValue=oFiltro.value.replace(/'/g,"");
+              var FilValue=oFiltro.value;
               var FilNameAtt="filter_"+FilName.replace(/ /g,"_"); 
               oDivProd.setAttribute(FilNameAtt,FilValue);        
               if(oDicFilters[FilName]==undefined)oDicFilters[FilName]=FilValue;
               else oDicFilters[FilName]=oDicFilters[FilName]+","+FilValue;           
             }
-          }       
+          }
         }
-      }        
+      }
     }
   }
 
   function fnShowFilters(){
-  /*Insert the filters on the page*/
-    var sHTML="<div id='DivFiltrarPor' class='DivFiltrarPor'><span class='Label'>"+ rk("products-filter-your-results") +":</span> ";
+  //Insert the filters on the page
+    var sHTML="<div id='DivFiltrarPor' class='DivFiltrarPor'><span class='Label'>Filtrar por:</span> ";
     var oFiltersNames=Object.keys(oDicFilters);
     var oFiltersValues=Object.values(oDicFilters);
     for(var z in oFiltersNames){
@@ -85,25 +103,25 @@ var LibHotSite$=(function(){
       aUniqValues.sort();
       var iValues=aUniqValues.length;
       sHTML+="<ul class=FilSearch data-att='"+ FilNameAtt +"'>";
-      sHTML+="  <li class='FilName Fil"+ z +"' onclick='LibHotSite$.fnHideFil("+ z +")'><span id='FilName"+ z +"' class='SetaBaixo'>"+ rk("products-filter-by") +" "+ oFiltersNames[z] +"</span></li>";
+      sHTML+="  <li class='FilName Fil"+ z +"' onclick='LibHotSite$.fnHideFil("+ z +")'><span id='FilName"+ z +"' class='SetaBaixo'>Filtre por "+ oFiltersNames[z] +"</span></li>";
       sHTML+="  [Search_"+z+"]<li class='FilItems FilInfo"+ z +"'><span style='font-size:12px;' id=TxtSearch"+ z +"></span>";
       sHTML+="    <ul id='FilItemsList"+ z +"' class='FilItemsList'>";
       for(var h=0; h<iValues; h++){
         var sValue=fnRemoveAcento(aUniqValues[h].toLowerCase().replace(/ /g,"_"));
         var sKey=FilNameAtt+"_"+ sValue;
-        sHTML+="<li name='FilterLi"+ z +"' class='FilterLi' data-key=\""+ sKey +"\" data-att=\""+ FilNameAtt +"\" data-value=\""+ aUniqValues[h] +"\">";
-        sHTML+="  <input type=checkbox id='fil"+ z +"_"+ h +"' data-fil-name=\""+ oFiltersNames[z] +"\" value=\""+ aUniqValues[h] +"\" name='filters' onclick=\"LibHotSite$.fnChangeFilters()\">";
+        sHTML+="<li name='FilterLi"+ z +"' class='FilterLi' data-key='"+ sKey +"' data-att='"+ FilNameAtt +"' data-value='"+ aUniqValues[h] +"'>";
+        sHTML+="  <input type=checkbox id='fil"+ z +"_"+ h +"' data-fil-name='"+ oFiltersNames[z] +"' value='"+ aUniqValues[h] +"' name='filters' onclick=\"LibHotSite$.fnChangeFilters()\">";
         sHTML+="  <label for='fil"+ z +"_"+ h +"'>"+ aUniqValues[h] +"<span id='Qtd_"+ sKey +"'>"+ fnShowQtd(FilNameAtt,aUniqValues[h]) +"</span></label>";
         sHTML+="</li>";
       }
       sHTML+="    </ul>";
       sHTML+="  </li>";
       sHTML+="</ul>";
-      if(h>iMaxItems)sSearch+="<li class='FilInputSearch FilInfoCat'><input id='InputSearch"+ z +"' maxlength="+ iMaxSearch +" class=SearchFil placeholder='"+ rk("products-filter-search") +" "+ oFiltersNames[z] +"' onkeyup='LibHotSite$.fnSearchFil(this.value,"+ z +");' type=text></li>";
+      if(h>iMaxItems)sSearch+="<li class='FilInputSearch FilInfoCat'><input id='InputSearch"+ z +"' maxlength="+ iMaxSearch +" class=SearchFil placeholder='Buscar "+ oFiltersNames[z] +"' onkeyup='LibHotSite$.fnSearchFil(this.value,"+ z +");' type=text></li>"
       sHTML=sHTML.replace("[Search_"+z+"]",sSearch);
     }
     sHTML+="</div>";
-    oFilOut=fnGetID("ProductsFilterFC_Hotsite");
+    oFilOut=fnGetID("ProductsFilterFC");
     if(oFilOut){
       oFilOut.innerHTML="<div id=ContentFil>"+ sHTML +"</div>";
     }
@@ -127,12 +145,12 @@ var LibHotSite$=(function(){
   }
 
   function fnUpdateFilters(){
-    oDicQtdFilters={}; /*to reset product qty counters in the filter*/
+    oDicQtdFilters={}; //to reset product qty counters in the filter
     var oFiltersNames=Object.keys(oDicFilters);
     var oFiltersValues=Object.values(oDicFilters);
     oFilShow={};
     oDicQtdNameFil={};
-    /*loop in oDicFilters, containing the product filter options*/
+    //loop in oDicFilters, containing the product filter options
     for(var z in oFiltersNames){
       var oTxtSearch=FCLib$.GetID("TxtSearch"+z);
       if(oTxtSearch)oTxtSearch.innerHTML="";
@@ -152,7 +170,7 @@ var LibHotSite$=(function(){
         oDicQtdNameFil[FilNameAtt]=true;
       }
     }
-    /*loop in each item of <li> of the filters*/
+    //loop in each item of <li> of the filters
     var oFilterLi=oFilOut.getElementsByClassName("FilterLi");
     var iTamFilterLi=oFilterLi.length;
     for (var z=0;z<iTamFilterLi;z++){
@@ -173,7 +191,7 @@ var LibHotSite$=(function(){
 
       }
     }
-    /*hides filters that have no option*/
+    //hides filters that have no option
     var oFilSearch=oFilOut.getElementsByClassName("FilSearch");
     var iTamFilSearch=oFilSearch.length;
     for (var z=0;z<iTamFilSearch;z++){
@@ -190,7 +208,7 @@ var LibHotSite$=(function(){
       var iQtdFound=0;
       for(var i=0;i<iTamFiltroItens;i++){
         var oFilValue=oFiltroItens[i].getAttribute("data-value");
-        if(fnRemoveAcento(oFilValue.toLowerCase()).search(fnRemoveAcento(sTxt))!=-1){var bFound=true;} else {var bFound=false;} /*se encontrou o item com a busca de itens do filtro*/
+        if(fnRemoveAcento(oFilValue.toLowerCase()).search(fnRemoveAcento(sTxt))!=-1){var bFound=true;} else {var bFound=false;} //se encontrou o item com a busca de itens do filtro
         var FilNameAtt=oFiltroItens[i].getAttribute("data-att");
         var sValue=fnRemoveAcento(oFilValue.toLowerCase().replace(/ /g,"_"));
         var sKey=FilNameAtt+"_"+ sValue;
@@ -201,8 +219,8 @@ var LibHotSite$=(function(){
       console.log(FilNameAtt+" > "+iQtdFound);
       var oTxtSearch=FCLib$.GetID("TxtSearch"+id);
       if(oTxtSearch){
-        if(iQtdFound==0){oTxtSearch.innerHTML=FilNameAtt.replace("filter_","") +" "+ rk("products-filter-not-found");}
-        else{oTxtSearch.innerHTML="";}
+        if(iQtdFound==0){oTxtSearch.innerHTML=FilNameAtt.replace("filter_","") +" não encontrado com o termo"}
+        else{oTxtSearch.innerHTML=""}
       }
     }
   }
@@ -224,26 +242,8 @@ var LibHotSite$=(function(){
     return str;
   }
 
-  function fnIntoView(oObj){
-    if(oObj){
-      if(!IsObjOnScreen(oObj)){
-        oObj.scrollIntoView();
-      }
-    }
-  }
-
-  function IsObjOnScreen(oObj){
-    var oRect=oObj.getBoundingClientRect();
-    return (
-     oRect.top>=0 &&
-     oRect.left>=0 &&
-     oRect.bottom<=(window.innerHeight || document.documentElement.clientHeight) &&
-     oRect.right<=(window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
   function fnHideFil(dif){
-    /*Função para exibir/esconder filtro*/
+    //Função para exibir/esconder filtro
     var oFilClass=oFilOut.getElementsByClassName("FilInfo"+dif);
     var oSpan=FCLib$.GetID("FilName"+dif);
     var bHide=false;
@@ -271,7 +271,7 @@ var LibHotSite$=(function(){
           var oFilValue=oFiltroItens[i].value;
           if(oDicFil[oFilName]==undefined)oDicFil[oFilName]=oFilValue;
           else oDicFil[oFilName]=oDicFil[oFilName]+","+oFilValue;           
-          sFilteringBy+="<li>"+ oFilName +": <span class=SearchItem>"+ oFilValue +"</span> <img  src='/images/x.gif' onclick=\"LibHotSite$.fnRemoveFilter('"+oFilName+"','"+ oFilValue +"')\" onmouseover='this.src=\"/images/xon.gif\"' onmouseout='this.src=\"/images/x.gif\"' title='"+ rk("products-filter-remove-this-filter") +"'></li>";
+          sFilteringBy+="<li>"+ oFilName +": <span class=SearchItem>"+ oFilValue +"</span> <img  src='/images/x.gif' onclick=\"LibHotSite$.fnRemoveFilter('"+oFilName+"','"+ oFilValue +"')\" onmouseover='this.src=\"/images/xon.gif\"' onmouseout='this.src=\"/images/x.gif\"' title='Remover este filtro'></li>";
           oDicFilteringBy["filter_"+oFilName]=true;
         }
       }
@@ -279,17 +279,17 @@ var LibHotSite$=(function(){
       var oFiltersValues=Object.values(oDicFil);
       var oDivHotSiteProd=document.getElementsByClassName("DivHotSiteProd");
       var iQtdProds=oDivHotSiteProd.length;
-      /*removes product displays*/
+      //removes product displays
       for(var j=0;j<iQtdProds;j++)oDivHotSiteProd[j].style.display="";
       var iQtdSearch=0;
       var aFiltersNames=[];
-      for(var z in oFiltersNames){aFiltersNames[z]="filter_"+oFiltersNames[z].replace(/ /g,"_").toLowerCase();} /*loads the current filters into aFiltersNames*/
+      for(var z in oFiltersNames){aFiltersNames[z]="filter_"+oFiltersNames[z].replace(/ /g,"_").toLowerCase();} //loads the current filters into aFiltersNames
       var iQtdFils=aFiltersNames.length;
-      /*loop in products*/
+      //loop in products
       var oShowProd={};
       for(var j=0;j<iQtdProds;j++){
         var oDivProd=oDivHotSiteProd[j];
-        /*requested filters loop*/
+        //requested filters loop
         var oFilFound={};
         oShowProd[j]=true;
         for(var z=0;z<iQtdFils;z++){
@@ -325,8 +325,8 @@ var LibHotSite$=(function(){
     }
     fnChangeQtdProds(iQtdSearch);
     if(sFilteringBy!=""){
-      sFilteringBy="<span class=Label>"+ rk("products-filter-filtering-by") +":</span><ul class=FiltrandoPor>"+sFilteringBy;
-      sFilteringBy+="<li><div class='FilRemoveFilters'><a onclick=\"LibHotSite$.fnRemoveFilter('')\" style='cursor:pointer;'>"+ rk("products-filter-remove-all") +"</a></div></li>";
+      sFilteringBy="<span class=Label>Filtros atuais:</span><ul class=FiltrandoPor>"+sFilteringBy;
+      sFilteringBy+="<li><div class='FilRemoveFilters'><a onclick=\"LibHotSite$.fnRemoveFilter('')\" style='cursor:pointer;'>Remover todos os filtros</a></div></li>";
       sFilteringBy+="</ul>";
       var oDivFilteringBy=fnGetID("DivFiltrandoPor");
       if(oDivFilteringBy){
@@ -359,9 +359,9 @@ var LibHotSite$=(function(){
   function fnChangeQtdProds(iQtd){
     var oDivQtdProd=fnGetID("HotSiteQtd");
     if(oDivQtdProd){
-      if(iQtd==0){oDivQtdProd.innerHTML=rk("product-list-no-products-found");}
-      else if(iQtd==1){oDivQtdProd.innerHTML=rk("product-list-found") +" <b>"+ iQtd +"</b> "+ rk("product-list-product")+":";}
-      else{oDivQtdProd.innerHTML=rk("product-list-found-plural") +" <b>"+ iQtd +"</b> "+ rk("product-list-product-plural")+":";}
+      if(iQtd==0){oDivQtdProd.innerHTML="Não foram encontrados produtos"}
+      else if(iQtd==1){oDivQtdProd.innerHTML="Encontrado <b>"+ iQtd +"</b> produto:"}
+      else{oDivQtdProd.innerHTML="Encontrados <b>"+ iQtd +"</b> produtos:"}
     }
   } 
 

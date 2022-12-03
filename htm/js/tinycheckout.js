@@ -8,7 +8,7 @@ var fcTinyCheckout$=(function(){
     function createAlertDiv(){
       var createNewDIVAlert=document.createElement("DIV");
       createNewDIVAlert.setAttribute("id",newDIVName+"Alert");
-      createNewDIVAlert.innerHTML="<b>"+rk("tiny-checkout-box-message-previous-item")+"</b>";
+      createNewDIVAlert.innerHTML="<b>Por favor, preencha os campos do item anterior para prosseguir.</b>"
       createNewDIV.appendChild(createNewDIVAlert);
     }
     function createNewTrTitle(newIdName,newClassName,titleText){
@@ -20,12 +20,12 @@ var fcTinyCheckout$=(function(){
       createNewDIV.appendChild(createNewTRtitle);
     }
     if(typeOfData=="address"){
-      if(!document.getElementById("idShippingFC"))createNewTrTitle("idShippingFC","EstChkTabTopo",rk("register-checkout-shipping-information"));
+      if(!document.getElementById("idShippingFC"))createNewTrTitle("idShippingFC","EstChkTabTopo","Endereço do cliente");
       createAlertDiv();
     }
     if(typeOfData=="delivery"){
       if(checkNivel7)createNewDIV.setAttribute("style","display:none;");
-      createNewTrTitle("idDeliveryTitleFC","EstChkTabTopo",rk("tiny-checkout-delivery-address"));
+      createNewTrTitle("idDeliveryTitleFC","EstChkTabTopo","Endereço de entrega");
       if(checkNivel1)createAlertDiv();
     }
     var createNewDIVSub1=document.createElement("DIV");
@@ -51,7 +51,7 @@ var fcTinyCheckout$=(function(){
       else createNewDIVSub1.appendChild(document.getElementById(item));
     });
     var createNewButton=document.createElement("BUTTON");
-    createNewButton.appendChild(document.createTextNode(rk("tiny-checkout-save-button")));
+    createNewButton.appendChild(document.createTextNode("Salvar"));
     createNewButton.setAttribute("onclick","fcTinyCheckout$.showContactInfosResume('button','"+createNewDIVSub2.id+"',fcTinyCheckout$."+nameInputArray+",'"+createNewDIVSub1.id+"','"+typeOfData+"')");
     createNewDIVSub1.appendChild(createNewButton);
   }
@@ -72,7 +72,7 @@ var fcTinyCheckout$=(function(){
         if(FC$.Language!=0 && fieldsPTBRonly.indexOf(item)>-1)return;
         else if(item!=="P2SenhaCli" && item!=="P2SenhaCliConfirma")divToInsert.innerHTML+="<p>"+document.getElementById(item).value+"</p>";
       });
-      divToInsert.innerHTML+='<button onclick="fcTinyCheckout$.enableEditing(\''+divToHide+'\',\''+divID+'\',\''+typeOfData+'\')">'+rk("tiny-checkout-edit-button")+'</button>';
+      divToInsert.innerHTML+='<button onclick="fcTinyCheckout$.enableEditing(\''+divToHide+'\',\''+divID+'\',\''+typeOfData+'\')">Alterar</button>';
       document.getElementById(divToHide).setAttribute("style","display:none;");
       document.getElementById(divID).removeAttribute("style");
       function hideAlertShowSubs1and2(DIVtypeName){
@@ -88,10 +88,14 @@ var fcTinyCheckout$=(function(){
         if(checkNivel7||checkNivel1)checkIdDeliveryDataFC.removeAttribute("style");
         if(checkNivel1)hideAlertShowSubs1and2("Delivery");
       }
+      
+      if(loadORbutton=="button"){
+          window.scrollTo(0,$(divToInsert).offset().top-60)
+      }
     }
     else{
       if(loadORbutton=="load")return;
-      else alert(rk("tiny-checkout-alert-fill-fields"));
+      else alert("Por favor, preencha todos os campos corretamente");
     }
   }
   function enableEditing(divInputs,divResume,typeOfData){

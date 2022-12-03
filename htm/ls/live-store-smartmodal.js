@@ -17,7 +17,7 @@ var fcProductSpy$=(function(){
     }
     smodalDivCont.innerHTML+="<div class='bgsModal' onclick='fcProductSpy$.removeLastSmartModal()'></div>"
     +"<div class='sModalContainer'>"
-    +"<iframe id='idIframe' width='100%' height='100%' src='"+fullURLPROD+"' frameborder='0' loading='lazy'></iframe>"
+    +"<iframe id='idIframe' width='100%' height='100%' src='"+fullURLPROD+"' frameborder='0'></iframe>"
     +"</div>";
     document.body.appendChild(smodalDivCont);
     setTimeout(function(){ (document.querySelector('.sModalArea')).style='transform:translateX(0);'; }, 10);

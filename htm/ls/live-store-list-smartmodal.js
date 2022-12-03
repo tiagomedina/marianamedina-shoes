@@ -11,13 +11,15 @@ var fcSpyLVCat$=(function(){
     var chkURL=(URLPROD.indexOf(',')>-1),
     fullURLPROD;
     if(!chkURL){
-        fullURLPROD=URLPROD + (URLPROD.indexOf("?")>-1?"&":"?") +"sty=4&int=1";
+        //fullURLPROD=URLPROD + (URLPROD.indexOf("?")>-1?"&":"?") +"sty=4&int=1";
+      	fullURLPROD=URLPROD + (URLPROD.indexOf("?")>-1?"&":"?") +"sty=4";
     } else {
-        fullURLPROD=URLPROD.replace('prod,','prod,sty,4,int,1,');
+        //fullURLPROD=URLPROD.replace('prod,','prod,sty,4,int,1,');
+      	fullURLPROD=URLPROD.replace('prod,','prod,sty,4');
     }
     smodalDivCont.innerHTML+="<div class='bgsModal' onclick='fcSpyLVCat$.removeLastSmartModal()'></div>"
     +"<div class='sModalContainer'>"
-    +"<iframe id='idIframe' width='100%' height='100%' src='"+fullURLPROD+"' frameborder='0'  loading='lazy'></iframe>"
+    +"<iframe id='idIframe' width='100%' height='100%' src='"+fullURLPROD+"' frameborder='0'></iframe>"
     +"</div>";
     document.body.appendChild(smodalDivCont);
     setTimeout(function(){ (document.querySelector('.sModalArea')).style='transform:translateX(0);'; }, 10);
