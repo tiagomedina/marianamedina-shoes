@@ -17,11 +17,17 @@ var fcSpyLVSearch$=(function(){
     }
     smodalDivCont.innerHTML+="<div class='bgsModal' onclick='fcSpyLVSearch$.removeLastSmartModal()'></div>"
     +"<div class='sModalContainer'>"
-    +"<iframe id='idIframeSearch' width='100%' height='100%' src='"+fullURLPROD+"' frameborder='0' name='idIframeSearch'  loading='lazy'></iframe>"
+    +"<style>#idIframeSearch html body.sty4 .HeaderMainbar{display:none}</style>"
+    +"<iframe id='idIframeSearch' width='100%' height='100%' src='"+fullURLPROD+"' frameborder='0' name='idIframeSearch'></iframe>"
     +"</div>";
     document.body.appendChild(smodalDivCont);
     setTimeout(function(){ (document.querySelector('.sModalArea')).style='transform:translateX(0);'; }, 10);
     setTimeout(function(){ document.getElementsByTagName("BODY")[0].style.overflow = "hidden"; }, 300);
+    
+    
+    setTimeout(function(){ (document.querySelector('.HeaderMainbar')).style='display:none'; }, 10);
+    
+    
   }
   function removeLastSmartModal(){
     document.onkeyup=null;
