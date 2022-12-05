@@ -1,4 +1,4 @@
-// FastCommerce Grid [08.07.2015] - Bebê Fofuxo - Dez/2018 //
+// FastCommerce Grid [08.07.2015] - Bebï¿½ Fofuxo - Dez/2018 //
 var produtoAdicionado;
 
 var FCGrid$ = function () {
@@ -41,7 +41,7 @@ var FCGrid$ = function () {
     btnSoldOut : 'botcarrinhoesgotado.svg',
 	iconArrowPrevIMG : 'icon-grid-arrow-prev.svg',
     iconArrowNextIMG : 'icon-grid-arrow-next.svg',
-    textGrid : 'Selecione as opções abaixo',
+    textGrid : 'Selecione as opï¿½ï¿½es abaixo',
     order : ['cor','adicional1','adicional2','adicional3'],
     nameDescriptor : {
      cor : 'Cor',
@@ -168,7 +168,7 @@ var FCGrid$ = function () {
         product.imgDet=arr.imgDet;
         product.imgAmp=arr.imgAmp;
         product.imgPri=arr.imgPri;
-      }else{ fn.consoleLogFC({'FC_Log_Grid_v1' : 'json do subproduto inválido'}); }
+      }else{ fn.consoleLogFC({'FC_Log_Grid_v1' : 'json do subproduto invï¿½lido'}); }
     },
 
     magicZoomFC: function(id, novoArray, novoArrayAmp, FC_MaxImages, refreshZoom){
@@ -240,7 +240,7 @@ var FCGrid$ = function () {
     },	
 
     popupSoldOutProduct: function(params){
-      return new MostraDispCaptcha(FC$.IDLoja, product.IDProduto); //Função para popup de aviso de disponibilidade, produto esgotado
+      return new MostraDispCaptcha(FC$.IDLoja, product.IDProduto); //Funï¿½ï¿½o para popup de aviso de disponibilidade, produto esgotado
       
     },
 
@@ -280,7 +280,7 @@ var FCGrid$ = function () {
          else{
            return oPositionPrice.innerHTML="<span style='font-size:24px; font-weight:700; color:#da187f'>"+FCLib$.FormatPreco(FormatPrecoReais(product.priceNum))+"</span>"+ oMaxInstallments;
          }
-      }else{return oPositionPrice.innerHTML="Preço sob Consulta";}
+      }else{return oPositionPrice.innerHTML="Preï¿½o sob Consulta";}
     },
 
     setCodeProduct: function(){
@@ -294,13 +294,13 @@ var FCGrid$ = function () {
       if(!product){
         oBtnComprar.setAttribute("class", "FCBtnGrid FCBtnSelectedOption FCBtnSelecioneGrid");
         oBtnComprar.innerHTML="<img src=\""+ FC$.PathImg + options.btnSelectImg +"\">"
-                             +"<div class=\"FCTooltipGrid Off\" id=\"idTooltipGridFC\" style=\"display:\">Selecione primeiro as opções do produto</div>";
+                             +"<div class=\"FCTooltipGrid Off\" id=\"idTooltipGridFC\" style=\"display:\">Selecione primeiro as opï¿½ï¿½es do produto</div>";
         oBtnComprar.onclick=function(a){
           if( fn.hasClass(document.getElementById("idTooltipGridFC"), "Off")){
             fn.removeClass(document.getElementById("idTooltipGridFC"), "Off");
             fn.addClass(document.getElementById("idTooltipGridFC"), "On");
             
-            //scroll até as opções
+            //scroll atï¿½ as opï¿½ï¿½es
             var item = $("#idNivelGridFC_0")[0];
             item.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
           }else{
@@ -328,7 +328,7 @@ var FCGrid$ = function () {
             
           };
           if(options.incMultGrid)fn.qtyIncFieldDisabled(true, false);
-          fn.getShippingView(false); //simulação de frete
+          fn.getShippingView(false); //simulaï¿½ï¿½o de frete
         }
         else if(parseInt(product.estoque)>0 && parseFloat(product.priceNum) === 0){
           oBtnComprar.setAttribute("class", "FCBtnGrid FCBtnConsultenos");
@@ -337,7 +337,7 @@ var FCGrid$ = function () {
             fn.consultUsAboutProduct(sParamsGrid);
           };
           if(options.incMultGrid)fn.qtyIncFieldDisabled(true, false);
-          fn.getShippingView(false); //simulação de frete
+          fn.getShippingView(false); //simulaï¿½ï¿½o de frete
         }
         else{
           oBtnComprar.setAttribute("class", "FCBtnGrid FCBtnComprarGrid");
@@ -353,7 +353,7 @@ var FCGrid$ = function () {
               }
               else if($("#id_emailpresenteado")[0].checked == false && $("#id_whatspresenteado")[0].checked == false && $("#id_meuemail")[0].checked == false)
               {
-                alert("Selecione uma das 3 opções de envio do Vale Presente");
+                alert("Selecione uma das 3 opï¿½ï¿½es de envio do Vale Presente");
                 var item = $("#id_emailpresenteado")[0];
                 item.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
               }
@@ -365,7 +365,7 @@ var FCGrid$ = function () {
               }
               else if($("#id_whatspresenteado")[0].checked == true && validacaoWhats() == false)
               {
-                alert("Preencha o Whatsapp do presenteado corretamente, com DDD e 9 dígitos.");
+                alert("Preencha o Whatsapp do presenteado corretamente, com DDD e 9 dï¿½gitos.");
                 var item = $("#id_whatspresenteado")[0];
                 item.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
               }
@@ -503,14 +503,14 @@ var FCGrid$ = function () {
             oQtdZipField.disabled = false;
             var iPesoProdSub = product.peso;
             iPesoProdSub = parseFloat(iPesoProdSub.replace(",","."));
-            //se o subproduto tem peso 0 é usado o peso do produto pai para a simulação de frete
+            //se o subproduto tem peso 0 ï¿½ usado o peso do produto pai para a simulaï¿½ï¿½o de frete
             if(product.estoque !== "" && iPesoProdSub > 0 || product.estoque !== undefined && iPesoProdSub > 0){
               oZipField.id = "idZip"+ product.IDProduto;
               oQtdZipField.id = "idQtdZip"+ product.IDProduto;
               oShippingValues.id = "idShippingValues"+ product.IDProduto;
               oButtonShipping.onclick = function() {
                 fnGetShippingValuesProdGrid(product.IDProduto);
-                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simulação de frete para o produto de ID ' + product.IDProduto});
+                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simulaï¿½ï¿½o de frete para o produto de ID ' + product.IDProduto});
               };
             }else{
               var oProdPai = JSON.parse(aProductOnlyOne);
@@ -519,7 +519,7 @@ var FCGrid$ = function () {
               oShippingValues.id = "idShippingValues" + oProdPai.IDProduto;
               oButtonShipping.onclick = function() {
                 fnGetShippingValuesProdGrid(oProdPai.IDProduto);
-                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simulação de frete para o produto de ID ' + oProdPai.IDProduto});
+                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simulaï¿½ï¿½o de frete para o produto de ID ' + oProdPai.IDProduto});
               };
             }
           }else{
@@ -584,7 +584,7 @@ var FCGrid$ = function () {
     },
 
     validQuantityIncMult: function(objHTML){
-      var sNumber = objHTML.value.replace(/[^0-9]/g, ""); //remove tudo que é diferente de 0-9
+      var sNumber = objHTML.value.replace(/[^0-9]/g, ""); //remove tudo que ï¿½ diferente de 0-9
       sNumber = sNumber.replace(/^(0+)(\d)/g, "$2"); //remove zeros a esquerda
       var oQtdZipFieldIncMult = document.querySelector("[id^='idQtdZip']");
       if(sNumber > 0){
@@ -617,13 +617,13 @@ var FCGrid$ = function () {
     },
 
     consoleLogFC: function(obj){
-      if (typeof console !== 'undefined')console.log(obj); /* Loga informações do produto */
+      if (typeof console !== 'undefined')console.log(obj); /* Loga informaï¿½ï¿½es do produto */
     }
 
   };
   //Fn auxiliares Grid_FC:end
   
-  // Realiza animação de pulsar do botão
+  // Realiza animaï¿½ï¿½o de pulsar do botï¿½o
   function btnAnimation(posBtnComprar) {
     if(options.btnAnimation) {
       posBtnComprar.classList.add('btnFadeOut');
@@ -687,7 +687,7 @@ var FCGrid$ = function () {
     {
       var sessao_id = window.localStorage.sessao_id;
       
-      AjaxExecFC("https://bebefofuxo.net/scripts/compre_mais/registrar_atividade.php","sessao_id="+ sessao_id + "&comprou_produto=" + "1" + "&cod_modelo=" + product.codProd,false,fnprocessRegistroAtividade_AddProduto);
+      // AjaxExecFC("https://bebefofuxo.net/scripts/compre_mais/registrar_atividade.php","sessao_id="+ sessao_id + "&comprou_produto=" + "1" + "&cod_modelo=" + product.codProd,false,fnprocessRegistroAtividade_AddProduto);
     }
   
 
@@ -752,7 +752,7 @@ var FCGrid$ = function () {
     if(oPos && FC$.Wishlist==1){
       var oBtnWL=document.createElement("div");
       oBtnWL.setAttribute("class","ProdWLSel");
-      oBtnWL.innerHTML="Selecione as opções acima para inserir na lista de desejos.";
+      oBtnWL.innerHTML="Selecione as opï¿½ï¿½es acima para inserir na lista de desejos.";
       oPos.appendChild(oBtnWL);
     }
   }
@@ -767,7 +767,7 @@ var FCGrid$ = function () {
       if(typeof FuncButtonAddToWL==="function"){WL$.fnButtonAddToWishlist(idp);} else {FCLib$.onReady(function(){WL$.fnButtonAddToWishlist(idp);});}
       var el=document.querySelectorAll('.ProdWLSel');
       if(el.length>0){
-        for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove texto informando para selecionar opções
+        for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove texto informando para selecionar opï¿½ï¿½es
       }
     }
   }
@@ -780,7 +780,7 @@ var FCGrid$ = function () {
     if(FC$.Wishlist==1){
       var el=document.querySelectorAll('.ProdWL');
       if(el.length>0){
-        for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove os botões já existem no html de wishlist
+        for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove os botï¿½es jï¿½ existem no html de wishlist
       }
     }
   }
@@ -833,7 +833,7 @@ var FCGrid$ = function () {
     }else{
       oPositionDetail.innerHTML=fn.getDetailsProduct();
     }
-    //fn.consoleLogFC({'FC_Log_Grid_v1' : 'descritores do produto selecionado', 'dscr' : sParms.replace(/\&/g,', ').replace(/\=/g,' : ')}); /*Loga os parâmetros do produto selecionado*/
+    //fn.consoleLogFC({'FC_Log_Grid_v1' : 'descritores do produto selecionado', 'dscr' : sParms.replace(/\&/g,', ').replace(/\=/g,' : ')}); /*Loga os parï¿½metros do produto selecionado*/
   }
 
 
@@ -842,7 +842,7 @@ var FCGrid$ = function () {
   //fnResetOptions:begin
   function fnResetOptions(objElementParent){
     if(options.incMultGrid)fn.qtyIncFieldDisabled(true, false);
-    fn.getShippingView(false); //simulação de frete
+    fn.getShippingView(false); //simulaï¿½ï¿½o de frete
     var el=document.querySelectorAll('#idButtonBuyFC .FCBtnGrid');
     var elSelect=document.querySelectorAll('#idButtonBuyFC .FCBtnSelectedOption');
     if(el.length>0 && elSelect.length===0){
@@ -1003,7 +1003,7 @@ var FCGrid$ = function () {
               }else{
                 var sBgColor = "#" + fn.getColor(prd['cor']).rgb;
               }
-              var sNameCor= options.colorName == false ? "&nbsp;" : fn.getColor(prd['cor']).name; //Exibe ou não o nome da cor
+              var sNameCor= options.colorName == false ? "&nbsp;" : fn.getColor(prd['cor']).name; //Exibe ou nï¿½o o nome da cor
               sHtmlUL+="<li class=\""+ sDisabled +" "+ oFlagEsgotado.classLabel +"\" data-nivel=\""+i+"\" "+ oClickEvent +"\>"
                     +  options.htmlFlagChecked
                     +  "<span style=\"background:"+ sBgColor +"\" class=\"FCDescritorGrid "+ sClassDescritor +"\" data-attr=\""+ prd[aDestinosDescritores[i]] +"\""+ sDataImagesProd +"\ data-id=\""+ prd['IDProduto']+"\">"
@@ -1011,7 +1011,7 @@ var FCGrid$ = function () {
                     +  "</span>"
                     +"</li>";
             }
-            /* não e descritor cor */
+            /* nï¿½o e descritor cor */
             else{
               sHtmlUL+="<li class=\""+ sDisabled +" "+ oFlagEsgotado.classLabel +"\" data-nivel=\""+ i +"\" "+ oClickEvent +">"
                     +  options.htmlFlagChecked
@@ -1176,7 +1176,7 @@ var FCGrid$ = function () {
           oPositionHtml.appendChild(oNewDiv);
     }
 
-    fn.setAttrProduct(oProd); // define o produto selecionado e inclui na variável product
+    fn.setAttrProduct(oProd); // define o produto selecionado e inclui na variï¿½vel product
     var oButton = fn.availableBuyProduct(oProd, sParms); // verificar disponibilidade e cria o botao [comprar/ esgotado/ consulte-nos]
     var el=document.querySelectorAll('#idButtonBuyFC .FCBtnGrid');
     if(el.length>0)for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove os botoes ja existem no html

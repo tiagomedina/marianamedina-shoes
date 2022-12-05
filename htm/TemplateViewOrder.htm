@@ -286,8 +286,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/consultaFalta.php?pedido="+numPedido, true);
-    xhr.send();
+    // xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/consultaFalta.php?pedido="+numPedido, true);
+    // xhr.send();
 
     document.getElementById("fala").innerText = numPedido;
     document.title = "Sistema Picking";
@@ -561,7 +561,7 @@ function clique_logout(){
                 document.querySelector(".btLogout").style.display = "none";
               	enviarAcoes(arrAcoesF);
 
-               window.location.href = "https://bebefofuxo.net/scripts/sistema_picking/tela_inicial/index.html";
+              //  window.location.href = "https://bebefofuxo.net/scripts/sistema_picking/tela_inicial/index.html";
             }
         }
     };
@@ -591,8 +591,8 @@ function clique_logout(){
     });
 	console.log(arrayBg);
 
-    xhttp2.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/registro_logout.php?nome="+usuario+"&data="+data_completa+"&numPedido="+numPedido+"&bg="+arrayBg, true);//Enviando registros do logout para o banco de dados
-    xhttp2.send();
+    // xhttp2.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/registro_logout.php?nome="+usuario+"&data="+data_completa+"&numPedido="+numPedido+"&bg="+arrayBg, true);//Enviando registros do logout para o banco de dados
+    // xhttp2.send();
 
 }
 
@@ -606,8 +606,8 @@ function buscarNome(){
         }
     }
 
-    xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/nome_atual.php?num_pedido="+numPedido, true);
-    xhttp.send();
+    // xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/nome_atual.php?num_pedido="+numPedido, true);
+    // xhttp.send();
 }
 
 function habilitar(){
@@ -681,8 +681,8 @@ function imagemProd(){
         }
     }
 
-    xhttp7.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/imagens.php?codigos="+codigos_modelos, true);
-    xhttp7.send();
+    // xhttp7.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/imagens.php?codigos="+codigos_modelos, true);
+    // xhttp7.send();
 }
 
 function criaTelas(){
@@ -893,14 +893,14 @@ function clique_enviar(){
 
                 if(control == 1){ //caso usuario e senha estejam corretos, esconde a tela de login e mostra a tela de picking, al�m de mandar o pedido para impress�o
 
-                    $.get( "https://bebefofuxo.net/scripts/sistema_picking/enviarDadosImpressao.php", {num_pedido: numPedido} )
-                    .done(function( data ) {
-                        let row = parseInt(data);
-                        if(row == 1){
-                            let nome = document.querySelector("#botao_drop").innerText;
-                            $.get( "https://bebefofuxo.net/scripts/sistema_picking/impressao_numero_pedido/enviar_impressao.php", { numero_pedido: numPedido, usuario: nome } )
-                        }
-                    });
+                    // $.get( "https://bebefofuxo.net/scripts/sistema_picking/enviarDadosImpressao.php", {num_pedido: numPedido} )
+                    // .done(function( data ) {
+                    //     let row = parseInt(data);
+                    //     if(row == 1){
+                    //         let nome = document.querySelector("#botao_drop").innerText;
+                    //         $.get( "https://bebefofuxo.net/scripts/sistema_picking/impressao_numero_pedido/enviar_impressao.php", { numero_pedido: numPedido, usuario: nome } )
+                    //     }
+                    // });
 
                     $("#pedido").show();
                     $("#a").show();
@@ -920,8 +920,8 @@ function clique_enviar(){
                     let usuario = document.getElementById("botao_drop").innerText;
                     let data_completa = data_atual();
 
-                    xhttp2.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/registro_login.php?nome="+usuario+"&data="+data_completa+"&numPedido="+numPedido, true); //Enviando registros de login, nome da pessoa, e a data para o banco de dados
-                    xhttp2.send();
+                    // xhttp2.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/registro_login.php?nome="+usuario+"&data="+data_completa+"&numPedido="+numPedido, true); //Enviando registros de login, nome da pessoa, e a data para o banco de dados
+                    // xhttp2.send();
 
                     const largura = document.querySelector(".master").clientWidth;
 
@@ -938,14 +938,14 @@ function clique_enviar(){
         let usuario = document.querySelectorAll("#botao_drop")[0].firstChild.innerText;
         let senha = $("#senha").val();
 
-        xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/login.php?usuario="+usuario+"&senha="+senha, true);
-        xhttp.send();
+        // xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/login.php?usuario="+usuario+"&senha="+senha, true);
+        // xhttp.send();
     		}
   		}
 	}
 
-  	xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/tela_inicial/verificarUsuarioLogado.php?pedido="+numPedido+"&usuario="+usuario, true);
-    xhr.send();
+  	// xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/tela_inicial/verificarUsuarioLogado.php?pedido="+numPedido+"&usuario="+usuario, true);
+    // xhr.send();
 }
 
 function verificaCliquePeguei(){
@@ -990,8 +990,8 @@ function verificaCliquePeguei(){
         }
     };
 
-    xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/verificarCliquePeguei.php?numPedido="+numPedido, true);
-    xhttp.send();
+    // xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/verificarCliquePeguei.php?numPedido="+numPedido, true);
+    // xhttp.send();
 
     let xhr = new XMLHttpRequest();
 
@@ -1013,8 +1013,8 @@ function verificaCliquePeguei(){
       }
     }
 
-    xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/verificaFinalizado.php?pedido="+numPedido, true);
-  	xhr.send();
+    // xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/verificaFinalizado.php?pedido="+numPedido, true);
+  	// xhr.send();
 }
 
 function verificaCliqueEmFalta(){
@@ -1055,8 +1055,8 @@ function verificaCliqueEmFalta(){
         }
     };
 
-    xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/verificarCliqueEmFalta.php?numPedido="+numPedido, true);
-    xhttp.send();
+    // xhttp.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/verificarCliqueEmFalta.php?numPedido="+numPedido, true);
+    // xhttp.send();
 }
 
 function insereTextos(){
@@ -1183,8 +1183,8 @@ function insereTextos(){
 
 	}
 
-	xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/buscarAcao.php?num_pedido="+numPedido, true);
-	xhr.send();
+	// xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/buscarAcao.php?num_pedido="+numPedido, true);
+	// xhr.send();
 }
 
 function criaTelaQtd(botao){
@@ -1641,8 +1641,8 @@ function enviarAcoes(acao){
         }
     }
 
-   xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/registro_acoes.php?array="+json+"&usuario="+usuario, true);
-   xhr.send();
+  //  xhr.open("GET", "https://bebefofuxo.net/scripts/sistema_picking/registro_acoes.php?array="+json+"&usuario="+usuario, true);
+  //  xhr.send();
 
 }
 

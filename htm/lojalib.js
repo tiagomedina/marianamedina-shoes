@@ -1340,7 +1340,7 @@ function fnprocessXMLCEPC(obj){
   {
     var sCEP=document.getElementById("idZipC1").value;
     if(sCEP=="")sCEP=document.getElementById("idZipC2").value;
-    AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
+    // AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
 
     if(primeiraTentativaPesquisarCEP == false)
     {
@@ -1380,8 +1380,8 @@ function fnprocessXMLCEPC(obj){
 
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = fnprocessExisteTransportadora;
-      xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
-      xhr.send();
+      // xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
+      // xhr.send();
     }
 
   }
@@ -2255,7 +2255,7 @@ var Cart$=(function(){
     if(ReadXMLNode(obj,"OptQt") >= 5)
     {
       var sCEP=document.getElementById("idZipC").value;
-      AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
+      // AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
 
       if(primeiraTentativaPesquisarCEP == false)
       {
@@ -2300,8 +2300,8 @@ var Cart$=(function(){
         var sCEP = document.getElementById("idZipC").value;
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = fnprocessExisteTransportadora;
-        xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
-        xhr.send();
+        // xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
+        // xhr.send();
       }
 
     }

@@ -89,11 +89,11 @@
         console.log("registrado com sucesso");
       }
     };
-    if(num_celular != "" && num_celular.length == 13 && nome != "" && email != "")
-    {
-      	xhttp.open("GET", "https://www.bebefofuxo.net/scripts/clientes_wa/registrar_dados_site.php?status=1&num_celular="+num_celular+"&nome="+nome+"&email="+email, true);
-    	xhttp.send();
-    }  
+    // if(num_celular != "" && num_celular.length == 13 && nome != "" && email != "")
+    // {
+    //   	xhttp.open("GET", "https://www.marianamedinashoes.net/scripts/clientes_wa/registrar_dados_site.php?status=1&num_celular="+num_celular+"&nome="+nome+"&email="+email, true);
+    // 	xhttp.send();
+    // }  
     
     $("#fade_enviowhats").hide();
     $("#light_enviowhats").hide();
@@ -112,11 +112,11 @@
         console.log("registrado com sucesso");
       }
     };
-    if(num_celular != "" && num_celular.length == 13 && nome != "" && email != "")
-    {
-      	xhttp.open("GET", "https://www.bebefofuxo.net/scripts/clientes_wa/registrar_dados_site.php?status=-1&num_celular="+num_celular+"&nome="+nome+"&email="+email, true);
-    	xhttp.send();
-    }
+    // if(num_celular != "" && num_celular.length == 13 && nome != "" && email != "")
+    // {
+    //   	xhttp.open("GET", "https://www.marianamedinashoes.net/scripts/clientes_wa/registrar_dados_site.php?status=-1&num_celular="+num_celular+"&nome="+nome+"&email="+email, true);
+    // 	xhttp.send();
+    // }
     
     $("#fade_enviowhats").hide();
     $("#light_enviowhats").hide();
@@ -145,19 +145,19 @@
   
   var ja_apareceu_comprar_mais = window.localStorage.ja_apareceu_comprar_mais;
 
-  if(ja_apareceu_comprar_mais)
-  {
-    var sessao_id = window.localStorage.sessao_id;
+  // if(ja_apareceu_comprar_mais)
+  // {
+  //   var sessao_id = window.localStorage.sessao_id;
 
-    AjaxExecFC("https://bebefofuxo.net/scripts/compre_mais/registrar_atividade.php","sessao_id="+ sessao_id + "&finalizou_compra=" + "1",false,fnprocessRegistroAtividade_FinalizouCompra);
+  //   AjaxExecFC("https://bebefofuxo.net/scripts/compre_mais/registrar_atividade.php","sessao_id="+ sessao_id + "&finalizou_compra=" + "1",false,fnprocessRegistroAtividade_FinalizouCompra);
     
-    window.localStorage.removeItem("carrinho_genero");
-    window.localStorage.removeItem("carrinho_faixa_etaria");
-    window.localStorage.removeItem("mostrar_comprar_mais");
-    window.localStorage.removeItem("ja_apareceu_comprar_mais");
-    window.localStorage.removeItem("sessao_id");
-    window.localStorage.removeItem("comprar_mais_data");
-  }
+  //   window.localStorage.removeItem("carrinho_genero");
+  //   window.localStorage.removeItem("carrinho_faixa_etaria");
+  //   window.localStorage.removeItem("mostrar_comprar_mais");
+  //   window.localStorage.removeItem("ja_apareceu_comprar_mais");
+  //   window.localStorage.removeItem("sessao_id");
+  //   window.localStorage.removeItem("comprar_mais_data");
+  // }
 
 //Personalização dos botoes e texto da pagina final
 var sPag=document.location.href.toUpperCase();

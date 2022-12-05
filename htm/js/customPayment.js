@@ -12,7 +12,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $('#idDadosPagtoTitFC').css("background-color","rgb(242 242 242)");
     $('#idDadosPagtoTitFC').css("color","rgb(102 102 102)");
     var a = $('#idDadosPagtoTitFC .EstTabTopo').text();
-    a = a.replace(" � (Loja Beb� Fofuxo)","");
+    a = a.replace(" � (Loja Mariana Medina Shoes)","");
     $('#idDadosPagtoTitFC .EstTabTopo').text(a);
   }
   else
@@ -119,7 +119,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $('#idDadosPagtoTitFC').css("background-color","rgb(242 242 242)");
     $('#idDadosPagtoTitFC').css("color","rgb(102 102 102)");
     var a = $('#idDadosPagtoTitFC .EstTabTopo').text();
-    a = a.replace(" � (Loja Beb� Fofuxo)","");
+    a = a.replace(" � (Loja Mariana Medina Shoes)","");
     $('#idDadosPagtoTitFC .EstTabTopo').text(a);
 
     var num_pedido = a.replace("Pagamento do pedido #","");
