@@ -159,7 +159,7 @@
   //   window.localStorage.removeItem("comprar_mais_data");
   // }
 
-//Personalização dos botoes e texto da pagina final
+//Personaliza&ccedil;ão dos botoes e texto da pagina final
 var sPag=document.location.href.toUpperCase();
   
 if(sPag.indexOf("CHECKOUT.ASP")>=0)
@@ -176,7 +176,7 @@ if(sPag.indexOf("CHECKOUT.ASP")>=0)
   if(localStorage.getItem("formaEntrega") == "SEDEX" || localStorage.getItem("formaEntrega") == "Encomenda PAC")
   {
     var elemAviso = document.createElement('div');
-  	elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> os Correios est�o <strong>parcialmente</strong> em greve.<br>Isso pode afetar um pouquinho o prazo de entrega. Os Correios est�o se esfor�ando para que a greve não atrapalhe a operação deles. Caso qualquer atraso ocorra, saiba que voc� pode contar com nossa equipe totalmente preparada para te auxiliar. Agradecemos a compreens�o! &#10084;&#65039;";
+  	elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> os Correios est�o <strong>parcialmente</strong> em greve.<br>Isso pode afetar um pouquinho o prazo de entrega. Os Correios est�o se esfor�ando para que a greve não atrapalhe a opera&ccedil;ão deles. Caso qualquer atraso ocorra, saiba que voc� pode contar com nossa equipe totalmente preparada para te auxiliar. Agradecemos a compreens�o! &#10084;&#65039;";
   	elemAviso.style.backgroundColor = "#eeeeee";
   	elemAviso.style.color = "#000000";
   	elemAviso.style.padding = "15px 15px 15px 15px";
@@ -191,7 +191,7 @@ if(sPag.indexOf("CHECKOUT.ASP")>=0)
   /*
   //aviso para prazo diferenciado COVID
   var elemAviso = document.createElement('div');
-  elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> iremos demorar um pouquinho para separar o seu pedido.<br><strong>Mas não se preocupe!</strong><br> O prazo que te informamos no momento da compra j� est� considerando esse tempinho de separação maior. Estamos com uma fila de pedidos grande devido ao surto de COVID-19, mas voc� ir� receber seu pedido com todo o carinho de nossa equipe. Agradecemos a compreens�o! &#10084;&#65039;";
+  elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> iremos demorar um pouquinho para separar o seu pedido.<br><strong>Mas não se preocupe!</strong><br> O prazo que te informamos no momento da compra j� est� considerando esse tempinho de separa&ccedil;ão maior. Estamos com uma fila de pedidos grande devido ao surto de COVID-19, mas voc� ir� receber seu pedido com todo o carinho de nossa equipe. Agradecemos a compreens�o! &#10084;&#65039;";
   elemAviso.style.backgroundColor = "#eeeeee";
   elemAviso.style.color = "#000000";
   elemAviso.style.padding = "15px 15px 15px 15px";

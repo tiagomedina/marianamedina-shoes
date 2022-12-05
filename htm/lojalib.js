@@ -569,7 +569,7 @@ function verificar_carrinho(carrinho)
   
 }
 
-// Formatação de Numero
+// Formata&ccedil;ão de Numero
 function fnFormatNumber(num){
   num=num.toString().replace(/\$|\,/g,'');
   if(isNaN(num))num="0";
@@ -1228,7 +1228,7 @@ function fnGetShippingValue(iField){
 
   if (verificaCapital_RM_EstadoSP(sCEP) == 0)
   {
-    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+    //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1250,7 +1250,7 @@ function fnGetShippingValue(iField){
   }
   else
   {
-    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+    //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1981,7 +1981,7 @@ var Cart$=(function(){
     var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight();
     $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
 
-    //Mostra carrinho (op��o com aninação)
+    //Mostra carrinho (op��o com anina&ccedil;ão)
     //oCartDesign.style.display="";
     //jQuery(oCartDesign).show(300);
     if(oCartDesign.style.right=="" || oCartDesign.style.right=="-350px")jQuery(oCartDesign).animate({ "right": "+=350px" }, 200 );
@@ -2040,7 +2040,7 @@ var Cart$=(function(){
       lastY = top;
     });
 
-    //verificação para mostrar comprar mais
+    //verifica&ccedil;ão para mostrar comprar mais
     verificar_carrinho(oJSON);
   }
 
@@ -2062,7 +2062,7 @@ var Cart$=(function(){
   function fnCloseCartDesign(){
     var oCartDesign=document.getElementById("CartDesign");   
     if(oCartDesign){
-      //Esconde carrinho (op��o com aninação)
+      //Esconde carrinho (op��o com anina&ccedil;ão)
       //oCartDesign.style.display="none";
       //jQuery(oCartDesign).hide(300);
       if(oCartDesign.style.right=="0px")jQuery(oCartDesign).animate({ "right": "-=350px" }, 200 );
@@ -2160,7 +2160,7 @@ var Cart$=(function(){
 
     if (verificaCapital_RM_EstadoSP(sCEP) == 0)
     {
-      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+      //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2178,7 +2178,7 @@ var Cart$=(function(){
     }
     else
     {
-      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+      //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       

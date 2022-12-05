@@ -331,7 +331,7 @@ var table=jQuery('#TabItens');
     var prazoNoMomentoDoPedido = $("#ObsFreteFC")[0].innerText
     prazoNoMomentoDoPedido = prazoNoMomentoDoPedido.replace("Obs: ","");
 
-    //retirar observação de prazo default da p�gina
+    //retirar observa&ccedil;ão de prazo default da p�gina
 	$("#ObsFreteFC").remove();
 
     var dataPedido = $("td.EstNomeCampo:contains(Feito em)").parent().children()[1].innerText;
@@ -391,7 +391,7 @@ var table=jQuery('#TabItens');
 
       /////// ATENCAO: AQUI TEMOS QUE FALAR SOBRE PRE-VENDA. PODE SER QUE A DATA DE POSTAGEM DA PRE-VENDA SEJA MENOR DO QUE O TEMPO DE ESPERA NA FILA DE SEPARACAO //////////////////////
 
-      	//prazo de entrega total ou retirada a partir da aprovação do pedido
+      	//prazo de entrega total ou retirada a partir da aprova&ccedil;ão do pedido
     	divPrazoEntrega = document.createElement("div");
       	divPrazoEntrega.style.marginTop = "0px";
     	divPrazoEntrega.style.padding = "5px";
@@ -408,20 +408,20 @@ var table=jQuery('#TabItens');
 
       	if (formaPagamento == "Cupom" || formaPagamento == "Troca")
         {
-          	textoPagamento = "aprovação";
+          	textoPagamento = "aprova&ccedil;ão";
         }
       	else
         {
-          	textoPagamento = "confirmação do pagamento";
+          	textoPagamento = "confirma&ccedil;ão do pagamento";
         }
 
-      	///=====> PROVISORIAMENTE IREMOS DEIXAR APENAS A DATA DE POSTAGEM PREVISTA DO PEDIDO QUANDO FOR PRE-VENDA. FUTURAMENTE BUSCAR A INFORMação EXATA DO SERVIDOR COM O CALCULO EXATO CONSIDERANDO FERIADOS
+      	///=====> PROVISORIAMENTE IREMOS DEIXAR APENAS A DATA DE POSTAGEM PREVISTA DO PEDIDO QUANDO FOR PRE-VENDA. FUTURAMENTE BUSCAR A INFORMa&ccedil;ão EXATA DO SERVIDOR COM O CALCULO EXATO CONSIDERANDO FERIADOS
 
       	//se tiver pr�-venda
       	if(dataPostagem != -1)
         {
 
-          	if (($("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprovação do cart�o"))
+          	if (($("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;ão do cart�o"))
         	{
           		if(tipoEntrega == "Retirar na loja")
           		{
@@ -515,7 +515,7 @@ var table=jQuery('#TabItens');
       	else if (formaPagamento == "Boleto banc�rio")
       	{
 
-  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, não se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirmação do pagamento. Assim que recebermos a confirmação, seu pedido ser� aprovado.";
+  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, não se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirma&ccedil;ão do pagamento. Assim que recebermos a confirma&ccedil;ão, seu pedido ser� aprovado.";
 
         	$("#idLinkBoletoFC").remove();
 
@@ -575,7 +575,7 @@ var table=jQuery('#TabItens');
 /////////STATUS NOVO - FIM ====================================================================================
 
 /////////STATUS EM APROVACAO ====================================================================================
-    if ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprovação do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix")
+    if ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;ão do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix")
     {
 		//trocar imagem status pedido
       	$("#idOrderStatusFC").html("<img src='../lojas/00054883/images/msg_status_0_01.svg'>");
@@ -591,7 +591,7 @@ var table=jQuery('#TabItens');
         	}
         	else if (formaPagamento == "Cart�o de cr�dito")
         	{
-          		$("#idTxtSit3OrderFC").html("<b>Aguardando aprovação<br>do cart�o</b>");
+          		$("#idTxtSit3OrderFC").html("<b>Aguardando aprova&ccedil;ão<br>do cart�o</b>");
         	}
         
       	}
@@ -600,7 +600,7 @@ var table=jQuery('#TabItens');
       	if (formaPagamento == "Cart�o de cr�dito")
       	{
         	
-  			divStatusPagamento.innerHTML = "Verificamos que o pagamento atrav�s do seu cart�o de cr�dito <span style='color:red'><strong>não foi autorizado</strong></span>. não se preocupe, isso pode acontecer. Voc� recebeu em seu e-mail um link para tentar efetuar o pagamento novamente.<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso voc� j� tenha efetuado o pagamento novamente, aguarde, pois a transação est� em an�lise.<br><br><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento do pagamento.</strong></div><br>Caso não tenha conseguido efetuar o pagamento no cart�o de cr�dito, no mesmo e-mail enviado tem um link para tentar efetuar o pagamento via PIX.";
+  			divStatusPagamento.innerHTML = "Verificamos que o pagamento atrav�s do seu cart�o de cr�dito <span style='color:red'><strong>não foi autorizado</strong></span>. não se preocupe, isso pode acontecer. Voc� recebeu em seu e-mail um link para tentar efetuar o pagamento novamente.<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso voc� j� tenha efetuado o pagamento novamente, aguarde, pois a transa&ccedil;ão est� em an�lise.<br><br><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento do pagamento.</strong></div><br>Caso não tenha conseguido efetuar o pagamento no cart�o de cr�dito, no mesmo e-mail enviado tem um link para tentar efetuar o pagamento via PIX.";
           
           	$("#idRecoverOrderFC a").css('text-decoration','none');
       		$("#idRecoverOrderFC a").text("CLIQUE AQUI PARA REFAZER SEU PEDIDO");
@@ -611,7 +611,7 @@ var table=jQuery('#TabItens');
       	}//boleto banc�rio
       	else if (formaPagamento == "Boleto banc�rio")
       	{
-  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, não se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirmação do pagamento. Assim que recebermos a confirmação, seu pedido ser� aprovado.";
+  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, não se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirma&ccedil;ão do pagamento. Assim que recebermos a confirma&ccedil;ão, seu pedido ser� aprovado.";
         
         	$("#idLinkBoletoFC").remove();
 
@@ -691,7 +691,7 @@ var table=jQuery('#TabItens');
     celula.style.fontSize = "15px";
     celula.style.textAlign = "center";
     celula.style.borderBottom = "solid #ffffff";
-    celula.innerHTML = "Data prevista para<br><strong>separação</strong>";
+    celula.innerHTML = "Data prevista para<br><strong>separa&ccedil;ão</strong>";
           
     celula = linha.insertCell(1);
     celula.style.width = "50%";
@@ -738,7 +738,7 @@ var table=jQuery('#TabItens');
   	divFeriadoRegional.style.color = "darkgray";
     divFeriadoRegional.style.display = "none";
     divFeriadoRegional.id = "feriado_regional";
-    divFeriadoRegional.innerHTML = "A data de entrega pode sofrer alteração devido a feriados regionais";
+    divFeriadoRegional.innerHTML = "A data de entrega pode sofrer altera&ccedil;ão devido a feriados regionais";
     
     $(".infoPedido").append(divFeriadoRegional);
           
@@ -759,7 +759,7 @@ var table=jQuery('#TabItens');
 			if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo a data prevista de separação do seu pedido. <span style='color:orange'><strong>ATEN��O: Assim que seu pedido estiver pronto, voc� receber� um e-mail informando sobre a retirada em nossa loja.</strong></span>";
+          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo a data prevista de separa&ccedil;ão do seu pedido. <span style='color:orange'><strong>ATEN��O: Assim que seu pedido estiver pronto, voc� receber� um e-mail informando sobre a retirada em nossa loja.</strong></span>";
           
           		$("#linhaSeparacao").show();
           		$("#linhaEntrega").hide();
@@ -768,7 +768,7 @@ var table=jQuery('#TabItens');
       		else
         	{
           
-          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo as datas previstas de separação e entrega do seu pedido.";
+          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo as datas previstas de separa&ccedil;ão e entrega do seu pedido.";
           
           		$("#linhaSeparacao").show();
           		$("#linhaEntrega").show();
@@ -993,7 +993,7 @@ var table=jQuery('#TabItens');
     
     
     //COISAS PARA FAZER NO FORMATO NOVO
-    //ver se o pagamento cupom ou troca interfere em algo na apresentação dos dados
+    //ver se o pagamento cupom ou troca interfere em algo na apresenta&ccedil;ão dos dados
     
     //se o pagamento ainda não consta, informar que estamos aguardando
     
@@ -1003,9 +1003,9 @@ var table=jQuery('#TabItens');
     
     //retirada em loja
     
-    //informação sobre pre-venda
+    //informa&ccedil;ão sobre pre-venda
     
-    //informação sobre separação e entrega
+    //informa&ccedil;ão sobre separa&ccedil;ão e entrega
     
     //COISAS PARA FAZER NO FORMATO NOVO - FIM
   }
@@ -1121,7 +1121,7 @@ function fnprocessDetalhesPedido(){
 
               	$("#tabelaPrazos").hide();
               
-              	if (!($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprovação do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix" || $("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja"))
+              	if (!($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;ão do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix" || $("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja"))
               	{
 					$("#txtStatusPagamento").hide();
               	}
@@ -1329,12 +1329,12 @@ $( window ).scroll(function() {
 <div class="cookiewarning bg-warning" id="cookie-law">
 <div class="cookiewarning-position" id ="cookiewarning-mobile">
   <h4>Pol�tica de cookies</h4>
-  <p>Utilizamos cookies pr�prios e de terceiros para melhorar nossos servi�os analisando seus h�bitos de navegação. <a href="#" id="cookie-url">Ver mais</a></p>
+  <p>Utilizamos cookies pr�prios e de terceiros para melhorar nossos servi�os analisando seus h�bitos de navega&ccedil;ão. <a href="#" id="cookie-url">Ver mais</a></p>
   <div class="cookiewarning-position-btn"><span class="cookiewarning-btn">ACEITAR</span></div>
 </div>
 <div class="cookiewarning-position" id ="cookiewarning-desktop">
   <h4>Pol�tica de cookies</h4>
-  <p>Utilizamos cookies pr�prios e de terceiros para melhorar nossos servi�os analisando seus h�bitos de navegação. <a href="#" id="cookie-url">Ver mais</a> <span class="cookiewarning-btn">ACEITAR</span></p>
+  <p>Utilizamos cookies pr�prios e de terceiros para melhorar nossos servi�os analisando seus h�bitos de navega&ccedil;ão. <a href="#" id="cookie-url">Ver mais</a> <span class="cookiewarning-btn">ACEITAR</span></p>
 </div>
 </div>
 <script>fnCookieWarning();
