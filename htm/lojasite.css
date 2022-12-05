@@ -119,7 +119,7 @@ img  {border-style:none;}
 
 
 /*ALTERACAO BLACK FRIDAY - segunda linha comentada refere ao black friday*/
-.cupomPrimeiraCompra {width:100%;height:20px;background-color:#dc087f;color:white;font-size:14px;text-align:center;display:none;padding-top:3px;}
+.cupomPrimeiraCompra {width:100%;height:20px;background-color:#000000;color:white;font-size:14px;text-align:center;display:none;padding-top:3px;}
 /*.cupomPrimeiraCompra {width:100%;height:20px;background-color:#000000;color:white;font-size:13px;text-align:center;display:none;padding-top:3px;}*/
 .cupomPrimeiraCompra b {color:#ffffff}
 /*.cupomPrimeiraCompra b {color:#f9cc10}*/
