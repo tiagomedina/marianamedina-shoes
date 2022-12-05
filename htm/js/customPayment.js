@@ -133,7 +133,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     newNode.style.maxWidth = "500px";
     newNode.style.marginLeft = "auto";
     newNode.style.marginRight = "auto";
-    newNode.innerHTML = "Para trocar a bandeira do cart�o de cr�dito e efetuar o pagamento voc� precisa <strong>refazer o seu pedido</strong>, mas não se preocupe, � bem f�cil:<br><br>- Clique no link abaixo<br>- Fa�a o login (caso ainda não esteja logado)<br>- Clique no bot�o verde da p�gina indicando para refazer o pedido<br><br><a href='https://www.marianamedinashoes.com.br/track.asp?numpedido="+num_pedido+"'>Desejo trocar a bandeira do cart�o</a>";
+    newNode.innerHTML = "Para trocar a bandeira do cart�o de cr�dito e efetuar o pagamento voc� precisa <strong>refazer o seu pedido</strong>, mas n&atilde;o se preocupe, � bem f�cil:<br><br>- Clique no link abaixo<br>- Fa�a o login (caso ainda n&atilde;o esteja logado)<br>- Clique no bot�o verde da p�gina indicando para refazer o pedido<br><br><a href='https://www.marianamedinashoes.com.br/track.asp?numpedido="+num_pedido+"'>Desejo trocar a bandeira do cart�o</a>";
     insertAfter($("#idTabRedirPagtoFC").parent().parent().parent().parent().parent()[0],newNode);
 
 

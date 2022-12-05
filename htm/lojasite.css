@@ -12,7 +12,7 @@ img  {border-style:none;}
 /* Estrutura Site */
 #idFCContent {width:100%; max-width:1306px; margin:0 auto; padding:30px 0 0 0;}
 
-/* Confirma&ccedil;ão do pedido */
+/* Confirma&ccedil;&atilde;o do pedido */
 .StyReturnPayment{margin-top:20px;background-color:#FFFCF0;padding:5px;border-width:2px;border-style:dashed;border-color:#dedede;text-align:center;border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
 
 /* Global Signin - Topo */
@@ -831,13 +831,13 @@ span.obrigado_cm {
 #boxclose_fretegratis img {width: 20px; height: 20px; margin: 3px 3px 0 0;}
 /* Fim Popup Frete Gratis*/
 
-/* Popup Envio Msg Whatsapp - Confirma&ccedil;ão Pedido*/
+/* Popup Envio Msg Whatsapp - Confirma&ccedil;&atilde;o Pedido*/
 #fade_enviowhats {display: none; position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index: 1001; -moz-opacity: 0.8; opacity: .80; filter: alpha(opacity=80);}
 #light_enviowhats {display: none; position: fixed; width: 300px; height: 295px; z-index: 10002; background-color:white;}
 #light_enviowhats h4 {font-size:18px; font-weight:700; color:#0088e4; margin:0 0 15px 0;}
 #boxclose_enviowhats {float: right; cursor: pointer; display: inline-block; position: absolute; right: 5px; top: 5px; z-index: 1002; }
 #boxclose_enviowhats img {width: 20px; height: 20px; margin: 3px 3px 0 0;}
-/* Fim Popup Envio Msg Whatsapp - Confirma&ccedil;ão Pedido*/
+/* Fim Popup Envio Msg Whatsapp - Confirma&ccedil;&atilde;o Pedido*/
 
 
 /* Rodape */
@@ -1365,7 +1365,7 @@ input[type="text"]:focus, textarea:focus, select:focus {-webkit-text-size-adjust
 #CartDesign .ProdCartPagto a {padding: 10px 24%;}
 .CartDesign-product-info-container {margin:10px 0px;}
 .CartDesign-product-info-qty {left:0px}
-/*Altera&ccedil;ão em 08/02/2021 para melhorar usabilidade do 320px - Gabriela*/
+/*Altera&ccedil;&atilde;o em 08/02/2021 para melhorar usabilidade do 320px - Gabriela*/
 .CartDesign-header {padding: 8px 0;}
 #CartDesign .ProdCartInvisivel {display: none;}
 #CartDesign .containerProdCart {display: block !important;}
@@ -1466,7 +1466,7 @@ select {
 .cupomPrimeiraCompra {font-size:11px;}
 }
 
-/*pagina&ccedil;ão */
+/*pagina&ccedil;&atilde;o */
 
 @media screen and (max-width: 1024px) {
 .ProductList #idMiddlePageFC a {display: initial !important;}

@@ -23,7 +23,7 @@
 var primeiraTentativaPesquisarCEP = true;
   
 //======================================================== AJUSTE DE INFO DE FRETE NO CHECKOUT
-//se n�o fizer esse ajuste aparecem dados divergentes na se��o de escolher o frete e no resumo da compra no fim do checkout
+//se n&atilde;o fizer esse ajuste aparecem dados divergentes na se��o de escolher o frete e no resumo da compra no fim do checkout
 //isso ocorre porque adicionamos dias no prazo dado pelos Correios via c&oacute;digo e tamb�m porque mudamos os nomes das transportadoras cadastradas via c&oacute;digo
 function ajusteInfoFreteResumoCompra()
 {
@@ -31,14 +31,14 @@ function ajusteInfoFreteResumoCompra()
   //verificando se tem algum checkbox de frete selecionado
   var count_checked = $("#idTabFreteOptFC input[type='radio']:checked").length;
   
-  //se n�o tiver nada selecionado, apagar texto descritivo do frete no detalhamento da compra
+  //se n&atilde;o tiver nada selecionado, apagar texto descritivo do frete no detalhamento da compra
   if(count_checked == 0)
   {
      var ac = $(".EstTabPedidoFrete");
      ac[0].innerHTML = "";
   }
   
-  //verificando quantas op��es de frete aparece para o cliente - se for apenas uma op��o de frete n�o vai ter input type radio
+  //verificando quantas op��es de frete aparece para o cliente - se for apenas uma op��o de frete n&atilde;o vai ter input type radio
   var count_elements = $("#idTabFreteOptFC input[type='radio']").length;
   
   
@@ -154,7 +154,7 @@ function ajustePrazo_Dados_Frete()
 
 
   
-  //vari�vel para guardar se � area restrita ou n�o
+  //vari�vel para guardar se � area restrita ou n&atilde;o
   //var areaRestrita = false;
 
   var tem_retirar_loja = false;
@@ -255,7 +255,7 @@ function ajustePrazo_Dados_Frete()
     {
     
         //Extraindo a informa��o contida na label, normalmente � obs do frete cadastrada na loja + (x dias �teis) - Manaus (15 dias �teis)
-        //Quando � area de entrega restrita o websevice dos Correios n�o retorna prazo de entrega, ficando apenas a obs do frete cadastrada na loja
+        //Quando � area de entrega restrita o websevice dos Correios n&atilde;o retorna prazo de entrega, ficando apenas a obs do frete cadastrada na loja
     	var textoLabel = $( this ).text();
       
       	var array = textoLabel.split(" ");
@@ -439,16 +439,16 @@ function fnprocessExisteTransportadora(obj)
         }
       	else
         {
-          	$("#idTxtErrFreightFC")[0].innerText = "CEP INV�LIDO";
+          	$("#idTxtErrFreightFC")[0].innerText = "CEP INV&aacute;lido";
           
           	if($("#P2DadosEntrega")[0].checked)
             {
-              	$("#idTxtErrFieldP2PCEPFC").text("CEP inv�lido");
+              	$("#idTxtErrFieldP2PCEPFC").text("CEP inV&aacute;lido");
           		$("#idErrFieldP2PCEPFC").show();
             }
           	else
             {
-              	$("#idTxtErrFieldP2CEPFC").text("CEP inv�lido");
+              	$("#idTxtErrFieldP2CEPFC").text("CEP inV&aacute;lido");
           		$("#idErrFieldP2CEPFC").show();
             } 
           	
@@ -478,14 +478,14 @@ function fnprocessExisteTransportadora(obj)
 }
 
   
-//alerta avisando sobre entrega restrita - n�o est� ativo atualmente
+//alerta avisando sobre entrega restrita - n&atilde;o est� ativo atualmente
 function alertaEntregaRestrita()
 {
   alert("Pode ser que seu pedido demore um pouquinho mais para ser entregue ou pode ser necess�rio voc� ir retirar o seu pedido na ag�ncia dos Correios mais pr�xima.\n\nPara maiores explica��es entre em contato conosco: shoes@marianamedina.com.br");
 }
   
   
-//aviso de area restrita apresentado no layout da loja - n�o est� ativo atualmente
+//aviso de area restrita apresentado no layout da loja - n&atilde;o est� ativo atualmente
 function avisoAreaRestrita()
 {
   var elemAviso = document.createElement('div');
@@ -584,7 +584,7 @@ function avisoAreaRestrita()
         $("#idErrFieldP2PCEPFC").hide();
       });
 
-      $("#idTxtCEP2FC .smText").html("<a href='#1' onclick='MostraPesquisaCEP()'>Clique se n�o souber</a>");
+      $("#idTxtCEP2FC .smText").html("<a href='#1' onclick='MostraPesquisaCEP()'>Clique se n&atilde;o souber</a>");
       $("#idTxtPhoneFC").hide();
       $("#idTxtPhone2FC").hide();
       
@@ -625,7 +625,7 @@ function avisoAreaRestrita()
         var chr = String.fromCharCode(e.which);
         if (">?&%*#@!+<$\/".indexOf(chr) >= 0)
         {
-          alert(chr + " � um caracter inv�lido para esse campo");
+          alert(chr + " � um caracter inV&aacute;lido para esse campo");
           this.focus();
           return false;
         }
@@ -635,7 +635,7 @@ function avisoAreaRestrita()
         var chr = String.fromCharCode(e.which);
         if (">?<$".indexOf(chr) >= 0)
         {
-          alert(chr + " � um caracter inv�lido para esse campo");
+          alert(chr + " � um caracter inV&aacute;lido para esse campo");
           this.focus();
           return false;
         }
@@ -677,7 +677,7 @@ function avisoAreaRestrita()
       document.getElementById("P2PEnderecoNum").onkeypress = funcaoTamanhoNumero2;
 
 
-      //caso campos do CC estejam abertos e n�o tenha valor nos campos CPF, Data de Nascimento e Telefone, estamos fazendo com que os dados sejam copiados para l� depois que o campo do cadastro perder o foco
+      //caso campos do CC estejam abertos e n&atilde;o tenha valor nos campos CPF, Data de Nascimento e Telefone, estamos fazendo com que os dados sejam copiados para l� depois que o campo do cadastro perder o foco
       $("#P2CPF").focusout(function(){
 
         if($("#P2TitularCPF").length > 0)
@@ -802,7 +802,7 @@ function avisoAreaRestrita()
     var showBadgeDiscount=document.querySelectorAll('[rulename*="discount"] .EstTabPedido');
     var createDivElemFree=document.createElement("div");
     createDivElemFree.className="fc-cart-discount-badge-free";
-    createDivElemFree.innerHTML="GR�TIS";
+    createDivElemFree.innerHTML="GR&Aacute;TIS";
     
     for(var i=0;i<showBadgeFree.length;i++){showBadgeFree[i].appendChild(createDivElemFree);}
     for(var i=0;i<showBadgeDiscount.length;i++)
@@ -1046,7 +1046,7 @@ function FuncChkPaymentEnd(){
   //verificando se tem algum checkbox de frete selecionado
   var count_checked = $("#idTabFreteOptFC input[type='radio']:checked").length;
   
-  //se n�o tiver algo selecionado
+  //se n&atilde;o tiver algo selecionado
   if(count_checked == 1)
   {
     var idVal = $("#idTabFreteOptFC input[type='radio']:checked").attr("id")
@@ -1068,7 +1068,7 @@ function FuncChkPaymentEnd(){
   
   
   
-  //verificando quantas op��es de frete aparece para o cliente - se for apenas uma op��o de frete n�o vai ter input type radio
+  //verificando quantas op��es de frete aparece para o cliente - se for apenas uma op��o de frete n&atilde;o vai ter input type radio
   var count_elements = $("#idTabFreteOptFC input[type='radio']").length;
   
   
@@ -1307,7 +1307,7 @@ function fnShowCupom(){
     }
   }
   
-  if(!oCupom && F$.Step==1){ //Se j� tem cupom no c�lculo n�o exibe campo de cupom. S� exibe no passo 1
+  if(!oCupom && F$.Step==1){ //Se j� tem cupom no c�lculo n&atilde;o exibe campo de cupom. S� exibe no passo 1
     var oInsert=document.getElementById("idCartItemsFC");
     if(oInsert){
       var oNewElement=document.createElement("tr");
@@ -1376,12 +1376,12 @@ function fnCallBackCupom(){
       }
       
       if(!oCupom){
-        //Se atualizou cart e n�o tem cupom no c�lculo � porque o cupom era inv�lido
+        //Se atualizou cart e n&atilde;o tem cupom no c�lculo � porque o cupom era inV&aacute;lido
         var oDivCupom=document.getElementById("DivCupom");
         if(oDivCupom){
           var oNewElement=document.createElement("div");
           oNewElement.setAttribute("id","MsgErrCupom");
-          oNewElement.innerHTML="<div style='color:#dc087f;padding:5px;font-size:13px;'>Cupom Inv�lido</div>";
+          oNewElement.innerHTML="<div style='color:#dc087f;padding:5px;font-size:13px;'>Cupom InV&aacute;lido</div>";
           fnInsertAfter(oNewElement,oDivCupom);
         }
       }
@@ -1553,7 +1553,7 @@ function fnInsertAfter(newNode,referenceNode) {
       {
         if(numero.substring(2, 3) == "9")
         {
-          //telefone com 11 digitos e que come�a com 9, celular v�lido
+          //telefone com 11 digitos e que come�a com 9, celular V&aacute;lido
           numero_tratado = "55" + numero;
         }
       }
@@ -1561,7 +1561,7 @@ function fnInsertAfter(newNode,referenceNode) {
       {
         if(numero.substring(2, 3) == "9" || numero.substring(2, 3) == "8" || numero.substring(2, 3) == "7")
         {
-          //telefone com 10 digitos e que come�a com 9,8 ou 7, celular v�lido ap�s adicionar o 9 no inicio
+          //telefone com 10 digitos e que come�a com 9,8 ou 7, celular V&aacute;lido ap�s adicionar o 9 no inicio
           numero_tratado = "55" + numero.substring(0, 2) + "9" + numero.substring(2);
         }
       }

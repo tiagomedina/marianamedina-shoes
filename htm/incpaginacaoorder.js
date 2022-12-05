@@ -34,11 +34,11 @@ function NewOrder(){
     if(posOrder!=-1){ //encontrou order, substitui
       var sLoc=document.location.href.replace(new RegExp('order'+sCharSep+iOrderCurrent),'order'+sCharSep+iOrder);
     }
-    else{ //se não encontrar
+    else{ //se n&atilde;o encontrar
       if(sPag.indexOf("IDLOJA")>0){  //insere via subst idloja com order depois
         var sLoc=document.location.href.replace(new RegExp('idloja'+sCharSep+FC$.IDLoja,'gi'),'idloja'+sCharSep+FC$.IDLoja+sConcat+'order'+sCharSep+iOrder);
       }  
-      else{ //não tem idloja
+      else{ //n&atilde;o tem idloja
         if(sPag.indexOf("?")>0){  //insere via subst idloja com order depois
           var sLoc=document.location.href+sConcat+'order'+sCharSep+iOrder;
         }

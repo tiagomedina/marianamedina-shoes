@@ -29,7 +29,7 @@
 
 <div id='light_enviowhats' style="background-color:white;height:295px;"><div id="saudacao" style="padding:15px;font-size:22px; color:#008ae1">Ol�, NOME</div>
 <div style="padding:15px;padding-top:0px;font-size:16px; color:gray">Obrigado pela compra! =)<br><br>Voc� deseja receber mensagens com <span style="color:black;">promo��es</span>, <span style="color:black;">cupons</span> e <span style="color:black;">sorteios</span> em seu <span style="color:green;">Whatsapp</span> e sempre aproveitar nossos pre�os baixos?</div>
-    <div style="cursor:pointer;padding:15px;padding-top:25px"><div onclick="registrar_nao()" style="float:left;width:130px;background-color:darkgray;color:white;height: 45px;text-align:center;font-size: 18px;line-height: 45px;">não, obrigado</div>
+    <div style="cursor:pointer;padding:15px;padding-top:25px"><div onclick="registrar_nao()" style="float:left;width:130px;background-color:darkgray;color:white;height: 45px;text-align:center;font-size: 18px;line-height: 45px;">n&atilde;o, obrigado</div>
         <div onclick="registrar_sim()" style="cursor:pointer;float:right;width:130px;background-color:green;color:white;height: 45px;text-align:center;font-size: 18px;line-height: 45px;">Sim, eu quero!</div>
 
     
@@ -159,7 +159,7 @@
   //   window.localStorage.removeItem("comprar_mais_data");
   // }
 
-//Personaliza&ccedil;ão dos botoes e texto da pagina final
+//Personaliza&ccedil;&atilde;o dos botoes e texto da pagina final
 var sPag=document.location.href.toUpperCase();
   
 if(sPag.indexOf("CHECKOUT.ASP")>=0)
@@ -176,7 +176,7 @@ if(sPag.indexOf("CHECKOUT.ASP")>=0)
   if(localStorage.getItem("formaEntrega") == "SEDEX" || localStorage.getItem("formaEntrega") == "Encomenda PAC")
   {
     var elemAviso = document.createElement('div');
-  	elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> os Correios est�o <strong>parcialmente</strong> em greve.<br>Isso pode afetar um pouquinho o prazo de entrega. Os Correios est�o se esfor�ando para que a greve não atrapalhe a opera&ccedil;ão deles. Caso qualquer atraso ocorra, saiba que voc� pode contar com nossa equipe totalmente preparada para te auxiliar. Agradecemos a compreens�o! &#10084;&#65039;";
+  	elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> os Correios est�o <strong>parcialmente</strong> em greve.<br>Isso pode afetar um pouquinho o prazo de entrega. Os Correios est�o se esfor�ando para que a greve n&atilde;o atrapalhe a opera&ccedil;&atilde;o deles. Caso qualquer atraso ocorra, saiba que voc� pode contar com nossa equipe totalmente preparada para te auxiliar. Agradecemos a compreens�o! &#10084;&#65039;";
   	elemAviso.style.backgroundColor = "#eeeeee";
   	elemAviso.style.color = "#000000";
   	elemAviso.style.padding = "15px 15px 15px 15px";
@@ -191,7 +191,7 @@ if(sPag.indexOf("CHECKOUT.ASP")>=0)
   /*
   //aviso para prazo diferenciado COVID
   var elemAviso = document.createElement('div');
-  elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> iremos demorar um pouquinho para separar o seu pedido.<br><strong>Mas não se preocupe!</strong><br> O prazo que te informamos no momento da compra j� est� considerando esse tempinho de separa&ccedil;ão maior. Estamos com uma fila de pedidos grande devido ao surto de COVID-19, mas voc� ir� receber seu pedido com todo o carinho de nossa equipe. Agradecemos a compreens�o! &#10084;&#65039;";
+  elemAviso.innerHTML = "<strong>ATEN��O MAM�E:</strong> iremos demorar um pouquinho para separar o seu pedido.<br><strong>Mas n&atilde;o se preocupe!</strong><br> O prazo que te informamos no momento da compra j� est� considerando esse tempinho de separa&ccedil;&atilde;o maior. Estamos com uma fila de pedidos grande devido ao surto de COVID-19, mas voc� ir� receber seu pedido com todo o carinho de nossa equipe. Agradecemos a compreens�o! &#10084;&#65039;";
   elemAviso.style.backgroundColor = "#eeeeee";
   elemAviso.style.color = "#000000";
   elemAviso.style.padding = "15px 15px 15px 15px";
@@ -216,7 +216,7 @@ if(sPag.indexOf("CHECKOUT.ASP")>=0)
     //mudan�a de texto para quando for boleto
   	var linhaTextoBoleto = document.getElementById("idTxtBoletoFC");
     
-    linhaTextoBoleto.innerHTML = "SEU PEDIDO SER� ENVIADO <u><b>SOMENTE AP�S O PAGAMENTO</b></u> DO BOLETO BANC�RIO. (O boleto <u><b>não</b></u> ser� enviado pelo Correio).<br><br>A data de vencimento � de 3 dias corridos ap�s o fechamento do pedido. Ap�s essa data, o pedido ser� automaticamente cancelado em caso de não-pagamento.";
+    linhaTextoBoleto.innerHTML = "SEU PEDIDO SER� ENVIADO <u><b>SOMENTE AP�S O PAGAMENTO</b></u> DO BOLETO BANC�RIO. (O boleto <u><b>n&atilde;o</b></u> ser� enviado pelo Correio).<br><br>A data de vencimento � de 3 dias corridos ap�s o fechamento do pedido. Ap�s essa data, o pedido ser� automaticamente cancelado em caso de n&atilde;o-pagamento.";
     
     var ehBoleto=linhaTextoBoleto.innerHTML.toUpperCase();
     

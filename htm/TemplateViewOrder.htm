@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    //FIM - parte nova de coleta de dados e ordena&ccedil;ão geral
+    //FIM - parte nova de coleta de dados e ordena&ccedil;&atilde;o geral
 
     imagemProd();
     criaTelas();
@@ -690,7 +690,7 @@ function criaTelas(){
 	let htmlElements = document.createElement("div");
     htmlElements.style.display = "inline-flex";
 
-    //cria&ccedil;ão da tela de picking para cada item do pedido
+    //cria&ccedil;&atilde;o da tela de picking para cada item do pedido
     for (let i = 0; i < array_itens.length; i++) {
 
         let divTela = document.createElement("div");
@@ -1684,7 +1684,7 @@ function setQtd(control, index, qtd){
         if(document.querySelector("#botaoPeguei_"+index).dataset.pegou == 0){
 
           document.querySelector("#mostraQtd_"+index).className = "neutro";
-          document.querySelector("#mostraQtd_"+index).innerText = "Voc� não pegou nenhum item";
+          document.querySelector("#mostraQtd_"+index).innerText = "Voc� n&atilde;o pegou nenhum item";
           document.querySelector("#botaoEmFalta_"+index).dataset.pegou = 0;
 
         }else{
@@ -1706,7 +1706,7 @@ function setQtd(control, index, qtd){
         if(document.querySelector("#botaoEmFalta_"+index).dataset.pegou == 0){
 
           document.querySelector("#mostraQtd_"+index).className = "neutro";
-          document.querySelector("#mostraQtd_"+index).innerText = "Voc� não pegou nenhum item";
+          document.querySelector("#mostraQtd_"+index).innerText = "Voc� n&atilde;o pegou nenhum item";
           document.querySelector("#botaoPeguei_"+index).dataset.pegou = 0;
 
         }else{

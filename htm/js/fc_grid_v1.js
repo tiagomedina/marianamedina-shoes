@@ -168,7 +168,7 @@ var FCGrid$ = function () {
         product.imgDet=arr.imgDet;
         product.imgAmp=arr.imgAmp;
         product.imgPri=arr.imgPri;
-      }else{ fn.consoleLogFC({'FC_Log_Grid_v1' : 'json do subproduto inv�lido'}); }
+      }else{ fn.consoleLogFC({'FC_Log_Grid_v1' : 'json do subproduto inV&aacute;lido'}); }
     },
 
     magicZoomFC: function(id, novoArray, novoArrayAmp, FC_MaxImages, refreshZoom){
@@ -1003,7 +1003,7 @@ var FCGrid$ = function () {
               }else{
                 var sBgColor = "#" + fn.getColor(prd['cor']).rgb;
               }
-              var sNameCor= options.colorName == false ? "&nbsp;" : fn.getColor(prd['cor']).name; //Exibe ou n�o o nome da cor
+              var sNameCor= options.colorName == false ? "&nbsp;" : fn.getColor(prd['cor']).name; //Exibe ou n&atilde;o o nome da cor
               sHtmlUL+="<li class=\""+ sDisabled +" "+ oFlagEsgotado.classLabel +"\" data-nivel=\""+i+"\" "+ oClickEvent +"\>"
                     +  options.htmlFlagChecked
                     +  "<span style=\"background:"+ sBgColor +"\" class=\"FCDescritorGrid "+ sClassDescritor +"\" data-attr=\""+ prd[aDestinosDescritores[i]] +"\""+ sDataImagesProd +"\ data-id=\""+ prd['IDProduto']+"\">"
@@ -1011,7 +1011,7 @@ var FCGrid$ = function () {
                     +  "</span>"
                     +"</li>";
             }
-            /* n�o e descritor cor */
+            /* n&atilde;o e descritor cor */
             else{
               sHtmlUL+="<li class=\""+ sDisabled +" "+ oFlagEsgotado.classLabel +"\" data-nivel=\""+ i +"\" "+ oClickEvent +">"
                     +  options.htmlFlagChecked

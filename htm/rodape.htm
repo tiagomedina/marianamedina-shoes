@@ -32,14 +32,14 @@
   <div class='rod1'>
     <div class="rodt1">Institucional</div>
     <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cSobre.htm,quem-somos">Quem Somos</a></div>
-    <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cPrivacidade.htm,politica-de-privacidade">Pol�tica de Privacidade</a></div>
-    <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cSeguranca.htm,seguranca">Pol�tica de Seguran�a</a></div>
+    <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cPrivacidade.htm,politica-de-privacidade">Pol&iacute;tica de Privacidade</a></div>
+    <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cSeguranca.htm,seguranca">Pol&iacute;tica de Seguran�a</a></div>
     <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cTrocas.htm,trocas-e-devolucoes">Trocas e Devolu��es</a></div>
     <div class="rodmenu1"><a href="/page,idloja,<IDLoja>,arq,cPagamento.htm,formas-de-pagamento">Formas de Pagamento</a></div>
   </div>
 
   <div class='rod2'>
-    <div class="rodt1">Servi�os</div>
+    <div class="rodt1">servi&ccedil;os</div>
     <div class="rodmenu1"><a href="/cadastro.asp?IDLoja=<IDLoja>">Meu Cadastro</a></div>
     <div class="rodmenu1"><a href="/track.asp?idloja=<IDLoja>">Meus Pedidos</a></div>
     <div class="rodmenu1"><a href="/addproduto.asp?idloja=<IDLoja>">Meu Carrinho</a></div>
@@ -75,9 +75,9 @@
   </div>
 
   <div class='rod7'><a href="https://www.marianamedinashoes.com.br"><picture><source media="(max-width:1023px)" srcset="<baseLoja>images/logomobile.png"><img src="<PathTo file="images/logotopo.png">" alt="Mariana Medina Shoes" title="Mariana Medina Shoes"></picture></a></div>
-  <div class='rod8 rodtxt0'>BEBE FOFUXO COMERCIO DE ROUPAS INFANTIS LTDA. &nbsp;|&nbsp; CNPJ 13.043.380/0001-93 &nbsp;|&nbsp; Telefone: (16) 99170-0689 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>
-  <!--<div class='rod8 rodtxt0'>BEBE FOFUXO COMERCIO DE ROUPAS INFANTIS LTDA. &nbsp;|&nbsp; CNPJ 13.043.380/0001-93 &nbsp;|&nbsp; Telefone: (11) 4515-7761 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>-->
-  <div class='rod9 rodtxt0'>A Mariana Medina Shoes � uma loja online especializada em roupas, cal�ados e acess�rios para beb�s e crian�as de at&eacute; 6 anos. Temos tudo para o enxoval do seu beb� pelo menor pre�o do Brasil. Conhe�a nossas linhas de body, mij�o (culote), macac�o e tudo mais o que seu beb� precisa para estar sempre fofo e confort�vel!</div>  
+  <div class='rod8 rodtxt0'>&nbsp; Telefone: (16) 99170-0689 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>
+  <!--<div class='rod8 rodtxt0'>&nbsp; Telefone: (11) 4515-7761 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>-->
+  <div class='rod9 rodtxt0'>A Mariana Medina Shoes � uma loja online especializada em cal�ados.</div>  
 
   <div id="compraWhatsappBotao">
     <a id="compra_whatsapp" href='https://api.whatsapp.com/send?phone=5516991700689' target='_blank'><img src="<PathTo file="images/compre_whatsapp.svg">" alt="WhatsApp" title="WhatsApp"></a>
@@ -129,7 +129,7 @@ if(FC$.Page=="Cart" && (FC$.TypeFrt==3 || FC$.TypeFrt==4)){
 
   /*
   //mensagem produto pre-venda prevenda
-  //essa mensagem � adicionada no arquivo lojalib.js, por�m não conseguimos retirar ela por l� quando o usu�rio remove o item do carrinho
+  //essa mensagem � adicionada no arquivo lojalib.js, por�m n&atilde;o conseguimos retirar ela por l� quando o usu�rio remove o item do carrinho
   $(document).ready(function() {
 
     verificarPreVenda(dataLayerGTM[0].prodSKU);
@@ -149,7 +149,7 @@ var table=jQuery('#TabItens');
   function ComprarImg(){document.getElementsByName("Comprar")[1].click();}
   
   
-  //mostrar erro do carrinho - quando o cliente coloca uma quantidade que não tem em estoque, por padr�o, a loja não avisava qual a linha do carrinho com problema. O script abaixo faz scroll at&eacute; o input em quest�o e o deixa na cor vermelha
+  //mostrar erro do carrinho - quando o cliente coloca uma quantidade que n&atilde;o tem em estoque, por padr�o, a loja n&atilde;o avisava qual a linha do carrinho com problema. O script abaixo faz scroll at&eacute; o input em quest�o e o deixa na cor vermelha
   $(document).ready(function(){
     
   var arrayScripts = $("script:contains('setTimeout'):contains('document.Lista'):not(:contains('arrayScripts'))");
@@ -325,13 +325,13 @@ var table=jQuery('#TabItens');
   	// xhr.send();
 
     //verifica se existe item em pre-venda prevenda no pedido
-    //var dataPostagem = verificarPreVendaDetalhePedido(); //se voltar a ter pre-venda, reativar essa chamada e verificar se o defer dado na tag script não vai afetar
+    //var dataPostagem = verificarPreVendaDetalhePedido(); //se voltar a ter pre-venda, reativar essa chamada e verificar se o defer dado na tag script n&atilde;o vai afetar
     dataPostagem = -1;
 
     var prazoNoMomentoDoPedido = $("#ObsFreteFC")[0].innerText
     prazoNoMomentoDoPedido = prazoNoMomentoDoPedido.replace("Obs: ","");
 
-    //retirar observa&ccedil;ão de prazo default da p�gina
+    //retirar observa&ccedil;&atilde;o de prazo default da p�gina
 	$("#ObsFreteFC").remove();
 
     var dataPedido = $("td.EstNomeCampo:contains(Feito em)").parent().children()[1].innerText;
@@ -385,13 +385,13 @@ var table=jQuery('#TabItens');
 
     var divPrazoEntrega;
 
-/////////CASO não ESTEJA CANCELADO ========================================================================================
+/////////CASO n&atilde;o ESTEJA CANCELADO ========================================================================================
     if ($("#idRecoverOrderFC").length && $("#idTxtSit2OrderFC").text() != "Cancelado")
     {
 
       /////// ATENCAO: AQUI TEMOS QUE FALAR SOBRE PRE-VENDA. PODE SER QUE A DATA DE POSTAGEM DA PRE-VENDA SEJA MENOR DO QUE O TEMPO DE ESPERA NA FILA DE SEPARACAO //////////////////////
 
-      	//prazo de entrega total ou retirada a partir da aprova&ccedil;ão do pedido
+      	//prazo de entrega total ou retirada a partir da aprova&ccedil;&atilde;o do pedido
     	divPrazoEntrega = document.createElement("div");
       	divPrazoEntrega.style.marginTop = "0px";
     	divPrazoEntrega.style.padding = "5px";
@@ -408,20 +408,20 @@ var table=jQuery('#TabItens');
 
       	if (formaPagamento == "Cupom" || formaPagamento == "Troca")
         {
-          	textoPagamento = "aprova&ccedil;ão";
+          	textoPagamento = "aprova&ccedil;&atilde;o";
         }
       	else
         {
-          	textoPagamento = "confirma&ccedil;ão do pagamento";
+          	textoPagamento = "confirma&ccedil;&atilde;o do pagamento";
         }
 
-      	///=====> PROVISORIAMENTE IREMOS DEIXAR APENAS A DATA DE POSTAGEM PREVISTA DO PEDIDO QUANDO FOR PRE-VENDA. FUTURAMENTE BUSCAR A INFORMa&ccedil;ão EXATA DO SERVIDOR COM O CALCULO EXATO CONSIDERANDO FERIADOS
+      	///=====> PROVISORIAMENTE IREMOS DEIXAR APENAS A DATA DE POSTAGEM PREVISTA DO PEDIDO QUANDO FOR PRE-VENDA. FUTURAMENTE BUSCAR A INFORMa&ccedil;&atilde;o EXATA DO SERVIDOR COM O CALCULO EXATO CONSIDERANDO FERIADOS
 
       	//se tiver pr�-venda
       	if(dataPostagem != -1)
         {
 
-          	if (($("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;ão do cart�o"))
+          	if (($("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart�o"))
         	{
           		if(tipoEntrega == "Retirar na loja")
           		{
@@ -480,7 +480,7 @@ var table=jQuery('#TabItens');
       	insertAfter(divCancelado,$("#idRecoverOrderFC")[0]);
 
     }
-/////////CASO não ESTEJA CANCELADO - FIM ========================================================================================
+/////////CASO n&atilde;o ESTEJA CANCELADO - FIM ========================================================================================
 
     var divStatusPagamento = document.createElement("div");
 
@@ -515,7 +515,7 @@ var table=jQuery('#TabItens');
       	else if (formaPagamento == "Boleto banc�rio")
       	{
 
-  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, não se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirma&ccedil;ão do pagamento. Assim que recebermos a confirma&ccedil;ão, seu pedido ser� aprovado.";
+  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, n&atilde;o se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirma&ccedil;&atilde;o do pagamento. Assim que recebermos a confirma&ccedil;&atilde;o, seu pedido ser� aprovado.";
 
         	$("#idLinkBoletoFC").remove();
 
@@ -562,12 +562,12 @@ var table=jQuery('#TabItens');
       	else if (formaPagamento == "Pix")
       	{
 
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso não tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
+          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
           
         	$("#idLinkBoletoFC").remove();
           
           
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso não tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #bfbfbf'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
+          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #bfbfbf'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
 
       	}
 
@@ -575,7 +575,7 @@ var table=jQuery('#TabItens');
 /////////STATUS NOVO - FIM ====================================================================================
 
 /////////STATUS EM APROVACAO ====================================================================================
-    if ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;ão do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix")
+    if ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix")
     {
 		//trocar imagem status pedido
       	$("#idOrderStatusFC").html("<img src='../lojas/00054883/images/msg_status_0_01.svg'>");
@@ -591,7 +591,7 @@ var table=jQuery('#TabItens');
         	}
         	else if (formaPagamento == "Cart�o de cr�dito")
         	{
-          		$("#idTxtSit3OrderFC").html("<b>Aguardando aprova&ccedil;ão<br>do cart�o</b>");
+          		$("#idTxtSit3OrderFC").html("<b>Aguardando aprova&ccedil;&atilde;o<br>do cart�o</b>");
         	}
         
       	}
@@ -600,7 +600,7 @@ var table=jQuery('#TabItens');
       	if (formaPagamento == "Cart�o de cr�dito")
       	{
         	
-  			divStatusPagamento.innerHTML = "Verificamos que o pagamento atrav�s do seu cart�o de cr�dito <span style='color:red'><strong>não foi autorizado</strong></span>. não se preocupe, isso pode acontecer. Voc� recebeu em seu e-mail um link para tentar efetuar o pagamento novamente.<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso voc� j� tenha efetuado o pagamento novamente, aguarde, pois a transa&ccedil;ão est� em an�lise.<br><br><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento do pagamento.</strong></div><br>Caso não tenha conseguido efetuar o pagamento no cart�o de cr�dito, no mesmo e-mail enviado tem um link para tentar efetuar o pagamento via PIX.";
+  			divStatusPagamento.innerHTML = "Verificamos que o pagamento atrav�s do seu cart�o de cr�dito <span style='color:red'><strong>n&atilde;o foi autorizado</strong></span>. n&atilde;o se preocupe, isso pode acontecer. Voc� recebeu em seu e-mail um link para tentar efetuar o pagamento novamente.<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso voc� j� tenha efetuado o pagamento novamente, aguarde, pois a transa&ccedil;&atilde;o est� em an�lise.<br><br><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento do pagamento.</strong></div><br>Caso n&atilde;o tenha conseguido efetuar o pagamento no cart�o de cr�dito, no mesmo e-mail enviado tem um link para tentar efetuar o pagamento via PIX.";
           
           	$("#idRecoverOrderFC a").css('text-decoration','none');
       		$("#idRecoverOrderFC a").text("CLIQUE AQUI PARA REFAZER SEU PEDIDO");
@@ -611,7 +611,7 @@ var table=jQuery('#TabItens');
       	}//boleto banc�rio
       	else if (formaPagamento == "Boleto banc�rio")
       	{
-  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, não se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirma&ccedil;ão do pagamento. Assim que recebermos a confirma&ccedil;ão, seu pedido ser� aprovado.";
+  			divStatusPagamento.innerHTML = "Estamos aguardando o pagamento do seu boleto banc�rio. Caso j� tenha pago, n&atilde;o se preocupe, <span style='color:orange'><strong>o banco demora at&eacute; 48 horas �teis</strong></span> para nos enviar a confirma&ccedil;&atilde;o do pagamento. Assim que recebermos a confirma&ccedil;&atilde;o, seu pedido ser� aprovado.";
         
         	$("#idLinkBoletoFC").remove();
 
@@ -657,12 +657,12 @@ var table=jQuery('#TabItens');
       	else if (formaPagamento == "Pix")
       	{
 
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso não tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
+          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
           
         	$("#idLinkBoletoFC").remove();
           
           
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso não tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #00ae7c'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
+          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #00ae7c'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
 
       	}
 	}
@@ -691,7 +691,7 @@ var table=jQuery('#TabItens');
     celula.style.fontSize = "15px";
     celula.style.textAlign = "center";
     celula.style.borderBottom = "solid #ffffff";
-    celula.innerHTML = "Data prevista para<br><strong>separa&ccedil;ão</strong>";
+    celula.innerHTML = "Data prevista para<br><strong>separa&ccedil;&atilde;o</strong>";
           
     celula = linha.insertCell(1);
     celula.style.width = "50%";
@@ -738,7 +738,7 @@ var table=jQuery('#TabItens');
   	divFeriadoRegional.style.color = "darkgray";
     divFeriadoRegional.style.display = "none";
     divFeriadoRegional.id = "feriado_regional";
-    divFeriadoRegional.innerHTML = "A data de entrega pode sofrer altera&ccedil;ão devido a feriados regionais";
+    divFeriadoRegional.innerHTML = "A data de entrega pode sofrer altera&ccedil;&atilde;o devido a feriados regionais";
     
     $(".infoPedido").append(divFeriadoRegional);
           
@@ -753,13 +753,13 @@ var table=jQuery('#TabItens');
       
       	$("#txtStatusPagamento").hide();
       
-      	//mostrar apenas se não tiver pre-venda
+      	//mostrar apenas se n&atilde;o tiver pre-venda
       	if(dataPostagem == -1)
         {
 			if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo a data prevista de separa&ccedil;ão do seu pedido. <span style='color:orange'><strong>ATEN��O: Assim que seu pedido estiver pronto, voc� receber� um e-mail informando sobre a retirada em nossa loja.</strong></span>";
+          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo a data prevista de separa&ccedil;&atilde;o do seu pedido. <span style='color:orange'><strong>ATEN��O: Assim que seu pedido estiver pronto, voc� receber� um e-mail informando sobre a retirada em nossa loja.</strong></span>";
           
           		$("#linhaSeparacao").show();
           		$("#linhaEntrega").hide();
@@ -768,7 +768,7 @@ var table=jQuery('#TabItens');
       		else
         	{
           
-          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo as datas previstas de separa&ccedil;ão e entrega do seu pedido.";
+          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo as datas previstas de separa&ccedil;&atilde;o e entrega do seu pedido.";
           
           		$("#linhaSeparacao").show();
           		$("#linhaEntrega").show();
@@ -809,13 +809,13 @@ var table=jQuery('#TabItens');
       	$("#idOrderStatusFC").html("<img src='../lojas/00054883/images/msg_status_0_03.svg'>");
       	$("#data_confirmacao_pagamento_2").hide();
       
-      	//mostrar apenas se não tiver pre-venda
+      	//mostrar apenas se n&atilde;o tiver pre-venda
       	if(dataPostagem == -1)
         {
 			if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! não esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 �s 20h (segunda a sexta) - 08h30 �s 17h (s�bado)</span>";
+          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! n&atilde;o esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 �s 20h (segunda a sexta) - 08h30 �s 17h (s�bado)</span>";
           
           		$("#linhaSeparacao").hide();
           		$("#linhaEntrega").hide();
@@ -836,7 +836,7 @@ var table=jQuery('#TabItens');
           	if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! não esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 �s 20h (segunda a sexta) - 08h30 �s 17h (s�bado)</span>";
+          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! n&atilde;o esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 �s 20h (segunda a sexta) - 08h30 �s 17h (s�bado)</span>";
           
                 $("#divPrazoEntrega").hide();
           		$("#linhaSeparacao").hide();
@@ -869,7 +869,7 @@ var table=jQuery('#TabItens');
       
       	$("#data_confirmacao_pagamento_2").hide();
       
-      	//mostrar apenas se não tiver pre-venda
+      	//mostrar apenas se n&atilde;o tiver pre-venda
       	if(dataPostagem == -1)
         {
 			if(tipoEntrega == "Retirar na loja")
@@ -979,7 +979,7 @@ var table=jQuery('#TabItens');
 			divPendente.style.marginTop = "20px";
   			divPendente.style.fontSize = "15px";
   			divPendente.style.color = "#008ae1";
-      		divPendente.innerHTML = "Seu pedido est� com status <strong>PENDENTE</strong>. Mas não precisa se preocupar, est� tudo certo com o pagamento! O pedido est� nesse status apenas porque voc� comprou um item em pr�-venda. Caso tenha alguma d�vida, entre em contato com <strong>shoes@marianamedina.com.br</strong>";
+      		divPendente.innerHTML = "Seu pedido est� com status <strong>PENDENTE</strong>. Mas n&atilde;o precisa se preocupar, est� tudo certo com o pagamento! O pedido est� nesse status apenas porque voc� comprou um item em pr�-venda. Caso tenha alguma d�vida, entre em contato com <strong>shoes@marianamedina.com.br</strong>";
       		insertAfter(divPrazoEntrega,divPendente);
         }
       
@@ -993,9 +993,9 @@ var table=jQuery('#TabItens');
     
     
     //COISAS PARA FAZER NO FORMATO NOVO
-    //ver se o pagamento cupom ou troca interfere em algo na apresenta&ccedil;ão dos dados
+    //ver se o pagamento cupom ou troca interfere em algo na apresenta&ccedil;&atilde;o dos dados
     
-    //se o pagamento ainda não consta, informar que estamos aguardando
+    //se o pagamento ainda n&atilde;o consta, informar que estamos aguardando
     
     //verificar quando aparece o bot�o de reimprimir boleto
     
@@ -1003,9 +1003,9 @@ var table=jQuery('#TabItens');
     
     //retirada em loja
     
-    //informa&ccedil;ão sobre pre-venda
+    //informa&ccedil;&atilde;o sobre pre-venda
     
-    //informa&ccedil;ão sobre separa&ccedil;ão e entrega
+    //informa&ccedil;&atilde;o sobre separa&ccedil;&atilde;o e entrega
     
     //COISAS PARA FAZER NO FORMATO NOVO - FIM
   }
@@ -1121,7 +1121,7 @@ function fnprocessDetalhesPedido(){
 
               	$("#tabelaPrazos").hide();
               
-              	if (!($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;ão do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix" || $("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja"))
+              	if (!($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix" || $("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja"))
               	{
 					$("#txtStatusPagamento").hide();
               	}
@@ -1328,13 +1328,13 @@ $( window ).scroll(function() {
 <!-- Cookie Policy alert -->
 <div class="cookiewarning bg-warning" id="cookie-law">
 <div class="cookiewarning-position" id ="cookiewarning-mobile">
-  <h4>Pol�tica de cookies</h4>
-  <p>Utilizamos cookies pr�prios e de terceiros para melhorar nossos servi�os analisando seus h�bitos de navega&ccedil;ão. <a href="#" id="cookie-url">Ver mais</a></p>
+  <h4>Pol&iacute;tica de cookies</h4>
+  <p>Utilizamos cookies pr&oacute;prios e de terceiros para melhorar nossos servi&ccedil;os analisando seus h&aacute;bitos de navega&ccedil;&atilde;o. <a href="#" id="cookie-url">Ver mais</a></p>
   <div class="cookiewarning-position-btn"><span class="cookiewarning-btn">ACEITAR</span></div>
 </div>
 <div class="cookiewarning-position" id ="cookiewarning-desktop">
-  <h4>Pol�tica de cookies</h4>
-  <p>Utilizamos cookies pr�prios e de terceiros para melhorar nossos servi�os analisando seus h�bitos de navega&ccedil;ão. <a href="#" id="cookie-url">Ver mais</a> <span class="cookiewarning-btn">ACEITAR</span></p>
+  <h4>Pol&iacute;tica de cookies</h4>
+  <p>Utilizamos cookies pr&oacute;prios e de terceiros para melhorar nossos servi&ccedil;os analisando seus h&aacute;bitos de navega&ccedil;&atilde;o. <a href="#" id="cookie-url">Ver mais</a> <span class="cookiewarning-btn">ACEITAR</span></p>
 </div>
 </div>
 <script>fnCookieWarning();

@@ -367,13 +367,13 @@ function fnprocessExisteTransportadora(obj)
         {
           var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
           if(oImgLoadingCEP){oImgLoadingCEP.style.display="none";}
-          oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>CEP inv�lido</span>";
+          oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>CEP inV&aacute;lido</span>";
 
         }
         else if(oShippingValue1 || oShippingValue2)
         {
-          oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inv�lido</span>";
-          oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inv�lido</span>";
+          oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inV&aacute;lido</span>";
+          oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inV&aacute;lido</span>";
           var oImgLoadingCEP1=document.getElementById("idImgLoadingCEP1");
           if(oImgLoadingCEP1){oImgLoadingCEP1.style.display="none";}
           var oImgLoadingCEP2=document.getElementById("idImgLoadingCEP2");
@@ -569,7 +569,7 @@ function verificar_carrinho(carrinho)
   
 }
 
-// Formata&ccedil;ão de Numero
+// Formata&ccedil;&atilde;o de Numero
 function fnFormatNumber(num){
   num=num.toString().replace(/\$|\,/g,'');
   if(isNaN(num))num="0";
@@ -1228,7 +1228,7 @@ function fnGetShippingValue(iField){
 
   if (verificaCapital_RM_EstadoSP(sCEP) == 0)
   {
-    //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+    //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1250,7 +1250,7 @@ function fnGetShippingValue(iField){
   }
   else
   {
-    //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+    //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1312,8 +1312,8 @@ function fnprocessXMLCEPC(obj){
     if(oImgLoadingCEP1){oImgLoadingCEP1.style.display="none";}
     var oImgLoadingCEP2=document.getElementById("idImgLoadingCEP2");
     if(oImgLoadingCEP2){oImgLoadingCEP2.style.display="none";}
-    oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inv�lido" +"</span>";
-    oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inv�lido" +"</span>";
+    oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inV&aacute;lido" +"</span>";
+    oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inV&aacute;lido" +"</span>";
     return;
   }
   oShippingObs1.innerHTML="";oShippingObs2.innerHTML="";oShippingValue1.innerHTML="";oShippingValue2.innerHTML="";
@@ -1509,7 +1509,7 @@ function fnprocessXMLCEPC(obj){
   var texto_entrega_jato = "";
   
   
-  //OptObsAJato verifica se o prazo � de um dia ou diferente. Se for diferente � que veio da base interna, ent�o não mostramos.
+  //OptObsAJato verifica se o prazo � de um dia ou diferente. Se for diferente � que veio da base interna, ent�o n&atilde;o mostramos.
   if(OptValueAJato != ""  && OptName != "PEX" && OptObsAJato == "1 dias �teis")
   {
     
@@ -1914,7 +1914,7 @@ var Cart$=(function(){
       }
     }
     var oCartDesign=document.getElementById("CartDesign");
-    //Insere elemento (carrinho) se ele não existir
+    //Insere elemento (carrinho) se ele n&atilde;o existir
     if(!oCartDesign){
       var oInsert=document.getElementById("idFCLeftContentRight");
       if(oInsert){
@@ -1926,7 +1926,7 @@ var Cart$=(function(){
     }
 
     var oBlocker=document.getElementById("Blocker");
-    //Insere elemento (tela bloqueada) se ele não existir
+    //Insere elemento (tela bloqueada) se ele n&atilde;o existir
     if(oBlocker){
       oBlocker.style.display="block";
     }
@@ -1955,7 +1955,7 @@ var Cart$=(function(){
     var bTemProds=true;
     if(sProdutosNaCesta==""){bTemProds=false;sProdutosNaCesta+="<div class='CartDesign-empty'>Seu Carrinho est� vazio.</div>";}
 
-    //Se ocorreu erro ao incluir exibe mensagem de erro. Se não ocorrer erro não mostra a mensagem
+    //Se ocorreu erro ao incluir exibe mensagem de erro. Se n&atilde;o ocorrer erro n&atilde;o mostra a mensagem
     if(iErr>0 && sMsg!=""){sProdutosNaCesta="<div id=DivMsgCart><div style='color:"+(iErr>0?"#ffffff":"#ffffff") +";background:"+(iErr>0?"#b61f24":"#1a75d7") +";'>"+ sMsg +"</div></div>"+sProdutosNaCesta;}
 
     var sTopo="<div class='CartDesign-header'>";
@@ -1981,7 +1981,7 @@ var Cart$=(function(){
     var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight();
     $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
 
-    //Mostra carrinho (op��o com anina&ccedil;ão)
+    //Mostra carrinho (op��o com anina&ccedil;&atilde;o)
     //oCartDesign.style.display="";
     //jQuery(oCartDesign).show(300);
     if(oCartDesign.style.right=="" || oCartDesign.style.right=="-350px")jQuery(oCartDesign).animate({ "right": "+=350px" }, 200 );
@@ -1996,13 +1996,13 @@ var Cart$=(function(){
       if(oContentItensCart)oContentItensCart.style.maxHeight="215px";
     }*/
 
-    //Se não est� vazio, carrega fun��o do c�lculo de frete
+    //Se n&atilde;o est� vazio, carrega fun��o do c�lculo de frete
     if((FC$.TypeFrt==3 || FC$.TypeFrt==4) && bTemProds)fnGetCEP(subtotalProdCart); 
 
     //Atualiza carrinho do topo
     fnUpdateCartTop(iItensCesta,currencyProdCart,subtotalProdCart);
 
-    //Remove mensagem de produto adicionado ao carrinho ou produto não adicionado
+    //Remove mensagem de produto adicionado ao carrinho ou produto n&atilde;o adicionado
     setTimeout(function(){if(document.getElementById('DivMsgCart'))jQuery(document.getElementById('DivMsgCart')).hide(500);},2000);
 
 
@@ -2040,7 +2040,7 @@ var Cart$=(function(){
       lastY = top;
     });
 
-    //verifica&ccedil;ão para mostrar comprar mais
+    //verifica&ccedil;&atilde;o para mostrar comprar mais
     verificar_carrinho(oJSON);
   }
 
@@ -2062,7 +2062,7 @@ var Cart$=(function(){
   function fnCloseCartDesign(){
     var oCartDesign=document.getElementById("CartDesign");   
     if(oCartDesign){
-      //Esconde carrinho (op��o com anina&ccedil;ão)
+      //Esconde carrinho (op��o com anina&ccedil;&atilde;o)
       //oCartDesign.style.display="none";
       //jQuery(oCartDesign).hide(300);
       if(oCartDesign.style.right=="0px")jQuery(oCartDesign).animate({ "right": "-=350px" }, 200 );
@@ -2109,14 +2109,14 @@ var Cart$=(function(){
     if(bLeuEstoque){
       if(iQtdProd<iQtdOri){
         iQtdSolic=iQtdProd; //se a qtd original � maior que a qtd em estoque, a quantidade solicitada � a qtd do produto
-        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois não temos mais em estoque";}
+        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois n&atilde;o temos mais em estoque";}
         else {sMsgErr="A quantidade foi alterada para a quantidade m�xima em estoque dispon�vel nesse momento: "+ iQtdProd;}
       }
     }
     else{
-      iQtdProd=iQtdSolic; //se não consegue ler estoque do produto, usa o estoque solicitado
+      iQtdProd=iQtdSolic; //se n&atilde;o consegue ler estoque do produto, usa o estoque solicitado
     }
-    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente não temos "+ iQtdSolic +" unidades em estoque";
+    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente n&atilde;o temos "+ iQtdSolic +" unidades em estoque";
     if(sMsgErr!="")alert(sMsgErr);
   }
 
@@ -2160,7 +2160,7 @@ var Cart$=(function(){
 
     if (verificaCapital_RM_EstadoSP(sCEP) == 0)
     {
-      //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+      //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2178,7 +2178,7 @@ var Cart$=(function(){
     }
     else
     {
-      //Altera&ccedil;ão em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+      //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2196,7 +2196,7 @@ var Cart$=(function(){
     FCLib$.SetCookie("CEP"+FC$.IDLoja,sCEP);
     if(sCEP=="")
     {
-      document.getElementById("idShippingValue").innerHTML="<span style=color:#990000;>CEP inv�lido</span>";
+      document.getElementById("idShippingValue").innerHTML="<span style=color:#990000;>CEP inV&aacute;lido</span>";
       
       var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight() - $(".CartDesign-totalcart-container").outerHeight();
       $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
@@ -2227,7 +2227,7 @@ var Cart$=(function(){
     if(iErr!="0"){
       var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
       if(oImgLoadingCEP){oImgLoadingCEP.style.display="none";}
-      oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>"+ "CEP inv�lido" +"</span>";
+      oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>"+ "CEP inV&aacute;lido" +"</span>";
       return;
     }
     oShippingObs.innerHTML="";
@@ -2792,7 +2792,7 @@ function processar_clique_pagamento()
     }
     else
     {
-      //ainda não apareceu comprar mais
+      //ainda n&atilde;o apareceu comprar mais
       window.location.href = "/page,idloja,54883,arq," + pagina_comprar_mais;
     }
   }
