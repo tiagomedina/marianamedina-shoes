@@ -1167,8 +1167,8 @@ function fnCustomizeCart(){
     var oTRFreightCalc=oFCCartSubtotals.parentNode.insertBefore(oNewElement,oFCCartSubtotals);
     oTRFreightCalc.innerHTML="<td>Digite o CEP para calcular o Frete: <input type=text id=idZipC1 size=10 maxlength=9 class=InputText> <input type=button value='Calcular Frete' class=idBut class=InputButton onclick='fnGetShippingValue(1)'></td><td colspan="+ sColspan +"><span id=idShippingObs1></span></td><td align=right><span id=idShippingValue1></span><img src='/images/loading.gif' vspace=3 style='display:none' id=idImgLoadingCEP1></td>";
   }
-  //insere tr para mostrar info sobre frete GRÁTIS
-  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemFrete' style='display:none; color:#da187f; text-align:right;'><td colspan='4'>Em compras acima de R$ 199,00 seu frete � GRÁTIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td></tr>");
+  //insere tr para mostrar info sobre frete GR&Aacute;TIS
+  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemFrete' style='display:none; color:#da187f; text-align:right;'><td colspan='4'>Em compras acima de R$ 199,00 seu frete � GR&Aacute;TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td></tr>");
   //insere tr para mostrar info sobre item em pre-venda prevenda
   $("#FCCartFreightCalc").after("<tr id='Cart-mensagemPreVenda' style='display:none; color:red; text-align:right;'><td colspan='4'>Prazo diferenciado: pedido cont�m item em pr�-venda</td></tr>");
   //insere campo solicitando o CEP para calculo do lado direito
@@ -1228,7 +1228,7 @@ function fnGetShippingValue(iField){
 
   if (verificaCapital_RM_EstadoSP(sCEP) == 0)
   {
-    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
+    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1238,7 +1238,7 @@ function fnGetShippingValue(iField){
     var widthBarra = ((100 - (faltaFrete/99)*100));
     faltaFrete = faltaFrete.replace(".",",");
     
-    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
+    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR&Aacute;TIS!</span><br>
                                                                 <div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div>																	<br></div>
                                                                 <a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a></td>`;
     
@@ -1246,11 +1246,11 @@ function fnGetShippingValue(iField){
 	  if (widthBarra < 100) {
         document.querySelector('#Cart-InternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }*/
-   // document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 239,00 seu frete � GRÁTIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
+   // document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 239,00 seu frete � GR&Aacute;TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
   }
   else
   {
-    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
+    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1260,7 +1260,7 @@ function fnGetShippingValue(iField){
     var widthBarra = ((100 - (faltaFrete/99)*100));
     faltaFrete = faltaFrete.replace(".",",");
     
-    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
+    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR&Aacute;TIS!</span><br>
 																<div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div></div>
 																<a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a><br></td>`;
     
@@ -1268,10 +1268,10 @@ function fnGetShippingValue(iField){
 	  if (widthBarra < 100) {
         document.querySelector('#Cart-InternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }*/
-    //document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 199,00 seu frete � GRÁTIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
+    //document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 199,00 seu frete � GR&Aacute;TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
   }
 
-	document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
+	document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR&Aacute;TIS!</span><br>
 																<div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div></div>
 																<a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a><br></td>`;
     
@@ -1461,7 +1461,7 @@ function fnprocessXMLCEPC(obj){
     if (textoFinal == "1 dias �teis") textoFinal = "1 dia �til";
   }
 
-  //mensagem sobre valor MÍNIMO para frete GRÁTIS
+  //mensagem sobre valor M&iacute;NIMO para frete GR&Aacute;TIS
   var valorMinimo = 0;
   if(capital_rm_estadoSP == 1)
   {
@@ -1810,7 +1810,7 @@ var Cart$=(function(){
         var showBadgeFreeSideCartFree = sAtrRuleNameItem.indexOf("free");
         var showBadgeFreeSideCartDiscount = sAtrRuleNameItem.indexOf("discount");
         if(showBadgeFreeSideCartFree > -1){
-          sProdAtual+="<div class='fc-cart-discount-badge-free'>GRÁTIS</div>";
+          sProdAtual+="<div class='fc-cart-discount-badge-free'>GR&Aacute;TIS</div>";
         }else if(showBadgeFreeSideCartDiscount > -1){
           sProdAtual+="<div class='fc-sidecart-discount-badge-discount'>Item com desconto especial<br>Promo��o: " + promocao_nomes[sAtrRuleNameItem] + "</div>";
         }
@@ -1862,11 +1862,11 @@ var Cart$=(function(){
         if(FC$.TypeFrt==3 || FC$.TypeFrt==4){
           sFinalCart+="<div id='FCCartLembretePreVenda' class='CartDesign-lembrete-pre-venda'>Prazo diferenciado: pedido cont�m item em pr�-venda";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartPreenchaFreteGratis' class='CartDesign-preencha-frete-gratis'><b>FRETE GRÁTIS?</b> Preencha CEP abaixo e descubra";
+          sFinalCart+="<div id='FCCartPreenchaFreteGratis' class='CartDesign-preencha-frete-gratis'><b>FRETE GR&Aacute;TIS?</b> Preencha CEP abaixo e descubra";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartLembreteFreteGratis' class='CartDesign-lembrete-frete-gratis'>Em compras acima de R$ 199,00 seu frete � GRÁTIS!";
+          sFinalCart+="<div id='FCCartLembreteFreteGratis' class='CartDesign-lembrete-frete-gratis'>Em compras acima de R$ 199,00 seu frete � GR&Aacute;TIS!";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartContemFreteGratis' class='CartDesign-contem-frete-gratis'>Eba! Seu frete � GRÁTIS! Aproveite!";
+          sFinalCart+="<div id='FCCartContemFreteGratis' class='CartDesign-contem-frete-gratis'>Eba! Seu frete � GR&Aacute;TIS! Aproveite!";
           sFinalCart+="</div>";
           sFinalCart+="<div id='FCCartProgressoFreteGratis' class='CartDesign-progresso-frete-gratis' style='display:none'>";
           sFinalCart+="<div id='FCCartInternoProgFreteGratis' class='CartDesign-interno-prog-frete-gratis'>";
@@ -2087,7 +2087,7 @@ var Cart$=(function(){
     if(oQtdValOri){
       var iQtdOri=parseInt(oQtdValOri.innerHTML);
       if(bMais)var iQtd=iQtdOri+1; else var iQtd=iQtdOri-1;
-      //Se controla estoque checa quantos tem no produto, caso contrário altera a quantidade direto
+      //Se controla estoque checa quantos tem no produto, caso contr&Aacute;rio altera a quantidade direto
       if(FC$.StockControl)FCLib$.fnAjaxExecFC("/infoprod.asp","idloja="+ FC$.IDLoja +"&idprod="+ idProdCart +"&format=1",false,fnChangeQtdProdStock,idProdPed,iQtd,iQtdOri);
       else fnChangeQtdProdExec(idProdPed,iQtd);
     }
@@ -2160,7 +2160,7 @@ var Cart$=(function(){
 
     if (verificaCapital_RM_EstadoSP(sCEP) == 0)
     {
-      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
+      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2173,12 +2173,12 @@ var Cart$=(function(){
       }
       faltaFrete = faltaFrete.replace(".",",");
 
-      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GRÁTIS!</b>`);
-      //$(".CartDesign-lembrete-frete-gratis").html("Em compras acima de R$ 239,00 seu frete � GRÁTIS!");
+      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GR&Aacute;TIS!</b>`);
+      //$(".CartDesign-lembrete-frete-gratis").html("Em compras acima de R$ 239,00 seu frete � GR&Aacute;TIS!");
     }
     else
     {
-      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
+      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2190,7 +2190,7 @@ var Cart$=(function(){
         document.querySelector('#FCCartInternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }
       faltaFrete = faltaFrete.replace(".",",");
-      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GRÁTIS!</b>`);
+      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GR&Aacute;TIS!</b>`);
     }
 
     FCLib$.SetCookie("CEP"+FC$.IDLoja,sCEP);
@@ -2375,7 +2375,7 @@ var Cart$=(function(){
       if (textoFinal == "1 dias �teis") textoFinal = "1 dia �til";
     }
 
-    //mensagem sobre valor MÍNIMO para frete GRÁTIS
+    //mensagem sobre valor M&iacute;NIMO para frete GR&Aacute;TIS
     var valorMinimo = 0;
     if(capital_rm_estadoSP == 1)
     {
@@ -2591,7 +2591,7 @@ var Cart$=(function(){
 function fnBadgeDiscount(){
   var createDivElemFree=document.createElement("div");
   createDivElemFree.className="fc-cart-discount-badge-free";
-  createDivElemFree.innerHTML="GRÁTIS";
+  createDivElemFree.innerHTML="GR&Aacute;TIS";
 
   if(FC$.Page=="Cart"){
     var showBadgeFree=document.querySelectorAll('[rulename*="free"] .FCCartItemCont');
