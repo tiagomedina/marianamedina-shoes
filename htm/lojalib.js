@@ -2570,7 +2570,7 @@ var Cart$=(function(){
   }
 
   /* function fnMontaMaxParcelaCart(Valor){
-    return("Em at� 10x de "+ FormatPrecoReais(CalculaParcelaJurosCompostos(Valor,10)));
+    return("Em até 10x de "+ FormatPrecoReais(CalculaParcelaJurosCompostos(Valor,10)));
   } */
 
 
