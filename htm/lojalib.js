@@ -569,7 +569,7 @@ function verificar_carrinho(carrinho)
   
 }
 
-// Formata��o de Numero
+// Formatação de Numero
 function fnFormatNumber(num){
   num=num.toString().replace(/\$|\,/g,'');
   if(isNaN(num))num="0";
@@ -1167,8 +1167,8 @@ function fnCustomizeCart(){
     var oTRFreightCalc=oFCCartSubtotals.parentNode.insertBefore(oNewElement,oFCCartSubtotals);
     oTRFreightCalc.innerHTML="<td>Digite o CEP para calcular o Frete: <input type=text id=idZipC1 size=10 maxlength=9 class=InputText> <input type=button value='Calcular Frete' class=idBut class=InputButton onclick='fnGetShippingValue(1)'></td><td colspan="+ sColspan +"><span id=idShippingObs1></span></td><td align=right><span id=idShippingValue1></span><img src='/images/loading.gif' vspace=3 style='display:none' id=idImgLoadingCEP1></td>";
   }
-  //insere tr para mostrar info sobre frete gr�tis
-  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemFrete' style='display:none; color:#da187f; text-align:right;'><td colspan='4'>Em compras acima de R$ 199,00 seu frete � GR�TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td></tr>");
+  //insere tr para mostrar info sobre frete GRÁTIS
+  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemFrete' style='display:none; color:#da187f; text-align:right;'><td colspan='4'>Em compras acima de R$ 199,00 seu frete � GRÁTIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td></tr>");
   //insere tr para mostrar info sobre item em pre-venda prevenda
   $("#FCCartFreightCalc").after("<tr id='Cart-mensagemPreVenda' style='display:none; color:red; text-align:right;'><td colspan='4'>Prazo diferenciado: pedido cont�m item em pr�-venda</td></tr>");
   //insere campo solicitando o CEP para calculo do lado direito
@@ -1228,7 +1228,7 @@ function fnGetShippingValue(iField){
 
   if (verificaCapital_RM_EstadoSP(sCEP) == 0)
   {
-    //Altera��o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete gr�tis
+    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1238,7 +1238,7 @@ function fnGetShippingValue(iField){
     var widthBarra = ((100 - (faltaFrete/99)*100));
     faltaFrete = faltaFrete.replace(".",",");
     
-    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR�TIS!</span><br>
+    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
                                                                 <div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div>																	<br></div>
                                                                 <a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a></td>`;
     
@@ -1246,11 +1246,11 @@ function fnGetShippingValue(iField){
 	  if (widthBarra < 100) {
         document.querySelector('#Cart-InternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }*/
-   // document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 239,00 seu frete � GR�TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
+   // document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 239,00 seu frete � GRÁTIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
   }
   else
   {
-    //Altera��o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete gr�tis
+    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1260,7 +1260,7 @@ function fnGetShippingValue(iField){
     var widthBarra = ((100 - (faltaFrete/99)*100));
     faltaFrete = faltaFrete.replace(".",",");
     
-    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR�TIS!</span><br>
+    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
 																<div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div></div>
 																<a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a><br></td>`;
     
@@ -1268,10 +1268,10 @@ function fnGetShippingValue(iField){
 	  if (widthBarra < 100) {
         document.querySelector('#Cart-InternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }*/
-    //document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 199,00 seu frete � GR�TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
+    //document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 199,00 seu frete � GRÁTIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
   }
 
-	document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR�TIS!</span><br>
+	document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
 																<div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div></div>
 																<a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a><br></td>`;
     
@@ -1461,7 +1461,7 @@ function fnprocessXMLCEPC(obj){
     if (textoFinal == "1 dias �teis") textoFinal = "1 dia �til";
   }
 
-  //mensagem sobre valor m�nimo para frete gr�tis
+  //mensagem sobre valor MÍNIMO para frete GRÁTIS
   var valorMinimo = 0;
   if(capital_rm_estadoSP == 1)
   {
@@ -1509,7 +1509,7 @@ function fnprocessXMLCEPC(obj){
   var texto_entrega_jato = "";
   
   
-  //OptObsAJato verifica se o prazo � de um dia ou diferente. Se for diferente � que veio da base interna, ent�o n�o mostramos.
+  //OptObsAJato verifica se o prazo � de um dia ou diferente. Se for diferente � que veio da base interna, ent�o não mostramos.
   if(OptValueAJato != ""  && OptName != "PEX" && OptObsAJato == "1 dias �teis")
   {
     
@@ -1810,7 +1810,7 @@ var Cart$=(function(){
         var showBadgeFreeSideCartFree = sAtrRuleNameItem.indexOf("free");
         var showBadgeFreeSideCartDiscount = sAtrRuleNameItem.indexOf("discount");
         if(showBadgeFreeSideCartFree > -1){
-          sProdAtual+="<div class='fc-cart-discount-badge-free'>GR�TIS</div>";
+          sProdAtual+="<div class='fc-cart-discount-badge-free'>GRÁTIS</div>";
         }else if(showBadgeFreeSideCartDiscount > -1){
           sProdAtual+="<div class='fc-sidecart-discount-badge-discount'>Item com desconto especial<br>Promo��o: " + promocao_nomes[sAtrRuleNameItem] + "</div>";
         }
@@ -1862,11 +1862,11 @@ var Cart$=(function(){
         if(FC$.TypeFrt==3 || FC$.TypeFrt==4){
           sFinalCart+="<div id='FCCartLembretePreVenda' class='CartDesign-lembrete-pre-venda'>Prazo diferenciado: pedido cont�m item em pr�-venda";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartPreenchaFreteGratis' class='CartDesign-preencha-frete-gratis'><b>FRETE GR�TIS?</b> Preencha CEP abaixo e descubra";
+          sFinalCart+="<div id='FCCartPreenchaFreteGratis' class='CartDesign-preencha-frete-gratis'><b>FRETE GRÁTIS?</b> Preencha CEP abaixo e descubra";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartLembreteFreteGratis' class='CartDesign-lembrete-frete-gratis'>Em compras acima de R$ 199,00 seu frete � GR�TIS!";
+          sFinalCart+="<div id='FCCartLembreteFreteGratis' class='CartDesign-lembrete-frete-gratis'>Em compras acima de R$ 199,00 seu frete � GRÁTIS!";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartContemFreteGratis' class='CartDesign-contem-frete-gratis'>Eba! Seu frete � GR�TIS! Aproveite!";
+          sFinalCart+="<div id='FCCartContemFreteGratis' class='CartDesign-contem-frete-gratis'>Eba! Seu frete � GRÁTIS! Aproveite!";
           sFinalCart+="</div>";
           sFinalCart+="<div id='FCCartProgressoFreteGratis' class='CartDesign-progresso-frete-gratis' style='display:none'>";
           sFinalCart+="<div id='FCCartInternoProgFreteGratis' class='CartDesign-interno-prog-frete-gratis'>";
@@ -1914,7 +1914,7 @@ var Cart$=(function(){
       }
     }
     var oCartDesign=document.getElementById("CartDesign");
-    //Insere elemento (carrinho) se ele n�o existir
+    //Insere elemento (carrinho) se ele não existir
     if(!oCartDesign){
       var oInsert=document.getElementById("idFCLeftContentRight");
       if(oInsert){
@@ -1926,7 +1926,7 @@ var Cart$=(function(){
     }
 
     var oBlocker=document.getElementById("Blocker");
-    //Insere elemento (tela bloqueada) se ele n�o existir
+    //Insere elemento (tela bloqueada) se ele não existir
     if(oBlocker){
       oBlocker.style.display="block";
     }
@@ -1955,7 +1955,7 @@ var Cart$=(function(){
     var bTemProds=true;
     if(sProdutosNaCesta==""){bTemProds=false;sProdutosNaCesta+="<div class='CartDesign-empty'>Seu Carrinho est� vazio.</div>";}
 
-    //Se ocorreu erro ao incluir exibe mensagem de erro. Se n�o ocorrer erro n�o mostra a mensagem
+    //Se ocorreu erro ao incluir exibe mensagem de erro. Se não ocorrer erro não mostra a mensagem
     if(iErr>0 && sMsg!=""){sProdutosNaCesta="<div id=DivMsgCart><div style='color:"+(iErr>0?"#ffffff":"#ffffff") +";background:"+(iErr>0?"#b61f24":"#1a75d7") +";'>"+ sMsg +"</div></div>"+sProdutosNaCesta;}
 
     var sTopo="<div class='CartDesign-header'>";
@@ -1981,7 +1981,7 @@ var Cart$=(function(){
     var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight();
     $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
 
-    //Mostra carrinho (op��o com anina��o)
+    //Mostra carrinho (op��o com aninação)
     //oCartDesign.style.display="";
     //jQuery(oCartDesign).show(300);
     if(oCartDesign.style.right=="" || oCartDesign.style.right=="-350px")jQuery(oCartDesign).animate({ "right": "+=350px" }, 200 );
@@ -1996,13 +1996,13 @@ var Cart$=(function(){
       if(oContentItensCart)oContentItensCart.style.maxHeight="215px";
     }*/
 
-    //Se n�o est� vazio, carrega fun��o do c�lculo de frete
+    //Se não est� vazio, carrega fun��o do c�lculo de frete
     if((FC$.TypeFrt==3 || FC$.TypeFrt==4) && bTemProds)fnGetCEP(subtotalProdCart); 
 
     //Atualiza carrinho do topo
     fnUpdateCartTop(iItensCesta,currencyProdCart,subtotalProdCart);
 
-    //Remove mensagem de produto adicionado ao carrinho ou produto n�o adicionado
+    //Remove mensagem de produto adicionado ao carrinho ou produto não adicionado
     setTimeout(function(){if(document.getElementById('DivMsgCart'))jQuery(document.getElementById('DivMsgCart')).hide(500);},2000);
 
 
@@ -2040,7 +2040,7 @@ var Cart$=(function(){
       lastY = top;
     });
 
-    //verifica��o para mostrar comprar mais
+    //verificação para mostrar comprar mais
     verificar_carrinho(oJSON);
   }
 
@@ -2062,7 +2062,7 @@ var Cart$=(function(){
   function fnCloseCartDesign(){
     var oCartDesign=document.getElementById("CartDesign");   
     if(oCartDesign){
-      //Esconde carrinho (op��o com anina��o)
+      //Esconde carrinho (op��o com aninação)
       //oCartDesign.style.display="none";
       //jQuery(oCartDesign).hide(300);
       if(oCartDesign.style.right=="0px")jQuery(oCartDesign).animate({ "right": "-=350px" }, 200 );
@@ -2087,7 +2087,7 @@ var Cart$=(function(){
     if(oQtdValOri){
       var iQtdOri=parseInt(oQtdValOri.innerHTML);
       if(bMais)var iQtd=iQtdOri+1; else var iQtd=iQtdOri-1;
-      //Se controla estoque checa quantos tem no produto, caso contr�rio altera a quantidade direto
+      //Se controla estoque checa quantos tem no produto, caso contrário altera a quantidade direto
       if(FC$.StockControl)FCLib$.fnAjaxExecFC("/infoprod.asp","idloja="+ FC$.IDLoja +"&idprod="+ idProdCart +"&format=1",false,fnChangeQtdProdStock,idProdPed,iQtd,iQtdOri);
       else fnChangeQtdProdExec(idProdPed,iQtd);
     }
@@ -2109,14 +2109,14 @@ var Cart$=(function(){
     if(bLeuEstoque){
       if(iQtdProd<iQtdOri){
         iQtdSolic=iQtdProd; //se a qtd original � maior que a qtd em estoque, a quantidade solicitada � a qtd do produto
-        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois n�o temos mais em estoque";}
+        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois não temos mais em estoque";}
         else {sMsgErr="A quantidade foi alterada para a quantidade m�xima em estoque dispon�vel nesse momento: "+ iQtdProd;}
       }
     }
     else{
-      iQtdProd=iQtdSolic; //se n�o consegue ler estoque do produto, usa o estoque solicitado
+      iQtdProd=iQtdSolic; //se não consegue ler estoque do produto, usa o estoque solicitado
     }
-    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente n�o temos "+ iQtdSolic +" unidades em estoque";
+    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente não temos "+ iQtdSolic +" unidades em estoque";
     if(sMsgErr!="")alert(sMsgErr);
   }
 
@@ -2160,7 +2160,7 @@ var Cart$=(function(){
 
     if (verificaCapital_RM_EstadoSP(sCEP) == 0)
     {
-      //Altera��o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete gr�tis
+      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2173,12 +2173,12 @@ var Cart$=(function(){
       }
       faltaFrete = faltaFrete.replace(".",",");
 
-      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GR�TIS!</b>`);
-      //$(".CartDesign-lembrete-frete-gratis").html("Em compras acima de R$ 239,00 seu frete � GR�TIS!");
+      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GRÁTIS!</b>`);
+      //$(".CartDesign-lembrete-frete-gratis").html("Em compras acima de R$ 239,00 seu frete � GRÁTIS!");
     }
     else
     {
-      //Altera��o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete gr�tis
+      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GRÁTIS
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2190,7 +2190,7 @@ var Cart$=(function(){
         document.querySelector('#FCCartInternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }
       faltaFrete = faltaFrete.replace(".",",");
-      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GR�TIS!</b>`);
+      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GRÁTIS!</b>`);
     }
 
     FCLib$.SetCookie("CEP"+FC$.IDLoja,sCEP);
@@ -2375,7 +2375,7 @@ var Cart$=(function(){
       if (textoFinal == "1 dias �teis") textoFinal = "1 dia �til";
     }
 
-    //mensagem sobre valor m�nimo para frete gr�tis
+    //mensagem sobre valor MÍNIMO para frete GRÁTIS
     var valorMinimo = 0;
     if(capital_rm_estadoSP == 1)
     {
@@ -2591,7 +2591,7 @@ var Cart$=(function(){
 function fnBadgeDiscount(){
   var createDivElemFree=document.createElement("div");
   createDivElemFree.className="fc-cart-discount-badge-free";
-  createDivElemFree.innerHTML="GR�TIS";
+  createDivElemFree.innerHTML="GRÁTIS";
 
   if(FC$.Page=="Cart"){
     var showBadgeFree=document.querySelectorAll('[rulename*="free"] .FCCartItemCont');
@@ -2792,7 +2792,7 @@ function processar_clique_pagamento()
     }
     else
     {
-      //ainda n�o apareceu comprar mais
+      //ainda não apareceu comprar mais
       window.location.href = "/page,idloja,54883,arq," + pagina_comprar_mais;
     }
   }

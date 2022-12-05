@@ -37,8 +37,8 @@
 /*.dropdown [id^="dropbtn"]:hover {color:#000000 !important; background:#F4C708 !important;}*/
 /*FIM - alteracao BLACK FRIDAY*/
 
-.dropdown #dropbtn12:hover {color:#ffffff !important; background:#c1006c !important;}
-.dropdown #dropbtn10:hover {color:#F4C708 !important; background:#000000 !important;}
+.dropdown #dropbtn12:hover {color:#ffffff !important; background:#000000 !important;}
+.dropdown #dropbtn10:hover {color:#ffffff !important; background:#2c2c2c !important;}
 .dropdown:hover [class^="dropdown-menu"] {display: block;}
 
 div.topnav .dropdown:hover ~ #darknav {display:block;}
