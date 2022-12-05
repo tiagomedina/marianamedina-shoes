@@ -221,7 +221,7 @@
 
 <section class="login">
   <div class="container">
-    <img class="imgLogin" src="https://www.bebefofuxo.com.br/lojas/00054883/images/logotopo.png">
+    <img class="imgLogin" src="https://www.marianamedinashoes.com.br/lojas/00054883/images/logotopo.png">
     <div class="formulario">
       <h1>Pedido: <orderNumber></h1>
       <div class="botoesForm botao" id="botao_drop"><h2>Escolha um usu�rio</h2></div>
@@ -704,7 +704,7 @@ function criaTelas(){
 
         let imgSetaEsquerda = document.createElement("img");
         imgSetaEsquerda.className = "setalogo2";
-        imgSetaEsquerda.src = "https://www.bebefofuxo.com.br/lojas/00054883/images/seta_logo2.png";
+        imgSetaEsquerda.src = "https://www.marianamedinashoes.com.br/lojas/00054883/images/seta_logo2.png";
 
         let setaDireita = document.createElement("a");
         setaDireita.className = "direita";
@@ -713,7 +713,7 @@ function criaTelas(){
 
         let imgSetaDireita = document.createElement("img");
         imgSetaDireita.className = "setalogo";
-        imgSetaDireita.src = "https://www.bebefofuxo.com.br/lojas/00054883/images/seta_logo.png";
+        imgSetaDireita.src = "https://www.marianamedinashoes.com.br/lojas/00054883/images/seta_logo.png";
 
         let telaAtributos = document.createElement("div");
         telaAtributos.className = "divTela";
@@ -762,7 +762,7 @@ function criaTelas(){
 
         let img = document.createElement("img");
         img.className = "imgProd";
-        img.src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/" + imagem;
+        img.src = "https://www.marianamedinashoes.com.br/lojas/00054883/prod/" + imagem;
 
         let divBotoes = document.createElement("div");
         divBotoes.className = "divBotoes";
@@ -832,7 +832,7 @@ function insereImagens(){
 
             obterImagem[0] = array_imagens.filter(e => e.codigo_tamanho_cor === array_itens[i].codigo+tamanho.replace("Tamanho: ", "-")+"-"+corCorrigida);
             imagem = obterImagem[0][0].imagem_prod;
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.marianamedinashoes.com.br/lojas/00054883/prod/"+imagem;
 
         }else if(array_itens[i].cor == "" && array_itens[i].tamanho != ""){
 
@@ -840,7 +840,7 @@ function insereImagens(){
 
             obterImagem[0] = array_imagens.filter(e => e.codigo_tamanho_cor === array_itens[i].codigo+tamanho.replace("Tamanho: ", "-")+"-");
             imagem = obterImagem[0][0].imagem_prod;
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.marianamedinashoes.com.br/lojas/00054883/prod/"+imagem;
 
         }else{
 
@@ -848,14 +848,14 @@ function insereImagens(){
 
             obterImagem[0] = array_imagens.filter(e => e.codigo_tamanho_cor === array_itens[i].codigo+"--"+corCorrigida);
             imagem = obterImagem[0][0].imagem_prod;
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.marianamedinashoes.com.br/lojas/00054883/prod/"+imagem;
 
         }
 
         if(imagem == undefined){
 
             imagem = "imagem_template.png";
-            document.querySelectorAll(".imgProd")[i].src = "https://www.bebefofuxo.com.br/lojas/00054883/prod/"+imagem;
+            document.querySelectorAll(".imgProd")[i].src = "https://www.marianamedinashoes.com.br/lojas/00054883/prod/"+imagem;
 
         }
 
