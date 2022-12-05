@@ -2079,7 +2079,7 @@ var Cart$=(function(){
   };
 
   function fnGoCupom(){
-    if(confirm("Deseja inserir o c�digo de um cupom de desconto?\n\nCaso tenha um cupom de desconto voc� ser� redirecionado para a p�gina onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
+    if(confirm("Deseja inserir o c&oacute;digo de um cupom de desconto?\n\nCaso tenha um cupom de desconto voc� ser� redirecionado para a p�gina onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
   }
 
   function fnChangeQtdProd(idProdCart,idProdPed,bMais){

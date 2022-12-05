@@ -24,7 +24,7 @@ var primeiraTentativaPesquisarCEP = true;
   
 //======================================================== AJUSTE DE INFO DE FRETE NO CHECKOUT
 //se n�o fizer esse ajuste aparecem dados divergentes na se��o de escolher o frete e no resumo da compra no fim do checkout
-//isso ocorre porque adicionamos dias no prazo dado pelos Correios via c�digo e tamb�m porque mudamos os nomes das transportadoras cadastradas via c�digo
+//isso ocorre porque adicionamos dias no prazo dado pelos Correios via c&oacute;digo e tamb�m porque mudamos os nomes das transportadoras cadastradas via c&oacute;digo
 function ajusteInfoFreteResumoCompra()
 {
   
@@ -1079,7 +1079,7 @@ function FuncChkPaymentEnd(){
 
   function cvv_oque()
   {
-    alert('CVV � um c�digo de seguran�a de 3 d�gitos, impresso no verso de cart�es de cr�dito.<br><br>Em cart�es American Express voc� encontra o CVV com 4 d�gitos e na frente.<br><br>Informar o c�digo de seguran�a � uma exig�ncia das administradoras de cart�es para tornar suas compras on-line ainda mais seguras.');
+    alert('CVV � um c&oacute;digo de seguran�a de 3 d�gitos, impresso no verso de cart�es de cr�dito.<br><br>Em cart�es American Express voc� encontra o CVV com 4 d�gitos e na frente.<br><br>Informar o c&oacute;digo de seguran�a � uma exig�ncia das administradoras de cart�es para tornar suas compras on-line ainda mais seguras.');
 
     $(".vex-theme-default").css("padding-top","80px");
     $(".vex-theme-default").css("padding-bottom","0px");
@@ -1102,7 +1102,7 @@ function FuncChkCCEnd()
   $('#idTRccNomeFC').insertBefore('#idTRccExpFC');
   
   $("#idTRccNomeFC .EstChkNomeCampo").text("Titular (impresso no cart�o):");
-  $("#idTRccSegFC .EstChkNomeCampo").text("C�digo de seguran�a (CVV):");
+  $("#idTRccSegFC .EstChkNomeCampo").text("c&oacute;digo de seguran�a (CVV):");
   
 
   var selectParcelas = $("#idChkExtPaymentFC input[type='radio']:checked").parent().parent().parent().parent().parent()[0].getElementsByClassName("EstDivParcels")[0].children[0];

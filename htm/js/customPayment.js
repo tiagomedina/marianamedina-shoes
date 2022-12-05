@@ -75,7 +75,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $("#P2ccSeg").parent().parent()[0].children[1].remove();
     $("#P2ccSeg").parent().parent().parent().parent().parent().parent()[0].innerHTML = $("#P2ccSeg").parent().parent()[0].innerHTML;
     var newNode = document.createElement("div");
-    var textNode = document.createTextNode("C�digo de seguran�a (CVV):");
+    var textNode = document.createTextNode("c&oacute;digo de seguran�a (CVV):");
     newNode.appendChild(textNode);
     $("#P2ccSeg").parent().parent()[0].children[0].insertBefore(newNode,$("#P2ccSeg").parent().parent()[0].children[0].children[0]);
     $("#P2ccSeg").parent().parent()[0].children[0].innerHTML += oqeh;
