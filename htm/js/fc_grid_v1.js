@@ -1,4 +1,4 @@
-// FastCommerce Grid [08.07.2015] - Beb� Fofuxo - Dez/2018 //
+// FastCommerce Grid [08.07.2015] - Mariana Medina Shoes - Dez/2018 //
 var produtoAdicionado;
 
 var FCGrid$ = function () {
@@ -41,7 +41,7 @@ var FCGrid$ = function () {
     btnSoldOut : 'botcarrinhoesgotado.svg',
 	iconArrowPrevIMG : 'icon-grid-arrow-prev.svg',
     iconArrowNextIMG : 'icon-grid-arrow-next.svg',
-    textGrid : 'Selecione as op��es abaixo',
+    textGrid : 'Selecione as op&ccedil;&otilde;es abaixo',
     order : ['cor','adicional1','adicional2','adicional3'],
     nameDescriptor : {
      cor : 'Cor',
@@ -240,7 +240,7 @@ var FCGrid$ = function () {
     },	
 
     popupSoldOutProduct: function(params){
-      return new MostraDispCaptcha(FC$.IDLoja, product.IDProduto); //Fun��o para popup de aviso de disponibilidade, produto esgotado
+      return new MostraDispCaptcha(FC$.IDLoja, product.IDProduto); //Fun&ccedil;&atilde;o para popup de aviso de disponibilidade, produto esgotado
       
     },
 
@@ -294,13 +294,13 @@ var FCGrid$ = function () {
       if(!product){
         oBtnComprar.setAttribute("class", "FCBtnGrid FCBtnSelectedOption FCBtnSelecioneGrid");
         oBtnComprar.innerHTML="<img src=\""+ FC$.PathImg + options.btnSelectImg +"\">"
-                             +"<div class=\"FCTooltipGrid Off\" id=\"idTooltipGridFC\" style=\"display:\">Selecione primeiro as op��es do produto</div>";
+                             +"<div class=\"FCTooltipGrid Off\" id=\"idTooltipGridFC\" style=\"display:\">Selecione primeiro as op&ccedil;&otilde;es do produto</div>";
         oBtnComprar.onclick=function(a){
           if( fn.hasClass(document.getElementById("idTooltipGridFC"), "Off")){
             fn.removeClass(document.getElementById("idTooltipGridFC"), "Off");
             fn.addClass(document.getElementById("idTooltipGridFC"), "On");
             
-            //scroll at� as op��es
+            //scroll at� as op&ccedil;&otilde;es
             var item = $("#idNivelGridFC_0")[0];
             item.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
           }else{
@@ -328,7 +328,7 @@ var FCGrid$ = function () {
             
           };
           if(options.incMultGrid)fn.qtyIncFieldDisabled(true, false);
-          fn.getShippingView(false); //simula��o de frete
+          fn.getShippingView(false); //simula&ccedil;&atilde;o de frete
         }
         else if(parseInt(product.estoque)>0 && parseFloat(product.priceNum) === 0){
           oBtnComprar.setAttribute("class", "FCBtnGrid FCBtnConsultenos");
@@ -337,7 +337,7 @@ var FCGrid$ = function () {
             fn.consultUsAboutProduct(sParamsGrid);
           };
           if(options.incMultGrid)fn.qtyIncFieldDisabled(true, false);
-          fn.getShippingView(false); //simula��o de frete
+          fn.getShippingView(false); //simula&ccedil;&atilde;o de frete
         }
         else{
           oBtnComprar.setAttribute("class", "FCBtnGrid FCBtnComprarGrid");
@@ -353,7 +353,7 @@ var FCGrid$ = function () {
               }
               else if($("#id_emailpresenteado")[0].checked == false && $("#id_whatspresenteado")[0].checked == false && $("#id_meuemail")[0].checked == false)
               {
-                alert("Selecione uma das 3 op��es de envio do Vale Presente");
+                alert("Selecione uma das 3 op&ccedil;&otilde;es de envio do Vale Presente");
                 var item = $("#id_emailpresenteado")[0];
                 item.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
               }
@@ -503,14 +503,14 @@ var FCGrid$ = function () {
             oQtdZipField.disabled = false;
             var iPesoProdSub = product.peso;
             iPesoProdSub = parseFloat(iPesoProdSub.replace(",","."));
-            //se o subproduto tem peso 0 � usado o peso do produto pai para a simula��o de frete
+            //se o subproduto tem peso 0 � usado o peso do produto pai para a simula&ccedil;&atilde;o de frete
             if(product.estoque !== "" && iPesoProdSub > 0 || product.estoque !== undefined && iPesoProdSub > 0){
               oZipField.id = "idZip"+ product.IDProduto;
               oQtdZipField.id = "idQtdZip"+ product.IDProduto;
               oShippingValues.id = "idShippingValues"+ product.IDProduto;
               oButtonShipping.onclick = function() {
                 fnGetShippingValuesProdGrid(product.IDProduto);
-                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simula��o de frete para o produto de ID ' + product.IDProduto});
+                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simula&ccedil;&atilde;o de frete para o produto de ID ' + product.IDProduto});
               };
             }else{
               var oProdPai = JSON.parse(aProductOnlyOne);
@@ -519,7 +519,7 @@ var FCGrid$ = function () {
               oShippingValues.id = "idShippingValues" + oProdPai.IDProduto;
               oButtonShipping.onclick = function() {
                 fnGetShippingValuesProdGrid(oProdPai.IDProduto);
-                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simula��o de frete para o produto de ID ' + oProdPai.IDProduto});
+                fn.consoleLogFC({'FC_Log_Grid_v1' : 'simula&ccedil;&atilde;o de frete para o produto de ID ' + oProdPai.IDProduto});
               };
             }
           }else{
@@ -617,13 +617,13 @@ var FCGrid$ = function () {
     },
 
     consoleLogFC: function(obj){
-      if (typeof console !== 'undefined')console.log(obj); /* Loga informa��es do produto */
+      if (typeof console !== 'undefined')console.log(obj); /* Loga informa&ccedil;&otilde;es do produto */
     }
 
   };
   //Fn auxiliares Grid_FC:end
   
-  // Realiza anima��o de pulsar do bot�o
+  // Realiza anima&ccedil;&atilde;o de pulsar do bot�o
   function btnAnimation(posBtnComprar) {
     if(options.btnAnimation) {
       posBtnComprar.classList.add('btnFadeOut');
@@ -752,7 +752,7 @@ var FCGrid$ = function () {
     if(oPos && FC$.Wishlist==1){
       var oBtnWL=document.createElement("div");
       oBtnWL.setAttribute("class","ProdWLSel");
-      oBtnWL.innerHTML="Selecione as op��es acima para inserir na lista de desejos.";
+      oBtnWL.innerHTML="Selecione as op&ccedil;&otilde;es acima para inserir na lista de desejos.";
       oPos.appendChild(oBtnWL);
     }
   }
@@ -767,7 +767,7 @@ var FCGrid$ = function () {
       if(typeof FuncButtonAddToWL==="function"){WL$.fnButtonAddToWishlist(idp);} else {FCLib$.onReady(function(){WL$.fnButtonAddToWishlist(idp);});}
       var el=document.querySelectorAll('.ProdWLSel');
       if(el.length>0){
-        for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove texto informando para selecionar op��es
+        for(var i=0; i< el.length;i++){el[i].parentNode.removeChild(el[i]);} //remove texto informando para selecionar op&ccedil;&otilde;es
       }
     }
   }
@@ -842,7 +842,7 @@ var FCGrid$ = function () {
   //fnResetOptions:begin
   function fnResetOptions(objElementParent){
     if(options.incMultGrid)fn.qtyIncFieldDisabled(true, false);
-    fn.getShippingView(false); //simula��o de frete
+    fn.getShippingView(false); //simula&ccedil;&atilde;o de frete
     var el=document.querySelectorAll('#idButtonBuyFC .FCBtnGrid');
     var elSelect=document.querySelectorAll('#idButtonBuyFC .FCBtnSelectedOption');
     if(el.length>0 && elSelect.length===0){

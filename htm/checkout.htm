@@ -23,7 +23,7 @@
 var primeiraTentativaPesquisarCEP = true;
   
 //======================================================== AJUSTE DE INFO DE FRETE NO CHECKOUT
-//se n&atilde;o fizer esse ajuste aparecem dados divergentes na se��o de escolher o frete e no resumo da compra no fim do checkout
+//se n&atilde;o fizer esse ajuste aparecem dados divergentes na se&ccedil;&atilde;o de escolher o frete e no resumo da compra no fim do checkout
 //isso ocorre porque adicionamos dias no prazo dado pelos Correios via c&oacute;digo e tamb�m porque mudamos os nomes das transportadoras cadastradas via c&oacute;digo
 function ajusteInfoFreteResumoCompra()
 {
@@ -38,13 +38,13 @@ function ajusteInfoFreteResumoCompra()
      ac[0].innerHTML = "";
   }
   
-  //verificando quantas op��es de frete aparece para o cliente - se for apenas uma op��o de frete n&atilde;o vai ter input type radio
+  //verificando quantas op&ccedil;&otilde;es de frete aparece para o cliente - se for apenas uma op&ccedil;&atilde;o de frete n&atilde;o vai ter input type radio
   var count_elements = $("#idTabFreteOptFC input[type='radio']").length;
   
   
   if(count_elements > 0)
   {
-      //executando fun��o para todo checkbox selecionado
+      //executando fun&ccedil;&atilde;o para todo checkbox selecionado
       $("#idTabFreteOptFC input[type='radio']:checked").each(function() {
         
         //guardar id do checkbox selecionado
@@ -58,10 +58,10 @@ function ajusteInfoFreteResumoCompra()
         if(textosFrete.length>2)
         {
           
-           //div onde a informa��o vai ser colocada, fica no fim do checkout, na parte de resumo do pedido
+           //div onde a informa&ccedil;&atilde;o vai ser colocada, fica no fim do checkout, na parte de resumo do pedido
            var ac = $(".EstTabPedidoFrete");
           
-           //zerando a informa��o que est� nessa div
+           //zerando a informa&ccedil;&atilde;o que est� nessa div
            ac[0].innerHTML = "";
         
         
@@ -102,13 +102,13 @@ function ajusteInfoFreteResumoCompra()
   }
   else
   {
-      //se for apenas uma op��o de frete
+      //se for apenas uma op&ccedil;&atilde;o de frete
     
-      //obtendo o elemento onde ficam as informa��es sobre frete apresentada para o cliente
+      //obtendo o elemento onde ficam as informa&ccedil;&otilde;es sobre frete apresentada para o cliente
       $("#idTabFreteOptFC label").each(function() {
       var textosFrete = $(this).children();
       
-      //div onde a informa��o vai ser colocada, fica no fim do checkout, na parte de resumo do pedido
+      //div onde a informa&ccedil;&atilde;o vai ser colocada, fica no fim do checkout, na parte de resumo do pedido
       var ac = $(".EstTabPedidoFrete");
     
       //tipo do frete
@@ -159,7 +159,7 @@ function ajustePrazo_Dados_Frete()
 
   var tem_retirar_loja = false;
   
-  //executar fun��o para cada label de observa��o contida nas informa��es do frete
+  //executar fun&ccedil;&atilde;o para cada label de observa&ccedil;&atilde;o contida nas informa&ccedil;&otilde;es do frete
   $("[id=idTxtObsCEPFC]").each(function( index ) {
     
     
@@ -244,7 +244,7 @@ function ajustePrazo_Dados_Frete()
       var diasUteis = dias+" dias �teis";
       
       
-      $(this).html("Prazo para separa��o do pedido: "+diasUteis+".<br> Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP</strong> <br> Hor�rio de funcionamento: 8:30 �s 17:00 (segunda a sexta)");
+      $(this).html("Prazo para separa&ccedil;&atilde;o do pedido: "+diasUteis+".<br> Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP</strong> <br> Hor�rio de funcionamento: 8:30 �s 17:00 (segunda a sexta)");
       
       tem_retirar_loja = true;
       
@@ -254,7 +254,7 @@ function ajustePrazo_Dados_Frete()
     if(nomeServico == "Encomenda PAC:" || nomeServico == "SEDEX:")
     {
     
-        //Extraindo a informa��o contida na label, normalmente � obs do frete cadastrada na loja + (x dias �teis) - Manaus (15 dias �teis)
+        //Extraindo a informa&ccedil;&atilde;o contida na label, normalmente � obs do frete cadastrada na loja + (x dias �teis) - Manaus (15 dias �teis)
         //Quando � area de entrega restrita o websevice dos Correios n&atilde;o retorna prazo de entrega, ficando apenas a obs do frete cadastrada na loja
     	var textoLabel = $( this ).text();
       
@@ -281,7 +281,7 @@ function ajustePrazo_Dados_Frete()
     
   });
   
-  //jogar o retirar na loja para �ltima op��o
+  //jogar o retirar na loja para �ltima op&ccedil;&atilde;o
   if(tem_retirar_loja)
   {
     $("[id=idTxtObsCEPFC]").each(function( index ) {
@@ -310,7 +310,7 @@ function ajustePrazo_Dados_Frete()
   var array = $("[id=idTxtNomeCEPFC]").toArray();
  
   
-  //se tem muitas op��es de frete � que deu problema na consulta externa
+  //se tem muitas op&ccedil;&otilde;es de frete � que deu problema na consulta externa
   if(array.length >= 5)
   {
     var sCEP = $("#P2CEP").val();
@@ -481,7 +481,7 @@ function fnprocessExisteTransportadora(obj)
 //alerta avisando sobre entrega restrita - n&atilde;o est� ativo atualmente
 function alertaEntregaRestrita()
 {
-  alert("Pode ser que seu pedido demore um pouquinho mais para ser entregue ou pode ser necess�rio voc� ir retirar o seu pedido na ag�ncia dos Correios mais pr�xima.\n\nPara maiores explica��es entre em contato conosco: shoes@marianamedina.com.br");
+  alert("Pode ser que seu pedido demore um pouquinho mais para ser entregue ou pode ser necess�rio voc� ir retirar o seu pedido na ag�ncia dos Correios mais pr�xima.\n\nPara maiores explica&ccedil;&otilde;es entre em contato conosco: shoes@marianamedina.com.br");
 }
   
   
@@ -489,7 +489,7 @@ function alertaEntregaRestrita()
 function avisoAreaRestrita()
 {
   var elemAviso = document.createElement('div');
-  //elemAviso.innerHTML = "<strong>ATEN��O: </strong> No momento, seu CEP est� como �rea de entrega restrita pelos os Correios e isso pode ocasionar atraso na entrega do seu pedido. Para maiores explica��es entre em contato conosco: shoes@marianamedina.com.br";
+  //elemAviso.innerHTML = "<strong>ATEN&ccedil;&atilde;o: </strong> No momento, seu CEP est� como �rea de entrega restrita pelos os Correios e isso pode ocasionar atraso na entrega do seu pedido. Para maiores explica&ccedil;&otilde;es entre em contato conosco: shoes@marianamedina.com.br";
   elemAviso.innerHTML = "*�rea com entrega restrita - <a href='javascript:alertaEntregaRestrita();'>saiba mais</a>";
   elemAviso.style.backgroundColor = "#fff5d5";
   elemAviso.style.color = "#976b00";
@@ -645,7 +645,7 @@ function avisoAreaRestrita()
         var num_txt = document.querySelector('#P2EnderecoNum').value;
         if (num_txt.length >= 10)
         {
-          alert("Para adicionar mais informa��es, utilize o campo Complemento");
+          alert("Para adicionar mais informa&ccedil;&otilde;es, utilize o campo Complemento");
           this.focus();
           return false;
         }
@@ -655,7 +655,7 @@ function avisoAreaRestrita()
         var num_txt = document.querySelector('#P2PEnderecoNum').value;
         if (num_txt.length >= 10)
         {
-          alert("Para adicionar mais informa��es, utilize o campo Complemento");
+          alert("Para adicionar mais informa&ccedil;&otilde;es, utilize o campo Complemento");
           this.focus();
           return false;
         }
@@ -861,7 +861,7 @@ function FuncChkPaymentEnd(){
   */
   
   /*
-  //troca de posi��o
+  //troca de posi&ccedil;&atilde;o
   var elemMaestro = document.getElementById('idPagto25FC');
   var tdPai = elemMaestro.parentNode;
   tdPai.removeChild(elemMaestro);
@@ -872,7 +872,7 @@ function FuncChkPaymentEnd(){
   tdPai.appendChild(elemVisaElectron);
   */
   
-  //alterando posi��es das formas de pagamento
+  //alterando posi&ccedil;&otilde;es das formas de pagamento
   
   
   var elemElo = document.getElementById('idPagtoCC7FC');
@@ -1007,7 +1007,7 @@ function FuncChkPaymentEnd(){
   	var m = textoDesconto.indexOf(")");
   	var desconto = textoDesconto.substring(n+1, m);
   
-  	//colocar a informa��o de desconto junto ao nome da forma de pagamento Boleto Banc�rio
+  	//colocar a informa&ccedil;&atilde;o de desconto junto ao nome da forma de pagamento Boleto Banc�rio
  	FuncChkChangeTxtPagto("1","<label for=Pagto1>Boleto banc�rio <br><span id='descontoGreen'><font color='#2ab837'><b>" + desconto + " de DESCONTO</b></font></span></label>");
   
   	$( ".EstTabPagtoTit" ).remove();
@@ -1068,7 +1068,7 @@ function FuncChkPaymentEnd(){
   
   
   
-  //verificando quantas op��es de frete aparece para o cliente - se for apenas uma op��o de frete n&atilde;o vai ter input type radio
+  //verificando quantas op&ccedil;&otilde;es de frete aparece para o cliente - se for apenas uma op&ccedil;&atilde;o de frete n&atilde;o vai ter input type radio
   var count_elements = $("#idTabFreteOptFC input[type='radio']").length;
   
   
@@ -1079,7 +1079,7 @@ function FuncChkPaymentEnd(){
 
   function cvv_oque()
   {
-    alert('CVV � um c&oacute;digo de seguran�a de 3 d�gitos, impresso no verso de cart�es de cr�dito.<br><br>Em cart�es American Express voc� encontra o CVV com 4 d�gitos e na frente.<br><br>Informar o c&oacute;digo de seguran�a � uma exig�ncia das administradoras de cart�es para tornar suas compras on-line ainda mais seguras.');
+    alert('CVV � um c&oacute;digo de Seguran&ccedil;a de 3 d�gitos, impresso no verso de cart�es de cr�dito.<br><br>Em cart�es American Express voc� encontra o CVV com 4 d�gitos e na frente.<br><br>Informar o c&oacute;digo de Seguran&ccedil;a � uma exig�ncia das administradoras de cart�es para tornar suas compras on-line ainda mais seguras.');
 
     $(".vex-theme-default").css("padding-top","80px");
     $(".vex-theme-default").css("padding-bottom","0px");
@@ -1102,7 +1102,7 @@ function FuncChkCCEnd()
   $('#idTRccNomeFC').insertBefore('#idTRccExpFC');
   
   $("#idTRccNomeFC .EstChkNomeCampo").text("Titular (impresso no cart�o):");
-  $("#idTRccSegFC .EstChkNomeCampo").text("c&oacute;digo de seguran�a (CVV):");
+  $("#idTRccSegFC .EstChkNomeCampo").text("c&oacute;digo de Seguran&ccedil;a (CVV):");
   
 
   var selectParcelas = $("#idChkExtPaymentFC input[type='radio']:checked").parent().parent().parent().parent().parent()[0].getElementsByClassName("EstDivParcels")[0].children[0];
@@ -1152,7 +1152,7 @@ function FuncChkCCEnd()
   
 }
 
-//fun��o que muda o nome da forma de pagamento
+//fun&ccedil;&atilde;o que muda o nome da forma de pagamento
 function FuncChkChangeTxtPagto(sPagto,sTxt){
 var oPagto=F$.GetID("idTxtPagto"+ sPagto +"FC");
 if(oPagto){oPagto.innerHTML=sTxt;}
@@ -1171,9 +1171,9 @@ function fnShowStep(iStep){
   var oSteps=F$.GetID("StepCheckout");
   if(oSteps){
     var sContStep="";
-    if(iStep==0)sContStep="<img src='"+ FC$.PathImg +"ident_on.svg' alt='Identifica��o'><img src='"+ FC$.PathImg +"dados_off.svg' alt='Dados da Compra'><img src='"+ FC$.PathImg +"conf_off.svg' alt='Confirma��o'><style>#idChkOrderConfirmationFC {display:none;}</style>";
-    else if(iStep==1)sContStep="<img src='"+ FC$.PathImg +"ident_off.svg' alt='Identifica��o'><img src='"+ FC$.PathImg +"dados_on.svg' alt='Dados da Compra'><img src='"+ FC$.PathImg +"conf_off.svg' alt='Confirma��o'>";
-    else if(iStep==2)sContStep="<img src='"+ FC$.PathImg +"ident_off.svg' alt='Identifica��o'><img src='"+ FC$.PathImg +"dados_off.svg' alt='Dados da Compra'><img src='"+ FC$.PathImg +"conf_on.svg' alt='Confirma��o'>";
+    if(iStep==0)sContStep="<img src='"+ FC$.PathImg +"ident_on.svg' alt='Identifica&ccedil;&atilde;o'><img src='"+ FC$.PathImg +"dados_off.svg' alt='Dados da Compra'><img src='"+ FC$.PathImg +"conf_off.svg' alt='Confirma&ccedil;&atilde;o'><style>#idChkOrderConfirmationFC {display:none;}</style>";
+    else if(iStep==1)sContStep="<img src='"+ FC$.PathImg +"ident_off.svg' alt='Identifica&ccedil;&atilde;o'><img src='"+ FC$.PathImg +"dados_on.svg' alt='Dados da Compra'><img src='"+ FC$.PathImg +"conf_off.svg' alt='Confirma&ccedil;&atilde;o'>";
+    else if(iStep==2)sContStep="<img src='"+ FC$.PathImg +"ident_off.svg' alt='Identifica&ccedil;&atilde;o'><img src='"+ FC$.PathImg +"dados_off.svg' alt='Dados da Compra'><img src='"+ FC$.PathImg +"conf_on.svg' alt='Confirma&ccedil;&atilde;o'>";
     oSteps.innerHTML=sContStep;
   }
 }
@@ -1228,7 +1228,7 @@ function FuncChkRegisterBegin(){
 
     }
     
-    if(bShowCupomCheckout && F$.Step==1)fnShowCupom();  //Chama fun��o que exibe campo para cupom
+    if(bShowCupomCheckout && F$.Step==1)fnShowCupom();  //Chama fun&ccedil;&atilde;o que exibe campo para cupom
     ajusteInfoFreteResumoCompra();
 
     //TESTE DE ERRO

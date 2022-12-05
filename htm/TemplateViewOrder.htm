@@ -272,7 +272,7 @@ let cor = [];
 $("#pedido").hide();
 $("#a").hide();
 
-//Criando o bot�o de logout e outras fun��es assim que a p�gina � carregada
+//Criando o bot�o de logout e outras fun&ccedil;&otilde;es assim que a p�gina � carregada
 document.addEventListener("DOMContentLoaded", () => {
 
     criaBotaoLogout();
@@ -363,9 +363,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	$("label[class='nPedido']").remove();
 });
 
-window.setTimeout(()  => { insereImagens(); },2000); //Fun��o para colocar as imagens dos itens
+window.setTimeout(()  => { insereImagens(); },2000); //Fun&ccedil;&atilde;o para colocar as imagens dos itens
 
-//Fun��o para quando clicar no bot�o pegar
+//Fun&ccedil;&atilde;o para quando clicar no bot�o pegar
 function verde(botao) {
 
 	let qtd = parseInt(botao.dataset.qtd);
@@ -448,7 +448,7 @@ function verde(botao) {
     }
 }
 
-//Fun��o para quando clicar no bot�o em falta
+//Fun&ccedil;&atilde;o para quando clicar no bot�o em falta
 function vermelho(botao) {
 
     let text = "Tem certeza que est� em falta?";
@@ -532,14 +532,14 @@ function vermelho(botao) {
     }
 }
 
-//Fun��o para fazer logout
+//Fun&ccedil;&atilde;o para fazer logout
 function clique_logout(){
 
   	let usuario = document.getElementById("botao_drop").innerText;
     let xhttp2 = new XMLHttpRequest();
-    //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova fun��o de retorno definida
+    //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova fun&ccedil;&atilde;o de retorno definida
     xhttp2.onreadystatechange = function() {
-    //readystate = 4 e status = 200 indica que a requisi��o foi respondida com sucesso
+    //readystate = 4 e status = 200 indica que a requisi&ccedil;&atilde;o foi respondida com sucesso
         if (this.readyState == 4 && this.status == 200) {
             //o retorno do servidor encontra-se dentro do responseText
             let resposta = this.responseText;
@@ -631,12 +631,12 @@ function desabilitar(){
 
     setaDireita.forEach((element) => {
         element.href = "#"+element.parentNode.id;
-        element.onclick = function(){ alert("Marque uma op��o!"); };
+        element.onclick = function(){ alert("Marque uma op&ccedil;&atilde;o!"); };
     });
 
     setaEsquerda.forEach((element) => {
         element.href = "#"+element.parentNode.id;
-        element.onclick = function(){ alert("Marque uma op��o!"); };
+        element.onclick = function(){ alert("Marque uma op&ccedil;&atilde;o!"); };
     });
 }
 
@@ -651,7 +651,7 @@ function criaBotaoLogout(){
     btLogout.innerText = "Logout";
     btLogout.className = "btLogout";
 
-    btLogout.addEventListener("click", () => { //Atribuindo fun��o para fazer logout para o bot�o
+    btLogout.addEventListener("click", () => { //Atribuindo fun&ccedil;&atilde;o para fazer logout para o bot�o
         clique_logout();
     });
 
@@ -675,7 +675,7 @@ function imagemProd(){
         }
     });
 
-    xhttp7.onreadystatechange = function(){ //Fun��o para receber todas as imagens de produtos do banco de dados
+    xhttp7.onreadystatechange = function(){ //Fun&ccedil;&atilde;o para receber todas as imagens de produtos do banco de dados
         if(this.readyState == 4 && this.status == 200){
             array_imagens = eval(this.responseText);
         }
@@ -884,9 +884,9 @@ function clique_enviar(){
       }else{
 
         let xhttp = new XMLHttpRequest();
-        //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova fun��o de retorno definida
+        //funcao acionada quando o servidor responde para o nosso sistema, cada nova conexao deve ter um novo objeto xhttp, com uma nova fun&ccedil;&atilde;o de retorno definida
         xhttp.onreadystatechange = function() {
-            //readystate = 4 e status = 200 indica que a requisi��o foi respondida com sucesso
+            //readystate = 4 e status = 200 indica que a requisi&ccedil;&atilde;o foi respondida com sucesso
             if(this.readyState == 4 && this.status == 200) {
                 //o retorno do servidor encontra-se dentro do responseText
                 control = parseInt(this.responseText);

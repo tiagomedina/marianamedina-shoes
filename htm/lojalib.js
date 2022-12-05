@@ -1004,7 +1004,7 @@ function ShowCartOnPage(IDLoja,iErr,sMsg,sCartText,sCheckoutText,este){
     oDivShowCartOnPage.innerHTML=sHTML;
     iLastCartOnPage++;
     setTimeout("if(iLastCartOnPage=="+ iLastCartOnPage +")oDivShowCartOnPage.style.visibility='hidden';",5000);
-    sF$.fnUpdateCart(true,IsFramePage); //fun��o para atualizar carrinho
+    sF$.fnUpdateCart(true,IsFramePage); //fun&ccedil;&atilde;o para atualizar carrinho
 
   }
 
@@ -1776,7 +1776,7 @@ var Cart$=(function(){
         var s3=oItems[i].s3; if(s3==undefined)s3="";
         var wrap=oItems[i].wrap; if(wrap==undefined)wrap=false;
         var wrapValue=oItems[i].wrapValue; if(wrapValue==undefined)wrapValue=0;
-        //Informa��es do produto       
+        //Informa&ccedil;&otilde;es do produto       
         sProdAtual+="<div id='DivItem"+ idProdPed +"' class='CartDesign-product-container'>";
         sProdAtual+="  <div class='CartDesign-product-img'>";
         sProdAtual+="    <div class='ImgProdCart'><a href='/listaprodutos.asp?idloja="+ FC$.IDLoja +"&idproduto="+ idProdCart +"'><img src='"+ ImgProdCart +"' border='0'></a></div>";
@@ -1812,7 +1812,7 @@ var Cart$=(function(){
         if(showBadgeFreeSideCartFree > -1){
           sProdAtual+="<div class='fc-cart-discount-badge-free'>GR&Aacute;TIS</div>";
         }else if(showBadgeFreeSideCartDiscount > -1){
-          sProdAtual+="<div class='fc-sidecart-discount-badge-discount'>Item com desconto especial<br>Promo��o: " + promocao_nomes[sAtrRuleNameItem] + "</div>";
+          sProdAtual+="<div class='fc-sidecart-discount-badge-discount'>Item com desconto especial<br>Promo&ccedil;&atilde;o: " + promocao_nomes[sAtrRuleNameItem] + "</div>";
         }
 
         sProdutosNaCesta=sProdAtual+sProdutosNaCesta;        
@@ -1981,12 +1981,12 @@ var Cart$=(function(){
     var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight();
     $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
 
-    //Mostra carrinho (op��o com anina&ccedil;&atilde;o)
+    //Mostra carrinho (op&ccedil;&atilde;o com anina&ccedil;&atilde;o)
     //oCartDesign.style.display="";
     //jQuery(oCartDesign).show(300);
     if(oCartDesign.style.right=="" || oCartDesign.style.right=="-350px")jQuery(oCartDesign).animate({ "right": "+=350px" }, 200 );
 
-    //Muda tamanho e posi��o dependendo da largura
+    //Muda tamanho e posi&ccedil;&atilde;o dependendo da largura
     /*var iClientWidth=document.documentElement.clientWidth;
     if(iClientWidth<350){oCartDesign.style.width="320px";}
     if(iClientWidth<440){oCartDesign.style.top="0px";}
@@ -1996,7 +1996,7 @@ var Cart$=(function(){
       if(oContentItensCart)oContentItensCart.style.maxHeight="215px";
     }*/
 
-    //Se n&atilde;o est� vazio, carrega fun��o do c�lculo de frete
+    //Se n&atilde;o est� vazio, carrega fun&ccedil;&atilde;o do c�lculo de frete
     if((FC$.TypeFrt==3 || FC$.TypeFrt==4) && bTemProds)fnGetCEP(subtotalProdCart); 
 
     //Atualiza carrinho do topo
@@ -2062,7 +2062,7 @@ var Cart$=(function(){
   function fnCloseCartDesign(){
     var oCartDesign=document.getElementById("CartDesign");   
     if(oCartDesign){
-      //Esconde carrinho (op��o com anina&ccedil;&atilde;o)
+      //Esconde carrinho (op&ccedil;&atilde;o com anina&ccedil;&atilde;o)
       //oCartDesign.style.display="none";
       //jQuery(oCartDesign).hide(300);
       if(oCartDesign.style.right=="0px")jQuery(oCartDesign).animate({ "right": "-=350px" }, 200 );
@@ -2458,7 +2458,7 @@ var Cart$=(function(){
     if(deuErroBuscaFrete == false)
     {
       
-      //oShippingObs.innerHTML="<span class=ObsFreightCalc>"+ textoFinal +"</span>"; //Insere observa��es
+      //oShippingObs.innerHTML="<span class=ObsFreightCalc>"+ textoFinal +"</span>"; //Insere observa&ccedil;&otilde;es
       oShippingValue.innerHTML="<b>"+OptValue+"</b><br>"+textoFinal;
       oShippingValue.style.display="block";
       var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
@@ -2626,7 +2626,7 @@ function fnBadgeDiscount(){
 
       }
 
-      $("#TabItens tr:contains('Digite o CEP')").before("<tr><td colspan='4'>Voc� est� participando da promo��o"+ promocoes_divs +"</td></tr>");
+      $("#TabItens tr:contains('Digite o CEP')").before("<tr><td colspan='4'>Voc� est� participando da promo&ccedil;&atilde;o"+ promocoes_divs +"</td></tr>");
     }
 
 
@@ -2642,7 +2642,7 @@ function fnBadgeDiscount(){
 
       var createDivElemDiscount=document.createElement("div");
       createDivElemDiscount.className="fc-track-discount-badge-discount";
-      createDivElemDiscount.innerHTML="Item com desconto especial - Promo��o: " + promocao_nomes[showBadgeDiscountTrack[i].parentNode.getAttribute("rulename")];
+      createDivElemDiscount.innerHTML="Item com desconto especial - Promo&ccedil;&atilde;o: " + promocao_nomes[showBadgeDiscountTrack[i].parentNode.getAttribute("rulename")];
 
       showBadgeDiscountTrack[i].appendChild(createDivElemDiscount);
     }
