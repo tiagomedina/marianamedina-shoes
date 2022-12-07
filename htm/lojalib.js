@@ -55,50 +55,50 @@ else
 var promocao_nomes = {};
 promocao_nomes["9 kits por 259 discount"] = "9 kits por R$259";
 promocao_nomes["5 kits por 149 discount"] = "5 kits por R$149";
-promocao_nomes["80 mijoes por 480 discount"] = "80 mij&Otilde;ES por R$480";
+promocao_nomes["80 mijoes por 480 discount"] = "80 mijões por R$480";
 promocao_nomes["3 macaquinhos por 4899 discount"] = "3 Macaquinhos por R$48,99";
-promocao_nomes["verao menina 5 por 110 discount"] = "Ver&atilde;o Meninas - 5 por R$110";
-promocao_nomes["verao menino 5 por 100 discount"] = "Ver&atilde;o Meninos - 5 por R$100";
-promocao_nomes["kit 5 pecas 2 por 110 discount"] = "Kit 5 peï¿½as - 2 por R$110";
-promocao_nomes["kit body 3 pecas 5 por 145 discount"] = "Kit Body 3 peï¿½as - 5 por R$145";
-promocao_nomes["4 calcados por 100 discount"] = "4 Calï¿½ados por R$100";
+promocao_nomes["verao menina 5 por 110 discount"] = "Verão Meninas - 5 por R$110";
+promocao_nomes["verao menino 5 por 100 discount"] = "Verão Meninos - 5 por R$100";
+promocao_nomes["kit 5 pecas 2 por 110 discount"] = "Kit 5 peças - 2 por R$110";
+promocao_nomes["kit body 3 pecas 5 por 145 discount"] = "Kit Body 3 peças - 5 por R$145";
+promocao_nomes["4 calcados por 100 discount"] = "4 Calçados por R$100";
 promocao_nomes["3 pimpolhos por 90 discount"] = "3 Pimpolhos por R$90";
 promocao_nomes["2 pares por 88 discount"] = "2 pares por R$88";
 promocao_nomes["2 pares por 84 discount"] = "2 pares por R$84";
 
-promocao_nomes["4 calcados por 110 discount"] = "4 Calï¿½ados por R$110";
-promocao_nomes["kit 5 pecas 2 por 115 discount"] = "Kit 5 peï¿½as - 2 por R$115";
-promocao_nomes["kit body 3 pecas 5 por 149 discount"] = "Kit Body 3 peï¿½as - 5 por R$149";
+promocao_nomes["4 calcados por 110 discount"] = "4 Calçados por R$110";
+promocao_nomes["kit 5 pecas 2 por 115 discount"] = "Kit 5 peças - 2 por R$115";
+promocao_nomes["kit body 3 pecas 5 por 149 discount"] = "Kit Body 3 peças - 5 por R$149";
 
 promocao_nomes["3 baby soffete por 60 discount"] = "3 Baby Soffete por R$60";
 promocao_nomes["2 linda ju por 80 discount"] = "2 Linda Ju por R$80";
 
 
-promocao_nomes["verao 5 por 100 discount"] = "Ver&atilde;o 5 por R$100";
+promocao_nomes["verao 5 por 100 discount"] = "Verão 5 por R$100";
 
 promocao_nomes["3 macaquinhos por 49 discount"] = "3 Macaquinhos por R$49";
 
-promocao_nomes["kit body 3 pecas 3 por 96 discount"] = "Kit Body 3 peï¿½as - 3 por R$96";
+promocao_nomes["kit body 3 pecas 3 por 96 discount"] = "Kit Body 3 peças - 3 por R$96";
 
 promocao_nomes["2 pares por 105 discount"] = "2 pares por R$105";
 
-promocao_nomes["kit body longo 9 pecas por 118 discount"] = "Kit Body Inverno 3 peï¿½as - 3 por R$118";
-promocao_nomes["kit body curto 9 pecas por 96 discount"] = "Kit Body Curto 3 peï¿½as - 3 por R$96";
+promocao_nomes["kit body longo 9 pecas por 118 discount"] = "Kit Body Inverno 3 peças - 3 por R$118";
+promocao_nomes["kit body curto 9 pecas por 96 discount"] = "Kit Body Curto 3 peças - 3 por R$96";
 
 promocao_nomes["conjunto inverno 3 por 120 discount"] = "Conjunto Inverno Estilo - 3 por R$120";
-promocao_nomes["conjunto inverno basico 3 por 90 discount"] = "Conjunto Inverno B&aacute;sico - 3 por R$90";
+promocao_nomes["conjunto inverno basico 3 por 90 discount"] = "Conjunto Inverno Básico - 3 por R$90";
 promocao_nomes["conjunto inverno premium 3 por 150 discount"] = "Conjunto Inverno Premium - 3 por R$150";
 
 promocao_nomes["4 baby soffete por 90 discount"] = "4 Baby Soffete por R$90";
 
-promocao_nomes["2 macacao por 70 discount"] = "2 Macac&Otilde;ES por R$70";
-promocao_nomes["3 macacao por 99 discount"] = "3 Macac&Otilde;ES por R$99";
+promocao_nomes["2 macacao por 70 discount"] = "2 Macacões por R$70";
+promocao_nomes["3 macacao por 99 discount"] = "3 Macacões por R$99";
 
 promocao_nomes["2 pijamas por 66 discount"] = "2 Pijamas por R$66";
 
 
-promocao_nomes["kit body 9 pecas por 105 discount"] = "Kit Body 3 peï¿½as - 3 por R$105";
-promocao_nomes["kit body 12 pecas por 136 discount"] = "Kit Body 3 peï¿½as - 4 por R$136";
+promocao_nomes["kit body 9 pecas por 105 discount"] = "Kit Body 3 peças - 3 por R$105";
+promocao_nomes["kit body 12 pecas por 136 discount"] = "Kit Body 3 peças - 4 por R$136";
 
 promocao_nomes["3 por 99 discount"] = "3 por R$99";
 
@@ -115,48 +115,48 @@ promocao_nomes["5 por 179 discount"] = "5 por R$179";
 
 promocao_nomes["4 macaquinho por 90 discount"] = "4 Macaquinhos e Banho de Sol por R$90";
 promocao_nomes["4 por 142 discount"] = "4 por R$142";
-promocao_nomes["verao masc 5 por 143 discount"] = "Ver&atilde;o Masculino - 5 por R$143";
-promocao_nomes["verao fem 5 por 143 discount"] = "Ver&atilde;o Feminino - 5 por R$143";
-promocao_nomes["3 kit body por 106 discount"] = "Kit Body 3 peï¿½as - 3 por R$106";
-promocao_nomes["4 kit body por 140 discount"] = "Kit Body 3 peï¿½as - 4 por R$140";
+promocao_nomes["verao masc 5 por 143 discount"] = "Verão Masculino - 5 por R$143";
+promocao_nomes["verao fem 5 por 143 discount"] = "Verão Feminino - 5 por R$143";
+promocao_nomes["3 kit body por 106 discount"] = "Kit Body 3 peças - 3 por R$106";
+promocao_nomes["4 kit body por 140 discount"] = "Kit Body 3 peças - 4 por R$140";
 
 promocao_nomes["4 pares por 99 discount"] = "4 pares por R$99";
 
 //combo black friday
 promocao_nomes["2 pares por 99 discount"] = "2 pares por R$99";
-promocao_nomes["4 calcados por 95 discount"] = "4 Calï¿½ados por R$95";
+promocao_nomes["4 calcados por 95 discount"] = "4 Calçados por R$95";
 
 promocao_nomes["2 pares por 104 discount"] = "2 pares por R$104";
-promocao_nomes["4 calcados por 105 discount"] = "4 Calï¿½ados por R$105";
+promocao_nomes["4 calcados por 105 discount"] = "4 Calçados por R$105";
 
-promocao_nomes["verao masc 5 por 138 discount"] = "Ver&atilde;o Masculino - 5 por R$138";
-promocao_nomes["verao fem 5 por 138 discount"] = "Ver&atilde;o Feminino - 5 por R$138";
+promocao_nomes["verao masc 5 por 138 discount"] = "Verão Masculino - 5 por R$138";
+promocao_nomes["verao fem 5 por 138 discount"] = "Verão Feminino - 5 por R$138";
 promocao_nomes["4 por 138 discount"] = "4 por R$138";
-promocao_nomes["3 kit body por 103 discount"] = "Kit Body 3 peï¿½as - 3 por R$103";
-promocao_nomes["4 kit body por 136 discount"] = "Kit Body 3 peï¿½as - 4 por R$136";
+promocao_nomes["3 kit body por 103 discount"] = "Kit Body 3 peças - 3 por R$103";
+promocao_nomes["4 kit body por 136 discount"] = "Kit Body 3 peças - 4 por R$136";
 
-promocao_nomes["4 calcados por 97 discount"] = "4 Calï¿½ados por R$97";
+promocao_nomes["4 calcados por 97 discount"] = "4 Calçados por R$97";
 promocao_nomes["2 jardineiras por 57 discount"] = "2 Jardineiras por R$57";
 promocao_nomes["3 por 126 discount"] = "3 Kits por R$126";
 //fim combo black friday
 
-promocao_nomes["verao 5 por 143 discount"] = "Ver&atilde;o - 5 por R$143";
+promocao_nomes["verao 5 por 143 discount"] = "Verão - 5 por R$143";
 promocao_nomes["3 por 113 discount"] = "3 produtos por R$113";
 promocao_nomes["3 por 105 discount"] = "3 por R$105";
 
 promocao_nomes["4 pares por 96 discount"] = "4 pares por R$96";
-promocao_nomes["3 por 99 discount"] = "3 peï¿½as - 3 por R$99";
-promocao_nomes["3 por 104 discount"] = "3 peï¿½as - 3 por R$104";
-promocao_nomes["3 por 129 discount"] = "3 peï¿½as - 3 por R$129";
-promocao_nomes["3 calcados por 85 discount"] = "3 Calï¿½ados por R$85";
-promocao_nomes["10 por 115 discount"] = "10 peï¿½as por R$115";
+promocao_nomes["3 por 99 discount"] = "3 peças - 3 por R$99";
+promocao_nomes["3 por 104 discount"] = "3 peças - 3 por R$104";
+promocao_nomes["3 por 129 discount"] = "3 peças - 3 por R$129";
+promocao_nomes["3 calcados por 85 discount"] = "3 Calçados por R$85";
+promocao_nomes["10 por 115 discount"] = "10 peças por R$115";
 promocao_nomes["3 pares por 80 discount"] = "3 pares por R$80";
 promocao_nomes["4 pares por 103 discount"] = "4 pares por R$103";
-promocao_nomes["2 kit body por 67 discount"] = "Kit Body 3 peï¿½as - 2 por R$67";
-promocao_nomes["3 kit body por 100 discount"] = "Kit Body 3 peï¿½as - 3 por R$100";
-promocao_nomes["4 kit body por 130 discount"] = "Kit Body 3 peï¿½as - 4 por R$130";
-promocao_nomes["3 macacoes por 95 discount"] = "3 Macac&Otilde;ES por R$95";
-promocao_nomes["10 por 105 discount"] = "10 peï¿½as por R$105";
+promocao_nomes["2 kit body por 67 discount"] = "Kit Body 3 peças - 2 por R$67";
+promocao_nomes["3 kit body por 100 discount"] = "Kit Body 3 peças - 3 por R$100";
+promocao_nomes["4 kit body por 130 discount"] = "Kit Body 3 peças - 4 por R$130";
+promocao_nomes["3 macacoes por 95 discount"] = "3 Macacões por R$95";
+promocao_nomes["10 por 105 discount"] = "10 peças por R$105";
 promocao_nomes["3 por 89 discount"] = "3 por R$89";
 promocao_nomes["3 por 85 discount"] = "3 por R$85";
 
@@ -367,13 +367,13 @@ function fnprocessExisteTransportadora(obj)
         {
           var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
           if(oImgLoadingCEP){oImgLoadingCEP.style.display="none";}
-          oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>CEP inV&aacute;lido</span>";
+          oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>CEP inválido</span>";
 
         }
         else if(oShippingValue1 || oShippingValue2)
         {
-          oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inV&aacute;lido</span>";
-          oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inV&aacute;lido</span>";
+          oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inválido</span>";
+          oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>CEP inválido</span>";
           var oImgLoadingCEP1=document.getElementById("idImgLoadingCEP1");
           if(oImgLoadingCEP1){oImgLoadingCEP1.style.display="none";}
           var oImgLoadingCEP2=document.getElementById("idImgLoadingCEP2");
@@ -430,7 +430,7 @@ function verificar_carrinho(carrinho)
       tem_topchot = true;
     }
     
-    if(cat_produto == "Tï¿½nis" || cat_produto == "Sandï¿½lia"  || cat_produto == "Sapatilha"  || cat_produto == "Chinelo"  || cat_produto == "Babuche"  || cat_produto == "Mocassim" || cat_produto == "Galocha")
+    if(cat_produto == "Tênis" || cat_produto == "Sandália"  || cat_produto == "Sapatilha"  || cat_produto == "Chinelo"  || cat_produto == "Babuche"  || cat_produto == "Mocassim" || cat_produto == "Galocha")
     {
       tem_calcado = true;
     }
@@ -569,7 +569,7 @@ function verificar_carrinho(carrinho)
   
 }
 
-// Formata&ccedil;&atilde;o de Numero
+// Formatação de Numero
 function fnFormatNumber(num){
   num=num.toString().replace(/\$|\,/g,'');
   if(isNaN(num))num="0";
@@ -587,12 +587,12 @@ var sF$=(function(){
   function fnLoginUserName(NameUser,PicUser){
     var oImgGlobalSign=document.getElementById("idImgGlobalSignFC");
     if(NameUser==""){
-      document.getElementById("idLoginInfo").innerHTML="<!--div class='logintext'>Olï¿½ <b>Visitante</b>. <a href='/cadastro.asp?idloja="+FC$.IDLoja+"&pp=3&passo=1&sit=1'>Clique aqui</a> e faï¿½a seu login</div-->";
+      document.getElementById("idLoginInfo").innerHTML="<!--div class='logintext'>Olá <b>Visitante</b>. <a href='/cadastro.asp?idloja="+FC$.IDLoja+"&pp=3&passo=1&sit=1'>Clique aqui</a> e faça seu login</div-->";
       if(oImgGlobalSign){oImgGlobalSign.style.display="";}
     }
     else{
       NameUser=fnFirstName(NameUser);
-      document.getElementById("idLoginInfo").innerHTML="<!--div class='logintext'>Olï¿½ <b>"+NameUser+"</b>. <a href='#Logout' onclick=FCLib$.fnClientLogout('',sF$.fnCliLogout)>Clique</a> para sair.</div-->";
+      document.getElementById("idLoginInfo").innerHTML="<!--div class='logintext'>Olá <b>"+NameUser+"</b>. <a href='#Logout' onclick=FCLib$.fnClientLogout('',sF$.fnCliLogout)>Clique</a> para sair.</div-->";
       if(oImgGlobalSign){oImgGlobalSign.style.display="none";}
     }
     var oFoto=document.getElementById("UserImage");
@@ -682,7 +682,7 @@ function FuncButtonAddToWL(idp,bAdd){
 function fnShowProd(PrecoProd,PrecoOri,IDProd,MaxParcelas){
   var sPreco="";
   var ComSem="";
-  // pre&atilde;o
+  // preço
   if(PrecoProd==0 && PrecoOri==0){sPreco="&nbsp;";return void(0);}
   if(PrecoProd!=PrecoOri){
     sPreco="<span class='PrecoDeHome'>de <strike>"+FC$.Currency+""+FormatPrice(PrecoOri,'')+"</strike>&nbsp;&nbsp;</span><span class='PrecoPorHome'>por "+FC$.Currency+"<b>"+FormatPrice(PrecoProd,'')+"</b></span>";
@@ -716,7 +716,7 @@ function fnShowProd(PrecoProd,PrecoOri,IDProd,MaxParcelas){
     {
       	var valorDesc = arrayDesc[indexID];
       	var nomeImgDesc = "tag_dc_" + valorDesc + ".png";
-        if(oBadge.hasAttribute("data-sale") && PrecoOri>PrecoProd)sBadges+="<div class='badgePromRemark' title='Oferta'>-"+ getPromocao() +"%</div><div class='tag_remark' style='background-image: url(lojas/00054883/images/"+nomeImgDesc+");'></div>";
+        if(oBadge.hasAttribute("data-sale") && PrecoOri>PrecoProd)sBadges+="<div class='badgePromRemark' title='Oferta'>-"+ getPromocao() +"%</div><div class='tag_remark' style='background-image: url(lojas/00020368/images/"+nomeImgDesc+");'></div>";
     }
     else
     {
@@ -726,7 +726,7 @@ function fnShowProd(PrecoProd,PrecoOri,IDProd,MaxParcelas){
 
     if(oBadge.hasAttribute("data-sale") && PrecoOri>PrecoProd)sBadges+="<div class='badgeProm' title='Oferta'>-"+ getPromocao() +"%</div>";
 
-    //if(oBadge.hasAttribute("data-release"))sBadges+="<div class='badgeNew' title='Lanï¿½amento'>NOVO</div>";
+    //if(oBadge.hasAttribute("data-release"))sBadges+="<div class='badgeNew' title='Lançamento'>NOVO</div>";
     //if(oBadge.hasAttribute("data-highlight"))sBadges+="<div class='badgeHigh' title='Destaque'>&#9733;</div>";
     if(sBadges!="")oBadge.innerHTML+="<div class='badgesProd'>"+ sBadges +"</div>";
   }
@@ -762,7 +762,7 @@ function MostraPrecoDet(PrecoProd,PrecoOri,Cod){
 function fnShowProdMenu(PrecoProd,PrecoOri,IDProd,MaxParcelas){
   var sPrecoMenu="";
   var ComSem="";
-  // pre&atilde;o
+  // preço
   if(PrecoProd==0 && PrecoOri==0){sPrecoMenu="&nbsp;";return void(0);}
   if(PrecoProd!=PrecoOri){
     sPrecoMenu="<font style='font-size:12px; font-weight:400; color:#a2a2a2;'>de <strike>"+FC$.Currency+""+FormatPrice(PrecoOri,'')+"</strike>&nbsp;&nbsp;</font><font style='font-size:14px; font-weight:700; color:#da187f;'>por "+FC$.Currency+"<font style='font-size:16px;'>"+FormatPrice(PrecoProd,'')+"</font></font>";
@@ -784,7 +784,7 @@ function fnShowProdMenu(PrecoProd,PrecoOri,IDProd,MaxParcelas){
   if(oBadge){
     var sBadges="";
     if(oBadge.hasAttribute("data-sale") && PrecoOri>PrecoProd)sBadges+="<div class='badgeProm' title='Oferta'>-"+ getPromocao() +"%</div>";
-    //if(oBadge.hasAttribute("data-release"))sBadges+="<div class='badgeNew' title='Lanï¿½amento'>NOVO</div>";
+    //if(oBadge.hasAttribute("data-release"))sBadges+="<div class='badgeNew' title='Lançamento'>NOVO</div>";
     //if(oBadge.hasAttribute("data-highlight"))sBadges+="<div class='badgeHigh' title='Destaque'>&#9733;</div>";
     if(sBadges!="")oBadge.innerHTML+="<div class='badgesProd'>"+ sBadges +"</div>";
   }
@@ -1004,7 +1004,7 @@ function ShowCartOnPage(IDLoja,iErr,sMsg,sCartText,sCheckoutText,este){
     oDivShowCartOnPage.innerHTML=sHTML;
     iLastCartOnPage++;
     setTimeout("if(iLastCartOnPage=="+ iLastCartOnPage +")oDivShowCartOnPage.style.visibility='hidden';",5000);
-    sF$.fnUpdateCart(true,IsFramePage); //fun&ccedil;&atilde;o para atualizar carrinho
+    sF$.fnUpdateCart(true,IsFramePage); //função para atualizar carrinho
 
   }
 
@@ -1069,7 +1069,7 @@ if(FC$.Page=="Home"){
       /*FCLib$.fnDontGo(userDontGo,{
   DontGoBtnClose:FC$.PathImg +"botdontgoclose.svg?cccfc=1", //Close button
   DontGoBanner:FC$.PathImg +"bannerpopupdontgo.jpg?cccfc=1", //Banner
-  DontGoAltParam:"UM DESCONTO ESPECIAL PARA voc&ecirc;!"}, //Alt Param
+  DontGoAltParam:"UM DESCONTO ESPECIAL PARA VOCÊ!"}, //Alt Param
   "DontGoCookie"); //Cookie name
   */
     }
@@ -1167,10 +1167,10 @@ function fnCustomizeCart(){
     var oTRFreightCalc=oFCCartSubtotals.parentNode.insertBefore(oNewElement,oFCCartSubtotals);
     oTRFreightCalc.innerHTML="<td>Digite o CEP para calcular o Frete: <input type=text id=idZipC1 size=10 maxlength=9 class=InputText> <input type=button value='Calcular Frete' class=idBut class=InputButton onclick='fnGetShippingValue(1)'></td><td colspan="+ sColspan +"><span id=idShippingObs1></span></td><td align=right><span id=idShippingValue1></span><img src='/images/loading.gif' vspace=3 style='display:none' id=idImgLoadingCEP1></td>";
   }
-  //insere tr para mostrar info sobre frete GR&Aacute;TIS
-  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemFrete' style='display:none; color:#da187f; text-align:right;'><td colspan='4'>Em compras acima de R$ 199,00 seu frete ï¿½ GR&Aacute;TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td></tr>");
+  //insere tr para mostrar info sobre frete grátis
+  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemFrete' style='display:none; color:#da187f; text-align:right;'><td colspan='4'>Em compras acima de R$ 199,00 seu frete é GRÁTIS!<br><a href='/home.asp?idloja=20368'>Clique aqui para comprar mais</a></td></tr>");
   //insere tr para mostrar info sobre item em pre-venda prevenda
-  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemPreVenda' style='display:none; color:red; text-align:right;'><td colspan='4'>Prazo diferenciado: pedido contï¿½m item em prï¿½-venda</td></tr>");
+  $("#FCCartFreightCalc").after("<tr id='Cart-mensagemPreVenda' style='display:none; color:red; text-align:right;'><td colspan='4'>Prazo diferenciado: pedido contém item em pré-venda</td></tr>");
   //insere campo solicitando o CEP para calculo do lado direito
   var oFCCartRight=document.getElementById("FCCartSmallSubtotalPrice");
   if(!oFCCartRight)oFCCartRight=document.getElementById("FCCartSmallSubtotals");
@@ -1206,7 +1206,7 @@ function fnCustomizeCart(){
 
 }
 function fnGetCEP(){
-  //se jï¿½ tem CEP em cookie jï¿½ mosta cï¿½lculo
+  //se já tem CEP em cookie já mosta cálculo
   var sNumCEP=FCLib$.GetCookie("CEP"+FC$.IDLoja);
   if(sNumCEP!=""){
     document.getElementById("idZipC1").value=sNumCEP;
@@ -1228,7 +1228,7 @@ function fnGetShippingValue(iField){
 
   if (verificaCapital_RM_EstadoSP(sCEP) == 0)
   {
-    //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete grátis
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1238,19 +1238,19 @@ function fnGetShippingValue(iField){
     var widthBarra = ((100 - (faltaFrete/99)*100));
     faltaFrete = faltaFrete.replace(".",",");
     
-    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR&Aacute;TIS!</span><br>
+    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
                                                                 <div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div>																	<br></div>
-                                                                <a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a></td>`;
+                                                                <a href='/home.asp?idloja=20368' class='right'>Clique aqui para comprar mais</a></td>`;
     
 
 	  if (widthBarra < 100) {
         document.querySelector('#Cart-InternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }*/
-   // document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 239,00 seu frete ï¿½ GR&Aacute;TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
+   // document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 239,00 seu frete é GRÁTIS!<br><a href='/home.asp?idloja=20368'>Clique aqui para comprar mais</a></td>";
   }
   else
   {
-    //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+    //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete grátis
     var valorCarrinho = $("#FCCartSubtotals .FCPriceValue")[0].innerText;
     valorCarrinho = valorCarrinho.replace(",",".");
     
@@ -1260,20 +1260,20 @@ function fnGetShippingValue(iField){
     var widthBarra = ((100 - (faltaFrete/99)*100));
     faltaFrete = faltaFrete.replace(".",",");
     
-    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR&Aacute;TIS!</span><br>
+    /*document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam apenas R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
 																<div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div></div>
-																<a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a><br></td>`;
+																<a href='/home.asp?idloja=20368' class='right'>Clique aqui para comprar mais</a><br></td>`;
     
       
 	  if (widthBarra < 100) {
         document.querySelector('#Cart-InternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }*/
-    //document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 199,00 seu frete ï¿½ GR&Aacute;TIS!<br><a href='/home.asp?idl548830368'>Clique aqui para comprar mais</a></td>";
+    //document.getElementById("Cart-mensagemFrete").innerHTML = "<td colspan='4'>Em compras acima de R$ 199,00 seu frete é GRÁTIS!<br><a href='/home.asp?idloja=20368'>Clique aqui para comprar mais</a></td>";
   }
 
-	document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GR&Aacute;TIS!</span><br>
+	document.getElementById("Cart-mensagemFrete").innerHTML = `<td colspan='4'>Faltam R$${faltaFrete} para ganhar <span style='color: #008ae1'>FRETE GRÁTIS!</span><br>
 																<div id='Cart-ProgressoFreteGratis' class='Cart-Design-progresso-frete-gratis'><div id='Cart-InternoProgFreteGratis' class='Cart-Design-interno-prog-frete-gratis'></div></div>
-																<a href='/home.asp?idloja=54883' class='right'>Clique aqui para comprar mais</a><br></td>`;
+																<a href='/home.asp?idloja=20368' class='right'>Clique aqui para comprar mais</a><br></td>`;
     
       
 	  if (widthBarra < 100) {
@@ -1312,8 +1312,8 @@ function fnprocessXMLCEPC(obj){
     if(oImgLoadingCEP1){oImgLoadingCEP1.style.display="none";}
     var oImgLoadingCEP2=document.getElementById("idImgLoadingCEP2");
     if(oImgLoadingCEP2){oImgLoadingCEP2.style.display="none";}
-    oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inV&aacute;lido" +"</span>";
-    oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inV&aacute;lido" +"</span>";
+    oShippingValue1.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inválido" +"</span>";
+    oShippingValue2.innerHTML="<span id=idErrXMLCEPFC style=color:#dc087f;>"+ "CEP inválido" +"</span>";
     return;
   }
   oShippingObs1.innerHTML="";oShippingObs2.innerHTML="";oShippingValue1.innerHTML="";oShippingValue2.innerHTML="";
@@ -1335,12 +1335,12 @@ function fnprocessXMLCEPC(obj){
   deuErroBuscaFrete = false;
 
   //AJUSTE PROBLEMA CONEXAO COM SERVICO EXTERNO DE FRETE
-  //o mï¿½ximo de modos de entrega que pode ser retornado ï¿½ 3 + Retirar Loja. Portanto, se for maior ou igual a 5, ï¿½ porque deu erro de consulta
+  //o máximo de modos de entrega que pode ser retornado é 3 + Retirar Loja. Portanto, se for maior ou igual a 5, é porque deu erro de consulta
   if(ReadXMLNode(obj,"OptQt") >= 5)
   {
     var sCEP=document.getElementById("idZipC1").value;
     if(sCEP=="")sCEP=document.getElementById("idZipC2").value;
-    // AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
+    AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
 
     if(primeiraTentativaPesquisarCEP == false)
     {
@@ -1380,8 +1380,8 @@ function fnprocessXMLCEPC(obj){
 
       var xhr = new XMLHttpRequest();
       xhr.onreadystatechange = fnprocessExisteTransportadora;
-      // xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
-      // xhr.send();
+      xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
+      xhr.send();
     }
 
   }
@@ -1427,8 +1427,8 @@ function fnprocessXMLCEPC(obj){
       dias = parseInt(array[0]) + prazoPreVenda;
     }
 
-    //definindo o texto com "dias ï¿½teis"
-    var diasUteis = dias+" dias ï¿½teis";
+    //definindo o texto com "dias úteis"
+    var diasUteis = dias+" dias úteis";
 
     textoFinal = diasUteis;
 
@@ -1453,15 +1453,15 @@ function fnprocessXMLCEPC(obj){
       dias = parseInt(array[0]) + prazoPreVenda;
     }
 
-    //definindo o texto com "dias ï¿½teis"
-    var diasUteis = dias+" dias ï¿½teis";
+    //definindo o texto com "dias úteis"
+    var diasUteis = dias+" dias úteis";
 
     textoFinal = diasUteis;
     
-    if (textoFinal == "1 dias ï¿½teis") textoFinal = "1 dia &uacute;til";
+    if (textoFinal == "1 dias úteis") textoFinal = "1 dia útil";
   }
 
-  //mensagem sobre valor M&iacute;NIMO para frete GR&Aacute;TIS
+  //mensagem sobre valor mínimo para frete grátis
   var valorMinimo = 0;
   if(capital_rm_estadoSP == 1)
   {
@@ -1509,8 +1509,8 @@ function fnprocessXMLCEPC(obj){
   var texto_entrega_jato = "";
   
   
-  //OptObsAJato verifica se o prazo ï¿½ de um dia ou diferente. Se for diferente ï¿½ que veio da base interna, ent&atilde;o n&atilde;o mostramos.
-  if(OptValueAJato != ""  && OptName != "PEX" && OptObsAJato == "1 dias ï¿½teis")
+  //OptObsAJato verifica se o prazo é de um dia ou diferente. Se for diferente é que veio da base interna, então não mostramos.
+  if(OptValueAJato != ""  && OptName != "PEX" && OptObsAJato == "1 dias úteis")
   {
     
     
@@ -1694,7 +1694,7 @@ function fnInsertAfter(newNode, referenceNode) {
 // Mostrar Icone (Eye) Password
 FCLib$.onReady(FCLib$.showPwdViewer);
 
-// Bot&atilde;o Ver Mais Produtos na Lista 
+// Botão Ver Mais Produtos na Lista 
 var iNextPageButFC=1;
 
 // Scroll to the Top
@@ -1776,7 +1776,7 @@ var Cart$=(function(){
         var s3=oItems[i].s3; if(s3==undefined)s3="";
         var wrap=oItems[i].wrap; if(wrap==undefined)wrap=false;
         var wrapValue=oItems[i].wrapValue; if(wrapValue==undefined)wrapValue=0;
-        //Informa&ccedil;&otilde;es do produto       
+        //Informações do produto       
         sProdAtual+="<div id='DivItem"+ idProdPed +"' class='CartDesign-product-container'>";
         sProdAtual+="  <div class='CartDesign-product-img'>";
         sProdAtual+="    <div class='ImgProdCart'><a href='/listaprodutos.asp?idloja="+ FC$.IDLoja +"&idproduto="+ idProdCart +"'><img src='"+ ImgProdCart +"' border='0'></a></div>";
@@ -1810,9 +1810,9 @@ var Cart$=(function(){
         var showBadgeFreeSideCartFree = sAtrRuleNameItem.indexOf("free");
         var showBadgeFreeSideCartDiscount = sAtrRuleNameItem.indexOf("discount");
         if(showBadgeFreeSideCartFree > -1){
-          sProdAtual+="<div class='fc-cart-discount-badge-free'>GR&Aacute;TIS</div>";
+          sProdAtual+="<div class='fc-cart-discount-badge-free'>GRÁTIS</div>";
         }else if(showBadgeFreeSideCartDiscount > -1){
-          sProdAtual+="<div class='fc-sidecart-discount-badge-discount'>Item com desconto especial<br>Promo&ccedil;&atilde;o: " + promocao_nomes[sAtrRuleNameItem] + "</div>";
+          sProdAtual+="<div class='fc-sidecart-discount-badge-discount'>Item com desconto especial<br>Promoção: " + promocao_nomes[sAtrRuleNameItem] + "</div>";
         }
 
         sProdutosNaCesta=sProdAtual+sProdutosNaCesta;        
@@ -1822,7 +1822,7 @@ var Cart$=(function(){
         ValCesta=subtotalProdCart.replace(".","").replace(",",".");
         sFinalCart=""; 
         if(totalWrapValue>0)ValCesta=ValCesta-totalWrapValue; //se tem valor de presente, retira do valor da cesta       
-        //Se valor do total dos produtos ï¿½ diferente do subtotal calculado exibe descontos
+        //Se valor do total dos produtos é diferente do subtotal calculado exibe descontos
         if(totalProds!=subtotalProdCart){
           var ValProds=totalProds.replace(".","").replace(",",".");
           var ValorDesconto=(ValProds-ValCesta);
@@ -1858,15 +1858,15 @@ var Cart$=(function(){
         sFinalCart+="    &nbsp;"+ FCLib$.FormatPreco(currencyProdCart +" "+ subtotalProdCart) +"";
         sFinalCart+="  </div>";
         sFinalCart+="</div></div>";        
-        //Insere cï¿½lculo de frete se loja tem configurado por CEP
+        //Insere cálculo de frete se loja tem configurado por CEP
         if(FC$.TypeFrt==3 || FC$.TypeFrt==4){
-          sFinalCart+="<div id='FCCartLembretePreVenda' class='CartDesign-lembrete-pre-venda'>Prazo diferenciado: pedido contï¿½m item em prï¿½-venda";
+          sFinalCart+="<div id='FCCartLembretePreVenda' class='CartDesign-lembrete-pre-venda'>Prazo diferenciado: pedido contém item em pré-venda";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartPreenchaFreteGratis' class='CartDesign-preencha-frete-gratis'><b>FRETE GR&Aacute;TIS?</b> Preencha CEP abaixo e descubra";
+          sFinalCart+="<div id='FCCartPreenchaFreteGratis' class='CartDesign-preencha-frete-gratis'><b>FRETE GRÁTIS?</b> Preencha CEP abaixo e descubra";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartLembreteFreteGratis' class='CartDesign-lembrete-frete-gratis'>Em compras acima de R$ 199,00 seu frete ï¿½ GR&Aacute;TIS!";
+          sFinalCart+="<div id='FCCartLembreteFreteGratis' class='CartDesign-lembrete-frete-gratis'>Em compras acima de R$ 199,00 seu frete é GRÁTIS!";
           sFinalCart+="</div>";
-          sFinalCart+="<div id='FCCartContemFreteGratis' class='CartDesign-contem-frete-gratis'>Eba! Seu frete ï¿½ GR&Aacute;TIS! Aproveite!";
+          sFinalCart+="<div id='FCCartContemFreteGratis' class='CartDesign-contem-frete-gratis'>Eba! Seu frete é GRÁTIS! Aproveite!";
           sFinalCart+="</div>";
           sFinalCart+="<div id='FCCartProgressoFreteGratis' class='CartDesign-progresso-frete-gratis' style='display:none'>";
           sFinalCart+="<div id='FCCartInternoProgFreteGratis' class='CartDesign-interno-prog-frete-gratis'>";
@@ -1896,25 +1896,25 @@ var Cart$=(function(){
         }
         //Parcelamento
         //sFinalCart+="<div id='FCCartTotalParcCalc' class='ParcProdCart'>"+ fnMontaMaxParcelaCart(ValCesta) +"</div>";
-        //Bot&atilde;o ir para carrinho
+        //Botão ir para carrinho
         //sFinalCart+="<div class=ProdCartGo><a href='/addproduto.asp?idloja="+ FC$.IDLoja +"'>IR PARA O CARRINHO</a></div>";
         // Botao Continuar Comprando
         sFinalCart+="<div class='ProdCartCont ProdCartInvisivel'><a href='#' onclick='Cart$.fnCloseCartDesign();'><&nbsp; Continuar Comprando</a></div>";  
-        //Bot&atilde;o Ir para Pagamento
+        //Botão Ir para Pagamento
         //sFinalCart+="<div class='ProdCartPagto ProdCartInvisivel'><a href='/checkout.asp?idloja="+ FC$.IDLoja +"'>IR PARA O PAGAMENTO &nbsp;></a></div>";
         sFinalCart+="<div class='ProdCartPagto ProdCartInvisivel'><a href='#' onclick='processar_clique_pagamento();return false;'>IR PARA O PAGAMENTO &nbsp;></a></div>";
-        //Bot&Otilde;ES carrinho em 320px
+        //Botões carrinho em 320px
         sFinalCart+="<div class='containerProdCart' style='display:none'>";
         // Botao Continuar Comprando
         sFinalCart+="<div class='ProdCartCont'><a href='#' onclick='Cart$.fnCloseCartDesign();'><&nbsp; Comprar Mais</a></div>";  
-        //Bot&atilde;o Ir para Pagamento
+        //Botão Ir para Pagamento
         //sFinalCart+="<div class='ProdCartPagto'><a href='/checkout.asp?idloja="+ FC$.IDLoja +"'>PAGAR &nbsp;></a></div>";
         sFinalCart+="<div class='ProdCartPagto'><a href='#' onclick='processar_clique_pagamento();return false;'>PAGAR &nbsp;></a></div>";
         sFinalCart+="</div>";
       }
     }
     var oCartDesign=document.getElementById("CartDesign");
-    //Insere elemento (carrinho) se ele n&atilde;o existir
+    //Insere elemento (carrinho) se ele não existir
     if(!oCartDesign){
       var oInsert=document.getElementById("idFCLeftContentRight");
       if(oInsert){
@@ -1926,7 +1926,7 @@ var Cart$=(function(){
     }
 
     var oBlocker=document.getElementById("Blocker");
-    //Insere elemento (tela bloqueada) se ele n&atilde;o existir
+    //Insere elemento (tela bloqueada) se ele não existir
     if(oBlocker){
       oBlocker.style.display="block";
     }
@@ -1953,9 +1953,9 @@ var Cart$=(function(){
     };
 
     var bTemProds=true;
-    if(sProdutosNaCesta==""){bTemProds=false;sProdutosNaCesta+="<div class='CartDesign-empty'>Seu Carrinho estï¿½ vazio.</div>";}
+    if(sProdutosNaCesta==""){bTemProds=false;sProdutosNaCesta+="<div class='CartDesign-empty'>Seu Carrinho está vazio.</div>";}
 
-    //Se ocorreu erro ao incluir exibe mensagem de erro. Se n&atilde;o ocorrer erro n&atilde;o mostra a mensagem
+    //Se ocorreu erro ao incluir exibe mensagem de erro. Se não ocorrer erro não mostra a mensagem
     if(iErr>0 && sMsg!=""){sProdutosNaCesta="<div id=DivMsgCart><div style='color:"+(iErr>0?"#ffffff":"#ffffff") +";background:"+(iErr>0?"#b61f24":"#1a75d7") +";'>"+ sMsg +"</div></div>"+sProdutosNaCesta;}
 
     var sTopo="<div class='CartDesign-header'>";
@@ -1981,12 +1981,12 @@ var Cart$=(function(){
     var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight();
     $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
 
-    //Mostra carrinho (op&ccedil;&atilde;o com anina&ccedil;&atilde;o)
+    //Mostra carrinho (opção com aninação)
     //oCartDesign.style.display="";
     //jQuery(oCartDesign).show(300);
     if(oCartDesign.style.right=="" || oCartDesign.style.right=="-350px")jQuery(oCartDesign).animate({ "right": "+=350px" }, 200 );
 
-    //Muda tamanho e posi&ccedil;&atilde;o dependendo da largura
+    //Muda tamanho e posição dependendo da largura
     /*var iClientWidth=document.documentElement.clientWidth;
     if(iClientWidth<350){oCartDesign.style.width="320px";}
     if(iClientWidth<440){oCartDesign.style.top="0px";}
@@ -1996,13 +1996,13 @@ var Cart$=(function(){
       if(oContentItensCart)oContentItensCart.style.maxHeight="215px";
     }*/
 
-    //Se n&atilde;o estï¿½ vazio, carrega fun&ccedil;&atilde;o do cï¿½lculo de frete
+    //Se não está vazio, carrega função do cálculo de frete
     if((FC$.TypeFrt==3 || FC$.TypeFrt==4) && bTemProds)fnGetCEP(subtotalProdCart); 
 
     //Atualiza carrinho do topo
     fnUpdateCartTop(iItensCesta,currencyProdCart,subtotalProdCart);
 
-    //Remove mensagem de produto adicionado ao carrinho ou produto n&atilde;o adicionado
+    //Remove mensagem de produto adicionado ao carrinho ou produto não adicionado
     setTimeout(function(){if(document.getElementById('DivMsgCart'))jQuery(document.getElementById('DivMsgCart')).hide(500);},2000);
 
 
@@ -2040,7 +2040,7 @@ var Cart$=(function(){
       lastY = top;
     });
 
-    //verifica&ccedil;&atilde;o para mostrar comprar mais
+    //verificação para mostrar comprar mais
     verificar_carrinho(oJSON);
   }
 
@@ -2062,7 +2062,7 @@ var Cart$=(function(){
   function fnCloseCartDesign(){
     var oCartDesign=document.getElementById("CartDesign");   
     if(oCartDesign){
-      //Esconde carrinho (op&ccedil;&atilde;o com anina&ccedil;&atilde;o)
+      //Esconde carrinho (opção com aninação)
       //oCartDesign.style.display="none";
       //jQuery(oCartDesign).hide(300);
       if(oCartDesign.style.right=="0px")jQuery(oCartDesign).animate({ "right": "-=350px" }, 200 );
@@ -2079,7 +2079,7 @@ var Cart$=(function(){
   };
 
   function fnGoCupom(){
-    if(confirm("Deseja inserir o c&oacute;digo de um cupom de desconto?\n\nCaso tenha um cupom de desconto voc&ecirc; serï¿½ redirecionado para a pï¿½gina onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
+    if(confirm("Deseja inserir o código de um cupom de desconto?\n\nCaso tenha um cupom de desconto você será redirecionado para a página onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
   }
 
   function fnChangeQtdProd(idProdCart,idProdPed,bMais){
@@ -2087,7 +2087,7 @@ var Cart$=(function(){
     if(oQtdValOri){
       var iQtdOri=parseInt(oQtdValOri.innerHTML);
       if(bMais)var iQtd=iQtdOri+1; else var iQtd=iQtdOri-1;
-      //Se controla estoque checa quantos tem no produto, caso contr&Aacute;rio altera a quantidade direto
+      //Se controla estoque checa quantos tem no produto, caso contrário altera a quantidade direto
       if(FC$.StockControl)FCLib$.fnAjaxExecFC("/infoprod.asp","idloja="+ FC$.IDLoja +"&idprod="+ idProdCart +"&format=1",false,fnChangeQtdProdStock,idProdPed,iQtd,iQtdOri);
       else fnChangeQtdProdExec(idProdPed,iQtd);
     }
@@ -2108,15 +2108,15 @@ var Cart$=(function(){
     //console.log("bLeuEstoque:"+bLeuEstoque);
     if(bLeuEstoque){
       if(iQtdProd<iQtdOri){
-        iQtdSolic=iQtdProd; //se a qtd original ï¿½ maior que a qtd em estoque, a quantidade solicitada ï¿½ a qtd do produto
-        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois n&atilde;o temos mais em estoque";}
-        else {sMsgErr="A quantidade foi alterada para a quantidade mï¿½xima em estoque disponï¿½vel nesse momento: "+ iQtdProd;}
+        iQtdSolic=iQtdProd; //se a qtd original é maior que a qtd em estoque, a quantidade solicitada é a qtd do produto
+        if(iQtdSolic==0){sMsgErr="O produto foi removido do carrinho pois não temos mais em estoque";}
+        else {sMsgErr="A quantidade foi alterada para a quantidade máxima em estoque disponível nesse momento: "+ iQtdProd;}
       }
     }
     else{
-      iQtdProd=iQtdSolic; //se n&atilde;o consegue ler estoque do produto, usa o estoque solicitado
+      iQtdProd=iQtdSolic; //se não consegue ler estoque do produto, usa o estoque solicitado
     }
-    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente n&atilde;o temos "+ iQtdSolic +" unidades em estoque";
+    if(iQtdSolic<=iQtdProd)fnChangeQtdProdExec(idProdPed,iQtdSolic); else sMsgErr="Infelizmente não temos "+ iQtdSolic +" unidades em estoque";
     if(sMsgErr!="")alert(sMsgErr);
   }
 
@@ -2133,15 +2133,15 @@ var Cart$=(function(){
 
   function fnInsertLoading(idProdPed){
     var oObj=document.getElementById("DivItem"+idProdPed);
-    var sH="112";//altura padr&atilde;o
-    var sM="28";//margin top padr&atilde;o
+    var sH="112";//altura padrão
+    var sM="28";//margin top padrão
     var iHeight=oObj.offsetHeight;
     if(iHeight && iHeight>0){sH=iHeight-1;sM=((iHeight-50)/2);}
     if(oObj)oObj.innerHTML="<div style='width:100%;height:"+ sH +"px;text-align:center;'><img style='margin-top:"+ sM +"px;' src=/images/loading_ajax.gif></div>"
       }
 
   function fnGetCEP(iValorCesta){
-    //Se jï¿½ tem CEP em cookie jï¿½ mostra cï¿½lculo
+    //Se já tem CEP em cookie já mostra cálculo
     var sNumCEP=FCLib$.GetCookie("CEP"+FC$.IDLoja);
     if(sNumCEP && sNumCEP!=""){
       document.getElementById("idZipC").value=sNumCEP;
@@ -2160,7 +2160,7 @@ var Cart$=(function(){
 
     if (verificaCapital_RM_EstadoSP(sCEP) == 0)
     {
-      //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete grátis
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2173,12 +2173,12 @@ var Cart$=(function(){
       }
       faltaFrete = faltaFrete.replace(".",",");
 
-      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GR&Aacute;TIS!</b>`);
-      //$(".CartDesign-lembrete-frete-gratis").html("Em compras acima de R$ 239,00 seu frete ï¿½ GR&Aacute;TIS!");
+      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GRÁTIS!</b>`);
+      //$(".CartDesign-lembrete-frete-gratis").html("Em compras acima de R$ 239,00 seu frete é GRÁTIS!");
     }
     else
     {
-      //Altera&ccedil;&atilde;o em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete GR&Aacute;TIS
+      //Alteração em 04/02/2021 por Gabriela - Colocar quanto falta para ganhar frete grátis
       var valorCarrinho = $("#TabFinalCart .FCPriceValue")[0].innerText;
       valorCarrinho = valorCarrinho.replace(",",".");
       
@@ -2190,13 +2190,13 @@ var Cart$=(function(){
         document.querySelector('#FCCartInternoProgFreteGratis').style.width = `${widthBarra}%` ;
       }
       faltaFrete = faltaFrete.replace(".",",");
-      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GR&Aacute;TIS!</b>`);
+      $(".CartDesign-lembrete-frete-gratis").html(`<b>Faltam R$${faltaFrete} para ganhar FRETE GRÁTIS!</b>`);
     }
 
     FCLib$.SetCookie("CEP"+FC$.IDLoja,sCEP);
     if(sCEP=="")
     {
-      document.getElementById("idShippingValue").innerHTML="<span style=color:#990000;>CEP inV&aacute;lido</span>";
+      document.getElementById("idShippingValue").innerHTML="<span style=color:#990000;>CEP inválido</span>";
       
       var t = $("#CartDesign .EstTabFinalCart").outerHeight() + $("#CartDesign .CartDesign-header").outerHeight() - $(".CartDesign-totalcart-container").outerHeight();
       $("#CartDesign .ContentItensCart").css("height","calc(100% - " + t + "px)");
@@ -2227,7 +2227,7 @@ var Cart$=(function(){
     if(iErr!="0"){
       var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
       if(oImgLoadingCEP){oImgLoadingCEP.style.display="none";}
-      oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>"+ "CEP inV&aacute;lido" +"</span>";
+      oShippingValue.innerHTML="<span id=idErrXMLCEPFC style=color:#990000;>"+ "CEP inválido" +"</span>";
       return;
     }
     oShippingObs.innerHTML="";
@@ -2251,11 +2251,11 @@ var Cart$=(function(){
     deuErroBuscaFrete = false;
 
     //AJUSTE PROBLEMA CONEXAO COM SERVICO EXTERNO DE FRETE
-    //o mï¿½ximo de modos de entrega que pode ser retornado ï¿½ 3 + Retirar Loja. Portanto, se for maior ou igual a 5, ï¿½ porque deu erro de consulta
+    //o máximo de modos de entrega que pode ser retornado é 3 + Retirar Loja. Portanto, se for maior ou igual a 5, é porque deu erro de consulta
     if(ReadXMLNode(obj,"OptQt") >= 5)
     {
       var sCEP=document.getElementById("idZipC").value;
-      // AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
+      AjaxExecFC("https://bebefofuxo.net/scripts/calculo_frete/falhaComunicacaoServicoFrete.php","cep="+ sCEP,false,fnprocessErroConsultaFrete);
 
       if(primeiraTentativaPesquisarCEP == false)
       {
@@ -2300,8 +2300,8 @@ var Cart$=(function(){
         var sCEP = document.getElementById("idZipC").value;
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = fnprocessExisteTransportadora;
-        // xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
-        // xhr.send();
+        xhr.open("GET","https://bebefofuxo.net.br/scripts/calculo_frete/existe_transportadora.php?cep="+sCEP+"&peso="+pesoTotal+"&valor="+valorCarrinho,true);
+        xhr.send();
       }
 
     }
@@ -2340,8 +2340,8 @@ var Cart$=(function(){
 
 
 
-      //definindo o texto com "dias ï¿½teis"
-      var diasUteis = dias+" dias ï¿½teis";
+      //definindo o texto com "dias úteis"
+      var diasUteis = dias+" dias úteis";
 
       textoFinal = diasUteis;
 
@@ -2368,14 +2368,14 @@ var Cart$=(function(){
         dias = parseInt(array[0]) + prazoPreVenda;
       }
 
-      //definindo o texto com "dias ï¿½teis"
-      var diasUteis = dias+" dias ï¿½teis";
+      //definindo o texto com "dias úteis"
+      var diasUteis = dias+" dias úteis";
 
       textoFinal = diasUteis;
-      if (textoFinal == "1 dias ï¿½teis") textoFinal = "1 dia &uacute;til";
+      if (textoFinal == "1 dias úteis") textoFinal = "1 dia útil";
     }
 
-    //mensagem sobre valor M&iacute;NIMO para frete GR&Aacute;TIS
+    //mensagem sobre valor mínimo para frete grátis
     var valorMinimo = 0;
     if(capital_rm_estadoSP == 1)
     {
@@ -2440,7 +2440,7 @@ var Cart$=(function(){
     var texto_entrega_jato = "";
 
 
-    if(OptValueAJato != "" && OptName != "PEX" && OptObsAJato == "1 dias ï¿½teis")
+    if(OptValueAJato != "" && OptName != "PEX" && OptObsAJato == "1 dias úteis")
     {
 
       var data_hoje = new Date();
@@ -2458,7 +2458,7 @@ var Cart$=(function(){
     if(deuErroBuscaFrete == false)
     {
       
-      //oShippingObs.innerHTML="<span class=ObsFreightCalc>"+ textoFinal +"</span>"; //Insere observa&ccedil;&otilde;es
+      //oShippingObs.innerHTML="<span class=ObsFreightCalc>"+ textoFinal +"</span>"; //Insere observações
       oShippingValue.innerHTML="<b>"+OptValue+"</b><br>"+textoFinal;
       oShippingValue.style.display="block";
       var oImgLoadingCEP=document.getElementById("idImgLoadingCEP");
@@ -2570,7 +2570,7 @@ var Cart$=(function(){
   }
 
   /* function fnMontaMaxParcelaCart(Valor){
-    return("Em at&eacute; 10x de "+ FormatPrecoReais(CalculaParcelaJurosCompostos(Valor,10)));
+    return("Em até 10x de "+ FormatPrecoReais(CalculaParcelaJurosCompostos(Valor,10)));
   } */
 
 
@@ -2591,7 +2591,7 @@ var Cart$=(function(){
 function fnBadgeDiscount(){
   var createDivElemFree=document.createElement("div");
   createDivElemFree.className="fc-cart-discount-badge-free";
-  createDivElemFree.innerHTML="GR&Aacute;TIS";
+  createDivElemFree.innerHTML="GRÁTIS";
 
   if(FC$.Page=="Cart"){
     var showBadgeFree=document.querySelectorAll('[rulename*="free"] .FCCartItemCont');
@@ -2626,7 +2626,7 @@ function fnBadgeDiscount(){
 
       }
 
-      $("#TabItens tr:contains('Digite o CEP')").before("<tr><td colspan='4'>voc&ecirc; estï¿½ participando da promo&ccedil;&atilde;o"+ promocoes_divs +"</td></tr>");
+      $("#TabItens tr:contains('Digite o CEP')").before("<tr><td colspan='4'>Você está participando da promoção"+ promocoes_divs +"</td></tr>");
     }
 
 
@@ -2642,7 +2642,7 @@ function fnBadgeDiscount(){
 
       var createDivElemDiscount=document.createElement("div");
       createDivElemDiscount.className="fc-track-discount-badge-discount";
-      createDivElemDiscount.innerHTML="Item com desconto especial - Promo&ccedil;&atilde;o: " + promocao_nomes[showBadgeDiscountTrack[i].parentNode.getAttribute("rulename")];
+      createDivElemDiscount.innerHTML="Item com desconto especial - Promoção: " + promocao_nomes[showBadgeDiscountTrack[i].parentNode.getAttribute("rulename")];
 
       showBadgeDiscountTrack[i].appendChild(createDivElemDiscount);
     }
@@ -2680,7 +2680,7 @@ function trocarCEP(){
 //RETIRAR ISSO QUANDO O TEMPO DE RESPOSTA DO CARRINHO MELHORAR
 $(window).on('beforeunload', function(){
     if($("body").hasClass('running')){
-        return "Estamos adicionando o seu produto no carrinho, voc&ecirc; deseja mesmo sair?";
+        return "Estamos adicionando o seu produto no carrinho, você deseja mesmo sair?";
     }
 });
 
@@ -2727,12 +2727,12 @@ function qual_dia()
 
       if(incremento == 1)
       {
-        texto_dia = "AMANHï¿½";
+        texto_dia = "AMANHÃ";
       }
       else
       {
         if(data_analisada.getDay() == 1) texto_dia = "SEGUNDA";
-        else if(data_analisada.getDay() == 2) texto_dia = "TERï¿½A";
+        else if(data_analisada.getDay() == 2) texto_dia = "TERÇA";
         else if(data_analisada.getDay() == 3) texto_dia = "QUARTA";
         else if(data_analisada.getDay() == 4) texto_dia = "QUINTA";
         else if(data_analisada.getDay() == 5) texto_dia = "SEXTA";
@@ -2787,18 +2787,18 @@ function processar_clique_pagamento()
   {
     if(window.localStorage.ja_apareceu_comprar_mais)
     {
-      //jï¿½ apareceu comprar mais
-      window.location.href = "/checkout.asp?idloja=54883";
+      //já apareceu comprar mais
+      window.location.href = "/checkout.asp?idloja=20368";
     }
     else
     {
-      //ainda n&atilde;o apareceu comprar mais
-      window.location.href = "/page,idloja,54883,arq," + pagina_comprar_mais;
+      //ainda não apareceu comprar mais
+      window.location.href = "/page,idloja,20368,arq," + pagina_comprar_mais;
     }
   }
   else
   {
-    window.location.href = "/checkout.asp?idloja=54883";
+    window.location.href = "/checkout.asp?idloja=20368";
   }
   
   
