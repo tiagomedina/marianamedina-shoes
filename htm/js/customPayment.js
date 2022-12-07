@@ -64,7 +64,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     $("#P2ccNome").parent().parent()[0].children[1].remove();
     $("#P2ccNome").parent().parent().parent().parent().parent().parent()[0].innerHTML = $("#P2ccNome").parent().parent()[0].innerHTML;
     var newNode = document.createElement("div");
-    var textNode = document.createTextNode("Titular (impresso no cart�o):");
+    var textNode = document.createTextNode("Titular (impresso no cart&atilde;o):");
     newNode.appendChild(textNode);
     $("#P2ccNome").parent().parent()[0].children[0].insertBefore(newNode,$("#P2ccNome").parent().parent()[0].children[0].children[0]);
     $("#idTRccNomeFC div").css('margin-top', '10px');
@@ -105,9 +105,9 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
       this.style.height = "44px";
       this.style.padding = "5px 0 5px 5px";
       $(this).css("input[type='text']:focus","16px !important");
-      this.onpaste = function(){alert("Digite os dados ao inv�s de colar.");return false};
-      this.onpaste = function(){alert("Digite os dados ao inv�s de colar.");return false};
-      this.onpaste = function(){alert("Digite os dados ao inv�s de colar.");return false};
+      this.onpaste = function(){alert("Digite os dados ao inv&aacute;s de colar.");return false};
+      this.onpaste = function(){alert("Digite os dados ao inv&aacute;s de colar.");return false};
+      this.onpaste = function(){alert("Digite os dados ao inv&aacute;s de colar.");return false};
 
     });
 
@@ -133,7 +133,7 @@ if(sPag.indexOf("YPREDIR.ASP") != -1) {
     newNode.style.maxWidth = "500px";
     newNode.style.marginLeft = "auto";
     newNode.style.marginRight = "auto";
-    newNode.innerHTML = "Para trocar a bandeira do cart�o de cr�dito e efetuar o pagamento voc� precisa <strong>refazer o seu pedido</strong>, mas n&atilde;o se preocupe, � bem f�cil:<br><br>- Clique no link abaixo<br>- Fa�a o login (caso ainda n&atilde;o esteja logado)<br>- Clique no bot�o verde da p�gina indicando para refazer o pedido<br><br><a href='https://www.marianamedinashoes.com.br/track.asp?numpedido="+num_pedido+"'>Desejo trocar a bandeira do cart�o</a>";
+    newNode.innerHTML = "Para trocar a bandeira do cart&atilde;o de cr&eacute;dito e efetuar o pagamento voc&ecirc; precisa <strong>refazer o seu pedido</strong>, mas n&atilde;o se preocupe, � bem f�cil:<br><br>- Clique no link abaixo<br>- Fa�a o login (caso ainda n&atilde;o esteja logado)<br>- Clique no bot&atilde;o verde da p�gina indicando para refazer o pedido<br><br><a href='https://www.marianamedinashoes.com.br/track.asp?numpedido="+num_pedido+"'>Desejo trocar a bandeira do cart&atilde;o</a>";
     insertAfter($("#idTabRedirPagtoFC").parent().parent().parent().parent().parent()[0],newNode);
 
 

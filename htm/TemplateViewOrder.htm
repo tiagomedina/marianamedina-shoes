@@ -137,7 +137,7 @@
 
   .pegou:after{
 
-    content: "Voc� pegou";
+    content: "voc&ecirc; pegou";
 
   }
 
@@ -272,7 +272,7 @@ let cor = [];
 $("#pedido").hide();
 $("#a").hide();
 
-//Criando o bot�o de logout e outras fun&ccedil;&otilde;es assim que a p�gina � carregada
+//Criando o bot&atilde;o de logout e outras fun&ccedil;&otilde;es assim que a p�gina � carregada
 document.addEventListener("DOMContentLoaded", () => {
 
     criaBotaoLogout();
@@ -365,7 +365,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.setTimeout(()  => { insereImagens(); },2000); //Fun&ccedil;&atilde;o para colocar as imagens dos itens
 
-//Fun&ccedil;&atilde;o para quando clicar no bot�o pegar
+//Fun&ccedil;&atilde;o para quando clicar no bot&atilde;o pegar
 function verde(botao) {
 
 	let qtd = parseInt(botao.dataset.qtd);
@@ -448,7 +448,7 @@ function verde(botao) {
     }
 }
 
-//Fun&ccedil;&atilde;o para quando clicar no bot�o em falta
+//Fun&ccedil;&atilde;o para quando clicar no bot&atilde;o em falta
 function vermelho(botao) {
 
     let text = "Tem certeza que est� em falta?";
@@ -651,7 +651,7 @@ function criaBotaoLogout(){
     btLogout.innerText = "Logout";
     btLogout.className = "btLogout";
 
-    btLogout.addEventListener("click", () => { //Atribuindo fun&ccedil;&atilde;o para fazer logout para o bot�o
+    btLogout.addEventListener("click", () => { //Atribuindo fun&ccedil;&atilde;o para fazer logout para o bot&atilde;o
         clique_logout();
     });
 
@@ -862,7 +862,7 @@ function insereImagens(){
     }
 }
 
-//func�o para realizar o login
+//func&atilde;o para realizar o login
 function clique_enviar(){
 
   let usuario = document.getElementById("botao_drop").innerText;
@@ -891,7 +891,7 @@ function clique_enviar(){
                 //o retorno do servidor encontra-se dentro do responseText
                 control = parseInt(this.responseText);
 
-                if(control == 1){ //caso usuario e senha estejam corretos, esconde a tela de login e mostra a tela de picking, al�m de mandar o pedido para impress�o
+                if(control == 1){ //caso usuario e senha estejam corretos, esconde a tela de login e mostra a tela de picking, al�m de mandar o pedido para impress&atilde;o
 
                     // $.get( "https://bebefofuxo.net/scripts/sistema_picking/enviarDadosImpressao.php", {num_pedido: numPedido} )
                     // .done(function( data ) {
@@ -1340,7 +1340,7 @@ function abreTela(qtdPegos, nome, control, botao){
 
   	if(control == 1){
 
-      document.querySelector("#titulo").innerText = "Quantos est�o em falta?";
+      document.querySelector("#titulo").innerText = "Quantos est&atilde;o em falta?";
 
       if(document.querySelector("#botaoPeguei_"+index).style.backgroundColor == "green"){
 		limite = parseInt(document.querySelector("#botaoPeguei_"+index).dataset.pegou);
@@ -1396,7 +1396,7 @@ function abreTela(qtdPegos, nome, control, botao){
               	//mostraQtdNeutro.style.display = "none";
           		//mostraQtdPeguei.style.display = "block";
           		//mostraQtdFalta.style.display = "none";
-            	//mostraQtdPeguei.innerText = "Voc� pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
+            	//mostraQtdPeguei.innerText = "voc&ecirc; pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
 
             }
 
@@ -1415,7 +1415,7 @@ function abreTela(qtdPegos, nome, control, botao){
 
     }else if(control == 0){
 
-      document.querySelector("#titulo").innerText = "Voc� precisa pegar "+ qtdTotal + " " + nome;
+      document.querySelector("#titulo").innerText = "voc&ecirc; precisa pegar "+ qtdTotal + " " + nome;
 
       if(document.querySelector("#botaoEmFalta_"+index).style.backgroundColor == "red"){
 		limite = parseInt(document.querySelector("#botaoEmFalta_"+index).dataset.pegou);
@@ -1439,7 +1439,7 @@ function abreTela(qtdPegos, nome, control, botao){
               mostraQtdNeutro.style.display = "none";
           	  mostraQtdFalta.style.display = "none";
               mostraQtdPeguei.style.display = "block";
-              mostraQtdPeguei.innerText = "Voc� pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
+              mostraQtdPeguei.innerText = "voc&ecirc; pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
 
               fechaTela();
 
@@ -1448,7 +1448,7 @@ function abreTela(qtdPegos, nome, control, botao){
               mostraQtdNeutro.style.display = "none";
           	  mostraQtdFalta.style.display = "none";
               mostraQtdPeguei.style.display = "block";
-              mostraQtdPeguei.innerText = "Voc� pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
+              mostraQtdPeguei.innerText = "voc&ecirc; pegou " + parseInt(qtd.innerText) + "/" + qtdTotal + " itens";
 
               document.querySelector("#botaoPeguei_"+index).style.backgroundColor = "green";
 
@@ -1469,7 +1469,7 @@ function abreTela(qtdPegos, nome, control, botao){
       }
     }else if(control == 2){
 
-    	document.querySelector("#titulo").innerText = "Quantos voc� quer devolver?";
+    	document.querySelector("#titulo").innerText = "Quantos voc&ecirc; quer devolver?";
         limite = parseInt(qtdPegos);
         document.querySelector("#iconeMais").onclick = function(){ if(parseInt(qtd.innerText) <= limite - 1){ qtd.innerText = parseInt(qtd.innerText) + 1 }}
         console.log(qtdPegos + " " + qtd.innerText);
@@ -1509,7 +1509,7 @@ function abreTela(qtdPegos, nome, control, botao){
               mostraQtdNeutro.style.display = "none";
               mostraQtdFalta.style.display = "none";
               mostraQtdPeguei.style.display = "block";
-              mostraQtdPeguei.innerText = "Voc� pegou " + (qtdPegos - parseInt(qtd.innerText)) + "/" + qtdTotal + " itens";
+              mostraQtdPeguei.innerText = "voc&ecirc; pegou " + (qtdPegos - parseInt(qtd.innerText)) + "/" + qtdTotal + " itens";
               botao.style.backgroundColor = "";
               document.querySelector("#botaoEmFalta_"+index).style.visibility = "";
               document.querySelector("#botaoEmFalta_"+index).dataset.pegou = (qtdTotal - (qtdPegos - parseInt(qtd.innerText)));
@@ -1531,7 +1531,7 @@ function abreTela(qtdPegos, nome, control, botao){
 
     }else if(control == 3){
 
-		document.querySelector("#titulo").innerText = "Quantos voc� quer desmarcar falta?";
+		document.querySelector("#titulo").innerText = "Quantos voc&ecirc; quer desmarcar falta?";
         limite = parseInt(qtdPegos);
         document.querySelector("#iconeMais").onclick = function(){ if(parseInt(qtd.innerText) <= limite - 1){ qtd.innerText = parseInt(qtd.innerText) + 1 }}
 
@@ -1550,7 +1550,7 @@ function abreTela(qtdPegos, nome, control, botao){
 					mostraQtdFalta.style.display = "none";
                     mostraQtdNeutro.style.display = "none";
                 	mostraQtdPeguei.style.display = "block";
-                    mostraQtdPeguei.innerText = "Voc� pegou " + document.querySelector("#botaoPeguei_"+index).dataset.pegou + "/" + qtdTotal + " itens";
+                    mostraQtdPeguei.innerText = "voc&ecirc; pegou " + document.querySelector("#botaoPeguei_"+index).dataset.pegou + "/" + qtdTotal + " itens";
 
                 }else{
 
@@ -1659,7 +1659,7 @@ function fnGetQtd(mostraQtdPeguei, mostraQtdFalta, mostraQtdNeutro){
     }else if(mostraQtdPeguei.style.display == "block"){
 
       let qtdAnterior = mostraQtdPeguei.innerText.split("/");
-      qtdAnterior[0] = qtdAnterior[0].replace("Voc� pegou ", "");
+      qtdAnterior[0] = qtdAnterior[0].replace("voc&ecirc; pegou ", "");
       qtdAnterior[0] = qtdAnterior[0].replace(" ", "");
 
       return qtdAnterior[0];
@@ -1667,7 +1667,7 @@ function fnGetQtd(mostraQtdPeguei, mostraQtdFalta, mostraQtdNeutro){
     }else{
 
       let qtdAnterior = mostraQtdNeutro.innerText.split("/");
-      qtdAnterior[0] = qtdAnterior[0].replace("Voc� pegou ", "");
+      qtdAnterior[0] = qtdAnterior[0].replace("voc&ecirc; pegou ", "");
       qtdAnterior[0] = qtdAnterior[0].replace(" ", "");
 
       return qtdAnterior[0];
@@ -1684,13 +1684,13 @@ function setQtd(control, index, qtd){
         if(document.querySelector("#botaoPeguei_"+index).dataset.pegou == 0){
 
           document.querySelector("#mostraQtd_"+index).className = "neutro";
-          document.querySelector("#mostraQtd_"+index).innerText = "Voc� n&atilde;o pegou nenhum item";
+          document.querySelector("#mostraQtd_"+index).innerText = "voc&ecirc; n&atilde;o pegou nenhum item";
           document.querySelector("#botaoEmFalta_"+index).dataset.pegou = 0;
 
         }else{
 
           document.querySelector("#mostraQtd_"+index).className = "peguei";
-          document.querySelector("#mostraQtd_"+index).innerText = "Voc� pegou " + qtd + " item(s)";
+          document.querySelector("#mostraQtd_"+index).innerText = "voc&ecirc; pegou " + qtd + " item(s)";
           document.querySelector("#botaoEmFalta_"+index).dataset.pegou = 0;
 
         }
@@ -1706,7 +1706,7 @@ function setQtd(control, index, qtd){
         if(document.querySelector("#botaoEmFalta_"+index).dataset.pegou == 0){
 
           document.querySelector("#mostraQtd_"+index).className = "neutro";
-          document.querySelector("#mostraQtd_"+index).innerText = "Voc� n&atilde;o pegou nenhum item";
+          document.querySelector("#mostraQtd_"+index).innerText = "voc&ecirc; n&atilde;o pegou nenhum item";
           document.querySelector("#botaoPeguei_"+index).dataset.pegou = 0;
 
         }else{
@@ -1720,7 +1720,7 @@ function setQtd(control, index, qtd){
       }else if(control == 3){
 
         document.querySelector("#mostraQtd_"+index).className = "peguei";
-        document.querySelector("#mostraQtd_"+index).innerText = "Voc� pegou " + qtd + " item(s)";
+        document.querySelector("#mostraQtd_"+index).innerText = "voc&ecirc; pegou " + qtd + " item(s)";
         document.querySelector("#botaoPeguei_"+index).dataset.pegou = qtd;
 //Fazer o inserir textos para o peguei
       }

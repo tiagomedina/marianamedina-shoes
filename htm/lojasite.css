@@ -558,7 +558,7 @@ div[id^="idLoadWaitFC"] {margin: 0 auto;}
 #idTDFreightSimulationFC .ZipName {font-size: 13px; font-family: 'Nunito', Arial, sans-serif; font-weight: bold;}
 #idTDFreightSimulationFC .ZipValue {font-size: 13px; font-family: 'Nunito', Arial, sans-serif; font-weight: bold; padding-top: 10px;}
 #idShippingValues table {width:82%}
-.firstFCCartButtons {display:block; margin-bottom:20px;} /* Exibir primeira fileira de bot�es no Carrinho */
+.firstFCCartButtons {display:block; margin-bottom:20px;} /* Exibir primeira fileira de bot&Otilde;ES no Carrinho */
 
 /* Cupom de Desconto no Carrinho */
 #FCCartCupom {vertical-align:initial;}
@@ -1409,7 +1409,7 @@ select {
 .content-grid-list span {min-width: 10px; min-height: 20px; display: inline-block; padding: 3px 1px;}
 .grid-list-item-color span {border: 1px solid #ededed; min-width: 20px;}
 
-/* pre�os especiais lista */
+/* pre&atilde;os especiais lista */
 .ProdDestLista .zf-prices {margin-top:5px;}
 .ProdDestLista .old-price, .price {display: inline;}
 .ProdDestLista .old-price {color:#999999; font-size: 13px; font-weight:400;}

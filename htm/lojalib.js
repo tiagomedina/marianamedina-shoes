@@ -55,10 +55,10 @@ else
 var promocao_nomes = {};
 promocao_nomes["9 kits por 259 discount"] = "9 kits por R$259";
 promocao_nomes["5 kits por 149 discount"] = "5 kits por R$149";
-promocao_nomes["80 mijoes por 480 discount"] = "80 mij�es por R$480";
+promocao_nomes["80 mijoes por 480 discount"] = "80 mij&Otilde;ES por R$480";
 promocao_nomes["3 macaquinhos por 4899 discount"] = "3 Macaquinhos por R$48,99";
-promocao_nomes["verao menina 5 por 110 discount"] = "Ver�o Meninas - 5 por R$110";
-promocao_nomes["verao menino 5 por 100 discount"] = "Ver�o Meninos - 5 por R$100";
+promocao_nomes["verao menina 5 por 110 discount"] = "Ver&atilde;o Meninas - 5 por R$110";
+promocao_nomes["verao menino 5 por 100 discount"] = "Ver&atilde;o Meninos - 5 por R$100";
 promocao_nomes["kit 5 pecas 2 por 110 discount"] = "Kit 5 pe�as - 2 por R$110";
 promocao_nomes["kit body 3 pecas 5 por 145 discount"] = "Kit Body 3 pe�as - 5 por R$145";
 promocao_nomes["4 calcados por 100 discount"] = "4 Cal�ados por R$100";
@@ -74,7 +74,7 @@ promocao_nomes["3 baby soffete por 60 discount"] = "3 Baby Soffete por R$60";
 promocao_nomes["2 linda ju por 80 discount"] = "2 Linda Ju por R$80";
 
 
-promocao_nomes["verao 5 por 100 discount"] = "Ver�o 5 por R$100";
+promocao_nomes["verao 5 por 100 discount"] = "Ver&atilde;o 5 por R$100";
 
 promocao_nomes["3 macaquinhos por 49 discount"] = "3 Macaquinhos por R$49";
 
@@ -86,13 +86,13 @@ promocao_nomes["kit body longo 9 pecas por 118 discount"] = "Kit Body Inverno 3 
 promocao_nomes["kit body curto 9 pecas por 96 discount"] = "Kit Body Curto 3 pe�as - 3 por R$96";
 
 promocao_nomes["conjunto inverno 3 por 120 discount"] = "Conjunto Inverno Estilo - 3 por R$120";
-promocao_nomes["conjunto inverno basico 3 por 90 discount"] = "Conjunto Inverno B�sico - 3 por R$90";
+promocao_nomes["conjunto inverno basico 3 por 90 discount"] = "Conjunto Inverno B&aacute;sico - 3 por R$90";
 promocao_nomes["conjunto inverno premium 3 por 150 discount"] = "Conjunto Inverno Premium - 3 por R$150";
 
 promocao_nomes["4 baby soffete por 90 discount"] = "4 Baby Soffete por R$90";
 
-promocao_nomes["2 macacao por 70 discount"] = "2 Macac�es por R$70";
-promocao_nomes["3 macacao por 99 discount"] = "3 Macac�es por R$99";
+promocao_nomes["2 macacao por 70 discount"] = "2 Macac&Otilde;ES por R$70";
+promocao_nomes["3 macacao por 99 discount"] = "3 Macac&Otilde;ES por R$99";
 
 promocao_nomes["2 pijamas por 66 discount"] = "2 Pijamas por R$66";
 
@@ -115,8 +115,8 @@ promocao_nomes["5 por 179 discount"] = "5 por R$179";
 
 promocao_nomes["4 macaquinho por 90 discount"] = "4 Macaquinhos e Banho de Sol por R$90";
 promocao_nomes["4 por 142 discount"] = "4 por R$142";
-promocao_nomes["verao masc 5 por 143 discount"] = "Ver�o Masculino - 5 por R$143";
-promocao_nomes["verao fem 5 por 143 discount"] = "Ver�o Feminino - 5 por R$143";
+promocao_nomes["verao masc 5 por 143 discount"] = "Ver&atilde;o Masculino - 5 por R$143";
+promocao_nomes["verao fem 5 por 143 discount"] = "Ver&atilde;o Feminino - 5 por R$143";
 promocao_nomes["3 kit body por 106 discount"] = "Kit Body 3 pe�as - 3 por R$106";
 promocao_nomes["4 kit body por 140 discount"] = "Kit Body 3 pe�as - 4 por R$140";
 
@@ -129,8 +129,8 @@ promocao_nomes["4 calcados por 95 discount"] = "4 Cal�ados por R$95";
 promocao_nomes["2 pares por 104 discount"] = "2 pares por R$104";
 promocao_nomes["4 calcados por 105 discount"] = "4 Cal�ados por R$105";
 
-promocao_nomes["verao masc 5 por 138 discount"] = "Ver�o Masculino - 5 por R$138";
-promocao_nomes["verao fem 5 por 138 discount"] = "Ver�o Feminino - 5 por R$138";
+promocao_nomes["verao masc 5 por 138 discount"] = "Ver&atilde;o Masculino - 5 por R$138";
+promocao_nomes["verao fem 5 por 138 discount"] = "Ver&atilde;o Feminino - 5 por R$138";
 promocao_nomes["4 por 138 discount"] = "4 por R$138";
 promocao_nomes["3 kit body por 103 discount"] = "Kit Body 3 pe�as - 3 por R$103";
 promocao_nomes["4 kit body por 136 discount"] = "Kit Body 3 pe�as - 4 por R$136";
@@ -140,7 +140,7 @@ promocao_nomes["2 jardineiras por 57 discount"] = "2 Jardineiras por R$57";
 promocao_nomes["3 por 126 discount"] = "3 Kits por R$126";
 //fim combo black friday
 
-promocao_nomes["verao 5 por 143 discount"] = "Ver�o - 5 por R$143";
+promocao_nomes["verao 5 por 143 discount"] = "Ver&atilde;o - 5 por R$143";
 promocao_nomes["3 por 113 discount"] = "3 produtos por R$113";
 promocao_nomes["3 por 105 discount"] = "3 por R$105";
 
@@ -155,7 +155,7 @@ promocao_nomes["4 pares por 103 discount"] = "4 pares por R$103";
 promocao_nomes["2 kit body por 67 discount"] = "Kit Body 3 pe�as - 2 por R$67";
 promocao_nomes["3 kit body por 100 discount"] = "Kit Body 3 pe�as - 3 por R$100";
 promocao_nomes["4 kit body por 130 discount"] = "Kit Body 3 pe�as - 4 por R$130";
-promocao_nomes["3 macacoes por 95 discount"] = "3 Macac�es por R$95";
+promocao_nomes["3 macacoes por 95 discount"] = "3 Macac&Otilde;ES por R$95";
 promocao_nomes["10 por 105 discount"] = "10 pe�as por R$105";
 promocao_nomes["3 por 89 discount"] = "3 por R$89";
 promocao_nomes["3 por 85 discount"] = "3 por R$85";
@@ -682,7 +682,7 @@ function FuncButtonAddToWL(idp,bAdd){
 function fnShowProd(PrecoProd,PrecoOri,IDProd,MaxParcelas){
   var sPreco="";
   var ComSem="";
-  // pre�o
+  // pre&atilde;o
   if(PrecoProd==0 && PrecoOri==0){sPreco="&nbsp;";return void(0);}
   if(PrecoProd!=PrecoOri){
     sPreco="<span class='PrecoDeHome'>de <strike>"+FC$.Currency+""+FormatPrice(PrecoOri,'')+"</strike>&nbsp;&nbsp;</span><span class='PrecoPorHome'>por "+FC$.Currency+"<b>"+FormatPrice(PrecoProd,'')+"</b></span>";
@@ -762,7 +762,7 @@ function MostraPrecoDet(PrecoProd,PrecoOri,Cod){
 function fnShowProdMenu(PrecoProd,PrecoOri,IDProd,MaxParcelas){
   var sPrecoMenu="";
   var ComSem="";
-  // pre�o
+  // pre&atilde;o
   if(PrecoProd==0 && PrecoOri==0){sPrecoMenu="&nbsp;";return void(0);}
   if(PrecoProd!=PrecoOri){
     sPrecoMenu="<font style='font-size:12px; font-weight:400; color:#a2a2a2;'>de <strike>"+FC$.Currency+""+FormatPrice(PrecoOri,'')+"</strike>&nbsp;&nbsp;</font><font style='font-size:14px; font-weight:700; color:#da187f;'>por "+FC$.Currency+"<font style='font-size:16px;'>"+FormatPrice(PrecoProd,'')+"</font></font>";
@@ -1069,7 +1069,7 @@ if(FC$.Page=="Home"){
       /*FCLib$.fnDontGo(userDontGo,{
   DontGoBtnClose:FC$.PathImg +"botdontgoclose.svg?cccfc=1", //Close button
   DontGoBanner:FC$.PathImg +"bannerpopupdontgo.jpg?cccfc=1", //Banner
-  DontGoAltParam:"UM DESCONTO ESPECIAL PARA VOC�!"}, //Alt Param
+  DontGoAltParam:"UM DESCONTO ESPECIAL PARA voc&ecirc;!"}, //Alt Param
   "DontGoCookie"); //Cookie name
   */
     }
@@ -1458,7 +1458,7 @@ function fnprocessXMLCEPC(obj){
 
     textoFinal = diasUteis;
     
-    if (textoFinal == "1 dias �teis") textoFinal = "1 dia �til";
+    if (textoFinal == "1 dias �teis") textoFinal = "1 dia &uacute;til";
   }
 
   //mensagem sobre valor M&iacute;NIMO para frete GR&Aacute;TIS
@@ -1509,7 +1509,7 @@ function fnprocessXMLCEPC(obj){
   var texto_entrega_jato = "";
   
   
-  //OptObsAJato verifica se o prazo � de um dia ou diferente. Se for diferente � que veio da base interna, ent�o n&atilde;o mostramos.
+  //OptObsAJato verifica se o prazo � de um dia ou diferente. Se for diferente � que veio da base interna, ent&atilde;o n&atilde;o mostramos.
   if(OptValueAJato != ""  && OptName != "PEX" && OptObsAJato == "1 dias �teis")
   {
     
@@ -1694,7 +1694,7 @@ function fnInsertAfter(newNode, referenceNode) {
 // Mostrar Icone (Eye) Password
 FCLib$.onReady(FCLib$.showPwdViewer);
 
-// Bot�o Ver Mais Produtos na Lista 
+// Bot&atilde;o Ver Mais Produtos na Lista 
 var iNextPageButFC=1;
 
 // Scroll to the Top
@@ -1896,18 +1896,18 @@ var Cart$=(function(){
         }
         //Parcelamento
         //sFinalCart+="<div id='FCCartTotalParcCalc' class='ParcProdCart'>"+ fnMontaMaxParcelaCart(ValCesta) +"</div>";
-        //Bot�o ir para carrinho
+        //Bot&atilde;o ir para carrinho
         //sFinalCart+="<div class=ProdCartGo><a href='/addproduto.asp?idloja="+ FC$.IDLoja +"'>IR PARA O CARRINHO</a></div>";
         // Botao Continuar Comprando
         sFinalCart+="<div class='ProdCartCont ProdCartInvisivel'><a href='#' onclick='Cart$.fnCloseCartDesign();'><&nbsp; Continuar Comprando</a></div>";  
-        //Bot�o Ir para Pagamento
+        //Bot&atilde;o Ir para Pagamento
         //sFinalCart+="<div class='ProdCartPagto ProdCartInvisivel'><a href='/checkout.asp?idloja="+ FC$.IDLoja +"'>IR PARA O PAGAMENTO &nbsp;></a></div>";
         sFinalCart+="<div class='ProdCartPagto ProdCartInvisivel'><a href='#' onclick='processar_clique_pagamento();return false;'>IR PARA O PAGAMENTO &nbsp;></a></div>";
-        //Bot�es carrinho em 320px
+        //Bot&Otilde;ES carrinho em 320px
         sFinalCart+="<div class='containerProdCart' style='display:none'>";
         // Botao Continuar Comprando
         sFinalCart+="<div class='ProdCartCont'><a href='#' onclick='Cart$.fnCloseCartDesign();'><&nbsp; Comprar Mais</a></div>";  
-        //Bot�o Ir para Pagamento
+        //Bot&atilde;o Ir para Pagamento
         //sFinalCart+="<div class='ProdCartPagto'><a href='/checkout.asp?idloja="+ FC$.IDLoja +"'>PAGAR &nbsp;></a></div>";
         sFinalCart+="<div class='ProdCartPagto'><a href='#' onclick='processar_clique_pagamento();return false;'>PAGAR &nbsp;></a></div>";
         sFinalCart+="</div>";
@@ -2079,7 +2079,7 @@ var Cart$=(function(){
   };
 
   function fnGoCupom(){
-    if(confirm("Deseja inserir o c&oacute;digo de um cupom de desconto?\n\nCaso tenha um cupom de desconto voc� ser� redirecionado para a p�gina onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
+    if(confirm("Deseja inserir o c&oacute;digo de um cupom de desconto?\n\nCaso tenha um cupom de desconto voc&ecirc; ser� redirecionado para a p�gina onde pode inserir este cupom para obter o desconto.")){top.location.href="/addproduto.asp?idloja="+ FC$.IDLoja +"#acupom";}
   }
 
   function fnChangeQtdProd(idProdCart,idProdPed,bMais){
@@ -2133,8 +2133,8 @@ var Cart$=(function(){
 
   function fnInsertLoading(idProdPed){
     var oObj=document.getElementById("DivItem"+idProdPed);
-    var sH="112";//altura padr�o
-    var sM="28";//margin top padr�o
+    var sH="112";//altura padr&atilde;o
+    var sM="28";//margin top padr&atilde;o
     var iHeight=oObj.offsetHeight;
     if(iHeight && iHeight>0){sH=iHeight-1;sM=((iHeight-50)/2);}
     if(oObj)oObj.innerHTML="<div style='width:100%;height:"+ sH +"px;text-align:center;'><img style='margin-top:"+ sM +"px;' src=/images/loading_ajax.gif></div>"
@@ -2372,7 +2372,7 @@ var Cart$=(function(){
       var diasUteis = dias+" dias �teis";
 
       textoFinal = diasUteis;
-      if (textoFinal == "1 dias �teis") textoFinal = "1 dia �til";
+      if (textoFinal == "1 dias �teis") textoFinal = "1 dia &uacute;til";
     }
 
     //mensagem sobre valor M&iacute;NIMO para frete GR&Aacute;TIS
@@ -2626,7 +2626,7 @@ function fnBadgeDiscount(){
 
       }
 
-      $("#TabItens tr:contains('Digite o CEP')").before("<tr><td colspan='4'>Voc� est� participando da promo&ccedil;&atilde;o"+ promocoes_divs +"</td></tr>");
+      $("#TabItens tr:contains('Digite o CEP')").before("<tr><td colspan='4'>voc&ecirc; est� participando da promo&ccedil;&atilde;o"+ promocoes_divs +"</td></tr>");
     }
 
 
@@ -2680,7 +2680,7 @@ function trocarCEP(){
 //RETIRAR ISSO QUANDO O TEMPO DE RESPOSTA DO CARRINHO MELHORAR
 $(window).on('beforeunload', function(){
     if($("body").hasClass('running')){
-        return "Estamos adicionando o seu produto no carrinho, voc� deseja mesmo sair?";
+        return "Estamos adicionando o seu produto no carrinho, voc&ecirc; deseja mesmo sair?";
     }
 });
 

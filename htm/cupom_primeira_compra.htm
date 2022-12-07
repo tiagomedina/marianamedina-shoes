@@ -14,7 +14,7 @@ function tratarResposta () {
               	
              	var divResposta = document.getElementById('lblRetornoCupom');
           		timerResposta = setTimeout(esconderResposta, 4000);
-            	divResposta.innerHTML = "Voc� j� est� cadastrado!";
+            	divResposta.innerHTML = "voc&ecirc; j� est� cadastrado!";
                 jahVerificado=false;
             }
             else if (xhr.responseText == "2")
@@ -29,7 +29,7 @@ function tratarResposta () {
                jahVerificado=true;
                var divResposta = document.getElementById('lblRetornoCupom');
   			   divResposta.innerHTML = "";
-               alert("Eba! =) <br><br> Voc� recebeu o cupom de primeira compra em seu e-mail!")
+               alert("Eba! =) <br><br> voc&ecirc; recebeu o cupom de primeira compra em seu e-mail!")
             }
          }
          else
@@ -88,7 +88,7 @@ function verificarUsuarioCadastrado() {
     
     	xhr.send();
         */
-      	alert("Eba! =) <br><br> Voc� foi cadastado e recebeu um e-mail com o c&oacute;digo do cupom! Seu cupom de primeira compra �: <br><br>20BEMVINDO<br><br> Clique em OK e comece a usar o seu cupom!");
+      	alert("Eba! =) <br><br> voc&ecirc; foi cadastado e recebeu um e-mail com o c&oacute;digo do cupom! Seu cupom de primeira compra �: <br><br>20BEMVINDO<br><br> Clique em OK e comece a usar o seu cupom!");
       	window.location= "https://www.marianamedinashoes.com.br/home.asp?IDLoja=54883&cupom=20BEMVINDO";
   		return false;
     }

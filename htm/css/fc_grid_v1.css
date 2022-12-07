@@ -54,9 +54,17 @@ li.FCDescritorGridActivated .FCSelectedGrid .FCGridMain .FCDescritorGrid {border
 .FCStepGridTitle  {display: inline-block; padding:0; margin:0 6px 0 0;}
 .FCStepGridTitle .FCTitQtyInc {margin-left:5px;}
 .FCTitQtyInc {position: relative; height: 28px; padding-top: 10px;}
+
 .FCSoldOutLabel span {background:#eee; color:#dfdfdf;}
 .FCSoldOutLabel .FCFlagEsgotadoGrid {width: 20px; height: 18px; position: absolute; margin: 0; top: -4px; right: -7px; background: #e17600; font-size: 13px; line-height:16px; font-weight: 400; color: #fff;  padding: 2px 0 0 0; border: none; border-radius: 10px; -webkit-border-radius: 10px; -ms-border-radius: 10px; text-align: center !important; z-index: 1;}
+.FCSoldOutLabel:hover{border-color:#f56217!important}
+
+.FCBoxGrid.FCResumeProduct{padding:10px 0!important;display:none}
+.FCDescritorGridActivated{cursor:pointer}
+.FCDescritorGridActivated:hover{border-color:#3e98e4}
+
 .FCDescritorGridActivated  {cursor: pointer;}
+
 .FCCheckedGrid {width:16px; height:16px; position:absolute; background:url('../../images/checkedgrid.svg') no-repeat; z-index:1; top:0px; right:-4px; display:none;}
 .FCGridBtnZoom {position: absolute; bottom:0; height:16px; } /* Mostrar o Botao Ampliar */
 .FCBtnEsgotadoGrid, .FCBtnConsultenos, .FCBtnComprarGrid, .FCBtnSelecioneGrid {max-height:46px; height:auto; cursor:pointer; text-align:center;}
@@ -193,6 +201,15 @@ li.FCDescritorGridActivated .FCSelectedGrid .FCGridMain .FCDescritorGrid {border
 .FCResumeProduct {margin: 0 0 0 0;}
 .FCBoxGrid .FCBoxGridBuy .FCBoxGridOnly {border:none; padding:0;}
 
+.FCDescritorContent{height:auto;list-style:none;overflow:auto;display:flex;flex-wrap:nowrap}
+.FCDescritorContent::-webkit-scrollbar{background-color:rgba(0,0,0,.03);height:6px;display:block}
+.FCDescritorContent::-webkit-scrollbar-thumb{background-color:rgba(0,0,0,.1);background-clip:padding-box}
+/*.ProductDet .FCDescritorContent{height:60px;list-style:none;overflow:auto;display:flex;flex-wrap:nowrap}*/
+.ProductDet .FCDescritorContent{height:auto;list-style:none;overflow:initial;display:-webkit-box;display:-ms-flexbox;display:flex;flex-wrap:wrap;margin:0 0 20px 0;}
+ul.FCDescritorContent{margin:0;padding:0}
+.FCDescritorContent li{height:37px;position:relative;float:left;border:2px solid transparent;margin:2px;border-radius:2px}
+.FCDescritorContent li:hover{}
+
 /* Tooltip - Dica para o Usuario */
 .FCTooltipGrid {position: relative; width: 280px; top: -80px; left: 0px; text-align:center; font-size: 13px; padding: 10px 5px; background: #dc087f; color: #fff; margin: 0px auto !important; border: none; border-radius: 5px; -webkit-border-radius: 5px; z-index:1; -webkit-transition:visibility 0s linear 0.3s,opacity 0.5s linear; transition:visibility 0s linear 0.3s,opacity 0.5s linear;}
 .FCTooltipGrid.On {visibility:visible; opacity:1;}
@@ -213,15 +230,13 @@ li.FCDescritorGridActivated .FCSelectedGrid .FCGridMain .FCDescritorGrid {border
 .ShowCartTxt2 a {color:#28c08d;text-decoration:none;}
 
 /* Descritores */
-.FCTxtGrid {display:none; width:100%; height:auto; position:relative; margin-bottom:5px;padding:5px 0px; font-size:15px; z-index:1;}
-.FCGridAdicContent span {display:inline-block; padding:0 5px 0 0;}
-.AdicNome {font-weight:400;}
-.AdicItem {font-weight:700;}
-.AdicItemCor {min-width: 16px; min-height: 20px; display: inline-block; margin: 0 5px; border: 1px solid #e4e4e4; border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%;}
-.FCDescritorContent {width:100%; height:auto; list-style: none; padding: 0; margin: 0 0 0 0; display: -webkit-flex; display: flex; display: -ms-flexbox; justify-content: flex-start; -webkit-justify-content:flex-start; flex-wrap:wrap; -webkit-flex-wrap:wrap; -ms-flex-wrap:wrap;}
-.FCDescritorContent li {position: relative; margin:10px 10px 0 0;}
+.FCTxtGrid{width:100%;height:auto;position:relative;margin-bottom:10px;text-align:left;display:none}
+.FCGridAdicContent span{display:inline-block;padding:5px}
+.AdicItemCor{min-width:20px;display:inline-block;margin:0 3px;border:1px solid #cccccc}
+.FCGridAdicContent.FCGridAdicProductList{float:left}
 
-/* Descrição HTML */
+
+/* Descriï¿½ï¿½o HTML */
 .zFDescrProdCont {font-size:16px;}
 .zFDescrProdCont a {color:#dc087f; }
 .zFDescrProdCont  ul.a-custom {list-style-type:circle; list-style-position: inside;}

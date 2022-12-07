@@ -49,9 +49,9 @@
   <div class='rod3'>
     <div class="rodt1">Atendimento</div>
     <div class="rodt1"><img src="<PathTo file="images/ic_telefone.svg">" alt="Telefone" title="Telefone">(16) 99170-0689</div>
-    <!--<div class="rodt1"><img src="<PathTo file="images/ic_telefone.svg">" alt="Telefone" title="Telefone">(11) 4515-7761</div>-->
+    <!--<div class="rodt1"><img src="<PathTo file="images/ic_telefone.svg">" alt="Telefone" title="Telefone">(16) 99170-0689</div>-->
     <div class="rodt1" id="id_whatsapp_rodape"><a href='https://api.whatsapp.com/send?phone=5516991700689' target='_blank'><img src="<PathTo file="images/ic_whatsapp2.svg">" alt="WhatsApp" title="WhatsApp">(16) 99170-0689</a></div>
-    <div class="rodtxt2">De Segunda � Sexta<br> das 9h �s 18h <span class="rod3email1"><a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></span><span class="rod3email2"><a href="mailto:shoes@marianamedina.com.br">&#8250; Envie um E-mail</a></span></div>
+    <div class="rodtxt2">De Segunda &aacute; Sexta<br> das 9h &aacute;s 18h <span class="rod3email1"><a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></span><span class="rod3email2"><a href="mailto:shoes@marianamedina.com.br">&#8250; Envie um E-mail</a></span></div>
   </div>
 
   <div class="rod4">
@@ -62,7 +62,7 @@
 
   <div class='rod5'>
     <div class="rodt1">Pagamentos</div>
-    <div class="rodtxt1">Pague em at&eacute; 6X sem juros nos cart�es</div>
+    <div class="rodtxt1">Pague em at&eacute; 6X sem juros nos cart&otilde;es</div>
     <div class="rod5A"><img src="<PathTo file="images/ic_mastercard2.svg">" alt="MasterCard" title="MasterCard"><img src="<PathTo file="images/ic_visa1.svg">" alt="Visa" title="Visa"><img src="<PathTo file="images/ic_hipercard1.svg">" alt="Hipercard" title="Hipercard"><img src="<PathTo file="images/ic_elo1.svg">" alt="Elo" title="Elo"><img src="<PathTo file="images/ic_amex2.svg">" alt="American Express" title="American Express"><!--<img src="<PathTo file="images/ic_diners2.svg">" alt="Dinners" title="Dinners">--><img src="<PathTo file="images/ic_pix.svg">" alt="Pix" title="Pix"><img src="<PathTo file="images/ic_boleto1.svg">" alt="Boleto Banc�rio" title="Boleto Banc�rio"></div>
   </div>
   
@@ -76,7 +76,7 @@
 
   <div class='rod7'><a href="https://www.marianamedinashoes.com.br"><picture><source media="(max-width:1023px)" srcset="<baseLoja>images/logomobile.png"><img src="<PathTo file="images/logotopo.png">" alt="Mariana Medina Shoes" title="Mariana Medina Shoes"></picture></a></div>
   <div class='rod8 rodtxt0'>&nbsp; Telefone: (16) 99170-0689 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>
-  <!--<div class='rod8 rodtxt0'>&nbsp; Telefone: (11) 4515-7761 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>-->
+  <!--<div class='rod8 rodtxt0'>&nbsp; Telefone: (16) 99170-0689 &nbsp;|&nbsp; Email: <a href="mailto:shoes@marianamedina.com.br">shoes@marianamedina.com.br</a></div>-->
   <div class='rod9 rodtxt0'>A Mariana Medina Shoes � uma loja online especializada em cal�ados.</div>  
 
   <div id="compraWhatsappBotao">
@@ -142,14 +142,14 @@ window.addEventListener('DOMContentLoaded', () => {
                         fnCustomizeCart();
 })
 
-//bot�es acima - INICIO
+//bot&Otilde;ES acima - INICIO
 var table=jQuery('#TabItens');
   jQuery('#FCCartButtons').clone().insertBefore(table).addClass('firstFCCartButtons');
   jQuery('#FCCartRightBuyBut').clone().insertBefore('#FCCartRightSummary');
   function ComprarImg(){document.getElementsByName("Comprar")[1].click();}
   
   
-  //mostrar erro do carrinho - quando o cliente coloca uma quantidade que n&atilde;o tem em estoque, por padr�o, a loja n&atilde;o avisava qual a linha do carrinho com problema. O script abaixo faz scroll at&eacute; o input em quest�o e o deixa na cor vermelha
+  //mostrar erro do carrinho - quando o cliente coloca uma quantidade que n&atilde;o tem em estoque, por padr&atilde;o, a loja n&atilde;o avisava qual a linha do carrinho com problema. O script abaixo faz scroll at&eacute; o input em quest&atilde;o e o deixa na cor vermelha
   $(document).ready(function(){
     
   var arrayScripts = $("script:contains('setTimeout'):contains('document.Lista'):not(:contains('arrayScripts'))");
@@ -179,12 +179,12 @@ var table=jQuery('#TabItens');
 
 
 }
-//bot�es acima - FIM 
+//bot&Otilde;ES acima - FIM 
 </script>
 
 <script>
   window.addEventListener('DOMContentLoaded', () => {
-            fnFooter();
+        fnFooter();
   			fn_mostrar_label_promocao();
   })
 
@@ -204,7 +204,7 @@ var table=jQuery('#TabItens');
   {
 
     
-    if(FC$.Page=='Products' && $(".FCBoxGrid").length == 0 && screen.width <= 567 && mostrar_label_promocao)
+    if(FC$.Page=='Products' && $(".FCBoxGrid").length == 0 && screen.width <= 567)
     {
       /*
     var imagens = [];
@@ -421,15 +421,15 @@ var table=jQuery('#TabItens');
       	if(dataPostagem != -1)
         {
 
-          	if (($("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart�o"))
+          	if (($("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto") || ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart&atilde;o"))
         	{
           		if(tipoEntrega == "Retirar na loja")
           		{
-            		divPrazoEntrega.innerHTML = "Seu pedido cont�m <strong>item em pr�-venda</strong>. Ap�s a " + textoPagamento + ", seu pedido ser� separado a partir de: <strong>" + dataPostagem + "</strong>";
+            		divPrazoEntrega.innerHTML = "Seu pedido cont�m <strong>item em pr�-venda</strong>. Ap&aacute;s a " + textoPagamento + ", seu pedido ser� separado a partir de: <strong>" + dataPostagem + "</strong>";
           		}
           		else
           		{
-           			divPrazoEntrega.innerHTML = "Seu pedido cont�m <strong>item em pr�-venda</strong>. Ap�s a " + textoPagamento + ", seu pedido ser� postado a partir de: <strong>" + dataPostagem + "</strong>";
+           			divPrazoEntrega.innerHTML = "Seu pedido cont�m <strong>item em pr�-venda</strong>. Ap&aacute;s a " + textoPagamento + ", seu pedido ser� postado a partir de: <strong>" + dataPostagem + "</strong>";
           		}
             }
           	else if (($("#idRecoverOrderFC").length && $("#idTxtSit4OrderFC").text() == "Com pend�ncias") || ($("#idRecoverOrderFC").length && $("#idTxtSit5OrderFC").text() == "Pagamento verificado"))
@@ -462,7 +462,7 @@ var table=jQuery('#TabItens');
     }
     else
     {
-      	//se estiver cancelado, avisar e mostrar o bot�o para refazer o pedido
+      	//se estiver cancelado, avisar e mostrar o bot&atilde;o para refazer o pedido
       	var divCancelado = document.createElement("div");
 
     	divCancelado.style.textAlign = "center";
@@ -503,11 +503,11 @@ var table=jQuery('#TabItens');
 
       	var formaPagamento = $("td.EstNomeCampo:contains(Pagamento)").parent().children()[1].innerText;
 
-      	//cart�o de cr�dito
-      	if (formaPagamento == "Cart�o de cr�dito")
+      	//cart&atilde;o de cr&eacute;dito
+      	if (formaPagamento == "Cart&atilde;o de cr&eacute;dito")
       	{
 
-  			divStatusPagamento.innerHTML = "Recebemos seu pedido com sucesso e, para a sua Seguran&ccedil;a, no momento seu pedido est� passando por uma an�lise anti-fraude. Esse processo � padr�o para todos os pedidos da loja visando a Seguran&ccedil;a dos nossos clientes.<p style='color:orange'><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento da compra.</strong></p>";
+  			divStatusPagamento.innerHTML = "Recebemos seu pedido com sucesso e, para a sua Seguran&ccedil;a, no momento seu pedido est� passando por uma an�lise anti-fraude. Esse processo � padr&atilde;o para todos os pedidos da loja visando a Seguran&ccedil;a dos nossos clientes.<p style='color:orange'><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento da compra.</strong></p>";
 
         	$("#idLinkBoletoFC").remove();
 
@@ -542,7 +542,7 @@ var table=jQuery('#TabItens');
             divInfoPix.style.fontSize = "15px";
             divInfoPix.style.color = "#008ae1";
             divInfoPix.id = "divInfoPix";
-			divInfoPix.innerHTML = "Sabia que voc� tamb�m pode efetuar o pagamento do pedido via PIX? � r�pido e pr�tico! Clique abaixo:";
+			divInfoPix.innerHTML = "Sabia que voc&ecirc; tamb�m pode efetuar o pagamento do pedido via PIX? � r�pido e pr�tico! Clique abaixo:";
             $(".infoPedido").append(divInfoPix);
           
           	var divBotaoPix = document.createElement("div");
@@ -562,12 +562,12 @@ var table=jQuery('#TabItens');
       	else if (formaPagamento == "Pix")
       	{
 
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
+          	divStatusPagamento.innerHTML = "Caso voc&ecirc; j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot&atilde;o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
           
         	$("#idLinkBoletoFC").remove();
           
           
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #bfbfbf'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
+          	divStatusPagamento.innerHTML = "Caso voc&ecirc; j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot&atilde;o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #bfbfbf'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
 
       	}
 
@@ -575,7 +575,7 @@ var table=jQuery('#TabItens');
 /////////STATUS NOVO - FIM ====================================================================================
 
 /////////STATUS EM APROVACAO ====================================================================================
-    if ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix")
+    if ($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart&atilde;o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix")
     {
 		//trocar imagem status pedido
       	$("#idOrderStatusFC").html("<img src='../lojas/00054883/images/msg_status_0_01.svg'>");
@@ -589,18 +589,18 @@ var table=jQuery('#TabItens');
         	{
           		$("#idTxtSit3OrderFC").html("<b>Aguardando pagamento<br>do boleto</b>");
         	}
-        	else if (formaPagamento == "Cart�o de cr�dito")
+        	else if (formaPagamento == "Cart&atilde;o de cr&eacute;dito")
         	{
-          		$("#idTxtSit3OrderFC").html("<b>Aguardando aprova&ccedil;&atilde;o<br>do cart�o</b>");
+          		$("#idTxtSit3OrderFC").html("<b>Aguardando aprova&ccedil;&atilde;o<br>do cart&atilde;o</b>");
         	}
         
       	}
       
-      	//cart�o de cr�dito
-      	if (formaPagamento == "Cart�o de cr�dito")
+      	//cart&atilde;o de cr&eacute;dito
+      	if (formaPagamento == "Cart&atilde;o de cr&eacute;dito")
       	{
         	
-  			divStatusPagamento.innerHTML = "Verificamos que o pagamento atrav�s do seu cart�o de cr�dito <span style='color:red'><strong>n&atilde;o foi autorizado</strong></span>. n&atilde;o se preocupe, isso pode acontecer. Voc� recebeu em seu e-mail um link para tentar efetuar o pagamento novamente.<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso voc� j� tenha efetuado o pagamento novamente, aguarde, pois a transa&ccedil;&atilde;o est� em an�lise.<br><br><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento do pagamento.</strong></div><br>Caso n&atilde;o tenha conseguido efetuar o pagamento no cart�o de cr�dito, no mesmo e-mail enviado tem um link para tentar efetuar o pagamento via PIX.";
+  			divStatusPagamento.innerHTML = "Verificamos que o pagamento atrav&aacute;s do seu cart&atilde;o de cr&eacute;dito <span style='color:red'><strong>n&atilde;o foi autorizado</strong></span>. n&atilde;o se preocupe, isso pode acontecer. voc&ecirc; recebeu em seu e-mail um link para tentar efetuar o pagamento novamente.<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso voc&ecirc; j� tenha efetuado o pagamento novamente, aguarde, pois a transa&ccedil;&atilde;o est� em an�lise.<br><br><strong>O prazo para a an�lise � de 24 horas �teis a partir do momento do pagamento.</strong></div><br>Caso n&atilde;o tenha conseguido efetuar o pagamento no cart&atilde;o de cr&eacute;dito, no mesmo e-mail enviado tem um link para tentar efetuar o pagamento via PIX.";
           
           	$("#idRecoverOrderFC a").css('text-decoration','none');
       		$("#idRecoverOrderFC a").text("CLIQUE AQUI PARA REFAZER SEU PEDIDO");
@@ -638,7 +638,7 @@ var table=jQuery('#TabItens');
             divInfoPix.style.fontSize = "15px";
             divInfoPix.style.color = "#008ae1";
             divInfoPix.id = "divInfoPix";
-			divInfoPix.innerHTML = "Sabia que voc� tamb�m pode efetuar o pagamento do pedido via PIX? � r�pido e pr�tico! Clique abaixo:";
+			divInfoPix.innerHTML = "Sabia que voc&ecirc; tamb�m pode efetuar o pagamento do pedido via PIX? � r�pido e pr�tico! Clique abaixo:";
             $(".infoPedido").append(divInfoPix);
           
           	var divBotaoPix = document.createElement("div");
@@ -657,12 +657,12 @@ var table=jQuery('#TabItens');
       	else if (formaPagamento == "Pix")
       	{
 
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
+          	divStatusPagamento.innerHTML = "Caso voc&ecirc; j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot&atilde;o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:";
           
         	$("#idLinkBoletoFC").remove();
           
           
-          	divStatusPagamento.innerHTML = "Caso voc� j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot�o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #00ae7c'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
+          	divStatusPagamento.innerHTML = "Caso voc&ecirc; j� tenha feito o seu PIX para pagamento do pedido, pedimos que aguarde, pois seu pedido ser� aprovado em breve. =)<br><br><div style='color:#444444;background:#ececec;padding:6px;'>Caso n&atilde;o tenha conseguido fazer o PIX, clique no bot&atilde;o abaixo para ver o QRCode ou copiar o c&oacute;digo de pagamento:<div class='botaoBoleto' style='text-align:center; margin:auto; width:100%; height: 30px; max-width:345px; margin-top: 20px; margin-bottom: 8px; font-size: 15px; background-color: #00ae7c'>" + "<a href='https://www.marianamedinashoes.com.br/pix.ehc?n="+numPedido+"'>Clique aqui para pagar o pedido com PIX</a>" + "</div>";
 
       	}
 	}
@@ -759,7 +759,7 @@ var table=jQuery('#TabItens');
 			if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo a data prevista de separa&ccedil;&atilde;o do seu pedido. <span style='color:orange'><strong>ATEN&ccedil;&atilde;o: Assim que seu pedido estiver pronto, voc� receber� um e-mail informando sobre a retirada em nossa loja.</strong></span>";
+          		divStatusPagamento.innerHTML = "Seu pagamento foi aprovado na data: <span id='data_confirmacao_pagamento' style='font-weight:bold;'></span><br>Veja abaixo a data prevista de separa&ccedil;&atilde;o do seu pedido. <span style='color:orange'><strong>ATEN&ccedil;&atilde;o: Assim que seu pedido estiver pronto, voc&ecirc; receber� um e-mail informando sobre a retirada em nossa loja.</strong></span>";
           
           		$("#linhaSeparacao").show();
           		$("#linhaEntrega").hide();
@@ -815,7 +815,7 @@ var table=jQuery('#TabItens');
 			if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! n&atilde;o esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 �s 20h (segunda a sexta) - 08h30 �s 17h (s�bado)</span>";
+          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! n&atilde;o esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere&atilde;o: <strong>Av. L�der, 3158 - Cidade L�der - S&atilde;o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 &aacute;s 20h (segunda a sexta) - 08h30 &aacute;s 17h (s�bado)</span>";
           
           		$("#linhaSeparacao").hide();
           		$("#linhaEntrega").hide();
@@ -836,7 +836,7 @@ var table=jQuery('#TabItens');
           	if(tipoEntrega == "Retirar na loja")
       		{
           	
-          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! n&atilde;o esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 �s 20h (segunda a sexta) - 08h30 �s 17h (s�bado)</span>";
+          		divStatusPagamento.innerHTML = "Seu pedido j� est� pronto e pode ser retirado em nossa loja! n&atilde;o esque�a de levar um <b>documento com foto</b> para retirar seu pedido!<br><br><span style='color:black'>Endere&atilde;o: <strong>Av. L�der, 3158 - Cidade L�der - S&atilde;o Paulo, SP (tocar campainha do lado direito)</strong></span> (<a href='https://goo.gl/maps/Q8rzTWWaTmeUDLK98' target='_blank'>veja o mapa</a>)<br><br><span style='color:black'>Hor�rio de funcionamento: 08h30 &aacute;s 20h (segunda a sexta) - 08h30 &aacute;s 17h (s�bado)</span>";
           
                 $("#divPrazoEntrega").hide();
           		$("#linhaSeparacao").hide();
@@ -884,7 +884,7 @@ var table=jQuery('#TabItens');
       		else
         	{
           		
-          		divStatusPagamento.innerHTML = "Seu pedido j� foi enviado para voc�!<br>Estamos enviando ele pela transportadora <span id='transportadora' style='font-weight:bold;'></span>";
+          		divStatusPagamento.innerHTML = "Seu pedido j� foi enviado para voc&ecirc;!<br>Estamos enviando ele pela transportadora <span id='transportadora' style='font-weight:bold;'></span>";
           
               	var divBotaoRastreio = document.createElement("div");
         		divBotaoRastreio.style.textAlign = "center";
@@ -922,7 +922,7 @@ var table=jQuery('#TabItens');
       		else
         	{
           
-          		divStatusPagamento.innerHTML = "Seu pedido j� foi enviado para voc�!<br>Estamos enviando ele pela transportadora <span id='transportadora' style='font-weight:bold;'></span>";
+          		divStatusPagamento.innerHTML = "Seu pedido j� foi enviado para voc&ecirc;!<br>Estamos enviando ele pela transportadora <span id='transportadora' style='font-weight:bold;'></span>";
           
               	var divBotaoRastreio = document.createElement("div");
         		divBotaoRastreio.style.textAlign = "center";
@@ -949,11 +949,11 @@ var table=jQuery('#TabItens');
       
       if(tipoEntrega == "Retirar na loja")
         {
-          texto = "O seu pedido est� com status <b>REMETIDO</b>. Isso significa que voc� j� veio retir�-lo em nossa loja! Qualquer d�vida, entre em contato em <b>shoes@marianamedina.com.br</b>";
+          texto = "O seu pedido est� com status <b>REMETIDO</b>. Isso significa que voc&ecirc; j� veio retir�-lo em nossa loja! Qualquer d�vida, entre em contato em <b>shoes@marianamedina.com.br</b>";
         }
         else
         {
-          texto = "O seu pedido est� com status <b>REMETIDO</b>. Isso significa que ele <b>j� foi enviado para voc�!</b> Enviamos para o seu e-mail o link de rastreio, verifique se recebeu. Qualquer d�vida, entre em contato em <b>shoes@marianamedina.com.br</b>";
+          texto = "O seu pedido est� com status <b>REMETIDO</b>. Isso significa que ele <b>j� foi enviado para voc&ecirc;!</b> Enviamos para o seu e-mail o link de rastreio, verifique se recebeu. Qualquer d�vida, entre em contato em <b>shoes@marianamedina.com.br</b>";
         }
       
     }
@@ -979,7 +979,7 @@ var table=jQuery('#TabItens');
 			divPendente.style.marginTop = "20px";
   			divPendente.style.fontSize = "15px";
   			divPendente.style.color = "#008ae1";
-      		divPendente.innerHTML = "Seu pedido est� com status <strong>PENDENTE</strong>. Mas n&atilde;o precisa se preocupar, est� tudo certo com o pagamento! O pedido est� nesse status apenas porque voc� comprou um item em pr�-venda. Caso tenha alguma d�vida, entre em contato com <strong>shoes@marianamedina.com.br</strong>";
+      		divPendente.innerHTML = "Seu pedido est� com status <strong>PENDENTE</strong>. Mas n&atilde;o precisa se preocupar, est� tudo certo com o pagamento! O pedido est� nesse status apenas porque voc&ecirc; comprou um item em pr�-venda. Caso tenha alguma d�vida, entre em contato com <strong>shoes@marianamedina.com.br</strong>";
       		insertAfter(divPrazoEntrega,divPendente);
         }
       
@@ -997,7 +997,7 @@ var table=jQuery('#TabItens');
     
     //se o pagamento ainda n&atilde;o consta, informar que estamos aguardando
     
-    //verificar quando aparece o bot�o de reimprimir boleto
+    //verificar quando aparece o bot&atilde;o de reimprimir boleto
     
     //verificar diferentes formas de pagamento
     
@@ -1022,7 +1022,7 @@ var table=jQuery('#TabItens');
 
 
 
-//func�o acionada ao receber os dados do pedido vindo do bebefofuxo.net
+//func&atilde;o acionada ao receber os dados do pedido vindo do bebefofuxo.net
 function fnprocessDetalhesPedido(){
   
   
@@ -1054,11 +1054,11 @@ function fnprocessDetalhesPedido(){
         			var prazoEntrega = prazoTotal - dias_separacao;
       				if(divPrazoEntrega.innerHTML == "")
                     {
-                      	divPrazoEntrega.innerHTML = "Prazo de entrega ap�s postagem: <strong>" + prazoEntrega + " dias �teis</strong>";
+                      	divPrazoEntrega.innerHTML = "Prazo de entrega ap&aacute;s postagem: <strong>" + prazoEntrega + " dias �teis</strong>";
                     }
                   	else
                     {
-                      	divPrazoEntrega.innerHTML = divPrazoEntrega.innerHTML + "<br><br> Prazo de entrega ap�s postagem: <strong>" + prazoEntrega + " dias �teis</strong>";
+                      	divPrazoEntrega.innerHTML = divPrazoEntrega.innerHTML + "<br><br> Prazo de entrega ap&aacute;s postagem: <strong>" + prazoEntrega + " dias �teis</strong>";
                     }
                   
       
@@ -1109,7 +1109,7 @@ function fnprocessDetalhesPedido(){
                 	}
               		else
                 	{
-                  		$("#txtStatusPagamento").html("Seu pedido j� foi enviado para voc�!");
+                  		$("#txtStatusPagamento").html("Seu pedido j� foi enviado para voc&ecirc;!");
                 	}
                 }
 
@@ -1121,7 +1121,7 @@ function fnprocessDetalhesPedido(){
 
               	$("#tabelaPrazos").hide();
               
-              	if (!($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart�o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix" || $("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja"))
+              	if (!($("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do boleto" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando aprova&ccedil;&atilde;o do cart&atilde;o" || $("#idRecoverOrderFC").length && $("#idTxtSit3OrderFC").text() == "Aguardando pagamento do Pix" || $("#idRecoverOrderFC").length && $("#idTxtSit1OrderFC").text() == "Recebido pela loja"))
               	{
 					$("#txtStatusPagamento").hide();
               	}
@@ -1198,7 +1198,7 @@ $( window ).scroll(function() {
     }
   
   var btn_ganhe = document.querySelector('#btn_ganhe20');
-  if(btn_ganhe.style.width != "86px" && FC$.Page=='Products' && $(".FCBoxGrid").length == 0 && screen.width <= 567 && !$("#btn_ganhe20").is(":hidden") && window.localStorage.btn_ganhe20_clicado != "sim" && mostrar_label_promocao)
+  if(btn_ganhe.style.width != "86px" && FC$.Page=='Products' && $(".FCBoxGrid").length == 0 && screen.width <= 567 && !$("#btn_ganhe20").is(":hidden") && window.localStorage.btn_ganhe20_clicado != "sim")
   {
   	$('#btn_ganhe20 img').animate({"objectPosition" : "100%"}, 200);
   	$('#btn_ganhe20 img').animate({"width" : "86px"}, 200);
@@ -1229,7 +1229,7 @@ $( window ).scroll(function() {
       }
 
 
-      if(btn_ganhe.style.width != "231px" && $("#cabeca_bebe").is(":hidden") && $("#maos_bebe").is(":hidden") && FC$.Page=='Products' && $(".FCBoxGrid").length == 0 && !$("#btn_ganhe20").is(":hidden") && mostrar_label_promocao) {
+      if(btn_ganhe.style.width != "231px" && $("#cabeca_bebe").is(":hidden") && $("#maos_bebe").is(":hidden") && FC$.Page=='Products' && $(".FCBoxGrid").length == 0 && !$("#btn_ganhe20").is(":hidden")) {
         $('#btn_ganhe20 img').animate({"width" : "231px"}, 200);
         $('#btn_ganhe20 img').animate({"objectPosition" : "0%"}, 200);
         $('#btn_ganhe20').css({"width" : "231px"});

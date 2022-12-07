@@ -50,7 +50,7 @@ function ajusteInfoFreteResumoCompra()
         //guardar id do checkbox selecionado
         var idVal = $(this).attr("id");
     
-        //guardando os textos que s�o apresentados para o usu�rio na parte de escolher o frete
+        //guardando os textos que s&atilde;o apresentados para o usu�rio na parte de escolher o frete
         var textosFrete = $("label[for='"+idVal+"']").children();
       
         
@@ -163,10 +163,10 @@ function ajustePrazo_Dados_Frete()
   $("[id=idTxtObsCEPFC]").each(function( index ) {
     
     
-    //obtendo a label em quest�o
+    //obtendo a label em quest&atilde;o
     var array = $("[id=idTxtNomeCEPFC]").toArray();
     
-    //extraindo o nome do servi�o de entrega
+    //extraindo o nome do servi&atilde;o de entrega
     var nomeServico = array[index].innerText;
     
     
@@ -196,7 +196,7 @@ function ajustePrazo_Dados_Frete()
       
       	$(this).text(diasUteis);
       
-      	//comentar ap�s fim da greve dos Correios
+      	//comentar ap&aacute;s fim da greve dos Correios
       	//$(this).html($(this).html() + "<div style='margin-left:5px;font-size:11px;margin-top:5px;display:inline;margin-top:5px;padding-left:5px;padding-right:5px;width:158px;background-color:#008ae1;color:white'>ENVIANDO NORMALMENTE</div>");
     }
     
@@ -212,12 +212,12 @@ function ajustePrazo_Dados_Frete()
       	  
         }
       	
-      	texto_entrega = "Voc� receber� seu pedido <span style='color:#008ae1'><b>" + qual_dia() + "!</b></span> &#x1F680;";
+      	texto_entrega = "voc&ecirc; receber� seu pedido <span style='color:#008ae1'><b>" + qual_dia() + "!</b></span> &#x1F680;";
       	
       
       	$(this).html(texto_entrega);
       
-      	//comentar ap�s fim da greve dos Correios
+      	//comentar ap&aacute;s fim da greve dos Correios
       	//$(this).html($(this).html() + "<div style='margin-left:5px;font-size:11px;margin-top:5px;display:inline;margin-top:5px;padding-left:5px;padding-right:5px;width:158px;background-color:#008ae1;color:white'>ENVIANDO NORMALMENTE</div>");
     }
     
@@ -244,7 +244,7 @@ function ajustePrazo_Dados_Frete()
       var diasUteis = dias+" dias �teis";
       
       
-      $(this).html("Prazo para separa&ccedil;&atilde;o do pedido: "+diasUteis+".<br> Endere�o: <strong>Av. L�der, 3158 - Cidade L�der - S�o Paulo, SP</strong> <br> Hor�rio de funcionamento: 8:30 �s 17:00 (segunda a sexta)");
+      $(this).html("Prazo para separa&ccedil;&atilde;o do pedido: "+diasUteis+".<br> Endere&atilde;o: <strong>Av. L�der, 3158 - Cidade L�der - S&atilde;o Paulo, SP</strong> <br> Hor�rio de funcionamento: 8:30 &aacute;s 17:00 (segunda a sexta)");
       
       tem_retirar_loja = true;
       
@@ -286,10 +286,10 @@ function ajustePrazo_Dados_Frete()
   {
     $("[id=idTxtObsCEPFC]").each(function( index ) {
 
-      //obtendo a label em quest�o
+      //obtendo a label em quest&atilde;o
       var array = $("[id=idTxtNomeCEPFC]").toArray();
 
-      //extraindo o nome do servi�o de entrega
+      //extraindo o nome do servi&atilde;o de entrega
       var nomeServico = array[index].innerText;
 
       if(nomeServico == "Retirar na loja:")
@@ -481,7 +481,7 @@ function fnprocessExisteTransportadora(obj)
 //alerta avisando sobre entrega restrita - n&atilde;o est� ativo atualmente
 function alertaEntregaRestrita()
 {
-  alert("Pode ser que seu pedido demore um pouquinho mais para ser entregue ou pode ser necess�rio voc� ir retirar o seu pedido na ag�ncia dos Correios mais pr�xima.\n\nPara maiores explica&ccedil;&otilde;es entre em contato conosco: shoes@marianamedina.com.br");
+  alert("Pode ser que seu pedido demore um pouquinho mais para ser entregue ou pode ser necess�rio voc&ecirc; ir retirar o seu pedido na ag�ncia dos Correios mais pr�xima.\n\nPara maiores explica&ccedil;&otilde;es entre em contato conosco: shoes@marianamedina.com.br");
 }
   
   
@@ -620,7 +620,7 @@ function avisoAreaRestrita()
         ehCNPJ = true;
       }
 
-      //evitar caracter especial em campos de nome e endere�o
+      //evitar caracter especial em campos de nome e endere&atilde;o
       var funcaoCaracteres1 = function(e) {
         var chr = String.fromCharCode(e.which);
         if (">?&%*#@!+<$\/".indexOf(chr) >= 0)
@@ -852,12 +852,12 @@ function FuncChkPaymentEnd(){
   //FuncChkChangeTxtPagto("16","<label for=Pagto16>VISA Electron (d�bito - � vista)</label>"); 
   //FuncChkChangeTxtPagto("25","<label for=Pagto25>MasterCard Maestro (d�bito - � vista)</label>"); 
   /*
-  FuncChkChangeTxtPagto("3_2","<label for=Pagto3_2>Diners - at� 6x sem juros</label>"); 
-  FuncChkChangeTxtPagto("3_7","<label for=Pagto3_7>Elo - at� 6x sem juros</label>"); 
-  FuncChkChangeTxtPagto("3_3","<label for=Pagto3_3>MasterCard - at� 6x sem juros</label>"); 
-  FuncChkChangeTxtPagto("3_4","<label for=Pagto3_4>VISA - at� 6x sem juros</label>"); 
-  FuncChkChangeTxtPagto("3_1","<label for=Pagto3_1>American Express - at� 6x sem juros</label>"); 
-  FuncChkChangeTxtPagto("3_5","<label for=Pagto3_5>Hipercard - at� 6x sem juros</label>");
+  FuncChkChangeTxtPagto("3_2","<label for=Pagto3_2>Diners - at&eacute; 6x sem juros</label>"); 
+  FuncChkChangeTxtPagto("3_7","<label for=Pagto3_7>Elo - at&eacute; 6x sem juros</label>"); 
+  FuncChkChangeTxtPagto("3_3","<label for=Pagto3_3>MasterCard - at&eacute; 6x sem juros</label>"); 
+  FuncChkChangeTxtPagto("3_4","<label for=Pagto3_4>VISA - at&eacute; 6x sem juros</label>"); 
+  FuncChkChangeTxtPagto("3_1","<label for=Pagto3_1>American Express - at&eacute; 6x sem juros</label>"); 
+  FuncChkChangeTxtPagto("3_5","<label for=Pagto3_5>Hipercard - at&eacute; 6x sem juros</label>");
   */
   
   /*
@@ -923,7 +923,7 @@ function FuncChkPaymentEnd(){
   //nome do grupo de forma de pagamento
   //CREDITO
   var elemTituloCredito = document.createElement('div');
-  elemTituloCredito.innerHTML = "<div style='width: 60%; float:left;'>Cart�o de Cr�dito<div>";
+  elemTituloCredito.innerHTML = "<div style='width: 60%; float:left;'>Cart&atilde;o de cr&eacute;dito<div>";
   elemTituloCredito.style.backgroundColor = "#f2f2f2";
   elemTituloCredito.style.color = "#666666";
   elemTituloCredito.style.padding = "5px 0px 5px 8px";
@@ -953,7 +953,7 @@ function FuncChkPaymentEnd(){
   /*
   //DEBITO
   var elemTituloDebito = document.createElement('div');
-  elemTituloDebito.innerHTML = "<div style='width: 50%; float:left;'><strong>CART�O DE D�BITO</strong></div>";
+  elemTituloDebito.innerHTML = "<div style='width: 50%; float:left;'><strong>CART&atilde;o DE D�BITO</strong></div>";
   elemTituloDebito.style.backgroundColor = "#f2f2f2";
   elemTituloDebito.style.color = "#666666";
   elemTituloDebito.style.padding = "5px 0px 5px 8px";
@@ -1051,7 +1051,7 @@ function FuncChkPaymentEnd(){
   {
     var idVal = $("#idTabFreteOptFC input[type='radio']:checked").attr("id")
 
-    //guardando os textos que s�o apresentados para o usu�rio na parte de escolher o frete
+    //guardando os textos que s&atilde;o apresentados para o usu�rio na parte de escolher o frete
     var textosFrete = $("label[for='"+idVal+"']").children();
     
     if(textosFrete[0].innerHTML.includes("JATO"))
@@ -1079,7 +1079,7 @@ function FuncChkPaymentEnd(){
 
   function cvv_oque()
   {
-    alert('CVV � um c&oacute;digo de Seguran&ccedil;a de 3 d�gitos, impresso no verso de cart�es de cr�dito.<br><br>Em cart�es American Express voc� encontra o CVV com 4 d�gitos e na frente.<br><br>Informar o c&oacute;digo de Seguran&ccedil;a � uma exig�ncia das administradoras de cart�es para tornar suas compras on-line ainda mais seguras.');
+    alert('CVV � um c&oacute;digo de Seguran&ccedil;a de 3 d&iacute;gitos, impresso no verso de cart&otilde;es de cr&eacute;dito.<br><br>Em cart&otilde;es American Express voc&ecirc; encontra o CVV com 4 d&iacute;gitos e na frente.<br><br>Informar o c&oacute;digo de Seguran&ccedil;a � uma exig�ncia das administradoras de cart&otilde;es para tornar suas compras on-line ainda mais seguras.');
 
     $(".vex-theme-default").css("padding-top","80px");
     $(".vex-theme-default").css("padding-bottom","0px");
@@ -1097,11 +1097,11 @@ function FuncChkCCEnd()
   
   $("#idTRccSegFC a").attr("onclick","cvv_oque()");
   $("#idTRccNumFC td").removeAttr("width");
-  $("#idTRccNumFC .EstChkNomeCampo").text("N�mero do cart�o:");
+  $("#idTRccNumFC .EstChkNomeCampo").text("N�mero do cart&atilde;o:");
   
   $('#idTRccNomeFC').insertBefore('#idTRccExpFC');
   
-  $("#idTRccNomeFC .EstChkNomeCampo").text("Titular (impresso no cart�o):");
+  $("#idTRccNomeFC .EstChkNomeCampo").text("Titular (impresso no cart&atilde;o):");
   $("#idTRccSegFC .EstChkNomeCampo").text("c&oacute;digo de Seguran&ccedil;a (CVV):");
   
 
@@ -1561,7 +1561,7 @@ function fnInsertAfter(newNode,referenceNode) {
       {
         if(numero.substring(2, 3) == "9" || numero.substring(2, 3) == "8" || numero.substring(2, 3) == "7")
         {
-          //telefone com 10 digitos e que come�a com 9,8 ou 7, celular V&aacute;lido ap�s adicionar o 9 no inicio
+          //telefone com 10 digitos e que come�a com 9,8 ou 7, celular V&aacute;lido ap&aacute;s adicionar o 9 no inicio
           numero_tratado = "55" + numero.substring(0, 2) + "9" + numero.substring(2);
         }
       }
